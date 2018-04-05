@@ -10,19 +10,19 @@ _仅可以运行于 VFP9_
 
 ***
 
-_**Thor** is a tool for managing add-on tools in the IDE, managing menus and hot key assignments for IDE Tools._
+_**Thor** 是一个管理IDE中插件工具的的管理器，用于管理访问IDE工具的菜单和快捷键。_
 
-[What's new in this release](#WhatsNew)
+[此版本新增功能](#WhatsNew)
 
-[Get the latest Thor news](Docs/Thor_news.md)
+[获取 Thor 的最新消息](Docs/Thor_news.md)
 
-**Download App:** [Download the latest build here](http://vfpxrepository.com/dl/thorupdate/thor/Thor.zip)
+**下载 App:** [点击此处下载最新的编译版本](http://vfpxrepository.com/dl/thorupdate/thor/Thor.zip)
 
-**Getting Started:** [Click here for installation instructions](Docs/Thor_install.md)
+**如何使用:** [点击此处查看安装说明](Docs/Thor_install.md)
 
-**Help:** [Click here for complete online documentation](Docs/Thor_help.md)
+**帮助:** [点击此处查看完整在线文档](Docs/Thor_help.md)
 
-**Discussions:** [Post questions, bug reports, discussions in the Thor Discussion Group](http://groups.google.com/group/FoxProThor)
+**讨论组:** [点击此处在 Thor 讨论组发布你的问题、BUG报告以及参与讨论](http://groups.google.com/group/FoxProThor)
 
 **Tools for Thor: [PEM Editor w/IDE Tools](https://github.com/VFPX/PEMEditor),** [The Thor Repository](Docs/Thor_repository.md),  [GoFish4](https://github.com/mattslay/GoFish)  
 
