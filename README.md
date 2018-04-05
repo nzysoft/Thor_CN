@@ -62,9 +62,9 @@ Thor 附带两个工具：Thor Repository 和 PEM Editor。(见下文)
 
 ### The Thor Repository
 
-Inherent in the design of Thor is the anticipation that members of the FoxPro community will have utilities of value that can well be shared throughout the community. The structure of the tool PRGs make such sharing simple.  
+Thor 设计的初衷是为了使 VFP 社区成员可以通过在社区的共享使其价值最大化. PRG工具的结构使这种共享变得异常简单。  
 
-The 'Thor Repository' is a catalog of such tools. The intent is that this repository grow over time, as developers submit tools to be included. The starting repository has about a dozen such tools. Click here for the help page for  [The Thor Repository](Docs/Thor_repository.md)  
+'Thor Repository' 就是这些工具的目录结构。随着开发者不断的提交新的工具，它也会不断的增长。在初始阶段，它大约包含十几个工具。点击此处可以查看[The Thor Repository](Docs/Thor_repository.md)的帮助。
 
 Downloading and installation of the Thor Repository occurs automatically as part of the [One-Click Update for Thor](Docs/Thor_one-click_update.md)
 
