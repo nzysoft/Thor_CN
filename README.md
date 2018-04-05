@@ -1,7 +1,7 @@
 ![](Docs/Images/Thor.png)  
-## Tool manager for FoxPro
+## VFP的工具管理器
 
-Version 1.40 Released 2013-08-26
+版本 1.40 释放日期 2013-08-26
 
 [What's new in this release](#WhatsNew)
 
