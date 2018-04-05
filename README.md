@@ -36,29 +36,29 @@ Thor:
 *   它提供了注册工具的统一的方法。
 *   简化了开发者之间共享任务。
 
-Thor comes with a ready-made list of tools from two sources, the Thor Repository and PEM Editor. (See below)
+Thor 附带两个工具：Thor Repository 和 PEM Editor。(见下文)
 
-Unlike the normal limited set of hot keys available from ON KEY LABEL, Thor provides for the full range of multiple-keystroke combinations ({Ctrl + Alt + A}, for instance). 
+与 ON KEY LABEL 不同，Thor 可以提供全方位的多建组合 (例如：{Ctrl + Alt + A})。
 
-The 'tools' managed by Thor are simply PRGs with the following characteristics
+它所管理的“工具”其实是很简单的PRG，它们具有以下特征：
 
-*   The PRGs are named **Thor_Tool_*.PRG**
-*   The PRG must be saved anywhere in the path, or in one of two Tools folders (which are created at installation) -- one for downloaded tools, one for personal tools.
-*   The first 40 lines or so of the PRG must follow a fixed template, allowing Thor to query them as to their name, description, etc.
+*   PRG的命名方式为：**Thor_Tool_*.PRG**
+*   PRG文件必须保存在搜索目录下，或者在两个 Tools 目录下（它们在安装时被创建） -- 一个用于（通过Thor）下载工具，一个用于个人制作的工具。
+*   PRG文件的前大概40行代码必须遵循固定的模板格式，用于 Thor 获得该工具的名称、描述等信息。
 
-### Documentation
+### 文档
 
-[Click here for complete online documentation of Thor](Docs/Thor_help.md)
+[点击此处查看Thor的完整联机文档](Docs/Thor_help.md)
 
-### Getting Started
+### 如何使用
 
-[Click here to download the latest release of Thor](http://vfpxrepository.com/dl/thorupdate/thor/Thor.zip).
+[点击此处下载最新的编译版本](http://vfpxrepository.com/dl/thorupdate/thor/Thor.zip).
 
-[Click here for installation instructions](Docs/Thor_install.md).
+[点击此处查看安装说明](Docs/Thor_install.md).
 
-### Community Forum for Thor
+### Thor社区
 
-Please visit the [Community Forum for Thor](http://groups.google.com/group/FoxProThor) to ask questions, make suggestions, report problems, and submit enhancement requests.  This is the best place to visit for all Thor-related topics.
+请访问[Thor社区]（http://groups.google.com/group/FoxProThor）提出问题、建议，报告BUG以及提交你对该工具的期望功能。 这是所有Thor相关主题的最佳去处。
 
 ### The Thor Repository
 
