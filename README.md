@@ -3,9 +3,9 @@
 
 版本 1.40 释放日期 2013-08-26
 
-[What's new in this release](#WhatsNew)
+[此版本新增功能](#WhatsNew)
 
-_Requires VFP9_
+_仅可以运行于 VFP9_
 
 
 ***
