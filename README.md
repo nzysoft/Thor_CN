@@ -66,7 +66,7 @@ Thor 设计的初衷是为了使 VFP 社区成员可以通过在社区的共享�
 
 'Thor Repository' 就是这些工具的目录结构。随着开发者不断的提交新的工具，它也会不断的增长。在初始阶段，它大约包含十几个工具。点击此处可以查看[The Thor Repository](Docs/Thor_repository.md)的帮助。
 
-Downloading and installation of the Thor Repository occurs automatically as part of the [One-Click Update for Thor](Docs/Thor_one-click_update.md)
+作为[一键更新 Thor](Docs/Thor_one-click_update.md)的一部分，它将被自动下载并予以安装。
 
 ### IDE Tools from PEM Editor
 
