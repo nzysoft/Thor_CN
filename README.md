@@ -24,17 +24,17 @@ _**Thor** 是一个管理IDE中插件工具的的管理器，用于管理访问I
 
 **讨论组:** [点击此处在 Thor 讨论组发布你的问题、BUG报告以及参与讨论](http://groups.google.com/group/FoxProThor)
 
-**Tools for Thor: [PEM Editor w/IDE Tools](https://github.com/VFPX/PEMEditor),** [The Thor Repository](Docs/Thor_repository.md),  [GoFish4](https://github.com/mattslay/GoFish)  
+**Thor 工具: [PEM Editor w/IDE Tools](https://github.com/VFPX/PEMEditor),** [The Thor Repository](Docs/Thor_repository.md),  [GoFish4](https://github.com/mattslay/GoFish)  
 
 Thor:
 
-*   has a user interface to control the assignment of hot keys to tools and developer-defined menus. The UI provides four different methods for accessing these tools:
-    1.  By assigning hot keys to them
-    2.  By creating pop-up menus accessible via hot keys
-    3.  By adding them as bars under any of the VFP system pads (File, Edit, View, etc.)
-    4.  By creating new pads in the VFP system menu and adding them as bars under these new pads
-*   provides a unified method for registering tools.
-*   simplifies the task of sharing them between developers.
+*   它具有一个用户界面，用来工具和用户自定义菜单快捷键的指定。UI提供了四种方式来访问这些工具：
+    1.  使用所定义的热键
+    2.  创建可使用热键的弹出菜单
+    3.  在固有系统菜单下创建新的自定义菜单项(文件、编辑、查看等)
+    4.  在VFP系统菜单中创建新的菜单
+*   它提供了注册工具的统一的方法。
+*   简化了开发者之间共享任务。
 
 Thor comes with a ready-made list of tools from two sources, the Thor Repository and PEM Editor. (See below)
 
