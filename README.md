@@ -58,7 +58,7 @@ Thor 附带两个工具：Thor Repository 和 PEM Editor。(见下文)
 
 ### Thor社区
 
-请访问[Thor社区]（http://groups.google.com/group/FoxProThor）提出问题、建议，报告BUG以及提交你对该工具的期望功能。 这是所有Thor相关主题的最佳去处。
+请访问[Thor社区]（http://groups.google.com/group/FoxProThor） 提出问题、建议，报告BUG以及提交你对该工具的期望功能。 这是所有Thor相关主题的最佳去处。
 
 ### The Thor Repository
 
