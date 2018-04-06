@@ -60,24 +60,24 @@ Result = ExecScript (_screen.cThorDispatcher, 'THOR_TOOL_REPOSITORY_VCD4PRG', lc
 
 *   注意：如果PRG中包含任何的类定义，你将被要求选择一个类来进行操作；如果不包含类定义，文件仅仅是被打开。因此，这样的命令可以被用于项目钩子的 QueryModifyFile 事件中，如果文件包含类定义，那么就会触发类的修改行为。
 
-### Revision History
+### 版本历史
 
-Version 0.9 – Sept. 3, 2011
+Version 0.9 – 9. 3, 2011
 
-*   Text between #IF / #ENDIF statements left untouched (treated like comments)
-*   Backup file *.BAK created when PRG file is updated.
-*   Descriptions in VCX for methods are (and should be) ignored.
-*   Recognizes parent classes from VCXs
-*   Generates appropriate error message if parent class not found
+*   在 #IF / #ENDIF 语句之间的文本保持原状（像注释一样处理）。
+*   当 PRG 文件被更新时创建 *.BAK 备份文件。
+*   VCX 中方法的描述将被忽略。
+*   识别来自 VCX 的父类。
+*   如果找不到父类则生成相应的错误消息。
 
-Version 0.04 – Sept. 1, 2011
+Version 0.04 – 9. 1, 2011
 
-*   Resolution for problem of finding parent class from the DEFINE CLASS statement
-*   Handling for comments, #Include statements, #Define statements that are not with Procedure blocks
-*   Implementation of a structure for property descriptions, based on Rick Strahl’s WestWind
+*   解决在 DEFINE CLASS 语句中查找父类的问题。
+*   处理不包含在 Procedure 过程块中的注释、#Include 语句、#Define 语句。
+*   以Rick Strahl的WestWind为基础，使用属性描述的结构。
 
-Version 0.02 – Aug 27, 2011
+Version 0.02 – 8. 27, 2011
 
-*   When saving, all VCX/SCX code windows are closed (saved) first, to make sure that no work is lost. Unfortunately, it is not possible to distinguish between VCX and SCX code windows, nor which VCX or SCX they belong to, so in the case where there are multiple VCXs or SCXs open, ALL their code windows are closed.
-*   Classes which cannot be defined in VCXs (Session, Column, and Header') can be edited; they are made to appear as ‘Custom’ classes, meaning that there may be some native PEMs which are handled wrong (but this should be minor). 
-*   When writing back to a file rather than a code window, MessageBox is used to notify that posting was complete.  An appropriate message will be displayed should posting should fail for any reason (such as if the file has subsequently been opened for editing by Modify Command)
+*   保存时，首先关闭所有的 VCX/SCX 代码窗口，确保不会丢失任何的工作。很不幸的是，无法区别VCX和SCX的代码窗口，也不能区分它们属于哪个VCX或者SCX，因此在打开多个VCX和SCX情况下，所有的代码窗口都将被关闭。
+*   可以编辑无法可视化定义的类(Session, Column, 和 Header')；它们被看作 ‘Custom’ 类，这可能会导致一些固有的 PEMs 被错误处理（这好像是次要的）。
+*   在回写文件而不是代码窗口时，MessageBox 被用于通知操作已完成。任何原因造成的失败都会显示适当的提示信息（例如，如果文件已被打开，以便通过修改命令进行编辑）。
