@@ -12,7 +12,7 @@ All the benefits of the Visual Class Designer (inheritance, Intellisense, having
 
 VCD4PRG is accessible from the Thor menu, as seen below.  For best test results, assign and use a hot key.
 
-![](Images\VCD4PRG_image_2.png)
+![](Docs\Images\VCD4PRG_image_2.png)
 
 ### **Getting started – an example**
 
