@@ -7,14 +7,14 @@
 
 ### Thor
 
-*   [Using Tool Launcher](http://youtu.be/2ttBR9vQqew) (7:57)
-*   [50 Ways to Run a Thor Tool](http://youtu.be/ZaBR5J9riQk) (14:39)
+*   [使用工具启动器](http://youtu.be/2ttBR9vQqew) (7:57)
+*   [运行 Thor 工具的 50 种方法](http://youtu.be/ZaBR5J9riQk) (14:39)
 
 <a name="Videos"></a>
 
 ### [GoFish 4](https://github.com/mattslay/GoFish)
 
-*   [GoFish - Code Search Tool](https://www.youtube.com/watch?v=0MdpWyPnfus) (12:13)
+*   [GoFish - 代码搜索工具](https://www.youtube.com/watch?v=0MdpWyPnfus) (12:13)
 
 ### [IntellisenseX](https://github.com/VFPX/IntelliSenseX)
 
