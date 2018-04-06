@@ -56,41 +56,41 @@ _本文档由 xinjie 于 2018-04-06 翻译_
 
 ## <a name="UpcomingVideos">即将推出的视频</a>
 
-1.  SuperBrowse
-2.  Go To Definition
+1.  SuperBrowse（超级浏览器）
+2.  Go To Definition(转到定义)
 
-Others being considered, in no particular order
+其他正在考虑发布的视频，没有特别的顺序
 
-*   Analyzing and modifying code (part I)
+*   分析和修改代码（第一部分）
     *   BeautifyX
     *   Create LOCALs
-*   Analyzing and modifying code (part II)
+*   分析和修改代码（第二部分）
     *   Highlight / Close Control Structure
     *   Extract to Method
     *   Cross References
     *   Code Listings
     *   Dynamic Snippets<!--EndFragment-->
-*   Working with Windows
+*   与窗口有关的操作
     *   Cycle thru open code windows
     *   Close some / all open code windows
     *   Auto move/resize current code window
     *   Open files (classes, forms, others)
     *   Manage favorites
     *   MRU lists<!--EndFragment-->
-*   Parent Classes, Containing Classes, and re-factoring
-*   RETURNs between WITH/ENDWITH
-*   Document TreeView
-*   Objects and PEMS
-    *   Copy properties and methods
-    *   Compare with copied object
-    *   Paste properties and method code
-    *   Paste object
-    *   Add object
-    *   Find objects
-    *   Object size and position
-    *   Auto-rename<!--EndFragment-->
-*   Extract To ...
-*   Design Time Event Handlers
-*   MDots!
+*   Parent Classes, Containing Classes, and re-factoring（父类、包含的类及重构）
+*   RETURNs between WITH/ENDWITH(WITH/ENDWITH中的返回值)
+*   Document TreeView（树形文档查看器）
+*   对象和 PEMS
+    *   Copy properties and methods（复制属性和方法）
+    *   Compare with copied object（与副本对象进行比较）
+    *   Paste properties and method code（粘贴属性和方法代码）
+    *   Paste object（粘贴对象）
+    *   Add object（增加对象）
+    *   Find objects（对象查找）
+    *   Object size and position(对象尺寸和位置)
+    *   Auto-rename<!--EndFragment-->(控件自动重命名)
+*   Extract To ...(提取...)
+*   Design Time Event Handlers（设计时刻的事件处理）
+*   MDots!("."操作符)
 *   Go To …
 
