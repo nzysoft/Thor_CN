@@ -2,6 +2,7 @@
 *   [**按类别列出的视频**](#VideosByCategory)
 *   [**按日期列出的视频**](#VideosByDate)
 *   [**即将推出的视频**](#UpcomingVideos)
+_本文档由 xinjie 于 2018-04-06 翻译_
 
 ## <a name="VideosByCategory">按类别列出的视频</a>
 
