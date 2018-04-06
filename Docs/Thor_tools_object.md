@@ -1,13 +1,13 @@
-﻿Thor Tools Object
+﻿Thor 工具对象
 ===
 
-This object is a collection of various tools, created for PEM Editor, which have applicability as well outside of the PEM Editor form.
+此对象是为PEM编辑器创建的各种工具的集合，它也适用于PEM编辑器外的应用程序。
 
-The Thor Tools Object can be obtained from this single line of code:
+Thor工具对象可以从这一行代码中获得：
 
     loTools = Execscript (_Screen.cThorDispatcher, 'class= tools from pemeditor')
 
-Note that the PEM Editor form need not be open for these tools to work.
+请注意，这些工具的工作时并不需要打开PEM编辑器。
 
 Methods (Parameters)|Description
 ---|---
