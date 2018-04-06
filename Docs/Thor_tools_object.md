@@ -22,12 +22,12 @@ CreateLocals(lcSelectCode)|在包含正常代码文本的字符串中创建LOCAL
 CreateNewPEM(tcType, tcName, txValue)|创建一个新的属性或者方法： 
 CreateNewPEM (cont.)|属性:tcType = 'P', 方法：tcType = 'M'  
 CreateNewPEM (cont.)|新的PEM：tcName = Name (_Memberdata 属性值将被更新)  
-CreateNewPEM (cont.)|txValue = Value (for properties) or method code (for methods)
-DiskFileName(tcFileName)|Returns the file name as it is stored on disk (that is, with current upper/lower case).
-EditMethod(toObject, tcMethodName)|Opens a method (or event) for editing. {toObject} may be
-EditMethod (cont.)|* an object reference,
-EditMethod (cont.)|* .T. for the current form or class
-EditMethod (cont.)|* empty for the current object.
+CreateNewPEM (cont.)|txValue = Value (针对属性) 或者方法代码 (针对方法)
+DiskFileName(tcFileName)|返回存储在磁盘上的文件名（即，使用当前的大写/小写）。
+EditMethod(toObject, tcMethodName)|打开一个方法（或事件）进行编辑。 toObject 参数参看：
+EditMethod (cont.)|* 一个对象引用，
+EditMethod (cont.)|* 针对当前表单或类， .T. 
+EditMethod (cont.)|* 如果为空，则指当前对象。
 EditSourceX(tcFileName, tcClass, tcMethodName, tnStartRange, tnEndRange)|Opens any file for editing (as **EditSource** does), with additional capabilities:
 EditSourceX (cont.)|* The file is added to its appropriate MRU library.
 EditSourceX (cont.)|* The file is opened with the correct case for the file name, so that when it is saved the case for the file name will not be changed.
