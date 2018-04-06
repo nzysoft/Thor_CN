@@ -72,13 +72,13 @@ Thor 设计的初衷是为了使 VFP 社区成员可以通过在社区的共享�
 
 PEM Editor Version 7， 现在已经改名为 'PEM Editor w/ IDE Tools'，包含可以通过 Thor 访问的超过30个工具，其中一部分是 PEM Editor Version 6 中包含的，其余的是全新开发的工具。这些工具可以从 PEM Editor 主页下载。点击此处访问帮助页面：[PEM Editor w/IDE Tools 帮助](https://github.com/VFPX/PEMEditor)  
 
-PEM Editor also "publishes" a pair of objects that simplify building further tools. More than half of the original tools in the Thor Repository use these objects.
+PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。Thor Repository 中超过一半的内置工具使用了它们。
 
-Downloading and installation of PEM Editor 7 with IDE Tools occurs automatically as part of the [One-Click Update for Thor](Docs/Thor_one-click_update.md).
+下载和安装 PEM Editor 7 with IDE Tools 的步骤已经作为[一键更新 Thor](Docs/Thor_one-click_update.md) 的一部分.
 
-### Sample
+### 示例
 
-Two new menu pads in VFP system menu (Thor and personal menu JRN) and the menu options in the Thor menu.
+系统菜单中两个新的菜单(Thor 和个人定制菜单 JRN)以及在 Thor 菜单中的菜单选项：
 
 ![](Docs/Images/Thor_image_4.png)
 
