@@ -86,7 +86,7 @@ PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。
 
 Thor 1.40 – 发布日期 2013-08-26
 
-Added the Thor ToolBar.  Tools may be added to the Toolbar may using the checkbox shown in the Thor Configuration form,  below (and also available in the [Tool Launcher](Docs/Thor_launcher.md).)
+增加 Thor 工具栏。通过配置表单中的选择，你可以将工具添加到工具栏，如下图所示(也可用于[Tool Launcher](Docs/Thor_launcher.md).)
 
 ![](Docs/Images/Thor_SNAGHTMLf389404.png)
 
