@@ -17,9 +17,9 @@ BeautifySelectStatement (lcSelectCode)|将BeautifyX样式应用于包含单个SQ
 BeautifySelectStatement (cont.)|* 插入CR，以便每个字段都在一个新行中
 BeautifySelectStatement (cont.)|* 插入CR，以便主要关键字在新行中
 BeautifySelectStatement (cont.)|* 对子查询应用类似的格式，在它们的SELECT语句下为它们对齐新行
-CloseForms()|Close the PEM Editor and Document TreeView forms, if open
-CreateLocals(lcSelectCode)|Creates LOCAL statements in a character string containing normal code text
-CreateNewPEM(tcType, tcName, txValue)|Creates a new property or method: 
+CloseForms()|如果 PEM Editor 和 树形文档查看器 打开的话，关闭它们
+CreateLocals(lcSelectCode)|在包含正常代码文本的字符串中创建LOCAL语句
+CreateNewPEM(tcType, tcName, txValue)|创建一个新的属性或者方法： 
 CreateNewPEM (cont.)|tcType = 'P' for Property, 'M' for Method  
 CreateNewPEM (cont.)|tcName = Name for new PEM (_Memberdata will be updated)  
 CreateNewPEM (cont.)|txValue = Value (for properties) or method code (for methods)
