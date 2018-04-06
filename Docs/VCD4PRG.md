@@ -1,8 +1,8 @@
-﻿#### Version 0.9 – Sept. 3, 201
+﻿#### Version 0.9 – 9.3, 201
 
-### Objective
+### 目的
 
-To create a tool which provides the ability to modify PRG-based custom classes using the Visual Class Designer (limited to classes that do not contain child objects).
+此工具的目的在于使用可视化的类设计器来编辑一个基于PRG的自定义类成为可能（仅限于不包含子对象的类）。
 
 ### Benefits
 
