@@ -90,11 +90,11 @@ Added the Thor ToolBar.  Tools may be added to the Toolbar may using the checkb
 
 ![](Docs/Images/Thor_SNAGHTMLf389404.png)
 
-When you add a tool to the Thor Toolbar, you can select a caption for the tool or select an image to represent it.  In the sample below, abbreviated captions are used.
+当你向 Thor 工具栏增加一个工具时，你可以选择一个工具标题或者一个图片来表示它。在下面的示例中使用了缩写的标题。
 
 ![](Docs/Images/Thor_SNAGHTMLf3b4e2e.png)
 
-工具栏尺寸、位置、停靠和 The toolbar’s size, positioning, and docking, persist from one session to the next. (Truth be told, persisting the docking has been problematic.)
+工具栏尺寸、位置、停靠以及从一个 session 到另一个的过程中保持显示（persist from one session to the next）。(说实话，这个保持显示一直有问题。)
 
 Thor 1.30 – 发布日期 2012-08-19
 
