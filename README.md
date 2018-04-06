@@ -7,6 +7,7 @@
 
 _仅可以运行于 VFP9_
 
+_本文档由 xinjie 于 2018-04-06 翻译_
 
 ***
 
@@ -129,8 +130,8 @@ Thor I Beta 2 - 发布日期 2011-07-04 (61 downloads)
 
 Thor I Beta - 发布日期 2011-06-03 (237 downloads)
 
-## Acknowledgments
+## 鸣谢
 
-*   The concept for this project started with Jim Nelson (the Project Manager).
-*   The design was created by a group which included Doug Hennig, Eric Selje, and Tore Bleken.
-*   The entire UI was designed and implemented by Doug Hennig.
+*   该项目的概念概念出自 Jim Nelson (项目经理).
+*   设计实现由 Doug Hennig, Eric Selje, 和 Tore Bleken 完成。
+*   整个项目的UI由 Doug Hennig 设计实现。
