@@ -23,15 +23,15 @@ VCD4PRG 可以通过 Thor 菜单访问，就像下图这样。最好，你为它
 3.  根据需要对类进行一些修改(增加属性和方法等)
 4.  在当前窗口为临时 VCX 或者它的任意方法窗口使，再次使用该工具将类定义回写到PRG类的窗口。
 
-### 不可调和的分歧
+### 如何处理不可调和的分歧
 
 在PRG类和VCX类之间存在清晰的界限，所以当转换PRG类为VCX时，必须对可用于PRG类但是不能直接用于VCX的部分予以调整。因为VCX必须包含基于PRG的整个类定义，所以需要一些技巧，这是你必须要清楚的地方：
 
 *   在PRG类中，针对属性描述没有统一的标准。然而，一个常见的用法是，在属性的前一行来描述属性或者在和属性定义的同一行用注释进行描述(例如 Rick Strahl 的 West-Wind Help 生成器中那样的处理)。这些属性定义在此工具下是可用的。(为了允许很长的属性描述，属性定义的“前一行”，可以是带有续行符号的多行描述)。在VCX中的属性描述将按照此格式予以导出。
 *   在PRG类中，针对方法的描述具有同样的问题。然而，一个常见的用法是，在紧挨着 PROCEDURE 这一行的前一行对方法予以描述（同样，例如 Rick Strahl 的 West-Wind Help 生成器中那样的处理）。本工具适用这种描述方式，注意，描述方法的注释中不能存在空行且和方法定义之间不能存在空行。由于在VCX中的属性描述有254个字符的限制，所以，当从PRG转换为VCX时，PRG中的方法描述将被置于方法代码的开始部分。当回写到PRG时，它位于方法的内部而不是外部。
-*   PRG-based classes allow for multiple #Include statements, as well as #Define statements and comments anywhere in the class definition and there is no equivalent structure in VCXs.  All of these lines (with the exception of the comment lines noted above) are captured and restored into the PRG immediately after the DEFINE CLASS statement.  Note that this include comments between PROCEDURES and also after the last ENDPROC
-*   PRG-based classes also provide for the assign of values into arrays, something that have no equivalent in VCXs.  These assignments are placed into the beginning of the INIT of the class.
-*   PRG-based classes allow for the listing of LParameters on the same line as the procedure definition:  PROCEDURE SomeProcedure(Parameter-list). These parameters are moved into a LParameters list in the method.
+*   在PRG类中，允许多条 #Include 语句，同时，#Define 语句和注释，允许存在于类定义中。但在VCX中，并没有对应的结构存在。所有这些行（除上述注释行外）在回写到PRG中时，都会放置在 DEFINE CLASS 语句之后。注意，这将包括在 PROCEDURES 和 ENDPROC 之间的注释。
+*   PRG类可以将值分配给数组，在VCX中不存在等价的方式。这些任务将在VCX类的INIT中予以完成。
+*   PRG类允许在过程定义的同一行列出 LParameters ：PROCEDURE SomeProcedure(参数列表)。这些参数将被移动到方法的 LParaments 列表中。
 
 ### Handling of non-visual classes
 
