@@ -70,7 +70,7 @@ Thor 设计的初衷是为了使 VFP 社区成员可以通过在社区的共享�
 
 ### IDE Tools from PEM Editor
 
-Version 7 of PEM Editor, now re-named 'PEM Editor w/ IDE Tools', contains more than three dozen tools that can be accessed through Thor. These include some tools released in version 6 of PEM Editor, along with a large number of completely new tools. These can be downloaded from the PEM Editor page. Click here for the help page for [Help page for PEM Editor w/IDE Tools](https://github.com/VFPX/PEMEditor)  
+PEM Editor Version 7， 现在已经改名为 'PEM Editor w/ IDE Tools'，包含可以通过 Thor 访问的超过30个工具，其中一部分是 PEM Editor Version 6 中包含的，其余的是全新开发的工具。这些工具可以从 PEM Editor 主页下载。点击此处访问帮助页面：[PEM Editor w/IDE Tools 帮助](https://github.com/VFPX/PEMEditor)  
 
 PEM Editor also "publishes" a pair of objects that simplify building further tools. More than half of the original tools in the Thor Repository use these objects.
 
