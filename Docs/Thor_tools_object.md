@@ -12,8 +12,8 @@ Thor工具对象可以从这一行代码中获得：
 方法 (参数)|描述
 ---|---
 AddMRUFile (tcFileName, tcClassName)|将文件添加到其相应的MRU列表（在FoxPro资源文件中）。 如果文件是类库，但没有提供类名称，则将该文件添加到类库的MRU列表（对于PEM编辑器是唯一的）
-BeautifyCode(lcCode)|将BeautifyX样式应用于包含正常代码文本的字符串。 请注意，它不会在此字符串中创建局部变量; 请参阅下面的Create Locals
-BeautifySelectStatement (lcSelectCode)|Applies BeautifyX styling to a character string containing a single SQL Select, Update, or Delete statement, to do the following:  
+BeautifyCode(lcCode)|将BeautifyX样式应用于包含正常代码文本的字符串。 请注意，它不会在此字符串中创建局部变量; 请参阅下面的CreateLocals
+BeautifySelectStatement (lcSelectCode)|将BeautifyX样式应用于包含单个SQL Select，Update或Delete语句的字符串，以执行以下操作：
 BeautifySelectStatement (cont.)|* Insert CR’s so that each field is on a new line 
 BeautifySelectStatement (cont.)|* Insert CR’s so that major keywords are on new lines
 BeautifySelectStatement (cont.)|* Apply similar formatting to sub-queries, aligning the new lines for them under their SELECT statements
