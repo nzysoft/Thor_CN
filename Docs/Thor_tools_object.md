@@ -20,8 +20,8 @@ BeautifySelectStatement (cont.)|* 对子查询应用类似的格式，在它们�
 CloseForms()|如果 PEM Editor 和 树形文档查看器 打开的话，关闭它们
 CreateLocals(lcSelectCode)|在包含正常代码文本的字符串中创建LOCAL语句
 CreateNewPEM(tcType, tcName, txValue)|创建一个新的属性或者方法： 
-CreateNewPEM (cont.)|tcType = 'P' for Property, 'M' for Method  
-CreateNewPEM (cont.)|tcName = Name for new PEM (_Memberdata will be updated)  
+CreateNewPEM (cont.)|属性:tcType = 'P', 方法：tcType = 'M'  
+CreateNewPEM (cont.)|新的PEM：tcName = Name (_Memberdata 属性值将被更新)  
 CreateNewPEM (cont.)|txValue = Value (for properties) or method code (for methods)
 DiskFileName(tcFileName)|Returns the file name as it is stored on disk (that is, with current upper/lower case).
 EditMethod(toObject, tcMethodName)|Opens a method (or event) for editing. {toObject} may be
