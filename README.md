@@ -84,7 +84,7 @@ PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。
 
 <a name="WhatsNew">**新增功能**</a>
 
-Thor 1.40 – Released 2013-08-26
+Thor 1.40 – 发布日期 2013-08-26
 
 Added the Thor ToolBar.  Tools may be added to the Toolbar may using the checkbox shown in the Thor Configuration form,  below (and also available in the [Tool Launcher](Docs/Thor_launcher.md).)
 
@@ -96,38 +96,38 @@ When you add a tool to the Thor Toolbar, you can select a caption for the tool o
 
 The toolbar’s size, positioning, and docking, persist from one session to the next. (Truth be told, persisting the docking has been problematic.)
 
-Thor 1.30 – Released 2012-08-19
+Thor 1.30 – 发布日期 2012-08-19
 
-*   Added [Tool Launcher](Docs/Thor_launcher.md), available from the Thor menu in the VFP system menu
+*   增加 [Tool Launcher](Docs/Thor_launcher.md), 通过VFP系统菜单中 Thor 菜单可以调用它
 
 ![](Docs/Images/Thor_SNAGHTML39362d.png)
 
-*   Added [Thor IntellisenseX](https://github.com/VFPX/IntelliSenseX).
+*   增加 [Thor IntellisenseX](https://github.com/VFPX/IntelliSenseX).
 
 ![](Docs/Images/Thor_image_2.png)
 
-Thor 1.1 - Released 2011-10-23  
+Thor 1.1 - 发布日期 2011-10-23  
 
-Thor Production Release - Released 2011-09-03  
+Thor 正式版发布 - 发布日期 2011-09-03  
 
-Thor I Beta 6 - Released 2011-08-22 (88 downloads)
+Thor I Beta 6 - 发布日期 2011-08-22 (88 downloads)
 
-*   a few minor bug fixes
+*   一些小的BUG修复
 
-Thor I Beta 5 - Released 2011-08-09 (91 downloads)
+Thor I Beta 5 - 发布日期 2011-08-09 (91 downloads)
 
-*   Miscellaneous minor adjustments and a couple of bug fixes
+*   一些小的调整和BUG修复
 
-Thor I Beta 4 - Released 2011-07-17 (125 downloads)
+Thor I Beta 4 - 发布日期 2011-07-17 (125 downloads)
 
-*   Re-installation now occurs automatically. Simply using the new version of Thor.App will cause re-installation.
-*   Includes full online documentation.
+*   重新安装将以自动的方式进行。你只需要简单的执行最新版本的 Thor.app 就可以完成。
+*   包含完整在线文档。
 
-Thor I Beta 3 - Released 2011-07-06 (94 downloads)  
+Thor I Beta 3 - 发布日期 2011-07-06 (94 downloads)  
 
-Thor I Beta 2 - Released 2011-07-04 (61 downloads)  
+Thor I Beta 2 - 发布日期 2011-07-04 (61 downloads)  
 
-Thor I Beta - Released 2011-06-03 (237 downloads)
+Thor I Beta - 发布日期 2011-06-03 (237 downloads)
 
 ## Acknowledgments
 
