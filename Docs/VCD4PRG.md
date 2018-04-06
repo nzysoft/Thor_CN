@@ -14,9 +14,9 @@ VCD4PRG 可以通过 Thor 菜单访问，就像下图这样。最好，你为它
 
 ![](Images/VCD4PRG_image_2.png)
 
-### **Getting started – an example**
+### **如何使用 – 一个示例**
 
-There are a number of different ways of using VCD4PRG to begin working on a PRG-based class.  Here are the steps for the simplest example:
+有几种不同的方式可以使 VCD4PRG 针对基于 PRG 格式的类工作。这里是最简单的步骤：
 
 1.  Use ‘Modify Command’ on the PRG and place the cursor somewhere within the class definition
 2.  Use the tool (as described above).  This will convert the class into a temporary VCX-based class.
