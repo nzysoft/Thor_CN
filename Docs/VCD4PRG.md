@@ -33,30 +33,32 @@ VCD4PRG 可以通过 Thor 菜单访问，就像下图这样。最好，你为它
 *   PRG类可以将值分配给数组，在VCX中不存在等价的方式。这些任务将在VCX类的INIT中予以完成。
 *   PRG类允许在过程定义的同一行列出 LParameters ：PROCEDURE SomeProcedure(参数列表)。这些参数将被移动到方法的 LParaments 列表中。
 
-### Handling of non-visual classes
+### 非可视类的处理
 
-There are four classes which cannot be represented in VCXs (Session, Column, Header, and Exception).  These classes can still be edited using VCD4PRG, as the temporary VCX that they are exported into is based on the custom class.  When posted back to the PRG, they are re-created using the base class on which they were originally defined.
+在VFP中有四个类不能用可视化的方式予以处理(Session, Column, Header, 和 Exception)。这些类仍旧可以使用 VCD4PRG 进行编辑，因为它们在进行操作时是导出为基于 Custom 类来进行操作。当回写到PRG时，它们将依据最初的基类重新予以创建。
 
-### Alternate methods for starting VCD4PRG
+### 启动 VCD4PRG 的替代方法
 
-*   #### From a PRG opened in a code window:
+*   #### 在一个打开PRG的代码窗口：
 
-    *   If the cursor is within a procedure within a class definition, that class will be used and that procedure will be opened
-    *   Else, if the cursor is within a class definition, but not within a procedure, the class will be opened.
-    *   Else, a pop-up form will allow selection of a class from the code window.
-*   #### If the current window is any other window that a PRG, Class Designer, or method window:
+    *   如果光标位于类定义的过程的内部，则光标所处的类将被予以操作并打开该过程。
+    *   如果光标位于类定义内部而不在过程内部，则类被打开。
+    *   如果不是上述两种情况，将弹出一个窗口让你选择一个类来进行操作。
+    
+*   #### 如果当前窗口是一个PRG、类设计器或者方法代码窗口：
 
-    *   GetFile(‘PRG’) is used to select a file containing PRG-base class(es), and then a pop-up form will allow selection of a class from the PRG file.  Note that the PRG file itself is _not_ opened.
-*   #### Opening programmatically:
+    *   使用 GetFile(‘PRG’) 来选择一个包含类定义的PRG文件，然后弹出一个窗口让你选择其中的一个类进行操作。注意：此时，PRG文件并没有被你用其他任何方式打开。
+    
+*   #### 以编程的方式打开：
 
-    *   The following line of code can be used to open a class programmatically, rather than by hot key.  I
+    *   以下代码行可用于以编程方式打开类的过程，而不是通过热键。
 
 ```foxpro
 Result = ExecScript (_screen.cThorDispatcher, 'THOR_TOOL_REPOSITORY_VCD4PRG', lcSomePRGFileName)
 ```
 
 
-*   Note that if the named PRG has any classes, you will be prompted for the class to open; if none, the file will be opened with Modify Command. Thus, this line can be inserted into the QueryModifyFile event of a Project Hook when opening a PRG, and the only change in behavior will occur if there are classes in the file.
+*   注意：如果PRG中包含任何的类定义，你将被要求选择一个类来进行操作；如果不包含类定义，文件仅仅是被打开。因此，这样的命令可以被用于项目钩子的 QueryModifyFile 事件中，如果文件包含类定义，那么就会触发类的修改行为。
 
 ### Revision History
 
