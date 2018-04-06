@@ -8,7 +8,7 @@
 
 拥有可视化类设计器(继承、智能感应以及同时打开多个多个代码窗口等) 和 Thor 的 IDE 工具 (GoToDefinition, ExtractToMethod, 等)的所有优点
 
-### Usage
+### 用法
 
 VCD4PRG 可以通过 Thor 菜单访问，就像下图这样。最好，你为它指定一个快捷键。
 
@@ -18,10 +18,10 @@ VCD4PRG 可以通过 Thor 菜单访问，就像下图这样。最好，你为它
 
 有几种不同的方式可以使 VCD4PRG 针对基于 PRG 格式的类工作。这里是最简单的步骤：
 
-1.  Use ‘Modify Command’ on the PRG and place the cursor somewhere within the class definition
-2.  Use the tool (as described above).  This will convert the class into a temporary VCX-based class.
-3.  Make any modifications to the class as desired (adding properties, methods, etc …)
-4.  With the current window being either the temporary VCX or any method window, use the tool again to write the class definition back into the code window for the PRG.
+1.  使用 ‘Modify Command’ 打开 PRG 文件，并将光标至于类定义内部的任意位置。
+2.  如上图所示使用工具。这将转换PRG类为一个临时的VCX类。
+3.  根据需要对类进行一些修改(增加属性和方法等)
+4.  在当前窗口为临时 VCX 或者它的任意方法窗口使，再次使用该工具将类定义回写到PRG类的窗口。
 
 ### Irreconcilable Differences
 
