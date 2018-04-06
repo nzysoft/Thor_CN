@@ -9,7 +9,7 @@ Thor工具对象可以从这一行代码中获得：
 
 请注意，这些工具的工作时并不需要打开PEM编辑器。
 
-Methods (Parameters)|Description
+方法 (参数)|描述
 ---|---
 AddMRUFile (tcFileName, tcClassName)|Adds a file to its appropriate MRU list (in the FoxPro resource file). If the file is a class library, but no class name is supplied, adds the file to the MRU list for class libraries (unique to PEM Editor)
 BeautifyCode(lcCode)|Applies BeautifyX styling to a character string containing normal code text.  Note that it does not create locals in this string; see CreateLocals, below
