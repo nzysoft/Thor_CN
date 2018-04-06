@@ -23,9 +23,9 @@ VCD4PRG 可以通过 Thor 菜单访问，就像下图这样。最好，你为它
 3.  根据需要对类进行一些修改(增加属性和方法等)
 4.  在当前窗口为临时 VCX 或者它的任意方法窗口使，再次使用该工具将类定义回写到PRG类的窗口。
 
-### Irreconcilable Differences
+### 不可调和的分歧
 
-There are clearly differences between PRG-based classes and VCX-based classes, so when converting from PRG to VCX there must be accommodations for the structures which can be used in PRG-based classes but which have no direct counterpart in VCX-based classes.  Since the VCX must contain an entire re-definition of the PRG-based class, this requires some gymnastics that you must be very aware of:
+在PRG类和VCX类之间存在清晰的界限，所以当转换PRG类为VCX时，必须对可用于PRG类但是不能直接用于VCX的部分予以调整。因为VCX必须包含基于PRG的整个类定义，所以需要一些技巧，这是你必须要清楚的地方：
 
 *   There is no standard for the definition of *descriptions of properties* in PRG-based classes. A fairly common usage, however, is to describe a property in the PRG either on the line before the property is defined or in comments on the same line (such as is described by Rick Strahl in West-Wind Help Builder). This is the definition that is used here.  (To allow for longer descriptions, the “preceding line” may actually be multiple lines with the continuation character).  Property descriptions created in the VCX will be exported in this format.
 *   There is also no standard for the definition of *descriptions of methods* in PRG-based classes. A fairly common usage, however, is to describe a method in the PRG in the lines immediately preceding the PROCEDURE line for the method (again, as is described by Rick Strahl in West-Wind Help Builder). This is the definition that is used here, noting that this refers to a number of consecutive lines beginning with a comment and without any intervening blank lines. Since descriptions for methods are frequently much longer than the limit of 254 characters in VCXs, these comment lines are transferred into the beginning of the method itself.  Thus, when exported back to the PRG, they will appear *within the method, not outside it*.
