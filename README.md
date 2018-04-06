@@ -94,7 +94,7 @@ When you add a tool to the Thor Toolbar, you can select a caption for the tool o
 
 ![](Docs/Images/Thor_SNAGHTMLf3b4e2e.png)
 
-The toolbar’s size, positioning, and docking, persist from one session to the next. (Truth be told, persisting the docking has been problematic.)
+工具栏尺寸、位置、停靠和 The toolbar’s size, positioning, and docking, persist from one session to the next. (Truth be told, persisting the docking has been problematic.)
 
 Thor 1.30 – 发布日期 2012-08-19
 
