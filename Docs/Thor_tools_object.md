@@ -11,7 +11,7 @@ Thor工具对象可以从这一行代码中获得：
 
 方法 (参数)|描述
 ---|---
-AddMRUFile (tcFileName, tcClassName)|Adds a file to its appropriate MRU list (in the FoxPro resource file). If the file is a class library, but no class name is supplied, adds the file to the MRU list for class libraries (unique to PEM Editor)
+AddMRUFile (tcFileName, tcClassName)|将文件添加到其相应的MRU列表（在FoxPro资源文件中）。 如果文件是类库，但没有提供类名称，则将该文件添加到类库的MRU列表（对于PEM编辑器是唯一的）
 BeautifyCode(lcCode)|Applies BeautifyX styling to a character string containing normal code text.  Note that it does not create locals in this string; see CreateLocals, below
 BeautifySelectStatement (lcSelectCode)|Applies BeautifyX styling to a character string containing a single SQL Select, Update, or Delete statement, to do the following:  
 BeautifySelectStatement (cont.)|* Insert CR’s so that each field is on a new line 
