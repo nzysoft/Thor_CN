@@ -1,7 +1,7 @@
 ![](Docs/Images/Thor.png)  
 ## VFP的工具管理器
 
-版本 1.40 释放日期 2013-08-26
+版本 1.40 发布日期 2013-08-26
 
 [此版本新增功能](#WhatsNew)
 
@@ -82,7 +82,7 @@ PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。
 
 ![](Docs/Images/Thor_image_4.png)
 
-<a name="WhatsNew">**What's New**</a>
+<a name="WhatsNew">**新增功能**</a>
 
 Thor 1.40 – Released 2013-08-26
 
