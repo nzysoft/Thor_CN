@@ -62,21 +62,21 @@ _本文档由 xinjie 于 2018-04-06 翻译_
 其他正在考虑发布的视频，没有特别的顺序
 
 *   分析和修改代码（第一部分）
-    *   BeautifyX
-    *   Create LOCALs
+    *   BeautifyX（超级Beautify）
+    *   Create LOCALs(创建 LOCAL 语句)
 *   分析和修改代码（第二部分）
-    *   Highlight / Close Control Structure
-    *   Extract to Method
-    *   Cross References
-    *   Code Listings
-    *   Dynamic Snippets<!--EndFragment-->
+    *   Highlight / Close Control Structure（突出显示/关闭控制结构）
+    *   Extract to Method（提取到方法）
+    *   Cross References（交叉引用）
+    *   Code Listings（代码清单）
+    *   Dynamic Snippets<!--EndFragment-->(动态片段)
 *   与窗口有关的操作
-    *   Cycle thru open code windows
-    *   Close some / all open code windows
-    *   Auto move/resize current code window
-    *   Open files (classes, forms, others)
-    *   Manage favorites
-    *   MRU lists<!--EndFragment-->
+    *   Cycle thru open code windows（在打开的代码窗口循环）
+    *   Close some / all open code windows（关闭一些/所有打开的代码窗口）
+    *   Auto move/resize current code window(自动移动/调整当前代码窗口的大小)
+    *   Open files (classes, forms, others)（打开文件（类，表单等））
+    *   Manage favorites（管理收藏夹）
+    *   MRU lists<!--EndFragment-->（MRU清单）
 *   Parent Classes, Containing Classes, and re-factoring（父类、包含的类及重构）
 *   RETURNs between WITH/ENDWITH(WITH/ENDWITH中的返回值)
 *   Document TreeView（树形文档查看器）
