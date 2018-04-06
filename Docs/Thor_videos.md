@@ -1,9 +1,9 @@
 ﻿
-*   [**Videos by Category**](#VideosByCategory)
-*   [**Videos by Date**](#VideosByDate)
-*   [**Upcoming Videos**](#UpcomingVideos)
+*   [**按类别列出的视频**](#VideosByCategory)
+*   [**按日期列出的视频**](#VideosByDate)
+*   [**即将推出的视频**](#UpcomingVideos)
 
-## <a name="VideosByCategory">Videos by Category</a>
+## <a name="VideosByCategory">按类别列出的视频</a>
 
 ### Thor
 
