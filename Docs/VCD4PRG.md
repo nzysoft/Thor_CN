@@ -4,13 +4,13 @@
 
 此工具的目的在于使用可视化的类设计器来编辑一个基于PRG的自定义类成为可能（仅限于不包含子对象的类）。
 
-### Benefits
+### 优点
 
-All the benefits of the Visual Class Designer (inheritance, Intellisense, having multiple code windows open simultaneously, etc) and the IDE Tools of Thor (GoToDefinition, ExtractToMethod, etc.)
+拥有可视化类设计器(继承、智能感应以及同时打开多个多个代码窗口等) 和 Thor 的 IDE 工具 (GoToDefinition, ExtractToMethod, 等)的所有优点
 
 ### Usage
 
-VCD4PRG is accessible from the Thor menu, as seen below.  For best test results, assign and use a hot key.
+VCD4PRG 可以通过 Thor 菜单访问，就像下图这样。最好，你为它指定一个快捷键。
 
 ![](Images/VCD4PRG_image_2.png)
 
