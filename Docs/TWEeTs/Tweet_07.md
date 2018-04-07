@@ -1,19 +1,20 @@
-﻿Thor TWEeT #7: Creating Properties and Methods (Part 2)
+﻿Thor TWEeT #7: 创建属性和方法（第2部分）
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-[Last week's TWEeT](Tweet_06.md) discussed the familiar way of creating properties and methods, a two-step process where their creation and reference are done independently.
+[上星期的 TWEeT](Tweet_06.md) 讨论了熟悉的创建属性和方法的方法，这是一个两步过程，其创建和引用是独立完成的。
 
-There’s a different pattern available where you can create properties and methods at the same time that you refer to them.
+有一种可用的模式，可以在引用它们的同时创建属性和方法。
 
-To do so, create a reference in a code window to the to-be-created property or method (leaving the cursor immediately after the name)
+为此，请在代码窗口中为待创建的属性或方法创建一个引用（将光标立即置于名称后面）
 
 ![](Images/Tweet7a.png)
 
-and then call tool **Go To Definition**. This opens the form for adding new properties and methods:
+然后调用工具**Go To Definition**。 这将打开添加新属性和方法的表单：
 
 ![](Images/Tweet7b.png)
 
-When creating methods, you can also choose to create the LParameters list at the same time:
+创建方法时，您也可以选择同时创建LParameters列表：
 
 ![](Images/Tweet7c.png)
 
