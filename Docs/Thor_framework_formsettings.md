@@ -22,10 +22,10 @@ lxFormID也是
 
 方法|含义
 ---|---
-.Restore(ThisForm)|Restores the saved settings for Top, Left, Height, and Width
-.Restore(ThisForm, ‘propertylist’)|Restores the values for all properties named in {propertylist}, which is a character string of existing property names, delimited with commas.
-.AlignToCursor(ThisForm, llAlignToMouse, tnVerticalAdjustment, tnHorizontalAdjustment)|Aligns the form (Top and Left properties) to the cursor position in the current edit window, if possible.  If the current window is not a edit window or llAlignToMouse = .T. , the form is aligned to the cursor position instead.
-.Save(ThisForm)|Saves values of properties from the form so that they may be restored in the next session.  The properties that are saved are all those that had been restored with all calls to .Restore.  This call is usually made in the Form’s Destroy event
+.Restore(ThisForm)|恢复顶部，左侧，高度和宽度的保存设置
+.Restore(ThisForm, ‘propertylist’)|恢复名为{属性列表}中所有属性的值，该属性是以逗号分隔的现有属性名称的字符串。
+.AlignToCursor(ThisForm, llAlignToMouse, tnVerticalAdjustment, tnHorizontalAdjustment)|如果可能，将表单（顶部和左侧属性）与当前编辑窗口中的光标位置对齐。 如果当前窗口不是编辑窗口或llAlignToMouse = .T。 ，表单将与光标位置对齐。
+.Save(ThisForm)|保存表单中属性的值，以便可以在下一个会话中恢复它们的值。 保存的属性是所有调用.Restore后恢复的属性。 此调用通常在Form's Destroy事件中进行
 
 
 ### Sample usage:
