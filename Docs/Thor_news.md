@@ -161,8 +161,8 @@ VFPX添加了两个新项目，并可从“检查更新”中找到。
 
 VFPX添加了两个新项目，并可从“检查更新”中找到。
 
-[VFP Runtime Installers](https://github.com/VFPX/VFPRuntimeInstallers) 包含VFP版本6到9的运行时安装程序(因为它们不再可从Microsoft网站获得)
-[StripeX](http://github.com/VFPX/StripeX) 是一个与Stripe.com合作的包装类。
+* [VFP Runtime Installers](https://github.com/VFPX/VFPRuntimeInstallers) 包含VFP版本6到9的运行时安装程序(因为它们不再可从Microsoft网站获得)
+* [StripeX](http://github.com/VFPX/StripeX) 是一个与Stripe.com合作的包装类。
  
 
 参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
@@ -175,59 +175,58 @@ Thor Version 1.40 发布: Thor 工具栏
 #### <a name="Headline18">#18, 2013-08-26</a>
  
 
-Added the Thor ToolBar.  Tools may be added to the Toolbar may using the checkbox shown in the Thor Configuration form,  below (and also available in the Tool Launcher.) TBL
-
+添加了Thor 工具栏。 可以使用下面Thor Configuration表单中显示的复选框（也可在Tool Launcher中找到）将工具添加到工具栏。TBL
 ![](Images/Thor_SNAGHTMLf389404.png)
 
-When you add a tool to the Thor Toolbar, you can select a caption for the tool or select an image to represent it.  In the sample below, abbreviated captions are used.
+将工具添加到Thor工具栏时，可以为该工具选择一个标题或选择一个图像来表示它。 在下面的示例中，使用缩写字符。
 
 ![](Images/Thor_SNAGHTMLf3b4e2e.png)
 
-The toolbar’s size, positioning, and docking, persist from one session to the next. (Truth be told, persisting the docking has been problematic.)
+工具栏尺寸、位置、停靠以及从一个 session 到另一个的过程中保持显示（persist from one session to the next）。(说实话，这个保持显示一直有问题。)
 
 ---
 
-New VFPX Project: Finder
+新的 VFPX 项目: Finder
 ---
 
 #### <a name="Headline17">#17, 2013-06-23</a>
  
 
-The new VFPX project *Finder* is a powerful search tool to find forms and classes. It searches either a project or folder (with sub-folders) for names of files or classes.
+新的VFPX项目* Finder *是一个强大的搜索工具，用于查找表单和类。 它搜索项目或文件夹（包含子文件夹）以查找文件或类的名称。
 
-Files or classes can be opened by double-clicking and there are numerous other options available from the context menu for rows in the grid.
+可以通过双击打开文件或类，并且可以从上下文菜单中为Grid中的行提供许多其他选项。
 
-When Class Search is used, the classes found can be dragged/dropped onto forms or classes being edited.
+使用类搜索时，可以将找到的类拖放到正在编辑的表单或类上。
 
-See the [Finder Home Page](https://github.com/VFPX/Finder) and watch the [Finder introductory video](http://www.youtube.com/watch?v=uL4a9gsCLlk&feature=youtu.be) (11:25).
+参看 [Finder 主页](https://github.com/VFPX/Finder) 并观看 [Finder 介绍视频](http://www.youtube.com/watch?v=uL4a9gsCLlk&feature=youtu.be) (11:25).
 
 ![](Images/Thor_News_SNAGHTML3cdc777.png)
 
 --- 
 
-Thor videos available from Thor menu
+Thor视频可从Thor菜单中获得
 ---
 
 #### <a name="Headline14">#14, 2013-01-16</a>
  
 
-There are already a number of videos explaining features of Thor and there are more to come. Follow the link from the Thor menu to the list of all Thor videos.
+已经有许多视频解释了Thor的特征，并且还有更多。 按照Thor菜单中的链接查看所有Thor视频列表。
 
 ![](Images/Thor_news_image_thumb_4.png)
 
 ---
 
-Thor's Tool Launcher: The one tool you *must* use
+Thor 工具启动器：您必须使用的工具之一
 ---
 
 #### <a name="Headline13">#13, 2013-01-05</a>
  
 
-Thor’s Tool Launcher uses a simple screen that allows you to browse through all the Thor tools by keyword, to read their descriptions or visit their home pages, to set their options, and, most importantly, to run them. It also helps you to organize the tools that you use most to make them easily accessible.
+Thor的工具启动器使用一个简单的屏幕，允许您通过关键字浏览所有Thor工具，阅读他们的描述或访问他们的主页，设置他们的选项，最重要的是运行它们。 它还可以帮助您组织最常用的工具，以便于访问。
 
-Thor suffers from an over-abundance of tools – there are so many that it may seem impossible to find 12ich tools are of interest to you. The Tool Launcher simplifies that search.
+Thor拥有过多的工具 - 在众多的工具中你可能无法找到你感兴趣的东西。 工具启动器简化了搜索。
 
-Watch [this short video](http://youtu.be/2ttBR9vQqew) (7:57) to learn all about it.
+观看[这个短片](http://youtu.be/2ttBR9vQqew)（7:57）了解它的一切。
 
 ---
 
