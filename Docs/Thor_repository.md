@@ -1,8 +1,8 @@
 ﻿![](Images\Thor_Repository_image_2.png)
 
-### Version 37 Released 2012-08-19   
-***Requires VFP9***
-
+### Version 37 发布日期 2012-08-19   
+***需要 VFP9***
+_本文档由 xinjie 于 2018-04-07 翻译_
 ---
 
 *The **Thor Repository** is a collection of IDE tools, accessible thru Thor, that have been written by members of the FoxPro community.*
