@@ -1,7 +1,8 @@
-﻿Thor TWEeT #10: <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a>: Field Names from SQL Server Tables
+﻿Thor TWEeT #10: <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a>: SQL Server表中的字段名
 ---
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-[IntellisenseX](https://github.com/VFPX/IntelliSenseX) now supplies field names from your SQL Server tables, as shown in the following example:
+[IntellisenseX](https://github.com/VFPX/IntelliSenseX) 现在支持从SQL Server表中提取字段名，如下例所示：
 
 ![](Images/Tweet10a.png)
 
