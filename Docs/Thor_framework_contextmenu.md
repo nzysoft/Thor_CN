@@ -23,12 +23,12 @@ AddMenuItem参数允许您定义要执行的字符串或可在Activate方法之�
 .AddMenuItem parameter|lcKeyword|如果选择了该项目，将从对象中提供关键字（仅当lcExec为空时才相关）
 .AddMenuItem parameter|lxParameters|如果选择此项目，则可以从对象中提供的其他参数（仅当lcExec为空时才相关）
 .AddMenuItem parameter||请注意，可以通过调用不带参数的AddMenuItem来创建分隔栏
-.AddSubMenu(lcPrompt)|Begins definition of a submenu.  All calls to AddMenuItem until the call to the closing EndSubMenu will be in this submenu.  May itself contain a submenu
-.EndSubMenu|Marks the end of a submenu.
-.Activate|Activates the pop-up menu.  If the item selected had an empty value for lcExec, returns an integer indicating the item selected.  In this case, loContextMenu.Keyword returns the value for lcKeyword for the selected item, and similarly for loContextMenu.Parameters
+.AddSubMenu(lcPrompt)||开始定义一个子菜单。 所有对AddMenuItem的调用，直到关闭EndSubMenu的调用都将在此子菜单中。 可能本身包含一个子菜单
+.EndSubMenu||标记子菜单的结尾。
+.Activate||激活弹出式菜单。 如果选择的项目具有lcExec的空值，则返回一个指示所选项目的整数。 在这种情况下，loContextMenu.Keyword返回所选项目的lcKeyword值，对于loContextMenu.Parameters也是如此
 
 
-### \* Sample 1: simple menu, two choices
+### \* Sample 1: 简单的菜单，两种选择
 ```foxpro
 loContextMenu = Execscript (_Screen.cThorDispatcher, 'class= Contextmenu')  
 With loContextMenu  
@@ -38,7 +38,7 @@ With loContextMenu
 Endwith
 ```
  
-### \* Sample 2: sub-menus
+### \* Sample 2: 子菜单
  
 ```foxpro
 loContextMenu = Execscript (_Screen.cThorDispatcher, 'class= Contextmenu')  
@@ -60,7 +60,7 @@ With loContextMenu
 Endwith
 ```
 
-### \* Sample 3:  Instead of passing something to execute for each menu item, a keyword is associated with each item.  If .Activate() returns .T., the keyword for the selected item is available to be used in the following code.
+### \* Sample 3:  与每个菜单项传递的内容不同，关键字与每个项目相关联。 如果.Activate（）返回.T。，则所选项目的关键字可用于以下代码。
 
 ```foxpro
 loContextMenu = Execscript (_Screen.cThorDispatcher, 'class= Contextmenu')  
