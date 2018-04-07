@@ -14,9 +14,9 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 ![](Images/Thor_One-Cick_Update_SNAGHTML1f1f7c63.png)
 
-The projects listed in Check For Updates are listed alphabetically within these five groups:
+检查更新中列出的项目在五个分组中按字母顺序列出：
 
-1.  Projects that you have already downloaded for which there is a more current version. (see #4)
+1.  您已下载的项目有更新的版本。(see #4)
 2.  Projects that you have not downloaded which have had updates in the last three months
 3.  All other projects that you have not downloaded
 4.  Projects that you have already downloaded and which are current
