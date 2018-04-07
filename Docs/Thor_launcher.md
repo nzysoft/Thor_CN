@@ -2,19 +2,19 @@
 ===
 _本文档由 xinjie 于 2018-04-07 翻译_
 
-Tool Launcher是一个Thor工具，可以轻松查找和运行工具。 它也可以配置为保存您最喜爱的Thor工具列表，以便于访问。
+工具启动器是一个Thor工具，可以轻松查找和运行工具。 它也可以配置为保存您最喜爱的Thor工具列表，以便于访问。
 
 工具启动器可以从Thor菜单启动，如下图所示，通过热键或每次运行Thor（如果您有足够的空间让它始终打开）。
 
 ![](Images/Thor_Launcher_image_2.png)
 
-The layout for the Launcher form is very similar to the second page (“Tool Definitions”) of the Thor Configuration form.
+“启动器”窗体的布局与Thor表单的Configuration（“工具定义”）非常相似。
 
-The TreeView on the left shows all the Thor tools, and when you click on a tool the controls on the right display the tool’s description, a link to the tool’s home page (if any), and buttons to assign the tool’s hot key or edit the tool.
+左侧的TreeView显示了所有的Thor工具，当你点击一个工具时，右侧的控件显示工具的描述，工具主页的链接（如果有的话）以及分配工具热键或编辑的按钮 工具。
 
-There is also a button, highlighted in red, that will run the tool. The form will disappear when you run a tool so that the focus can return to the last window visited, as a number of tools operate on the current window.
+还有一个按钮，用红色突出显示，可以运行该工具。 当你运行一个工具时，表单会消失，这样焦点可以返回到最后访问的窗口，因为许多工具都在当前窗口上运行。
 
-The tool can also be run by double-clicking the tool name in the TreeView.
+该工具也可以通过双击TreeView中的工具名称来运行。
 
 ![](Images/Thor_Launcher_SNAGHTML216ae24.png)
 
