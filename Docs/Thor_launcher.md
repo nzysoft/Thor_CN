@@ -18,33 +18,33 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 ![](Images/Thor_Launcher_SNAGHTML216ae24.png)
 
-The list of Thor tools is now long enough that browsing it one tool at a time is quite tedious. The filter box, in red below, can be used to find tools matching the text entered. The matching is done against the tool name, description, category, and author. One way to learn about the variety of tools offered by Thor would be to use the filter with familiar FoxPro terms, such as “class”, “form”, “object”, etc.
+Thor工具的列表现在足够长，以至于一次只能浏览一个工具是非常乏味的。 以下红色的过滤器框可用于查找与输入的文本相匹配的工具。 匹配是针对工具名称，描述，类别和作者完成的。 学习Thor提供的各种工具的一种方法是使用熟悉FoxPro术语的过滤器，例如“class”，“form”，“object”等。
 
-_Note: Filtering is done using a simple $ search. A contribution providing a more sophisticated mechanism, perhaps allowing AND or OR capabilities, would be appreciated._
+_注意：过滤使用简单的$搜索完成。 赞赏提供更复杂的机制，可能允许AND或OR功能，将不胜感激。_
 
 ![](Images/Thor_Launcher_SNAGHTML22a770e.png)
 
-As the list of tools become more familiar, the need for the controls on the right diminishes. The right arrow, shown in the green circle above, can be used shrink the form by hiding these controls.
+随着工具列表变得更加熟悉，右侧控件的需求就会减少。 显示在上面绿色圆圈中的右箭头可以隐藏这些控件来缩小表单。
 
-In this configuration, tools can be launched with a simple click.
+在这种配置下，只需点击一下即可启动工具。
 
-If you have enough screen space, you many want to have the form visible all the time. To so do, use the checkbox highlighted in red below.
+如果你有足够的屏幕空间，你很多人都想让表格始终可见。 为此，请使用下面以红色突出显示的复选框。
 
 ![](Images/Thor_Launcher_SNAGHTML22e40b2.png)
 
-You can also create your own custom list of tools to be available from the launcher, as shown in the image below. (*Nobody* uses all of the tools.)
+您还可以创建自己的自定义工具列表，以便从启动器中获得，如下图所示。 （*没人*使用所有工具。）
 
-The author of Thor, Jim Nelson, uses hot keys for the tools he uses all the time, pop-up menus for related groups of tools (Ctrl+E for “Extract” tools, Ctrl+G for “Go To” tools, etc), and his least frequently used tools he saves in the Custom List in the tool launcher.
+Thor的作者Jim Nelson使用热键来提供他一直使用的工具，相关工具组的弹出式菜单（Ctrl + E代表“Extract”工具，Ctrl + G代表“Go To”工具等） ）以及他保存在工具启动器的“自定义列表”中的最不常用的工具。
 
 
 ![](Images/Thor_Launcher_SNAGHTML2930164.png)
 
-Use the Thor configuration form to save tools into the Custom List by following these steps:
+按照以下步骤使用Thor配置表单将工具保存到自定义列表中：
 
-1.  Click on “Popup Menus”
-2.  Click on “Add Menu”. This creates a menu that can be used either as a popup menu (if you assign a hot key to it), in the Launcher, or both.
-3.  Enter the name of your menu. This will appear as the top node in the Launcher.
-4.  Click “Show in Launcher”.
-5.  For each tool to be added, click “Add Tool”. (You can also click “Add SubMenu” to organize your tools into sub-menus, as shown in the image above.)
+1.  点击 “Popup Menus”
+2.  点击“添加菜单”。 这会创建一个菜单，可以用作弹出式菜单（如果您为其分配热键），启动器中或两者都可以使用。
+3.  输入菜单的名称。 这将显示为启动器中的顶级节点。
+4.  点击“在启动器中显示”。
+5.  要添加每个工具，请点击“添加工具”。 （您也可以点击“添加SubMenu”将您的工具组织到子菜单中，如上图所示。）
 
 ![](Images/Thor_Launcher_SNAGHTML239a5cb.png)
