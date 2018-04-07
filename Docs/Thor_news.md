@@ -29,7 +29,7 @@ Thor Repository中提供了许多新的Thor工具。
 
 > **需要：**  Thor 并不能猜出你最喜欢的比较工具，所以你必须修改插件以便 Thor 可以调用它。插件的默认代码调用Beyond Compare（_私人建议：强烈建议！）_，并且你必须予以修改以适应您的环境。
 
-*   Three new tools for [VFP2Text](http://pfsolutions-mi.com/Product/VFP2Text), a add-on from Frank Perez, Jr. for Beyond Compare, that allow direct comparison of VCXs and SCXs
+*   第三个新工具 [VFP2Text](http://pfsolutions-mi.com/Product/VFP2Text), 一个来自Frank Perez，Jr.的Beyond Compare的插件，可以直接比较VCX和SCX
     *   'Download VFP2Text for Beyond Compare V3'
     *   'Download VFP2Text for Beyond Compare V4'
     *   'VFP2Text Home Page'
