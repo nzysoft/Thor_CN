@@ -104,20 +104,20 @@ Expression|*jim nelson kong|与上面的相同，星号是用于强调**任意**
 Value|=price>100|查找 price >100 的所有记录，等号（=）将强制执行表达式类型搜索**任意**所选字段
 
 
-#### 轻松访问正确的搜索类型
+#### 轻松使用正确的搜索类型
 
 *   用等号（=）开始搜索文本以强制执行表达式类型搜索
 *   同样，星号（*）强制执行值类型搜索
 
-#### For Value search, the following rules apply:
+#### 对于值搜索，以下规则适用：
 
-*   Each word are separated, and every word must exist in the record
-*   Only selected fields are searched
-*   All searches are case insensitive
-*   Memo fields are also searched
-*   Numeric values are searched for inside both character and numeric fields
+*   每个单词都是分开的，并且每个单词都必须存在于记录中
+*   只搜索选定的字段
+*   所有搜索都不区分大小写
+*   备注字段也被搜索
+*   在字符和数字字段中搜索数字值
 
-#### Other controls on this page:
+#### 本页其他控制:
 
 **Control** |**Description**
 ---|---
