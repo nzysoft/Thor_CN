@@ -8,7 +8,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 但是现在是时候恢复使用MRU了，因为Thor工具可以恢复它们，维护它们并提供访问它们的新方法。
 
-首先，所有Thor工具，最值得注意的是**[GoFish](https://github.com/mattslay/GoFish)，[Finder](https://github.com/VFPX/Finder)** 和 **[PEM编辑器](https://github.com/VFPX/PEMEditor)** ，以及所有其他打开文件的Thor工具，在打开文件时总是更新相应的MRU列表（无论是表单，类，表，报表 等）。 另外，他们还提供了两个其他功能：
+首先，所有Thor工具，最值得注意的是 **[GoFish](https://github.com/mattslay/GoFish),[Finder](https://github.com/VFPX/Finder)** 和 **[PEM编辑器](https://github.com/VFPX/PEMEditor)** ，以及所有其他打开文件的Thor工具，在打开文件时总是更新相应的MRU列表（无论是表单，类，表，报表 等）。 另外，他们还提供了两个其他功能：
 
 *   They maintain a new MRU list for all *class libraries* that are opened.
 *   They open each file using the same case for the file name as is found on disk, so that the case of file names is not changed.
