@@ -4,18 +4,18 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 ![](Images/Thor_Super_Browse_SNAGHTML8410e4d.png)
 
-### Left Pane
+### 左窗格
 
-The left pane shows a grid with the data structure of the table. The fields are listed in alphabetical order. The order can be changed by clicking one of the headers.
+左侧窗格显示一个表格，其中包含表格的数据结构。 这些字段按字母顺序列出。 点击其中一个标题即可更改排序。
 
-Click on the fields listed in the grid to mark those you wish to "process".
+点击 Grid 中列出的字段标记你想要“处理”的字段。
 
-Below the grid are two buttons:
+Grid 下方有两个按钮：
 
-**Button** |**Description**
+**按钮** |**描述**
 ---|---
-Save Selections|Saves the current selections so that the next time you open this table the same fields will be selected.
-Show Schema|Opens a detailed description about the table in your browser.
+Save Selections(保存选择)|保存当前选择，以便下次打开此表格时将选择相同的字段。
+Show Schema(显示概要)|在浏览器中打开关于表的详细描述。
 
 ### Picker Page
 
