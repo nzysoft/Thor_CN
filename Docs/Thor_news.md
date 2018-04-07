@@ -1,7 +1,9 @@
 ﻿![](Images/Thor.png)![](Images/Thor_news.png)  
 
-Tool manager for FoxPro
+FoxPro 的工具管理器
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
+
 [Thor Forum](http://groups.google.com/group/FoxProThor)
 
 [Thor Videos](Thor_videos.md)
