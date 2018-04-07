@@ -1,21 +1,22 @@
-﻿First-Time and Manual Installation of Thor
+﻿首次和手动安装Thor
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-Note:  Starting with Thor Version 1.1, updates to Thor can be obtained by using [One-Click Update of Thor](Thor_one-click_update.md). This page applies to the initial installation of Thor or should it happen that the One-Click Update is not working.
-### **Choosing an installation folder**
+注意：从Thor版本1.1开始，Thor的更新可以通过使用[Thor一键更新](Thor_one-click_update.md)来获得。 此页面适用于Thor的初始安装，或者如果One-Click Update不起作用。
+### **选择一个安装文件夹**
 
-Thor must be installed in a permanent folder; it creates some folders and tables which must always be available. It is suggested that it be installed in a folder that you regularly back up.  
+THOR 必须安装在永久文件夹中; 它会创建一些必须始终可用的文件夹和表格。 建议将其安装在您经常备份的文件夹中。
 
-There are two different strategies for selecting an installation folder for Thor:
+选择Thor的安装文件夹有两种不同的策略：
 
-1.  Install it in a common folder (such as in your path), so that Thor.App can be easily accessed
-2.  Install it in its own separate folder, and then use RunThor.PRG (see below) to access Thor.App 
+1.  将它安装在一个通用文件夹中（例如在你的路径中），以便Thor.App可以被轻松访问
+2.  将其安装在自己的单独文件夹中，然后使用RunThor.PRG（请参阅下文）访问Thor.App
 
-[**Click here to download the current version of Thor**](https://github.com/VFPX/Thor/archive/master.zip) 
+[**点击这里下载当前版本的Thor**](https://github.com/VFPX/Thor/archive/master.zip) 
 
 
 
-### **Installing Thor**
+### **安装 Thor**
 
 After you have downloaded the Zip file into its installation folder, do the following:  
 
