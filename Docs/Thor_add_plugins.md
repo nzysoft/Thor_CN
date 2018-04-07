@@ -32,17 +32,17 @@ CloseControlStructure|设置粘贴的文本作为控制结构中的代码的结�
 [CreateLocalsStatements](#CreateLocalsStatements)|创建LOCAL语句作为“Create Locals”的一部分; 允许您确定LOCAL语句的顺序和格式以及要在LOCAL语句中显示哪些变量。
 EditSourceX|打开带有非FoxPro扩展名的文件
 FormatFieldPicker|为已在[SuperBrowse](Thor_superbrowse.md)中选择的字段创建“字段选择器”字符串.
-GetDefaultValue|Sets the default value to be used for a new property created by PEM Editor based on the name of the property. The sample supplied uses the second character of the name.
-GetNewMethodHeader|Sets the header comment text that is used for any new method created by PEM Editor or IDE Tools
-GoToDefinition|Called if Go To Definition fails to find a match. Some documented features of Go To Definition are actually handled by this plug-in.
-[IntellisenseX](#IntellisenseX)|Provides extensions to IntellisenseX for dropdown lists of field names from SQL tables, data objects, etc. Called when IntellisenseX has otherwise found nothing to display.
-IsOperator|Restricts the lines that "Add space around operators" applies to because of the problem causes by having special characters in file names, such as + or -
-[OpenTable](#OpenTable)|Called by any of a number of tools which try to open a table.
-OpenVCXFile|Called when PEM Editor or IDE Tools open a VCX. The default behavior is to use the Class Browser.
-SetGridHighLighting|Sets the highlighting (coloring) for the rows in the PEM Editor grid
-SetGridSortOrder|Sets the index expression used for sorting the rows in the PEM Editor grid
-SortAutoComplete|Allows for modification of the drop down list from AutoComplete
-Spell Field Names|Determines the spelling of field names from tables. Note that options already provided are [lower \| UPPER \| Mixed \| Hungarian (cName)]
+GetDefaultValue|根据属性的名称设置用于PEM编辑器创建的新属性的默认值。 提供的示例使用名称的第二个字符。
+GetNewMethodHeader|设置用于由PEM Editor或IDE Tools创建的任何新方法的标题注释文本
+GoToDefinition|如果转到定义无法找到匹配，则调用。 Go To Definition的某些记录功能实际上由该插件处理。
+[IntellisenseX](#IntellisenseX)|为IntellisenseX提供对SQL表格，数据对象等字段名称下拉列表的扩展。当IntellisenseX另外找不到任何内容时显示。
+IsOperator|限制“环绕操作符添加空格”因文件名中包含特殊字符（例如+或 - ）而导致问题
+[OpenTable](#OpenTable)|通过任何尝试打开表格的工具调用。
+OpenVCXFile|当PEM编辑器或IDE工具打开VCX时调用。 默认行为是使用类浏览器。
+SetGridHighLighting|为PEM编辑器表格中的行设置突出显示（着色）
+SetGridSortOrder|设置用于对PEM编辑器表格中的行进行排序的索引表达式
+SortAutoComplete|允许从AutoComplete修改下拉列表
+Spell Field Names|确定表格中字段名称的拼写。 请注意，已经提供的选项是[lower\|UPPER\|混合\|匈牙利法（cName）]
 
 ### <a name="CreateLocalsStatements">**CreateLocalsStatements**</a>
 
