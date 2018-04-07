@@ -1,5 +1,6 @@
 ## <u>T</u>his <u>W</u>eeks <u>E</u>xc<u>e</u>ptional <u>T</u>ools
 _本文档由 xinjie 于 2018-04-08 翻译_
+
 #27: [Go To Definition](TWEeTs/Tweet_27.md) (Jan. 4, 2015)
 
 #26: [三个新的 Thor 工具](TWEeTs/Tweet_26.md) (Dec. 22, 2014)
@@ -35,13 +36,13 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
-*   _Custom Keyword List_
-    *   _Add all words from folder or project_
-    *   _Add all words in code windows_
-    *   _Add PEMs from current class or form_
-    *   _Add highlighted word_
-    *   _Apply Custom Keyword List to code window_
-    *   _Browse Custom Keyword List_
+*   _自定义关键字列表_
+    *   _添加文件夹或项目中的所有单词_
+    *   _在代码窗口中添加所有单词_
+    *   _从当前类或表单中添加PEM_
+    *   _添加突出显示的词_
+    *   _应用自定义关键字列表到代码窗口_
+    *   _浏览自定义关键字列表_
 
 #18: [IntellisenseX for Nested Objects](TWEeTs/Tweet_18.md) (May 10, 2014)
 
