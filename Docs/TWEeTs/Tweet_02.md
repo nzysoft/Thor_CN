@@ -10,13 +10,13 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 **设置对象大小和位置**显示一个表单，其中包括格式菜单中的所有功能，但对齐网格和设置网格比例除外。 此外，
 
-*   there are controls to change the top/left/height/width of the currently selected control(s), either one pixel at a time or by a specified step size.
-*   vertical and horizontal spacing may be changed either one pixel at a time or by a specified step size.
-*   there's an un-do button to reverse any changes made since the form received focus.
+*   控制可以更改当前所选控件的顶部/左侧/高度/宽度，一次一个像素或指定的步长。
+*   垂直和水平间距可以一次更改一个像素，也可以更改指定的步长。
+*   有一个un-do按钮可以撤销表单获得焦点以来所做的任何更改。
 
-The form's size and position is persistent from one use to another. The form is also dockable, and the six containers re-arrange themselves as the width of the form changes, allowing for various desirable docking combinations. 
+表单的大小和位置从一个用户到另一个用户是持久的。 该表单也是可停靠的，并且随着表单宽度的变化，六个容器将自行重新排列，从而允许各种期望的对接组合。
 
-![](Images\Tweet2b.png)
+![](Images/Tweet2b.png)
 
 Thanks to Cathy Knight for the concept and design.
 
