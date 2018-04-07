@@ -12,22 +12,22 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 ![](Images/Thor_greenline.png)
 
-**New Thor Tools and [SuperBrowse](Thor_superbrowse.md) Enhancements** 
+**新的 Thor 工具和 [SuperBrowse](Thor_superbrowse.md) 的增强功能** 
 ---
 
 ### #42, 2015-11-30
 
-A number of new Thor tools are available in the Thor Repository.
+Thor Repository中提供了许多新的Thor工具。
 
-*   'Toggle tabs in pageframe' – It can be quite difficult (OK, cumbersome) to navigate between pages of a pageframe when the tabs are not visible.  Use this tools to toggle the tabs in the current pageframe.
-*   'Compare text in two windows' – Use your favorite compare tool to compare the code from two different code windows without exiting FoxPro, as follows:
-    *   Select one text window
-    *   Execute this tool (hot key is recommended)
-    *   Select a second text window
-    *   Execute this tool again  
-            -- and the contents of the two windows will be compared
+*   'Toggle tabs in pageframe' – 当选项卡不可见时，在页框的页面之间导航可能非常困难（是的，很麻烦）。 使用此工具切换当前页面中的选项卡。
+*   'Compare text in two windows' – 使用您最喜爱的比较工具来比较来自两个不同代码窗口的代码，而不退出FoxPro，如下所示：
+    *   选择一个文本窗口
+    *   执行此工具（建议使用快捷键）
+    *   选择第二个文本窗口
+    *   再次执行此工具  
+            -- 这将比较两个窗口的内容
 
-> **Required:**  Thor cannot guess your favorite compare tool, so you must modify the Plug-In so that Thor can call it. The default code for the Plug-in calls Beyond Compare (_personal note: highly recommended!)_ and must be modified to fit your environment.
+> **需要：**  Thor cannot guess your favorite compare tool, so you must modify the Plug-In so that Thor can call it. The default code for the Plug-in calls Beyond Compare (_personal note: highly recommended!)_ and must be modified to fit your environment.
 
 *   Three new tools for [VFP2Text](http://pfsolutions-mi.com/Product/VFP2Text), a add-on from Frank Perez, Jr. for Beyond Compare, that allow direct comparison of VCXs and SCXs
     *   'Download VFP2Text for Beyond Compare V3'
