@@ -19,10 +19,10 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet3a.png)
 
-There are a number of other Thor tools that access these same MRU lists:
+还有许多其他Thor工具可以访问这些相同的MRU列表：
 
-*   **MRU class libraries** -- provides a list of only the MRU class libraries (the first item from the menu shown above)
-*   **HackCX4 from MRU forms or classes** -- creates a popup menu showing the MRU for forms and class libraries so that they can be they can be opened by HackCX4, (Requires separate installation of HackCX4 from [WhiteLightComputing](http://www.whitelightcomputing.com/prodhackcxpro.htm))
+*   **MRU class libraries** -- 仅提供MRU类库的列表（上面菜单中的第一项）
+*   **HackCX4 from MRU forms or classes** -- 创建一个弹出菜单，显示表单和类库的MRU，以便它们可以被HackCX4打开，（需要单独安装HackCX4 [WhiteLightComputing](http://www.whitelightcomputing.com/prodhackcxpro.htm))
 *   [Finder](https://github.com/VFPX/Finder) -- lists are available by right-clicking on either the "File Search" or "Class Search" buttons atop the screen.
 *   [PEM Editor](https://github.com/VFPX/PEMEditor) -- lists are available from the "Open File" button atop the screen.
 
