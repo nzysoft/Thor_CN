@@ -18,11 +18,11 @@ AddMenuItem参数允许您定义要执行的字符串或可在Activate方法之�
 ---|---|---
 .AddMenuItem(lcPrompt, lcExec, lcStatusBar, lcKeyStroke, lcKeyWord, lxParameters)|lcPrompt|菜单项的提示
 .AddMenuItem parameter|lcExec|要执行的字符串。 这可能是空的，在这种情况下，使用lcKeyword和lxParameters。
-.AddMenuItem parameter|lcStatusBar|Text to be displayed on the status bar
-.AddMenuItem parameter|lcKeyStroke|Keystroke
-.AddMenuItem parameter|lcKeyword|Keyword which will be available from the object if this item is chosen (relevant only if lcExec is empty)
-.AddMenuItem parameter|lxParameters|Other parameters which will me made available from the object if this item is chosen (relevant only if lcExec is Empty)
-.AddMenuItem parameter|Note that a separator bar can be created by calling AddMenuItem with no parameters
+.AddMenuItem parameter|lcStatusBar|文本显示在状态栏上
+.AddMenuItem parameter|lcKeyStroke|按键
+.AddMenuItem parameter|lcKeyword|如果选择了该项目，将从对象中提供关键字（仅当lcExec为空时才相关）
+.AddMenuItem parameter|lxParameters|如果选择此项目，则可以从对象中提供的其他参数（仅当lcExec为空时才相关）
+.AddMenuItem parameter||请注意，可以通过调用不带参数的AddMenuItem来创建分隔栏
 .AddSubMenu(lcPrompt)|Begins definition of a submenu.  All calls to AddMenuItem until the call to the closing EndSubMenu will be in this submenu.  May itself contain a submenu
 .EndSubMenu|Marks the end of a submenu.
 .Activate|Activates the pop-up menu.  If the item selected had an empty value for lcExec, returns an integer indicating the item selected.  In this case, loContextMenu.Keyword returns the value for lcKeyword for the selected item, and similarly for loContextMenu.Parameters
