@@ -35,17 +35,17 @@ lxFormID也是
 #### [点击此处查看ThorFormSettings主页](Thor_framework_formsettings.md)
 
 
-    loSettings) = ExecScript(_Screen.cThorDispatcher, "Class= ThorFormSettings", lxFormID)
+    loSettings = ExecScript(_Screen.cThorDispatcher, "Class= ThorFormSettings", lxFormID)
     Thisform.AddProperty ('oSettings', loSettings)
     loSettings.Restore (Thisform) && Gets top, left, height, width
     loSettings.Restore (Thisform, 'nObjectType, cSearchString') && and two other properties
 
-Where lxFormID is either
+lxFormID也是
 
-*   ThisForm (but only if called within an SCX)
-*   or the name of the file to be used for saving settings (such as ‘GoToMethod.Settings’)
+*   ThisForm (但仅限于在SCX内部调用)
+*   或用于保存设置的文件名（例如'GoToMethod.Settings'）
 
-And in the form’s ‘**Destroy’** event:
+并且在表单的 ‘**Destroy’** 事件：
 
     This.oSettings.Save (This)
     This.oSettings = .Null.```
