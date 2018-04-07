@@ -1,4 +1,4 @@
-﻿Thor TWEeT #1:### [PEM Editor](https://github.com/VFPX/PEMEditor), [GoFish](https://github.com/mattslay/GoFish), and Replace code window context menu items
+﻿Thor TWEeT #1: [PEM Editor](https://github.com/VFPX/PEMEditor), [GoFish](https://github.com/mattslay/GoFish), and Replace code window context menu items
 ===
 _本文档由 xinjie 于 2018-04-08 翻译_
 
