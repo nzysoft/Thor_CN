@@ -1,4 +1,4 @@
-﻿Running Thor
+﻿运行 Thor
 ===
 _本文档由 xinjie 于 2018-04-07 翻译_
 
