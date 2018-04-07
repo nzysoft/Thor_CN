@@ -17,57 +17,57 @@ Grid 下方有两个按钮：
 Save Selections(保存选择)|保存当前选择，以便下次打开此表格时将选择相同的字段。
 Show Schema(显示概要)|在浏览器中打开关于表的详细描述。
 
-### Picker Page
+### Picker 页
 
-This page is a SQL and Browse syntax builder.
+此页面是一个SQL和Browse语法构建器。
 
 ![](Images/Thor_Super_Browse_image_thumb_3.png)
 
-**Button** |**Description**
+**按钮** |**描述**
 ---|---
-Only fields|Creates a list of the selected fields
-Select ...|Creates a SQL Select statement
-Update ...|Creates a SQL Update statement
-Insert ...|Creates a SQL Insert statement
-Create ...|Create a SQL Create statement
-Browse|Create a Browse command
+Only fields(仅字段)|创建所选字段的列表
+Select ...|创建一个 SQL Select 声明
+Update ...|创建一个 SQL Update 声明
+Insert ...|创建一个 SQL Insert 声明
+Create ...|创建一个 SQL Create 声明
+Browse|创建一个 Browse 命令
 
 
-#### Option group to select SQL syntax type:
+#### 选项组用于选择SQL语法类型：
 
-**Button** |**Description**
+**按钮** |**描述**
 ---|---
-VFP|Creates VFP SQL syntax
-SQLExec|Creates MsSQL syntax
+VFP|以 VFP SQL 语法创建
+SQLExec|以 MsSQL 语法创建
 
-#### Checkbox for NVL():
+#### NVL()的选择:
 
-**Button** |**Description**
+**按钮** |**描述**
 ---|---
-Add NVL()|Adds NVL() syntax where appropriate
+Add NVL()|在适当的地方添加NVL（）语法
 
-#### Option group to select Cast type:
+#### 选项组选择字段映射类型：
 
-**Button** |**Description**
+**按钮** |**描述**
 ---|---
-No|Does not add Cast()
-VFP|Adds VFP type Cast()
-ANSI|Creates ANSI type Cast()
+No|不增加 Cast()
+VFP|增加 VFP 类型的 Cast()
+ANSI|创建 ANSI 类型的 Cast()
 
-#### Other options and controls:
+#### 其他选项和控制：
 
-**Control** |**Description**
+**控制** |**描述**
 ---|---
-“From:” Textbox|Shows the current table name
-“Add From” Checkbox|Adds “From” phrase to the Select statement
-“Close afterwards” Checkbox|Closes the table when SuperBrowse exits
-“As:” Textbox|Fills in the Table_Alias
-“=TableName” Button|Fills in the current table name in the As textbox
-“Remove” Button|Blanks the As field
-“Into Table” Textbox|Fill in the name of the target table/cursor
-Option 1\. Table|Target is a table
-Option 2\. Cursor|Target is a read only cursor
-Option 3\. Cursor read/Write|Target is a read/write cursor
+“From:” 文本框|显示当前表名
+“Add From” 选择框|将“From”短语添加到Select语句
+“Close afterwards” 选择框|SuperBrowse退出时关闭表
+“As:” 文本框|填写Table_Alias
+“=TableName” 按钮|在As文本框中填写当前表名
+“Remove” 按钮|As文本框置空
+“Into Table” 文本框|填写目标表/游标的名称
+Option 1\. Table|目标是一个表
+Option 2\. Cursor|目标是一个只读游标
+Option 3\. Cursor read/Write|目标是一个可读写的游标
 
 ### Grid page:
 
