@@ -50,25 +50,25 @@ SetHandle (tnHandle)|设置句柄（用于指示大多数这些命令中引用�
 SetTitle (tcNewTitle)|将编辑窗口的标题设置为{tcNewTitle}
 
 
-### Text manipulation
+### 文本操作
 
-Methods (Parameters)|Description|
+方法(参数)|描述|
 ---|---
-Copy()|Copies the currently highlighted text into the clipboard
-Cut()|Cuts the currently highlighted text
-EnsureVisible (tnPosition, tlScroll)|Ensures that the character at position {tnPosition} is visible in the editing window. If {tlScroll} is true, it is brought to the mid-point of the editing window
-GetCharacter (tnPosition)|Returns the character at position {tnPosition}
-GetEnvironment {tnIndex}|Returns a single environment setting. {tnIndex} takes values from 1 to 25\. See _EdGetEnv in the help for FoxTools for a description of all the settings. Frequently used values are:
-GetEnvironment {tnIndex} Return value x|x=2: File Size
-GetEnvironment {tnIndex} Return value x|x=17: Selection start
-GetEnvironment {tnIndex} Return value x|x=18x: Select end
-GetEnvironment {tnIndex} Return value x|x=25: Window Type
-GetFileSize()|Returns the file size
-GetLineNumber (tnSelStart)|Returns the line number for the character at position {tnPosition}
-GetLineStart (tnSelStart, tnLineOffset)|Determines the line number for the character at position {tnPosition} and returns the position for the character at the beginning of that line. If {tnLineOffset} is supplied, it first offsets the line number by that amount. Thus .GetLineStart (tnSelStart, 1) gives the start position of the next line after the line for {tnSelStart}
-GetSelEnd()|Returns the position for the end of the currently highlighted text
-GetSelStart()|Returns the position for the start of the currently highlighted text
-GetString (tnSelStart, tnSelEnd)|Returns the string of characters from position {tnSelStart} through {tnSelEnd}
-Paste(tcText)|If {tcText} is supplied, pastes it into the editing window, leaving _ClipText unchanged.  Otherwise, pastes the contents of the clipboard into the editing window.
-Select (tnSelStart, tnSelEnd)|Selects (highlights) the string of characters from position {tnSelStart} through {tnSelEnd}
-SetInsertionPoint (tnPosition)|Sets the insertion point to {tnPosition}
+Copy()|将当前突出显示的文本复制到剪贴板中
+Cut()|剪切当前突出显示的文本
+EnsureVisible (tnPosition, tlScroll)|确保位置{tnPosition}处的字符在编辑窗口中可见。 如果{tlScroll}为true，它会被带到编辑窗口的中点
+GetCharacter (tnPosition)|返回位置{tnPosition}处的字符
+GetEnvironment {tnIndex}|返回单个环境设置。 {tnIndex}取值从1到25 \.有关FoxTools的帮助，请参阅_EdGetEnv以获取所有设置的说明。 常用的值是：
+GetEnvironment {tnIndex} Return value x|x=2: 文件大小
+GetEnvironment {tnIndex} Return value x|x=17: 选择开始
+GetEnvironment {tnIndex} Return value x|x=18x: 选择结束
+GetEnvironment {tnIndex} Return value x|x=25: 窗口类型
+GetFileSize()|返回文件大小
+GetLineNumber (tnSelStart)|返回位置{tnPosition}处字符的行号
+GetLineStart (tnSelStart, tnLineOffset)|确定位置{tnPosition}中字符的行号，并返回该行开始处字符的位置。 如果提供了{tnLineOffset}，它首先以该数量偏移行号。 因此.GetLineStart（tnSelStart，1）给出{tnSelStart}行之后的下一行的开始位置，
+GetSelEnd()|返回当前突出显示的文本结尾处的位置
+GetSelStart()|返回当前突出显示的文本的开始位置
+GetString (tnSelStart, tnSelEnd)|返回从位置{tnSelStart}到{tnSelEnd}的字符串
+Paste(tcText)|如果提供{tcText}，则将其粘贴到编辑窗口中，并保持_ClipText不变。 否则，将剪贴板的内容粘贴到编辑窗口中。
+Select (tnSelStart, tnSelEnd)|从位置{tnSelStart}到{tnSelEnd}中选择（高亮显示）字符串
+SetInsertionPoint (tnPosition)|将插入点设置为{tnPosition}
