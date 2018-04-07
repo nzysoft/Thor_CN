@@ -26,11 +26,11 @@ Thor由四部分组成：
 
 ![](Images/Thor_Overview_SampleToolHeader.png)
 
-The actual code for the tool follows this header. As always, it is advantageous to browse other tools (something you can also do within the Thor form), to see examples of how these properties are normally used.  
+该工具的实际代码在该标题后面。 与往常一样，浏览其他工具（您也可以在Thor表单中执行的操作）以查看如何正常使用这些属性的示例是有益的。
 
-The process for creating a new tool (when using the Thor form) will guide the creation of the tool into a folder that Thor recognizes, which can be either the special sub-folder of the 'Thor' folder or any folder in the path. The default folder for new tools is **Thor\Tools\My Tools**  
+创建新工具的过程（使用Thor表单时）将指导创建该工具到Thor识别的文件夹中，该文件夹可以是'Thor'文件夹的特殊子文件夹或路径中的任何文件夹。 新工具的默认文件夹是** Thor \ Tools \ My Tools **
 
-One suggestion is to assign the same value for  the **.Source** property for all of your personal tools, so that the Thor form will group them together.
+一个建议是为所有个人工具的**.Source** 属性分配相同的值，以便Thor表单将它们组合在一起。
 
 #### **The Thor Repository**
 
