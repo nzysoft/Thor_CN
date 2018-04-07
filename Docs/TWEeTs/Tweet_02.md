@@ -1,13 +1,14 @@
-﻿Thor TWEeT #2: Set Object Size and Position
+﻿Thor TWEeT #2: 设置对象大小和位置
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-This week's Thor TWEeT is **Set Object Size and Position.**
+本周的Thor TWEeT是**设置对象大小和位置**。
 
-This tool provides enhanced capabilities to the Format menu pad in the FoxPro system menu, shown here:
+此工具为FoxPro系统菜单中的“格式”菜单板提供增强的功能，如下所示：
 
 ![](Images\Tweet2a.png)
 
-**Set Object Size and Position** displays a form that includes all of the features from the Format menu, except for Snap to Grid and Set Grid Scale. In addition,
+**设置对象大小和位置**显示一个表单，其中包括格式菜单中的所有功能，但对齐网格和设置网格比例除外。 此外，
 
 *   there are controls to change the top/left/height/width of the currently selected control(s), either one pixel at a time or by a specified step size.
 *   vertical and horizontal spacing may be changed either one pixel at a time or by a specified step size.
