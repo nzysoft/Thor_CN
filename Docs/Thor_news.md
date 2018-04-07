@@ -27,7 +27,7 @@ Thor Repository中提供了许多新的Thor工具。
     *   再次执行此工具  
             -- 这将比较两个窗口的内容
 
-> **需要：**  Thor cannot guess your favorite compare tool, so you must modify the Plug-In so that Thor can call it. The default code for the Plug-in calls Beyond Compare (_personal note: highly recommended!)_ and must be modified to fit your environment.
+> **需要：**  Thor 并不能猜出你最喜欢的比较工具，所以你必须修改插件以便 Thor 可以调用它。插件的默认代码调用Beyond Compare（_私人建议：强烈建议！）_，并且你必须予以修改以适应您的环境。
 
 *   Three new tools for [VFP2Text](http://pfsolutions-mi.com/Product/VFP2Text), a add-on from Frank Perez, Jr. for Beyond Compare, that allow direct comparison of VCXs and SCXs
     *   'Download VFP2Text for Beyond Compare V3'
