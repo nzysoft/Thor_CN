@@ -2,18 +2,18 @@
 _本文档由 xinjie 于 2018-04-08 翻译_
 #27: [Go To Definition](TWEeTs/Tweet_27.md) (Jan. 4, 2015)
 
-#26: [Three New Thor Tools](TWEeTs/Tweet_26.md) (Dec. 22, 2014)
+#26: [三个新的 Thor 工具](TWEeTs/Tweet_26.md) (Dec. 22, 2014)
 
-#25: [Five New Thor Tools for FoxBin2PRG](TWEeTs/Tweet_25.md) (Nov. 30, 2014)
+#25: [FoxBin2PRG的五个新Thor工具](TWEeTs/Tweet_25.md) (Nov. 30, 2014)
 
-#24: [Nine New Thor Tools](TWEeTs/Tweet_24.md) (Nov. 25, 2014)
+#24: [九个新的 Thor 工具](TWEeTs/Tweet_24.md) (Nov. 25, 2014)
 
-#23: [Buffer Overrun Errors](TWEeTs/Tweet_23.md) (Nov. 17, 2014)
+#23: [缓冲区溢出错误](TWEeTs/Tweet_23.md) (Nov. 17, 2014)
 
 *   _PEM Editor_
 *   _IntellisenseX_
 
-#22: [Related IntellisenseX Tools](TWEeTs/Tweet_22.md) (June 15, 2014)
+#22: [发布 IntellisenseX 工具](TWEeTs/Tweet_22.md) (June 15, 2014)
 
 *   _AutoComplete_
 *   _Dropdown constants list_
@@ -21,17 +21,17 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   _Dropdown table names_
 *   _DBC Tables by !_
 
-#21: [Advanced Features: Plug-ins for IntellisenseX](TWEeTs/Tweet_21.md) (June 4, 2014)
+#21: [高级功能：用于IntellisenseX的插件](TWEeTs/Tweet_21.md) (June 4, 2014)
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
 
-#20: [Quick Start Guide to IntellisenseX](TWEeTs/Tweet_20.md) (May 29, 2014)
+#20: [IntellisenseX快速入门指南](TWEeTs/Tweet_20.md) (May 29, 2014)
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
 
-#19: [Deficiencies in IntellisenseX (and how to avoid them) … The Custom Keyword List](TWEeTs/Tweet_19.md) (May 21, 2014)
+#19: [IntellisenseX中的缺陷（以及如何避免它们）...自定义关键字列表](TWEeTs/Tweet_19.md) (May 21, 2014)
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
