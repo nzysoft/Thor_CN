@@ -6,19 +6,19 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 调试器中的监视窗口当然是查看对象的标准方式，但查看集合时根本没有任何内容。
 
-为了填补这个空白，Tamar创建了 **Object and Collection Inspector** （您可能已经在其他地方看到过）。
+为了填补这个空白，Tamar创建了 **对象和集合检查器** （您可能已经在其他地方看到过）。
 
-Now the **Object and Collection Inspector** is a Thor tool, with considerable enhancement. As show below, it displays a TreeView showing all the children for an object, or the items in a collection, with the values for all the properties shown on the right.  Double-clicking a property opens a zoom box for editing its values.
+现在，**对象和收集检查员**是一个 Thor 工具，功能已经具有相当的提升。 如下所示，它显示一个TreeView，显示一个对象的所有子项或一个集合中的项目，右侧显示所有属性的值。 双击属性将打开一个缩放框来编辑其值。
 
 ![](Images/Tweet5a.png)
 
-Run this tool as follows:
+按如下所示运行此工具：
 
-*   In a code window or the command window, click on the name of an object or collection and then call the tool.
-*   Or, place the mouse over an object in an executing form, or a form or class being edited in the IDE, and call the tool.
-*   Or, if a form or class is being edited, call the tool to inspect the currently selected object (that is, the one shown in the Property Sheet).
-*   Otherwise, call the tool to paste text into the command window so that you can supply the name of the object or collection
+*   在代码窗口或命令窗口中，单击对象或集合的名称，然后调用该工具。
+*   或者，将鼠标放在执行形式的对象上，或者在IDE中编辑的表单或类中，然后调用该工具。
+*   或者，如果正在编辑表单或类，请调用该工具来检查当前选定的对象（即属性表中显示的对象）。
+*   否则，请调用工具将文本粘贴到命令窗口中，以便提供对象或集合的名称
 
-**NOTE**: Unfortunately, because of the way this tool is invoked, it doesn't work from the Thor Tool Bar.
+**注意**：不幸的是，由于这个工具被调用的方式，它不适用于Thor工具栏。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
