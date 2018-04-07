@@ -1,13 +1,14 @@
-Moving Menu Pads
+移动菜单项
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-You can move menu pads that you have created in the VFP system menu bar by:
-1. clicking on the menu pad you want to move
-1. then clicking on the up and down arrows
+您可以通过以下方式移动您在VFP系统菜单栏中创建的菜单项：
+1. 点击你想要移动的菜单
+1. 然后点击向上和向下箭头
 
 ![](Images/Thor_MoveMenuPads.png)
 
-Notes:
+注意：
 
-1. You ***can not*** move the VFP-defined menu pads.
-1. The changes you made do not take effect immediately.  See [General Usage Notes](Thor_form_usage_notes.md).
+1. 你***不能***移动VFP定义的菜单板。
+1. 您所做的更改不会立即生效。 参看 [一般使用说明](Thor_form_usage_notes.md).
