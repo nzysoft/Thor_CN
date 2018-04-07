@@ -1,5 +1,5 @@
 ## <u>T</u>his <u>W</u>eeks <u>E</u>xc<u>e</u>ptional <u>T</u>ools
-
+_本文档由 xinjie 于 2018-04-08 翻译_
 #27: [Go To Definition](TWEeTs/Tweet_27.md) (Jan. 4, 2015)
 
 #26: [Three New Thor Tools](TWEeTs/Tweet_26.md) (Dec. 22, 2014)
