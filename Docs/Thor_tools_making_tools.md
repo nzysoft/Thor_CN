@@ -20,6 +20,7 @@ Thor提供了一个工具框架来协助创建工具。
 ### 外部APP：
 
 Thor的结构提供了可以嵌入其他APP文件中对象。 特别是这两个，作为PEM编辑器的一部分开发。
+
     Result = Execscript (_Screen.cThorDispatcher, cParameter)
 **cParameter** |**Result**
 ---|---
