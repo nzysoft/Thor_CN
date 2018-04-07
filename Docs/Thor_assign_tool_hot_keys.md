@@ -1,22 +1,23 @@
-Assigning hot keys to tools
+将热键分配给工具
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-You can assign hot keys to tools on the second page (**Tool Definitions**) of the Thor form.
+您可以将热键分配给Thor表单的第二页上的工具（**工具定义**）。
 
-When you click on a tool, the hot key currently assigned to it appears in the control at the top right of the form.  (If there is one already assigned, you can remove it by using the 'Clear' button.)
+当你点击一个工具时，当前分配给它的热键出现在窗体右上角的控件中。 （如果已经分配了一个，可以使用“清除”按钮将其删除。）
 
-You can then click on the '...' button to be prompted for the new hot key.  A small form will appear, requesting that you press the key combination to be used as the hot key.  You can use any combination of Shift, Ctrl, and Alt.
+然后你可以点击'...'按钮来提示输入新的热键。 将出现一个小表格，要求您按下组合键作为热键。 您可以使用Shift，Ctrl和Alt的任意组合。
 
-Note that not all key combinations can be captured, and some of them will not be accepted because they are pre-empted by Windows or FoxPro itself (Alt-F10, for instance.)
+请注意，并非所有组合键都可以被捕获，并且其中一些组合不会被接受，因为它们被Windows或FoxPro自己预先占用（例如，Alt-F10）。
 
-You also are protected from assigning the same hot key to more than one tool.
+您也不能将同一个热键分配给多个工具。
 
-To review all hot key assignments, including keyboard macros and On Key Label definitions, see the third page of the form ([Hot Key Assignments](Thor_hot_key_list.md)).  You can also change hot key assignments on that page.
+要查看所有热键分配（包括键盘宏和开关键标签定义），请参阅表单的第三页([Hot Key Assignments](Thor_hot_key_list.md))。您也可以更改该页面上的热键分配。
 
 ![](Images/Thor_Assign_tool_hot_key.png)
 
-### See also:
-* [Browsing the list of tools](Thor_browsing_tools.md)
-* [Editing existing tools](Thor_editing_existing_tools.md)
-* [Creating new tools](Thor_creating_new_tools.md)
-* [Tools to make tools](Thor_tools_making_tools.md)
+### 参看：
+* [浏览工具列表](Thor_browsing_tools.md)
+* [编辑现有工具](Thor_editing_existing_tools.md)
+* [创建新工具](Thor_creating_new_tools.md)
+* [制作工具的工具](Thor_tools_making_tools.md)
