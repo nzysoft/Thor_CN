@@ -18,13 +18,13 @@ loEditorWin = Execscript (_Screen.cThorDispatcher, 'class= editorwin from pemedi
 
 一些进一步说明：
 
-1.  字符位置和行数从0开始，而不是1 \。 （即小心）
-2.  While this object only is available if PEM Editor has been installed, the PEM Editor form itself need not be open for it to work.
-3.  There are numerous uses of this object in the tools in the Thor Repository.
+1.  字符位置和行数从0开始，而不是1 。 （小心）
+2.  虽然只有安装了PEM编辑器才能使用此对象，但PEM编辑器表单本身无需打开即可使用。
+3.  Thor Repository中这个工具有很多用途。
 
-### Window manipulation: handles, size, position, title, etc.
+### 窗口操作：句柄，大小，位置，标题等
 
-Methods (Parameters)|Description
+方法(参数)|描述
 ---|---
 CloseWindow()|Close the current window
 FindLastWindow()|Returns the handle of the most recently used window which is either of a PRG or method code from the Form or Class Designer.
