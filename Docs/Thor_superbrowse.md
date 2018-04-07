@@ -119,50 +119,50 @@ Value|=price>100|查找 price >100 的所有记录，等号（=）将强制执�
 
 #### 本页其他控制:
 
-**Control** |**Description**
+**控制** |**描述**
 ---|---
-Listbox Sort|To select the current sort order
-Button \|<|Go to previous record
-Button \|>|Go to next record
-Button +|Add a new record
-Button Edit|Edit the current record on a separate form
-Checkbox Read-Only|Self explanatory
-Checkbox Hide unselected fields|Makes the grid only show selected fields
-Button Modify Structure|Gives you the possibility to modify the structure. If the table is opened shared, you are asked whether you want to reopen it exclusive or not.
+Sort 列表框|选择当前的排序顺序
+按钮 \|<|转到上一条记录
+按钮 \|>|转到下一条记录
+按钮 +|添加一条新记录
+按钮 Edit|在单独的表单上编辑当前记录
+Read-Only 选择框|自解释
+Hide unselected fields 选择框|使 Grid仅显示选定的字段
+按钮 Modify Structure|给你修改结构的可能性。 如果表是共享打开的，则会询问您是否要将其重新打开。
 
-### Index page
+### Index 页
 
-Lists all active index tags, and shows the syntax to recreate the index file. Can be copied to the clipboard by marking the text with the mouse and press Ctrl-C.
+列出所有活动的索引标记，并显示重新创建索引文件的语法。 可以通过用鼠标标记文本并按下Ctrl-C将其复制到剪贴板。
 
-### Settings page
+### Settings 页
 
-This page should be self explanatory.  
-Tip: The ForeColor and BackColor is a good tool to find the RGB values for a color. Select any color, press OK and you will see the value.  
-NB! It's usually best to use ForeColor, since the default is Black.
+此页是自解释的。
+提示：ForeColor和BackColor是查找颜色的RGB值的好工具。 选择任何颜色，按确定，您将看到该值。
+请注意！通常最好使用ForeColor，因为默认值是Black。
 
-### Keyboard shortcuts while the left grid is active:
+### 在左侧 Grid 处于活动状态时的键盘快捷键：
 
-#### Common:
+#### 通用：
 
-**Button** |**Description**
+**快捷键** |**描述**
 ---|---
-Escape|Close the form
-Enter|Close the form
-Spacebar|Toggle Select Field
-A|Press button Select all
-B|Copy the current SQL statement to the clipboard
-G|Activate page Grid
-H|Toggle checkbox Hide unselected Fields (Grid page)
-K|Activate page Picker
-O|Copy the current SQL statement to the clipboard
-R|Press button Reverse all
-S|Toggle Select Field
-U|Press button Unselect all
+Escape|关闭表单
+Enter|关闭表单
+Spacebar|切换选择字段
+A|按下 Select All 按钮
+B|将当前的SQL语句复制到剪贴板
+G|激活 Grid 页面
+H|切换 Grid 页中 Hide unselected Fields 的值
+K|激活 Picker 页面
+O|将当前的SQL语句复制到剪贴板
+R|按下按钮 Reverse all
+S|切换 Select Field
+U|按下按钮 Unselect all
 
 
-#### When Picker page is visible, these keys also are activated:
+#### 当 Picker 页可见时，下面的快捷键也是可用的：
 
-**Button** |**Description**
+**快捷键** |**描述**
 ---|---
 \:|Set focus to the textbox Into Cursor
 C|Select option SQL Create...
