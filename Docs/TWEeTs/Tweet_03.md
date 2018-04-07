@@ -10,12 +10,12 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 首先，所有Thor工具，最值得注意的是 **[GoFish](https://github.com/mattslay/GoFish),[Finder](https://github.com/VFPX/Finder)** 和 **[PEM编辑器](https://github.com/VFPX/PEMEditor)** ，以及所有其他打开文件的Thor工具，在打开文件时总是更新相应的MRU列表（无论是表单，类，表，报表 等）。 另外，他们还提供了两个其他功能：
 
-*   They maintain a new MRU list for all *class libraries* that are opened.
-*   They open each file using the same case for the file name as is found on disk, so that the case of file names is not changed.
+*   他们为打开的所有*类库*保留一个新的MRU列表。
+*   他们使用与磁盘上的文件名相同的大小写打开每个文件，这样文件名的大小写不会改变。
 
-> _Note: It might seem that this would not help you if you open files from the Project Manager or Class Browser, but there are simple modifications you can make to both to achieve the same effect as all other Thor tools,  See the end of this message._
+> _注意：如果您从项目管理器或类浏览器打开文件，看起来这并不会对您有所帮助，但您可以进行简单的修改，以达到与所有其他Thor工具相同的效果。请参阅此消息的结尾。_
 
-The main Thor tool for access MRU lists is called simply **MRUs**, and it displays a pop-up menu of all the different MRU lists (including, at the top, the list unique to Thor, of MRU class libraries.)
+用于访问MRU列表的主要Thor工具简称**MRUs**，它显示所有不同MRU列表的弹出式菜单（包括顶部的Thor特有的MRU类库的列表）。
 
 ![](Images/Tweet3a.png)
 
