@@ -330,87 +330,87 @@ IntellisenseX可从检查更新中获得。 <!-- TBL -->
 
 ---
 
-Use the Thor discussion group for comments, suggestions, bug reports, etc.
+使用Thor讨论组提出意见，建议，错误报告等。
 ---
 
 #### <a name="Headline6">#6, 2012-09-16</a>
 
-Use the “Community / Discussions” menu item in the Thor menu pad to send comments, suggestions, bug reports, and so on to the [Thor Discussion Group](http://groups.google.com/group/FoxProThor). You are invited to become a member of the group so that you can see what is going on in the land of Thor.
+使用Thor菜单板中的“Community / Discussions”菜单项将评论，建议，错误报告等发送到[Thor 讨论组](http://groups.google.com/group/FoxProThor)。 你被邀请成为这个组织的一员，这样你就可以看到Thor上发生了什么。
 
 ![](Images/Thor_community.png)
 
-Two things of note:
+两个注意事项：
 
-* You can email discussion questions (with screenshots) directly to:
+* 您可以通过电子邮件将讨论问题（截图）直接发送至：
 
     [foxproThor@googlegroups.com](mailto:foxproThor@googlegroups.com)
 
-*When reporting bugs, please provide as much information as possible, including screenshots. Any information you can provide (such as an image of the debugger, etc.) will be greatly appreciated.
+* 在报告错误时，请提供尽可能多的信息，包括截图。 您可以提供的任何信息（例如调试器的图像等）将不胜感激。
 
 ---
 
-IntellisenseX released
+IntellisenseX 发布
 ---
 
 #### <a name="Headline5">#5, 2012-09-10</a>
-*IntellisenseX* refers to a suite of Thor Tools that provide functionality similar to native Intellisense. These tools display lists of available variable names, field names, or members (properties, events, methods, and objects) while you type code, just like Intellisense. However, they cover those areas that Intellisense forgot (such as the list of field names in a table when editing in a code window) and provide new capabilities, available through customization, such as displaying the list of field names in an SQL table, as shown below. For a full description, see the [IntellisenseX Home Page.](https://github.com/VFPX/IntelliSenseX)
+*IntellisenseX*是指一套Thor工具，提供与原生Intellisense相似的功能。 这些工具在键入代码时显示可用变量名称，字段名称或成员（属性，事件，方法和对象）的列表，就像Intellisense一样。 但是，它们涵盖了Intellisense忘记的那些区域（例如，在代码窗口中编辑时，表中的字段名称列表），并提供可通过自定义提供的新功能，例如在SQL表中显示字段名称列表， 如下所示。 有关完整的描述，请参阅 [IntellisenseX 主页](https://github.com/VFPX/IntelliSenseX)
 
 ![](Images/Thor_News_SNAGHTMLf871ea8_thumb1_thumb_2.png)
 
 ---
 
-Data Explorer is now a Thor tool
+Data Explorer 现在是一个 Thor 工具
 ---
 
 #### <a name="Headline4">#4, 2012-09-09</a>
-Data Explorer 3 is now available as a Thor Tool. This means that you can choose to access it by hot key by assigning the hot key in the Thor configuration form.
+Data Explorer 3 现在可作为 Thor 工具使用。 这意味着您可以通过指定Thor配置表单中的热键来选择通过热键访问它。
 
 ![](Images/Thor_News_SNAGHTML1f93281e.png)
 
 ---
 
-New VFPX Projects: Dynamic Forms & Data Explorer
+新的 VFPX 项目: Dynamic Forms & Data Explorer
 ---
 
 #### <a name="Headline3">#3, 2012-09-04</a>
-Two new VFPX projects have been created in the last few days and are available from Check For Updates:
+最近几天创建了两个新的VFPX项目，可从[检查更新]获得：
 
 * [Dynamic Forms](https://github.com/mattslay/DynamicForms)
 * [Data Explorer 3](https://github.com/rschummer/DataExplorer)
 
-After downloading, you can use the Thor menu pad in the system menu to open the folder in which these components are installed:
+下载后，您可以使用系统菜单中的Thor菜单打开安装这些组件的文件夹：
 
 ![](Images/Tweet10_foxcodeplus.png)
 
 ---
 
-Join the Thor Beta discussion group.
+加入Thor Beta讨论组。
 ---
 
 #### <a name="Headline2">#2, 2012-08-30</a>
 
-**The [Thor Beta discussion group](https://groups.google.com/forum/#!forum/foxprothorBeta)** is intended for discussions of features currently under development for Beta versions of Thor, the Thor Repository, and PEM Editor.
+**[Thor Beta讨论组](https://groups.google.com/forum/#!forum/foxprothorBeta)**旨在讨论当前正在开发的Thor测试版，Thor存储库和 PEM编辑器。
 
-All other Thor issues should be directed to the [Thor discussion group](https://groups.google.com/forum/#!forum/foxprothor).
+所有其他Thor问题都应该直接指向 [Thor 讨论组](https://groups.google.com/forum/#!forum/foxprothor).
 
-To use the Beta version for Thor, download [Thor Repository Beta Updater.Zip](http://vfpxrepository.com/dl/thorupdate/Tools/Thor_Repository/Beta/Thor_Update_Thor_RepositoryBeta.zip) and unzip it into this sub-folder of the folder where you have installed Thor: **Thor\Tools\Updates\My Updates**
+要使用Thor的Beta版本，请下载[Thor Repository Beta Updater.Zip](http://vfpxrepository.com/dl/thorupdate/Tools/Thor_Repository/Beta/Thor_Update_Thor_RepositoryBeta.zip)并将其解压缩到该子文件夹中 安装Thor的文件夹：**Thor\Tools\Updates\My Updates**
 
-Thereafter, you will see a record for "Thor Repository Beta" when you run "Check For Updates".
+之后，当您运行“检查更新”时，您会看到“Thor Repository Beta”的记录。
 
 ---
 
-Introducing Thor News.
+介绍Thor新闻。
 ---
 
 #### <a name="Headline1">#1, 2012-08-25</a>
 
-This is the first installment of the Thor News, which will notify you of changes and updates to Thor. It will also, from time to time, explore some of the more interesting tools found in Thor.
+这是 Thor 新闻的第一部分，它会通知你关于 Thor 的变化和更新。 它还会不时地探索Thor中的一些更有趣的工具。
 
-The latest news will be brought to you:
+最新消息将带给你：
 
-*   each time that you run Check For Updates
-*   once a week when you execute RunThor.
+*   每次运行检查更新
+*   每周执行一次RunThor。
 
-You can change these settings in the Thor Configuration form:
+您可以在Thor Configuration表单中更改这些设置：
 
 ![](Images/Thor_configuration.png)
