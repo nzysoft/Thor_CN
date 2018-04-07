@@ -24,7 +24,7 @@ Thor的结构提供了可以嵌入其他APP文件中对象。 特别是这两个
     Result = Execscript (_Screen.cThorDispatcher, cParameter)
 **cParameter** |**Result**
 ---|---
-Class= editorwin from pemeditor|访问和修改当前打开的编辑窗口中的文本（选择，剪切，复制，粘贴等）的方法  - 参看 [Thor 编辑窗口对象](Thor_editorwindow_object.md)/
+Class= editorwin from pemeditor|访问和修改当前打开的编辑窗口中的文本（选择，剪切，复制，粘贴等）的方法  - 参看 [Thor 编辑窗口对象](Thor_editorwindow_object.md)
 Class= tools from pemeditor|各种方法的集合，彼此无关，但具有超越其在PEM编辑器中使用的价值 – 参看 [Thor 工具对象](Thor_tools_object.md)
 
 
@@ -33,13 +33,13 @@ Class= tools from pemeditor|各种方法的集合，彼此无关，但具有超�
 **cParameter** |**Result**
 ---|---
 Class= ContextMenu|返回用于创建关联菜单的对象 - see [Thor 关联菜单](Thor_framework_contextmenu.md)
-Class= ThorFormSettings|返回一个对象，以便表单可以保存其设置（大小，位置等）并将表单与鼠标或光标位置对齐 – see [Thor FormSettings](Thor_framework_formsettings.md)
+Class= ThorFormSettings|返回一个对象，以便表单可以保存其设置（大小，位置等）并将表单与鼠标或光标位置对齐 – 参看 [Thor FormSettings](Thor_framework_formsettings.md)
 Class= FindEXE|（文档尚未提供）
 Tool Folder=|返回Thor工具文件夹的名称
-Thor Register=|Returns an object so that an APP can self-register its own tools, such as is done by [GoFish 5](https://github.com/mattslay/GoFish) and [PEM Editor 7](https://github.com/VFPX/PEMEditor).
-Run|Runs Thor.  Same as  Do Thor with ‘Run’  or  Do RunThor
-Edit|Opens Thor form.  Same as Do Thor with ‘Edit’
-Clear HotKeys|Removes all Thor-assigned keyboard macros so that a macros (FKY) file can be saved
+Thor Register=|返回一个对象，以便APP可以自行注册自己的工具， 例如 [GoFish 5](https://github.com/mattslay/GoFish) 和 [PEM Editor 7](https://github.com/VFPX/PEMEditor).
+Run|运行 Thor 。效果同 Do Thor with ‘Run’  或者  Do RunThor
+Edit|打开 Thor 表单。效果同 Do Thor with ‘Edit’
+Clear HotKeys|删除所有Thor分配的键盘宏，以便可以保存宏（FKY）文件
 
 ### 参看
 
