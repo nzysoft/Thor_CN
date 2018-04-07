@@ -34,42 +34,41 @@ Thor由四部分组成：
 
 #### **The Thor Repository**
 
-Inherent in the design of Thor is the anticipation that members of the FoxPro community will have utilities of value that can well be shared throughout the community. The structure of the tool PRGs make such sharing simple.  
+Thor设计的初衷是FoxPro社区的成员可以拥有可在整个社区共享的有价值的工具。PRG工具的结构使这种共享变得简单。
 
-The 'Thor Repository' is a catalog of such tools. The intent is that this repository grow over time, as developers submit tools to be included. The starting repository has about a dozen such tools.  
+'Thor Repository'是这些工具的目录。 目的是随着开发者提交包含的工具，这个资源库会随着时间而增长。 起始库有大约十几个这样的工具。 
 
-See the section below on One-Click Updates for downloading updates of the Thor Repository.  
+有关Thor Repository更新的下载，请参阅：
 
-### [Click here for the home page for the Thor Repository](Thor_repository.md)
+### [点击此处查看Thor Repository的主页](Thor_repository.md)
 
-#### **Tools from PEM Editor**
+#### **来自PEM编辑器的工具**
 
-Version 7 of PEM Editor, now re-named 'PEM Editor w/ IDE Tools', contains more than three dozen tools that can be accessed through Thor. These include some tools released in version 6 of PEM Editor, along with a large number of completely new tools. These can be downloaded from the PEM Editor page.  
+PEM编辑器的第7版，现在重新命名为'PEM Editor w/ IDE Tools'，包含三十多种可通过Thor访问的工具。 其中包括一些在PEM Editor 6版本中发布的工具，以及大量全新的工具。 这些可以从PEM编辑器页面下载。
 
-PEM Editor also "publishes" a pair of objects that simplify building further tools. More than half of the original tools in the Thor Repository use these objects.  
+PEM编辑器还“发布”了一对儿简化构建工具的对象。 Thor Repository中超过一半的初始工具使用这些对象。 
 
-See the section below on One-Click Updates for downloading updates of the PEM Editor 7 with IDE Tools.
+有关使用IDE Tools下载PEM Editor 7的更新，请参阅以下部分。
 
-### [Click here for the home page for PEM Editor 7 with IDE Tools](https://github.com/VFPX/PEMEditor) 
+### [点击这里查看带IDE工具的PEM Editor 7的主页](https://github.com/VFPX/PEMEditor) 
 
 
-#### **One-Click Updates**   
-Beginning with Thor Version 1.1 (Released Oct. 23, 2011), updates to Thor, the Thor Repository, PEM Editor 7 with IDE Tools, and other tools, are all available through a single menu on the Thor menu (in the FoxPro system menu).  This new item, ‘Check for Updates’, checks to see if there are updates available for any of these tools; if any are found, they are automatically downloaded and installed.
+#### **一键更新**   
+从Thor版本1.1（2011年10月23日发布）开始，Thor，Thor Repository，带有IDE Tools的PEM Editor 7以及其他工具的更新都可以通过Thor菜单上的单个菜单获得（在FoxPro系统菜单中）。 这个新的菜单项“检查更新”，检查是否有更新可用于任何这些工具; 如果有任何找到，它们会自动下载并安装。
 
-Beginning with Thor Version 1.10.019 (Released Nov. 17, 2011), One-Click Updates may be performed automatically when starting your first IDE session of the day.  See [Running Thor](Thor_running.md).
+从Thor版本1.10.019（2011年11月17日发布）开始，当您开始第天第一个打开IDE会话时，可能会自动执行一键更新。参看 [运行 Thor](Thor_running.md).
 
 ![](Images/Thor_Overview_image_2.png)
 
-#### **Documentation**
+#### **文档**
 
-There is complete on-line documentation for Thor, the Thor Setup form, and other features of Thor.  [Click here](Thor_help.md)
+此处有完整的Thor在线文档，Thor设置表单和Thor的其他功能。[点击此处](Thor_help.md)
 
-#### **Community Forum for Thor**
+#### **Thor社区论坛**
 
-Please visit the community forum for Thor at [**http://groups.google.com/group/FoxProThor**](http://groups.google.com/group/FoxProThor) to make suggestions or comments, to report problems, and to see how others are using Thor and its related tools.
+请访问Thor的社区论坛 [**http://groups.google.com/group/FoxProThor**](http://groups.google.com/group/FoxProThor) 提出建议或意见，报告问题，并了解其他人如何使用Thor及其相关工具。
 
-#### **A Note on Hot Keys**
+#### **关于快捷键的注意事项**
+Thor提供了以前不可用的新功能 - 分配使用两个或三个Shift，Ctrl和Alt键（例如{Ctrl + Alt + A}）的快捷键的功能。 （实际上，使用这三者需要相当的灵活性。） 
 
-Thor provides for a new capability not previously available -- the ability to assign hot keys which use two or three of the Shift, Ctrl, and Alt keys, such as {Ctrl + Alt + A}. (Actually, using all three requires quite some dexterity.)  
-
-Keyboard macros (using FKY files) are the only VFP feature which recognize usage of two or three of these keys, but macros do not cause program execution, they only place characters into the keyboard buffer.
+键盘宏（使用FKY文件）是唯一识别这些键中两个或三个键的VFP功能，但宏不会导致程序执行，它们只能将字符放入键盘缓冲区。
