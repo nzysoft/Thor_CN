@@ -26,9 +26,9 @@ loEditorWin = Execscript (_Screen.cThorDispatcher, 'class= editorwin from pemedi
 
 方法(参数)|描述
 ---|---
-CloseWindow()|Close the current window
-FindLastWindow()|Returns the handle of the most recently used window which is either of a PRG or method code from the Form or Class Designer.
-FindWindow() |Saves the handle for the currently active window, and returns its window type:
+CloseWindow()|关闭当前窗口
+FindLastWindow()|返回最近使用的窗口的句柄，它是来自Form或Class Designer的PRG或方法代码。
+FindWindow() |保存当前活动窗口的句柄，并返回其窗口类型：
 FindWindow() return value x|x=0: Command Window, Form and Class Designers, other FoxPro windows|
 FindWindow() return value x|x=1: Program file (MODIFY COMMAND)|
 FindWindow() return value x|x=2: Text Editor (MODIFY FILE)|
