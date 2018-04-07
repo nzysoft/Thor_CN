@@ -1,18 +1,19 @@
-﻿The Thor Framework: tools to make tools
+﻿The Thor Framework: 制作工具的工具
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-Thor provides a framework of tools to assist in creating tools.
+Thor提供了一个工具框架来协助创建工具。
 
-Each of the tools in the framework can be obtained from a single line of code that looks like this:
+框架中的每个工具都可以从一行代码中获得，如下所示：
 
     Result = Execscript (_Screen.cThorDispatcher, cParameter)
 
-This rather unusual approach was chosen because it achieves two goals:
+选择这种非常寻常的方法是因为它要达到两个目标：
 
-1.  The tools in the framework are available with only the single dependency (the name of the property in _Screen) and thus can be accessed by tools regardless of the folder where Thor is installed.
-2.  The tools in the framework are available even after a ‘Clear All’.
+1.框架中的工具只有单一依赖项（_Screen中属性的名称），因此可以通过工具访问，无论安装Thor的文件夹如何。
+2.即使在“Clear All”后，框架中的工具仍可用。
 
-Note that the tools in the framework are always available from the Thor menu in the VFP system menu, and you can copy the line of code to access the tool directly from there.  Furthermore, if available, there is access to the home page for the tool.
+请注意，框架中的工具始终可从VFP系统菜单中的Thor菜单中获得，您可以复制代码行直接访问该工具。 此外，如果可用，可访问该工具的主页。
 
 ![](Images/Thor_Tools_Making_Tools_image_2.png)
 
