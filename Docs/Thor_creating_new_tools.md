@@ -11,36 +11,36 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 Thor在以下文件夹中查找名为 **Thor_Tool _ * .PRG** 的文件：
   
-1.  CurDir()  
-1. All folders in your path
-1. **Thor\Tools\MyTools** -- the recommended folder for personal tools
-1. **Thor\Tools** -- the recommended folder for downloaded tools, such as from PEM Editor 7 with IDE Tools or the Thor Repository 
+1. CurDir()  
+1. 您路径中的所有文件夹
+1. **Thor\Tools\MyTools** -- 推荐的个人工具文件夹
+1. **Thor\Tools** -- 下载工具的推荐文件夹，例如带有IDE Tools或Thor Repository的PEM Editor 7
  
 <!--- TBL: Previous: Links to PEME and Thor repository, wrong in old source --->
   
-Obviously, there can be name conflicts, as there could be PRGs with the same name in different folders. Thor resolves these conflicts by recognizing the first such tool encountered, ignoring any following tools with the same name. 
+显然，可能会有名称冲突，因为在不同的文件夹中可能有相同名称的PRG。 Thor通过识别遇到的第一个此类工具来解决这些冲突，忽略任何具有相同名称的以下工具。
 
-This design provides a substantial benefit, as it turns out. If the folder (**Thor\Tools**) is only used for downloaded tools, there is never any danger that your personal tools will conflict with them. Beyond that, you can select any of the downloaded tools, particularly any of those from the Thor Repository, make adjustments to them to suit your taste, and save them in **Thor\Tools\MyTools**. These personal copies will always take precedence, then, over any downloaded copies. 
+事实证明，这种设计提供了实质性的好处。 如果该文件夹（**Thor\Tools**）仅用于下载的工具，那么您的个人工具将不会有与其冲突的危险。 除此之外，您可以选择任何下载的工具，尤其是Thor Repository中的任何工具，根据您的口味对其进行调整，并将其保存在**Thor\Tools\MyTools**中。 这些个人副本将始终优先于任何下载的副本。
 
-The 'Create Tools' form gives you a combobox showing all the folders that Thor will search (in the order they will be searched), as well as a textbox where you can enter the name of the tool you will be creating. The listbox underneath shows the names of all tools already in that folder whose names might be in conflict with the name you are creating. 
+“创建工具”窗体为您提供了一个组合框，其中显示了Thor将搜索的所有文件夹（按照它们将被搜索的顺序）以及一个文本框，您可以在其中输入要创建的工具的名称。 下面的列表框显示了该文件夹中所有工具的名称，这些工具的名称可能与您创建的名称相冲突。
 
 ![](Images/Thor_creating_new_tools_createtoolform1.png)
 
-This will create the PRG and open it for you to edit. 
+这将创建PRG并打开它供您编辑。
 
-As you can see below, the "header" of the new PRG is a group of about 40 lines which act as a questionnaire, allowing the tool to tell Thor about itself. 
+正如你在下面看到的，新PRG的“标题”是一组40行左右的代码，让工具可以告诉Thor自己。 
 
 ![](Images/Thor_creating_new_tools_sampletoolheader.png) 
 
-The actual code for the tool is to be placed in the Procedure ‘**ToolCode**’, at the very end of the listing.
+该工具的实际代码将放置在清单最后的Procedure **ToolCode** 中。
 
-As always, it is advantageous to browse other tools (something you can also do from within the Thor form), to see examples of how these properties are normally used. 
+与往常一样，浏览其他工具（您也可以在Thor表单中执行某些操作）以查看这些属性通常如何使用的示例。
 
-A final suggestion: assign the same value for .**Source** for all of your personal tools, so that the Thor form will group them together. 
+最后的建议：为所有个人工具分配**.Source** 的相同值，以便Thor表单将它们组合在一起。
 
-### See also:
+### 参看：
 
-* [Browsing the list of tools](Thor_browsing_tools.md)  
-* [Assigning hot keys to tools](Thor_assign_tool_hot_keys.md)
-* [Editing existing tools](Thor_editing_existing_tools.md) 
-* [Tools to make tools](Thor_tools_making_tools.md)
+* [浏览工具列表](Thor_browsing_tools.md)  
+* [将热键分配给工具](Thor_assign_tool_hot_keys.md)
+* [编辑现有工具](Thor_editing_existing_tools.md) 
+* [制作工具的工具](Thor_tools_making_tools.md)
