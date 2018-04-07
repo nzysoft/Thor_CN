@@ -1,7 +1,6 @@
-﻿Thor TWEeT #1:
+﻿Thor TWEeT #1:### [PEM Editor](https://github.com/VFPX/PEMEditor), [GoFish](https://github.com/mattslay/GoFish), and Replace code window context menu items
 ===
-
-### [PEM Editor](https://github.com/VFPX/PEMEditor), [GoFish](https://github.com/mattslay/GoFish), and Replace code window context menu items
+_本文档由 xinjie 于 2018-04-08 翻译_
 
 While at SW Fox, I realized that many of the tools from Thor aren't being used because there are simply so many of them. It seems that there might be wider usage if they were properly introduced, at a more relaxed pace.
 
