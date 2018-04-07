@@ -2,12 +2,11 @@
 ===
 _本文档由 xinjie 于 2018-04-07 翻译_
 
-使用IDE Tools和其他工具更新[Thor](Thor.md)，[Thor Repository](Thor_repository.md)，[PEM Editor 7](https://github.com/VFPX/PEMEditor) 因为[VFPX]（https://github.com/VFPX）中的所有项目都可以通过Thor菜单上的单个菜单（在FoxPro系统菜单中）使用。 菜单'检查更新'可检查是否有更新可用于任何这些应用程序; 如果找到，它们会被自动下载并安装。
+使用IDE Tools和其他工具更新[Thor](Thor.md)，[Thor Repository](Thor_repository.md)，[PEM Editor 7](https://github.com/VFPX/PEMEditor) 因为[VFPX](https://github.com/VFPX)中的所有项目都可以通过Thor菜单上的单个菜单（在FoxPro系统菜单中）使用。 菜单'检查更新'可检查是否有更新可用于任何这些应用程序; 如果找到，它们会被自动下载并安装。
 
 ![](Images/Thor_One-Cick_Update_image_4.png)
 
-“检查更新”从确定是否有更新版本的Thor本身开始。 如果是这样，它会显示如下消息：
-“Check for Updates” begins by determining whether there is a newer version of Thor itself. If so, it displays a message like the following:
+“检查更新”从确定是否有更新版本的Thor开始。 如果存在，它会显示如下消息：
 
 ![](Images/Thor_One-Cick_Update_SNAGHTML17f44631.png)
 
