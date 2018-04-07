@@ -5,7 +5,7 @@
 ---
 _本文档由 xinjie 于 2018-04-07 翻译_
 
-*** Thor Repository **是可通过Thor访问的IDE工具集合，由FoxPro社区成员编写。*
+** Thor Repository **是可通过Thor访问的IDE工具集合，由FoxPro社区成员编写。
 
 ![](Docs/Images/Thor_greenline.png)
 
