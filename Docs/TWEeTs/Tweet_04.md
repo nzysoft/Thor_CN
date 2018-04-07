@@ -1,20 +1,21 @@
-﻿Thor TWEeT #4: Insert full name of object under mouse
+﻿Thor TWEeT #4: 在鼠标下插入对象的全名
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-This week's TWEeT is **Insert full name of object under mouse** (the longer the tool name, the narrower it's focus)
+本周的TWEeT是**在鼠标下插入对象的全名**（工具名称越长，焦点越狭窄）
 
-This tool simplifies the task of inserting a reference to another object in the same form or class you are editing (VCXs / SCXs only).
+此工具简化了在你编辑同一表单或类时向另一个对象插入对另一个对象引用的操作（仅限VCX / SCX）。
 
-The directions are simple:
+方向很简单：
 
-1.  Place the cursor where you want the reference to be inserted in your code window. The focus must be on this method.
-2.  Move the mouse over the object you want to refer to.
-3.  Use the hot key you have assigned to **Insert full name of object under mouse.**
+1.  将光标放在希望将引用插入代码窗口的位置。 重点必须放在这种方法上。
+2.  将鼠标移动到要引用的对象上。
+3.  使用您分配的热键执行**在鼠标下插入对象的全名。**
 
-Two important parts of this to keep in mind:
+请记住这两个重要部分：
 
-1.  The focus must on the code window, not the form or class you are editing.
-2.  This tool ***only works by using a hot key***, since it reads what is under the mouse when you execute it.
+1.  焦点必须放在代码窗口上，而不是你正在编辑的表单或类。
+2.  这个工具***只能使用热键***，因为它执行时会读取鼠标下的内容。
 
 You may have problems with remembering so many hot keys (at least I do), particularly for tools like this that you might not be using with great regularity.  The way that I handle this is to add the tool to the [Thor Tool Bar](https://groups.google.com/forum/?fromgroups#!searchin/FoxProThor/toolbar/foxprothor/DvZMXuxIEwM/3NK3XnAFyqsJ). When I need it, the tooltip shows me the hot key.
 
