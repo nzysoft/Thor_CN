@@ -28,11 +28,11 @@ lxFormID也是
 .Save(ThisForm)|保存表单中属性的值，以便可以在下一个会话中恢复它们的值。 保存的属性是所有调用.Restore后恢复的属性。 此调用通常在Form's Destroy事件中进行
 
 
-### Sample usage:
+### 示例用法:
 
-In the form’s ‘**Init**’ event:
+在表单的 ‘**Init**’ 事件：
 
-#### [Click here for ThorFormSettings home page](Thor_framework_formsettings.md)
+#### [点击此处查看ThorFormSettings主页](Thor_framework_formsettings.md)
 
 
     loSettings) = ExecScript(_Screen.cThorDispatcher, "Class= ThorFormSettings", lxFormID)
