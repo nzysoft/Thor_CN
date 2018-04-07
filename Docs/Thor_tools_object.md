@@ -33,13 +33,13 @@ EditSourceX (cont.)|* 该文件被添加到其适当的MRU库。
 EditSourceX (cont.)|* 该文件以正确的文件名大小写打开，以便在保存时文件名的大小写不会被更改。
 EditSourceX (cont.)|* 如果该文件是类库，并且没有提供类名称，则会打开类浏览器。
 EditSourceX (cont.)|* 系统会询问您是否要从源代码管理中检出文件（如果您使用SCC并且已在首选项文件中标记了适当的项目）。
-FindObjects (tcSearchText)|Finds all objects matching the search criteria in {tcSearchText}. The search criteria are the same as are specified by the 'Find' (binoculars) search button. The result is a collection, where each item in the collection is an object with two properties:
-FindObjects (cont.)|1.  Object - a reference to the object
-FindObjects (cont.)|2.  FullObjectName - the full path name to the object
-FindObjects (cont.)|_For example, **.FindObjects ('Exists ("ControlSource")' )** returns a collection of all objects having a ControlSource._
-FindProcedure(tcName)|Finds a PRG named {tcName}, or a procedure or function named {tcName} within a PRG, or a constant named {tcName}, opens the file for editing, and highlights the searched-for name.
-GetBeautifyXOptions()|Returns a character result which, when executed with ExecScript, will re-create the current settings used by BeautifyX. Note that this does **not** include settings from native VFP Beautify.
-GetClass()|Prompts for class, using IDE Tools ‘Open Class’ dialog; returns object with two properties, ‘Class’ and ‘ClassLib’
+FindObjects (tcSearchText)|在{tcSearchText}中查找符合搜索条件的所有对象。 搜索标准与'查找'（双筒望远镜图标）的搜索按钮指定的相同。 结果是一个集合，集合中的每个项目都是具有两个属性的对象：
+FindObjects (cont.)|1.  Object - 对象的引用
+FindObjects (cont.)|2.  FullObjectName - 对象的完整路径名称
+FindObjects (cont.)|例如, **.FindObjects ('Exists ("ControlSource")' )** 返回具有 ControlSource 的所有对象的集合
+FindProcedure(tcName)|在PRG中找到一个名为{tcName}的PRG，或名为{tcName}的过程或函数，或名为{tcName}的常量，打开该文件进行编辑，并突出显示搜索到的名称。
+GetBeautifyXOptions()|返回一个字符结果，当使用ExecScript执行该结果时，将使用BeautifyX的当前设置重新予以美化。 请注意，这不会包含VFP原生美化的设置。
+GetClass()|使用IDE工具的“打开类”对话框时对类予以提示; 返回具有两个属性的对象，‘Class’ 和 ‘ClassLib’
 GetClassList(tcClass, tcClassLib, tlSearchClassLibs, tlSearchProcs, tlProjectVCXs, tlProjectPRGs, tcFolder, tlSubFolders)|Creates an array of all classes defined in the active project.  The array is the only property of the result object.  The array has three columns:
 GetClassList (cont.)|1.  Class name
 GetClassList (cont.)|2.  Class library (full path name)
