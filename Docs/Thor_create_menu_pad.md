@@ -1,16 +1,18 @@
-Creating New Menu Pads
+创建新的菜单
 ===
-To create a new pad in the VFP system menu bar:
-* Click on the **VFP System Menu** node at the top of the TreeView
-* Click on the Add Menu commandbutton
+_本文档由 xinjie 于 2018-04-08 翻译_
+
+要在VFP系统菜单栏中创建新的菜单项，请执行以下操作：
+* 点击TreeView顶部的**VFP系统菜单**节点
+* 点击添加菜单命令按钮
 ![](Images/Thor_Create_Menu_Pad_CreateMenuPad.png)
 
-You can now:
+你现在可以：
 
-* Assign the prompt for the new menu
-* Assign the text that will appear in the status bar
-9 Move the new menu up to where you want it to be displayed.  See [Moving menu pads](Thor_moving_menu_pads.md).
+* 为新菜单分配提示
+* 分配将出现在状态栏中的文本
+* 将新菜单移至想要显示的位置。参看 [移动菜单](Thor_moving_menu_pads.md).
 
 ![](Images/Thor_Create_Menu_Pad_CreateMenuPad2.png)
 
-You can also take an existing menu (either a pop-up menu or a sub-menu) and add it to the VFP system menu bar.  See [Duplicating menus](Thor_duplicating_menus.md).
+您也可以使用现有的菜单（弹出菜单或子菜单）并将其添加到VFP系统菜单栏。参看 [复制菜单](Thor_duplicating_menus.md).
