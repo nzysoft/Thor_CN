@@ -1,17 +1,18 @@
-Editing Existing Tools
+编辑现有工具
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-You can edit existing tools by using the second page (**Tool Definitions**) of the Thor form.
+您可以使用Thor表单的第二页（**工具定义**）编辑现有工具。
 
-You can open a tool for editing either by double-clicking its row in the grid, or by selecting the row and then clicking the 'Edit Tool' button.
+您可以打开一个工具进行编辑，方法是双击表格中的一行，或选择该行，然后单击“编辑工具”按钮。
 
-Note that changes made to the 'header' of the tool's PRG are not automatically reflected in the form's display;  see [General Usage Notes](Thor_form_usage_notes.md)
+请注意，对工具PRG的“标题”所做的更改不会自动反映在表单的显示中; 参看[一般使用说明](Thor_form_usage_notes.md)
 
 ![](Images/Thor_Edit_Existing_tools.png)
 
 
-**See also**
-* [Browsing the list of tools](Thor_browsing_tools.md)
-* [Assigning hot keys to tools](Thor_assign_tool_hot_keys.md)
-* [Creating new tools](Thor_creating_new_tools.md)
-* [Tools to make tools](Thor_tools_making_tools.md)
+**参看**
+* [浏览工具列表](Thor_browsing_tools.md)
+* [将热键分配给工具](Thor_assign_tool_hot_keys.md)
+* [创建新工具](Thor_creating_new_tools.md)
+* [制作工具的工具](Thor_tools_making_tools.md)
