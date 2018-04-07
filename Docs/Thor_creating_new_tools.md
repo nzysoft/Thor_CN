@@ -9,7 +9,7 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 这将显示“创建工具”表单，该表单将指导您为新工具选择文件夹和文件名。
 
-Thor在以下文件夹中查找名为**Thor_Tool _ *.PRG**的文件：
+Thor在以下文件夹中查找名为 **Thor_Tool _ * .PRG** 的文件：
   
 1.  CurDir()  
 1. All folders in your path
