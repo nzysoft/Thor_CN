@@ -18,23 +18,23 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet7c.png)
 
-Note that there is no requirement that you call **Go To Definition** immediately.  You can come back at any time after writing the code to create the property or method.  Just click anywhere in the name (although if you want to create the LParameters list, you need to click after the right parenthesis) and then call **Go To Definition.**
+请注意，您不需要立即调用**Go To Definition**。 编写代码以创建属性或方法后，您可以随时撤销。 只需单击名称中的任意位置（但如果要创建LParameters列表，则需要在右括号之后单击），然后调用**Go To Definition**。
 
-A couple of comments on this:
+对此有几点建议：
 
-*   I highly recommend trying this technique.  It is highly addictive. This is my tool of choice for creating properties and methods. For all the time I have spent in creating [PEM Editor](https://github.com/VFPX/PEMEditor), I *rarely* use it to create properties and methods.
-*   This is only one of great features from **Go To Definition**.  There will be more on it another day, in its own TWEeT.
+*   我强烈建议尝试这种技术。 这是非常容易上瘾的。 这是我创建属性和方法的首选工具。 我一直花在创建[PEM编辑器](https://github.com/VFPX/PEMEditor)上，我*很少*使用它来创建属性和方法。
+*   这只是**Go To Definition**的重要功能之一。 有一天，在它自己的TWEeT中将会有更多解释。
 
-Form properties can also be referenced by other properties, such as ControlSource and RecordSource. If you use [PEM Editor](https://github.com/VFPX/PEMEditor) to edit the ControlSource or RecordSource properties, you will automatically be given the opportunity to create a new property when you click Save.
+表单属性也可以被其他属性引用，如ControlSource和RecordSource。 如果您使用[PEM编辑器](https://github.com/VFPX/PEMEditor)编辑ControlSource或RecordSource属性，则当您单击保存时，您将自动获得创建新属性的机会。
 
-For all of these uses, the following features (not available from standard New Property and New Method) are available:
+对于所有这些用途，以下功能（不可用于标准“新建属性”和“新方法”）均可用：
 
-*   MemberData is automatically updated if the name contains any uppercase characters.
-*   If you are creating a new property:
-    *   There is an option to set the initial value of the property based on the first character of the property name (‘c’ = Character, ‘n’ = Numeric, etc). Default = ON
-    *   You can create a [Plug-In](../Thor_add_plugins.md) to use some other method for assigning the initial values (such as using the second character)
-*   If you are creating a new method:
-    *   You can open it immediately for editing.
-    *   You can create a [Plug-In](../Thor_add_plugins.md) that will populate the header of the newly created method. 
+*   如果名称包含任何大写字符，MemberData将自动更新。
+*   如果你正在创建一个新的属性：
+    *   有一个选项可以根据属性名称的第一个字符（'c'= Character，'n'= Numeric等）设置属性的初始值。 Default = ON
+    *   您可以创建一个[Plug-In](../Thor_add_plugins.md)来使用其他方法来分配初始值（例如使用第二个字符）
+*   如果你正在创建一个新的方法：
+    *   您可以立即打开它进行编辑。
+    *   您可以创建一个[Plug-In](../Thor_add_plugins.md)，它将填充新创建的方法的标题。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
