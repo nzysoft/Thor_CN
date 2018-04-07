@@ -14,8 +14,8 @@ AddMenuItem参数允许您定义要执行的字符串或可在Activate方法之�
 
 这个对象然后可以如下使用：
 
-方法|含义|
----|---
+方法||含义
+---|---|---
 .AddMenuItem(lcPrompt, lcExec, lcStatusBar, lcKeyStroke, lcKeyWord, lxParameters)|lcPrompt. 菜单项的提示
 .AddMenuItem parameter|lcExec|String to be executed.  This may be empty, in which case lcKeyword and lxParameters are used.
 .AddMenuItem parameter|lcStatusBar|Text to be displayed on the status bar
