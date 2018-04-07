@@ -161,7 +161,7 @@ VFPX添加了两个新项目，并可从“检查更新”中找到。
 
 VFPX添加了两个新项目，并可从“检查更新”中找到。
 
-[VFP Runtime Installers](https://github.com/VFPX/VFPRuntimeInstallers) 包含VFP版本6到9的运行时安装程序（因为它们不再可从Microsoft网站获得）
+[VFP Runtime Installers](https://github.com/VFPX/VFPRuntimeInstallers) 包含VFP版本6到9的运行时安装程序(因为它们不再可从Microsoft网站获得)
 [StripeX](http://github.com/VFPX/StripeX) 是一个与Stripe.com合作的包装类。
  
 
