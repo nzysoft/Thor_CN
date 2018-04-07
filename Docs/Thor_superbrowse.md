@@ -99,15 +99,15 @@ Expression|Inlist(custno,10,20,30)|自解释
 Expression|'nit'$country|查找“nit”位于字段Country内的每条记录
 Value|usa|查找“usa”一词所在的每个记录**任何**所选字段
 Value|samsung 5110|查找单词'samsung'**和**'5110'在**任何**所选字段内的每条记录
-Value|jim nelson kong|Finds every record where the words 'jim' and 'nelson' and 'kong' are inside **any** of the selected fields
-Expression|\*jim nelson kong|Same as above, the asterisk (*) forces a Value type search**any** of the selected fields
-Value|=price>100|Find all records with price > 100, the equal sign (=) forces an Expression type search**any** of the selected fields
+Value|jim nelson kong|查找每个记录中**任意**所选字段包含'jim'和'nelson'以及'kong'字样的记录
+Expression|*jim nelson kong|与上面的相同，星号是用于强调**任意**所选的字段
+Value|=price>100|查找 price >100 的所有记录，等号（=）将强制执行表达式类型搜索**任意**所选字段
 
 
-#### Easy access to the right search type
+#### 轻松访问正确的搜索类型
 
-*   Begin the search text with an equal sign (=) to force an Expression type search
-*   Likewise, an asterisk (*) to force a Value type search
+*   用等号（=）开始搜索文本以强制执行表达式类型搜索
+*   同样，星号（*）强制执行值类型搜索
 
 #### For Value search, the following rules apply:
 
