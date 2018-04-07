@@ -21,14 +21,14 @@ Thor提供了一个工具框架来协助创建工具。
 
 Thor的结构提供了可以嵌入其他APP文件中对象。 特别是这两个，作为PEM编辑器的一部分开发。
 
-**cParameter** |**Result**
+**cParameter** |**结果**
 ---|---
 Class= editorwin from pemeditor|Methods to access and modify the text in the currently open editing window (Select, Cut, Copy, Paste, etc ...)  - 参看 [Thor 编辑窗口对象](Thor_editorwindow_object.md)/
 Class= tools from pemeditor|A collection of various methods, not related to each other, but of value beyond their use in PEM Editor – 参看 [Thor 工具对象](Thor_tools_object.md)
 
 
 ### 内部工具：
-
+    Result = Execscript (_Screen.cThorDispatcher, cParameter)
 **cParameter** |**Result**
 ---|---
 Class= ContextMenu|Returns an object used to create context menus - see [Thor ContextMenu](Thor_framework_contextmenu.md)
