@@ -1,11 +1,12 @@
-﻿Thor TWEeT #5: _Object and Collection Inspector_
+﻿Thor TWEeT #5: _对象和集合检查器_
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-When working with Objects and Collections, it doesn't take long to realize that there's no easy way to view the structure or properties of an Object or browse the contents of a Collection.
+处理对象和集合时，不需要很长时间就可以认识到没有简单的方法来查看对象的结构或属性或浏览集合的内容。
 
-The Watch window in the Debugger is a fair way to view an Object, of course, but there is simply nothing for viewing Collections.
+调试器中的监视窗口当然是查看对象的标准方式，但查看集合时根本没有任何内容。
 
-To fill this void, Tamar created the **Object and Collection Inspector** (which you may already have seen described elsewhere).
+为了填补这个空白，Tamar创建了 **Object and Collection Inspector** （您可能已经在其他地方看到过）。
 
 Now the **Object and Collection Inspector** is a Thor tool, with considerable enhancement. As show below, it displays a TreeView showing all the children for an object, or the items in a collection, with the values for all the properties shown on the right.  Double-clicking a property opens a zoom box for editing its values.
 
