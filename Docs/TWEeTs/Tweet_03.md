@@ -23,24 +23,24 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 *   **MRU class libraries** -- 仅提供MRU类库的列表（上面菜单中的第一项）
 *   **HackCX4 from MRU forms or classes** -- 创建一个弹出菜单，显示表单和类库的MRU，以便它们可以被HackCX4打开，（需要单独安装HackCX4 [WhiteLightComputing](http://www.whitelightcomputing.com/prodhackcxpro.htm))
-*   [Finder](https://github.com/VFPX/Finder) -- lists are available by right-clicking on either the "File Search" or "Class Search" buttons atop the screen.
-*   [PEM Editor](https://github.com/VFPX/PEMEditor) -- lists are available from the "Open File" button atop the screen.
+*   [Finder](https://github.com/VFPX/Finder) -- 通过右键单击屏幕顶部的“文件搜索”或“类搜索”按钮可以获得列表。
+*   [PEM Editor](https://github.com/VFPX/PEMEditor) -- 列表可从屏幕顶部的“打开文件”按钮获得。
 
-There are also two Thor tools that are slightly mis-named, as they really refer to most-recently-*changed* classes and files, based on timestamps rather than MRU lists. Note that **Finder** can also be used to find most-recently-changed classes and files
+还有两个Thor工具的名称稍有误，因为它们实际上是根据时间戳而不是MRU列表来引用最新近更改的类和文件。 请注意，**Finder**也可用于查找最近更改的类和文件
 
-*   **MRU classes in this project** - note that this uses the internal timestamp within a VCX for when a class was last updated, rather than the timestamp of the VCX file itself.
+*   **MRU classes in this project** - 请注意，这将在VCX内部使用内部时间戳，以用于上次更新类时的时间，而不是VCX文件本身的时间戳。
 *   **MRU files in this project**
 
-***Updating MRU lists from the Project Manager or Class Browser***
+***从项目管理器或类浏览器更新MRU列表***
 
-Thor provides files you can install so that files opened from the Project Manager or Class Browser will update your MRU lists appropriately. These files are found in folder Thor\Tools\Samples.
+Thor提供了可以安装的文件，以便从项目管理器或类浏览器中打开的文件将适当地更新您的MRU列表。 这些文件位于Thor\Tools\Samples文件夹中。
 
-> _Note: The MRU lists are updated only if you have run Thor. If you haven't, Project Manager and Class Browser will still work normally._
+> _注意：MRU列表仅在您运行Thor时更新。 如果你还没有，项目管理器和类浏览器仍然可以正常工作。_
 
-*   To change Project Manager, use the code from class BaseProjectHook of BaseProjectHooks.VCX
-    *   If you are not using ProjectHooks, modify the project to use this class (I recommend copying the class library to some other folder)
-    *   If you are already using ProjectHooks, simply copy the code from the only method in the class into your project hook file.
-*   To change Class Browser, copy the file Browser.APP into the home folder for FoxPro -- Home(1)
+*   要更改项目管理器，请使用BaseProjectHooks.VCX的BaseProjectHook类中的代码
+    *   如果您没有使用ProjectHooks，请修改该项目以使用此类（我建议将类库复制到其他文件夹）
+    *   如果您已经使用ProjectHooks，只需将该类中唯一方法的代码复制到您的项目钩子文件中即可。
+*   要更改类浏览器，将文件Browser.APP复制到FoxPro的主文件夹 - Home(1)
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
 
