@@ -1,34 +1,35 @@
-﻿Thor TWEeT #8: Creating Properties and Methods (Part 3)
+﻿Thor TWEeT #8: 创建属性和方法（第3部分）
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-This is the third and last in a series of TWEeTs showcasing the various ways that you can create properties and methods.
+这是TWEeTs系列中的第三个也是最后一个，展示了您可以创建属性和方法的各种方式。
 
-There is one more Thor tool that creates methods: **Extract to Method**.
+还有一个Thor工具可以创建方法：**提取到方法**。
 
-Use this tool when you have a block of method code (from a VCX or SCX) that you want to remove from the current code window and save into a new method.
+当您想要从当前代码窗口中删除并保存到新方法中的方法代码块（来自VCX或SCX）时使用此工具。
 
-The steps to do so are simple:
+这样做的步骤很简单：
 
-*   Highlight the lines of code you want to extract and move
-*   Invoke tool **Extract to Method**.
+*   突出显示要提取和移动的代码行
+*   调用工具**提取到方法**。
 
-This pops up a form where you can enter the name of the method to be created:
+这会弹出一个表单，您可以在其中输入要创建的方法的名称：
 
 ![](Images/Tweet8a.png)
 
-When you click “Apply”, the following steps are performed:
+当您点击“应用”时，将执行以下步骤：
 
-1.  The new method is created.
-2.  The code window for the new method is opened
-3.  The code you had highlighted in the original method is pasted into the new code window.
-4.  The highlighted code is removed from the original code window.
-5.  A reference to the new method is pasted into the original code window.
+1.  新方法已创建。
+2.  新方法的代码窗口打开
+3.  您在原始方法中突出显示的代码将粘贴到新的代码窗口中。
+4.  突出显示的代码将从原始代码窗口中删除。
+5.  对新方法的引用被粘贴到原始代码窗口中。
 
-Note as well the comments in the form that comes up:
+还要注意出现的表单中的注释：
 
-*   You can specify a result for your created method; the last line of the method returns that result and that result is also assigned in the original code window.
-*   You can specify parameters to your created method;  an LParameters statement is inserted at the beginning of the new code window and the parameters are used in the call in the original code window.
+*   您可以为您创建的方法指定结果; 该方法的最后一行返回该结果，并且该结果也在原始代码窗口中分配。
+*   您可以为您创建的方法指定参数; LParameters语句插入新代码窗口的开始处，并且参数在原始代码窗口中用于调用。
 
-**Extract to Method** works in code windows from VCXs and SCXs, but not PRGs.
+**提取到方法**在VCX和SCX的代码窗口中工作，而不是PRG。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
