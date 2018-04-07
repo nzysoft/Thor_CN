@@ -40,31 +40,31 @@ FindObjects (cont.)|例如, **.FindObjects ('Exists ("ControlSource")' )** 返�
 FindProcedure(tcName)|在PRG中找到一个名为{tcName}的PRG，或名为{tcName}的过程或函数，或名为{tcName}的常量，打开该文件进行编辑，并突出显示搜索到的名称。
 GetBeautifyXOptions()|返回一个字符结果，当使用ExecScript执行该结果时，将使用BeautifyX的当前设置重新予以美化。 请注意，这不会包含VFP原生美化的设置。
 GetClass()|使用IDE工具的“打开类”对话框时对类予以提示; 返回具有两个属性的对象，‘Class’ 和 ‘ClassLib’
-GetClassList(tcClass, tcClassLib, tlSearchClassLibs, tlSearchProcs, tlProjectVCXs, tlProjectPRGs, tcFolder, tlSubFolders)|Creates an array of all classes defined in the active project.  The array is the only property of the result object.  The array has three columns:
-GetClassList (cont.)|1.  Class name
-GetClassList (cont.)|2.  Class library (full path name)
-GetClassList (cont.)|3.  Internal timestamp (for VCX classes only)
-GetClassList (cont.)|The parameters provide for a number of different searches:
-GetClassList (cont.)|*   tcClass – name of class to search for (empty for all)
-GetClassList (cont.)|*   tcClassLib – name of VCX or PRG (empty for all)
-GetClassList (cont.)|*   tlSearchClassLibs – search Set(‘ClassLibs’)
-GetClassList (cont.)|*   tlSearchProcs – search Set(‘Procedures’)
-GetClassList (cont.)|*   tlProjectsVCXs – search VCXs in active project
-GetClassList (cont.)|*   tlProjectPRGs – search PRGs in active project
-GetClassList (cont.)|*   tcFolder – search all files in this folder (unless empty)
-GetClassList (cont.)|*   tcSubFolders – search sub-folders of tcFolder
-GetCurrentObject(tlTopOfForm)|If (tlTopOfForm) is true, returns the current form/class. Otherwise, returns the currently selected object.
-GetFullObjectName(toObject)|Returns the full name path of an object {toObject}
-GetPEMList(toObject, tcTypes|Returns a collection of the names of PEMs for an object.
-GetPEMList (cont.)|{toObject} may be
-GetPEMList (cont.)|*   an object reference
-GetPEMList (cont.)|*   .T. for the current form or class
-GetPEMList (cont.)|*   empty for the current object.
-GetPEMList (cont.)|{tcTypes} may be one or more of
-GetPEMList (cont.)|*   'P' (for properties),
-GetPEMList (cont.)|*   'E' (for Events),
-GetPEMList (cont.)|*   'M' (for Methods)
-GetPEMList (cont.)|or, if empty or missing, the collection will contain all PEMs.
+GetClassList(tcClass, tcClassLib, tlSearchClassLibs, tlSearchProcs, tlProjectVCXs, tlProjectPRGs, tcFolder, tlSubFolders)|创建活动项目中定义的所有类的数组。 该数组仅仅包含对象的唯一属性。 该数组有三列：
+GetClassList (cont.)|1.  类名
+GetClassList (cont.)|2.  类库（全路径名）
+GetClassList (cont.)|3.  内部时间戳（仅适用于VCX类）
+GetClassList (cont.)|这些参数提供了许多不同的搜索：
+GetClassList (cont.)|*   tcClass – 要搜索的类的名称（全部为空）
+GetClassList (cont.)|*   tcClassLib – VCX或PRG的名称（全部为空）
+GetClassList (cont.)|*   tlSearchClassLibs – 搜索 Set(‘ClassLibs’)
+GetClassList (cont.)|*   tlSearchProcs – 搜索 Set(‘Procedures’)
+GetClassList (cont.)|*   tlProjectsVCXs – 搜索活动项目中的VCX
+GetClassList (cont.)|*   tlProjectPRGs – 搜索活动项目中的PRG
+GetClassList (cont.)|*   tcFolder – 搜索此文件夹中的所有文件（除非空）
+GetClassList (cont.)|*   tcSubFolders – 搜索tcFolder的子文件夹
+GetCurrentObject(tlTopOfForm)|如果（tlTopOfForm）为true，则返回当前表单/类。 否则，返回当前选中的对象。
+GetFullObjectName(toObject)|返回对象的全名路径{toObject}
+GetPEMList(toObject, tcTypes|返回一个对象的PEM名称的集合。
+GetPEMList (cont.)|{toObject} 可以是
+GetPEMList (cont.)|*   一个对象引用
+GetPEMList (cont.)|*   .T. 表示当前表单或类
+GetPEMList (cont.)|*   空 表示当前对象
+GetPEMList (cont.)|{tcTypes} 可以是一个或多个的组合
+GetPEMList (cont.)|*   'P' (针对属性),
+GetPEMList (cont.)|*   'E' (针对事件),
+GetPEMList (cont.)|*   'M' (针对方法)
+GetPEMList (cont.)|或者, 如果空或缺少，集合将包含所有PEM。
 GetMRUList (tcName)|Returns a collection of file names in a MRU list. {tcName} may be a file name, a file extension, or the actual MRU-ID (if you know it)
 GetThis()|Returns the object that the current method belongs to.
 GetVariablesList(tcCodeBlock, tcTypes)|Returns an collection of the names of variables in the code block that are either Parameters (‘P’), Locals (‘L’), or assigned (‘!’).  An empty list for tcTypes returns a list of all variables that are parameters, locals, or assigned. A value of ‘#’ returns an object containing a single array (‘aList’) with two columns, listing all parameters, and local, private and public variables.
