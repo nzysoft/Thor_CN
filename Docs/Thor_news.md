@@ -175,7 +175,8 @@ Thor Version 1.40 发布: Thor 工具栏
 #### <a name="Headline18">#18, 2013-08-26</a>
  
 
-添加了Thor 工具栏。 可以使用下面Thor Configuration表单中显示的复选框（也可在Tool Launcher中找到）将工具添加到工具栏。TBL
+添加了Thor 工具栏。 可以使用下面Thor Configuration表单中显示的复选框（也可在Tool Launcher中找到）将工具添加到工具栏。
+
 ![](Images/Thor_SNAGHTMLf389404.png)
 
 将工具添加到Thor工具栏时，可以为该工具选择一个标题或选择一个图像来表示它。 在下面的示例中，使用缩写字符。
@@ -230,59 +231,59 @@ Thor拥有过多的工具 - 在众多的工具中你可能无法找到你感兴�
 
 ---
 
-Thor menus provide access to Discussion Forums and Change Logs
+Thor菜单提供对论坛和更改日志的访问
 ---
 
 #### <a name="Headline12">#12, 2012-11-16</a>
  
 
-The Thor menu has been changed to provide access to a number of related Discussion Forums.
+Thor菜单已更改为可访问多个相关的论坛。
 
-These forums are the preferred form of communication about these tools, rather than private emails, or using the Universal Thread, Foxite, or any other on-line forums.
+这些论坛是关于这些工具的首选沟通形式，而不是私人电子邮件，或使用Universal Thread，Foxite或任何其他在线论坛。
 
 ![](Images/Thor_forums.png)
 
 
-Change logs for the various tools and components of Thor are now available, as well as a link to the never ending list of Thor ERs.
+现在可以使用Thor各种工具和组件的更改日志，也可以链接到Thor ERs的永无止境的列表。
 
 ![](Images/Thor_news_image_thumb_5.png)
 
 ---
 
-Online FoxPro Users Group (OFUG) created
+在线FoxPro用户组（OFUG）创建
 ---
 
 #### <a name="Headline11">#11, 2012-11-10</a>
  
 
-A new Online Foxpro User Group is starting up. For more information, join the Google group at[ https://groups.google.com/forum/?fromgroups#!forum/ofug](https://groups.google.com/forum/?fromgroups#!forum/ofug).
+新的Online Foxpro用户组正在启动。 欲了解更多信息，请加入Google小组[ https://groups.google.com/forum/?fromgroups#!forum/ofug](https://groups.google.com/forum/?fromgroups#!forum/ofug).
 
-Meetings will be held the 3rd Tuesday of each month at 8:30 Eastern Standard Time via GotoMeeting.com or equivalent.
+会议将于每个月的第三个星期二在东部标准时间的8:30通过GotoMeeting.com或其他举行。
 
-Details about how to join the meeting will be published on the group forum (see link above) immediately before the me1ting is to start.
+有关如何加入会议的详情将在会议开始前立即在小组论坛上发布（请参阅上面的链接）。
 
-We intend to record the meeting and make it available on-line for those unable to attend.
+我们打算记录会议并在网上提供给那些无法参加的人。
 
-Next Meeting: Tuesday, November 20th, 8:30 PM Eastern Time (0130 UTC Wednesday, November 21)
+下次会议：美国东部时间11月20日星期二晚上8:30（11月21日星期三0130）
 
-Presenters:
+主持人：
 
 Matt Slay - Dynamic Forms
-Jim Nelson - PEM Editor and related tools
+Jim Nelson - PEM Editor 及相关工具
 
 ---
 
-New VFPX Project: FoxcodePlus
+新的 VFPX 项目: FoxcodePlus
 ---
 
 #### <a name="Headline10">#10, 2012-10-14</a>
  
 
-The new VFPX project [FoxcodePlus (Beta 1)](https://github.com/VFPX/FoxcodePlus) is available from Check For Updates.
+检查更新中提供了新的VFPX项目[FoxcodePlus（Beta 1）](https://github.com/VFPX/FoxcodePlus)。
 
-This project is ***not*** related to IntellisenseX, another VFPX project, although both provide Intellisense enhancements. FoxCodePlus provides a wider range of features and includes some of the features provided by IntellisenseX. Although not yet tested, it appears that the two may be used concurrently.
+这个项目与另一个VFPX项目IntellisenseX没有关系，尽管它们都提供了Intellisense增强功能。 FoxCodePlus提供更广泛的功能，并包含IntellisenseX提供的一些功能。 虽然尚未测试，但似乎可以同时使用两者。
 
-After downloading (which includes both the code and documentation), you can use the Thor menu pad in the system menu to 10en the folder in which these components are installed:
+下载完成后（包括代码和文档），您可以使用系统菜单中的Thor菜单安装这些组件的文件夹：
 
 ![](Images/Tweet10_foxcodeplus.png)
 
