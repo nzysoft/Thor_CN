@@ -52,103 +52,103 @@ Thor Repository中提供了许多新的Thor工具。
 
 ---
 
-Previous headlines
+以前的头条新闻
 ---
 
-**[#41, 2015-01-12 Two New Projects added to VFPX](#Headline41)**
+**[#41, 2015-01-12 添加到VFPX的两个新项目](#Headline41)**
 
 **[#40, 2014-01-04 TWEeT #27: Go To Definition](Tweet_27.md)**
 
-**[#39, 2014-12-22 TWEeT #26: Three New Thor Tools](Tweet_26.md)**
+**[#39, 2014-12-22 TWEeT #26: 三个新的 Thor 工具](Tweet_26.md)**
 
-**[#38, 2014-12-17 Two New Projects added to VFPX](#Headline38)**
+**[#38, 2014-12-17 添加到VFPX的两个新项目](#Headline38)**
 
-**[#37, 2014-11-30 TWEeT #25: Five New Thor Tools for FoxBin2PRG](Tweet_25.md)**
+**[#37, 2014-11-30 TWEeT #25: FoxBin2PRG的五个新Thor工具](Tweet_25.md)**
 
-**[#36, 2014-11-25 TWEeT #24: Nine New Thor Tools](Tweet_24.md)**
+**[#36, 2014-11-25 TWEeT #24: 九个新的 Thor 工具](Tweet_24.md)**
 
-**[#35, 2014-11-17 TWEeT #23: Buffer Overrun Detected!](Tweet_23.md)**
+**[#35, 2014-11-17 TWEeT #23: 检测到缓冲区溢出！](Tweet_23.md)**
 
-**[#34, 2014-06-11 TWEeT #22: Related IntellisenseX Tools](Tweet_22.md)**
+**[#34, 2014-06-11 TWEeT #22: 发布 IntellisenseX](Tweet_22.md)**
 
-**[#33, 2014-06-04 TWEeT #21: Advanced Features: Plug-Ins for IntellisenseX](Tweet_21.md)**
+**[#33, 2014-06-04 TWEeT #21: 高级功能：用于IntellisenseX的插件](Tweet_21.md)**
 
-**[#32, 2014-05-29 TWEeT #20: Quick Start Guide to IntellisenseX](Tweet_20.md)**
+**[#32, 2014-05-29 TWEeT #20: IntellisenseX快速入门指南](Tweet_20.md)**
 
-**[#31, 2014-05-21 TWEeT #19: Deficiencies in IntellisenseX (and how to avoid them) … The Custom Keyword List](Tweet_19.md)**
+**[#31, 2014-05-21 TWEeT #19: IntellisenseX中的缺陷（以及如何避免它们）...自定义关键字列表](Tweet_19.md)**
 
-**[#30, 2014-05-10 TWEeT #18: IntellisenseX for Nested Objects](Tweet_18.md)**
+**[#30, 2014-05-10 TWEeT #18: IntellisenseX嵌套对象](Tweet_18.md)**
 
-**[#29, 2014-04-29 TWEeT #17: Using Local Aliases in IntellisenseX](Tweet_17.md)**
+**[#29, 2014-04-29 TWEeT #17: 在IntellisenseX中使用本地别名](Tweet_17.md)**
 
-**[#28, 2014-03-03 TWEeT #16: Custom Keyword List for Field Names](Tweet_16.md)**
+**[#28, 2014-03-03 TWEeT #16: 字段名称的自定义关键字列表](Tweet_16.md)**
 
-**[#27, 2014-02-24 TWEeT #15: IntellisenseX and the Alias Dictionary](Tweet_15.md)**
+**[#27, 2014-02-24 TWEeT #15: IntellisenseX和别名字典](Tweet_15.md)**
 
 **[#26, 2014-02-17 TWEeT #14: IntellisenseX for Objects](Tweet_14.md)**
 
-**[#25, 2014-02-10 TWEeT #13: New (hidden) IntellisenseX Feature](Tweet_13.md)**
+**[#25, 2014-02-10 TWEeT #13: 新的（隐藏的）IntellisenseX功能](Tweet_13.md)**
 
-**[#24, 2014-02-03 TWEeT #12: IntellisenseX by Dot or by Hot Key?](Tweet_12.md)**
+**[#24, 2014-02-03 TWEeT #12: IntellisenseX 使用"."操作符还是使用快捷键？](Tweet_12.md)**
 
-**[#23, 2014-01-27 TWEeT #11: IntellisenseX: Aliases for VFP Tables](Tweet_11.md)**
+**[#23, 2014-01-27 TWEeT #11: IntellisenseX: VFP表的别名](Tweet_11.md)**
 
-**[#22, 2014-01-20 TWEeT #10: IntellisenseX: Field Names from SQL Server Tables](Tweet_10.md)**
+**[#22, 2014-01-20 TWEeT #10: IntellisenseX: SQL Server表中的字段名称](Tweet_10.md)**
 
-**[#21, 2014-01-13 TWEeT #9: Extract to Variable and Extract to Constant](Tweet_09.md)**
+**[#21, 2014-01-13 TWEeT #9: 提取到变量和提取为常量](Tweet_09.md)**
 
-**[#20, 2014-01-05 TWEeT #8: Creating Properties and Methods (#3)](Tweet_08.md)**
+**[#20, 2014-01-05 TWEeT #8: 创建属性和方法 (#3)](Tweet_08.md)**
 
-**[#19, 2013-12-18 TWEeT #7: Creating Properties and Methods (#2)](Tweet_07.md)**
+**[#19, 2013-12-18 TWEeT #7: 创建属性和方法 (#2)](Tweet_07.md)**
 
-**[#18, 2013-08-26 Thor Version 1.40 released: Thor ToolBar](#Headline18)**
+**[#18, 2013-08-26 Thor Version 1.40 发布: Thor 工具栏](#Headline18)**
 
-**[#17, 2013-06-23 New VFPX Project: Finder](#Headline17)**
+**[#17, 2013-06-23 新的 VFPX 项目: Finder](#Headline17)**
 
-**[#16, 2013-03-31 New Video: 50 Ways to Run a Thor Tool](#Headline16)**
+**[#16, 2013-03-31 新视频：运行Thor工具的50种方法](#Headline16)**
 
-**[#15, 2012-03-05 New Thor Tool: AutoComplete](#Headline15)**
+**[#15, 2012-03-05 新的 Thor 工具: AutoComplete](#Headline15)**
 
-**[#14, 2012-01-16 Thor videos available from Thor menu](#Headline14)**
+**[#14, 2012-01-16 Thor视频可从Thor菜单中获得](#Headline14)**
 
-**[#13, 2012-01-05 Thor's Tool Launcher: The one tool you must use](#Headline13)**
+**[#13, 2012-01-05 Thor 的工具启动器：你必须使用的工具之一](#Headline13)**
 
-**[#12, 2012-11-16 Thor menus provide access to Discussion Forums and Change Logs](#Headline12)**
+**[#12, 2012-11-16 Thor 菜单提供对论坛和更改日志的访问](#Headline12)**
 
-**[#11, 2012-11-10 Online FoxPro Users Group (OFUG) created](#Headline11)**
+**[#11, 2012-11-10 在线FoxPro用户组（OFUG）已创建](#Headline11)**
 
-**[#10, 2012-10-14 New VFPX Project: FoxcodePlus](#Headline10)**
+**[#10, 2012-10-14 新的 VFPX 项目: FoxcodePlus](#Headline10)**
 
-**[#9, 2012-10-06 Easy access to all VFPX home pages](#Headline9)**
+**[#9, 2012-10-06 轻松访问所有VFPX主页](#Headline9)**
 
-**[#8, 2012-09-30 IntellisenseX released as a VFPX project](#Headline8)**
+**[#8, 2012-09-30 IntellisenseX 作为一个 VFPX 项目已发布](#Headline8)**
 
-**[#7, 2012-09-19 All VFPX projects can be downloaded from Thor](#Headline7)**
+**[#7, 2012-09-19 所有VFPX项目都可以从Thor下载](#Headline7)**
 
-**[#6, 2012-09-16 Use the Thor discussion group](#Headline6)**
+**[#6, 2012-09-16 使用Thor讨论组](#Headline6)**
 
-**[#5, 2012-09-10 IntellisenseX released](#Headline5)**
+**[#5, 2012-09-10 IntellisenseX 发布](#Headline5)**
 
-**[#4, 2012-09-09 Data Explorer is now a Thor tool](#Headline4)**
+**[#4, 2012-09-09 Data Explorer 现在成为 Thor 工具](#Headline4)**
 
-**[#3, 2012-09-04 New VFPX Projects: Dynamic Forms & Data Explorer](#Headline3)**
+**[#3, 2012-09-04 新的 VFPX 项目: Dynamic Forms & Data Explorer](#Headline3)**
 
-**[#2, 2012-08-30 Join the Thor Beta discussion group](#Headline2)**
+**[#2, 2012-08-30 加入Thor Beta讨论组](#Headline2)**
 
-**[#1, 2012-08-25: Introducing Thor News](#Headline1)**
+**[#1, 2012-08-25: 介绍Thor新闻](#Headline1)**
 
 ---
 
-Two New Projects added to VFPX 
+添加到VFPX的两个新项目
 ---
 
 #### <a name="Headline41"> #41, 2015-01-12</a>
  
 
-Two new projects have been added to VFPX and are available from Check For Updates.
+VFPX添加了两个新项目，并可从“检查更新”中找到。
 
-* [ThemedTitleBar](https://github.com/VFPX/ThemedTitleBar) -- The TitleBar of a VFP form displayed ‘In Screen’ or ‘In Top-Level Form’ looks a bit outdated nowadays, at least running in Win8 and compared to Office 2013 or Visual Studio 2013. The goal of this project is to provide a modern drop-in replacement for the default TitleBar, requiring no code changes to existing forms.
-* [VFP 9 SP2 Hotfix 3 Download](https://github.com/VFPX/VFP9SP2Hotfix3) is the most recent hotfix for VFP 9 SP2. The hotfix includes all three hotfixes released for VFP 9 SP2
+* [ThemedTitleBar](https://github.com/VFPX/ThemedTitleBar) -- 显示为'In Screen'或'In Top-Level Form'的VFP表单的标题栏现在看起来有些过时，至少在Win8上运行，与Office 2013或Visual Studio 2013相比较。此项目的目标是提供一个时髦的TitleBar以直接替换默认TitleBar，不需要更改现有表单的代码。
+* [VFP 9 SP2 Hotfix 3 Download](https://github.com/VFPX/VFP9SP2Hotfix3) 是VFP 9 SP2的最新修补程序。 此修补程序包括为VFP 9 SP2发布的所有三个修补程序
  
 
 See also [History of all Thor TWEeTs](TWEeTs.md) and the [Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
