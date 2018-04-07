@@ -29,25 +29,25 @@ loEditorWin = Execscript (_Screen.cThorDispatcher, 'class= editorwin from pemedi
 CloseWindow()|关闭当前窗口
 FindLastWindow()|返回最近使用的窗口的句柄，它是来自Form或Class Designer的PRG或方法代码。
 FindWindow() |保存当前活动窗口的句柄，并返回其窗口类型：
-FindWindow() return value x|x=0: Command Window, Form and Class Designers, other FoxPro windows|
-FindWindow() return value x|x=1: Program file (MODIFY COMMAND)|
-FindWindow() return value x|x=2: Text Editor (MODIFY FILE)|
-FindWindow() return value x|x=8: Menu code edit window|
-FindWindow() return value x|x=10: Method code edit window of the Class or Form Designer
-FindWindow() return value x|x=12: Stored procedure in a DBC (MODIFY PROCEDURE)
-FindWindow() return value x|x=-1: None
-GetHeight()|Returns the height of the editing window, in pixels.
-GetLeft()|Returns the left position of the editing window, in pixels.
-GetOpenWindows()|Returns a collection of the handles of all open windows, most recently used first.
-GetTitle()|Returns the title for the current window
-GetTop()|Returns the top position of the editing window, in pixels.
-GetWidth()|Returns the width of the editing window, in pixels.
-GetWindowHandle()|Returns the handle of the current editing window
-MoveWindow (tnLeft, tnTop)|Moves the editing window to position {tnLeft}, {tnTop}. Both are in pixels.
-ResizeWindow (tnWidth, tnHeight)|Resizes the editing window to {tnWidth} by {tHeight}. Both are in pixels.
-SelectWindow (tnHandle)|Selects (brings to the foreground) window with handle {tnhandle}
-SetHandle (tnHandle)|Sets the handle (used to indicate the window being referenced in most of these commands)
-SetTitle (tcNewTitle)|Sets the title for the editing window to {tcNewTitle}
+FindWindow() return value x|x=0: 命令窗口，表单和类设计器，其他FoxPro窗口|
+FindWindow() return value x|x=1: 程序文件 (MODIFY COMMAND)|
+FindWindow() return value x|x=2: 文本编辑器 (MODIFY FILE)|
+FindWindow() return value x|x=8: 菜单代码编辑窗口|
+FindWindow() return value x|x=10: 类或表单设计器的方法代码编辑窗口
+FindWindow() return value x|x=12: DBC 的存储过程 (MODIFY PROCEDURE)
+FindWindow() return value x|x=-1: 无
+GetHeight()|返回编辑窗口的高度，以像素为单位。
+GetLeft()|返回编辑窗口的左侧位置，以像素为单位。
+GetOpenWindows()|返回最近最先使用的所有打开窗口句柄的集合。
+GetTitle()|返回当前窗口的标题
+GetTop()|返回编辑窗口的顶部位置，以像素为单位。
+GetWidth()|返回编辑窗口的宽度，以像素为单位。
+GetWindowHandle()|返回当前编辑窗口的句柄
+MoveWindow (tnLeft, tnTop)|将编辑窗口移动到位置{tnLeft}，{tnTop}。 两者都以像素为单位。
+ResizeWindow (tnWidth, tnHeight)|{tHeight}将编辑窗口的大小调整为{tnWidth}。 两者都以像素为单位。
+SelectWindow (tnHandle)|选择句柄{tnhandle}的窗口
+SetHandle (tnHandle)|设置句柄（用于指示大多数这些命令中引用的窗口）
+SetTitle (tcNewTitle)|将编辑窗口的标题设置为{tcNewTitle}
 
 
 ### Text manipulation
