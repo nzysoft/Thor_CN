@@ -65,11 +65,11 @@ GetPEMList (cont.)|*   'P' (针对属性),
 GetPEMList (cont.)|*   'E' (针对事件),
 GetPEMList (cont.)|*   'M' (针对方法)
 GetPEMList (cont.)|或者, 如果空或缺少，集合将包含所有PEM。
-GetMRUList (tcName)|Returns a collection of file names in a MRU list. {tcName} may be a file name, a file extension, or the actual MRU-ID (if you know it)
-GetThis()|Returns the object that the current method belongs to.
-GetVariablesList(tcCodeBlock, tcTypes)|Returns an collection of the names of variables in the code block that are either Parameters (‘P’), Locals (‘L’), or assigned (‘!’).  An empty list for tcTypes returns a list of all variables that are parameters, locals, or assigned. A value of ‘#’ returns an object containing a single array (‘aList’) with two columns, listing all parameters, and local, private and public variables.
-SelectObject (toObject)|Selects {toObject} as the current object displayed in the PEM Editor form and in the Properties Window (if possible).
-UseHighlightedTable()|SELECTs or USEs the current highlighted file.  
-UseHighlightedTable (cont.)|If the alias exists, it SELECTs it.  Otherwise, it looks for {PEME_OpenTable.PRG} and executes it, assuming that it will open the table (if possible)
-UseHighlightedTable (cont.)|If there is no highlighted text, uses the current cursor or table.  
-UseHighlightedTable (cont.)|An example of {PEME_OpenTable.PRG} can be found in the sub-folder **Dynamic Snippets\Snippet Samples** of the installation folder for PEM Editor. You can activate this by copying it to its parent folder (make any adjustments to it as you need.)
+GetMRUList (tcName)|返回MRU列表中文件名的集合。 {tcName}可能是文件名，文件扩展名或实际的MRU-ID（如果你知道的话）
+GetThis()|返回当前方法所属的对象。
+GetVariablesList(tcCodeBlock, tcTypes)|返回代码块中的 Parameters (‘P’), Locals (‘L’), 或者 assigned (‘!’)的变量名称集合。 如果tcTypes为空列表返回所有变量的参数。 如果tcTypes为'＃'则返回一个包含两列的单一数组（'aList'）的对象，其中，列出了所有参数以及局部，私有和公共变量。
+SelectObject (toObject)|选择{toObject}作为PEM编辑器窗体和属性窗口中显示的当前对象（如果可能）。
+UseHighlightedTable()|选择或打开当前突出显示的文件。  
+UseHighlightedTable (cont.)|如果别名存在，则选择它。 否则，它会查找{PEME_OpenTable.PRG}并执行它，假设它将打开表（如果可能的话）
+UseHighlightedTable (cont.)|如果没有突出显示的文本，则使用当前的游标或表。 
+UseHighlightedTable (cont.)|在PEM编辑器的安装文件夹的子文件夹** Dynamic Snippets \ Snippet Samples **中可找到{PEME_OpenTable.PRG}的示例。 您可以通过将其复制到其父文件夹来激活它（根据需要对其进行任何调整）。
