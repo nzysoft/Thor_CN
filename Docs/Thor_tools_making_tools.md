@@ -17,7 +17,7 @@ Thor提供了一个工具框架来协助创建工具。
 
 ![](Images/Thor_Tools_Making_Tools_image_2.png)
 
-### External APPs:
+### 外部APP：
 
 The structure of Thor provides for the inclusion of other objects embedded in APP files.  In particular are these two, developed as part of PEM Editor.  
 
@@ -27,7 +27,7 @@ Class= editorwin from pemeditor|Methods to access and modify the text in the cur
 Class= tools from pemeditor|A collection of various methods, not related to each other, but of value beyond their use in PEM Editor – see [Thor Tools Object](Thor_tools_object.md)
 
 
-### Internal Tools:
+### 内部工具：
 
 **cParameter** |**Result**
 ---|---
@@ -40,10 +40,10 @@ Run|Runs Thor.  Same as  Do Thor with ‘Run’  or  Do RunThor
 Edit|Opens Thor form.  Same as Do Thor with ‘Edit’
 Clear HotKeys|Removes all Thor-assigned keyboard macros so that a macros (FKY) file can be saved
 
-### See also
+### 参看
 
-*   [Browsing the list of tools](Thor_browsing_tools.md)
-*   [Assigning hot keys to tools](Thor_assign_tool_hot_keys.md)
-*   [Editing existing tools](Thor_editing_existing_tools.md)
-*   [Creating new tools](Thor_creating_new_tools.md)
+*   [浏览工具列表](Thor_browsing_tools.md)
+*   [为工具指定快捷键](Thor_assign_tool_hot_keys.md)
+*   [编辑已有工具](Thor_editing_existing_tools.md)
+*   [创建新的工具](Thor_creating_new_tools.md)
 
