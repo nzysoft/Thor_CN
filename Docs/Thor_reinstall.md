@@ -1,14 +1,15 @@
-﻿Installing an updated version of Thor
+﻿安装和更新 Thor
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-To install an updated version of Thor, simply unzip the installation zip file on top of the current version of Thor.  
+要安装Thor的更新版本，只需将最新版本的Thor的安装zip文件解压缩即可。
 
-Do ***not*** install Thor in a new folder or erase the Thor sub-folder, as you will lose any menus, hot keys, etc, that you have created.  
+**不要**将Thor安装在新文件夹中或删除Thor子文件夹，因为这将失去所有已创建的菜单，热键等。
 
-This will replace Thor.APP, and will not modify or delete any of the settings and tools that you have installed.  
+这将取代Thor.APP，并且不会修改或删除您已安装的任何设置和工具。
 
-Any updates necessary for the new version will be automatically installed the first time that you run Thor thereafter,  
+此后，在第一次运行Thor时，新版本所需的任何更新都将自动安装，
 
-**[Click here to download the latest release of Thor I](https://github.com/VFPX/Thor/archive/master.zip)
+**[点击此处下载最新版本的 Thor](https://github.com/VFPX/Thor/archive/master.zip)
 
 
