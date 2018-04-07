@@ -9,13 +9,13 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 ![](Images/Thor_greenline.png)
 
-**Download:** [Thor Repository.Zip](http://vfpxrepository.com/dl/thorupdate/Tools/Thor_Repository/Thor_Repository.zip)
+**下载:** [Thor Repository.Zip](http://vfpxrepository.com/dl/thorupdate/Tools/Thor_Repository/Thor_Repository.zip)
 
-**Complete Catalog:** **[Catalog of all Thor Repository Tools](https://github.com/VFPX/ThorRepository/blob/master/documents/ThorRepositoryCatalog.md)**
+**完整目录:** **[所有 Thor Repository 工具的目录](https://github.com/VFPX/ThorRepository/blob/master/documents/ThorRepositoryCatalog.md)**
 
-**Discussions:** [Post questions, bug reports, discussions in the Thor Discussion Group](http://groups.google.com/group/FoxProThor)
+**讨论组:** [在Thor讨论组发布问题，错误报告和讨论](http://groups.google.com/group/FoxProThor)
 
-**Home page for Thor:** [**Thor**](https://github.com/VFPX/Thor)
+**Thor主页:** [**Thor**](https://github.com/VFPX/Thor)
 
 ![](Images/Thor_greenline.png)
 
