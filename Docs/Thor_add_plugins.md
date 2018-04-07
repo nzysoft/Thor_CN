@@ -46,27 +46,27 @@ Spell Field Names|确定表格中字段名称的拼写。 请注意，已经提�
 
 ### <a name="CreateLocalsStatements">**CreateLocalsStatements**</a>
 
-This plug-in is called after either of the Thor tools that create LOCALs, “Create Locals” and “BeautifyX”, have compiled a list of all the variables assigned in a procedure.
+这个插件是创建LOCAL 语句的一个Thor工具，“Create Locals”和“BeautifyX”都可以。它们编译了一个过程中分配的所有变量的列表。
  
-The parameter is a ten column array, as described in the comments.
+该参数是一个十列数组，如注释中所述。
  
-The result is to be a character string, with embedded CRs as desired, that is to be the text of the new LOCAL statements.
+结果是一个字符串，根据需要嵌入CR，这就是新LOCAL语句的文本。
  
-The sample provided is the exact code that is used within Thor. You can thus tailor the content and display of the LOCAL statements to fit your needs.
+提供的样本是在Thor中使用的确切代码。 因此，您可以定制内容并显示LOCAL声明以适应您的需求。
 
 ### <a name="IntellisenseX">**IntellisenseX**</a>
 
-When you press the dot to initiate IntellisenseX, it goes through a number of paces to determine the meaning of the text preceding the dot (is it an alias? is it an object? and so on).
+当你按“.”来启动IntellisenseX时，它会经过许多步骤来确定点之前的文本的含义（它是一个别名吗？它是一个对象吗？等等）。
  
-If all possibilities fail, the last recourse is to call this plug-in that allows you to interpret the text before the dot. The parameter passed to the plug-in is an object containing a number of different properties, as described in the comments. There a number of different results that can be returned to generate the IntellisenseX drop-down list.
+如果所有的可能性都失败了，最后的方法是调用这个插件，它允许您在点之前解释文本。 传递给插件的参数是一个包含许多不同属性的对象，如注释中所述。 可以返回许多不同的结果来生成IntellisenseX下拉列表。
  
-There is much that can be done with this PRG, including (but not limited to) these two capabilities demonstrated in the sample PRG:
+这个PRG有很多工作可以完成，包括（但不限于）样本PRG中显示的这两种功能：
  
-1.  **SQL server table** - If you use SQL server tables, you could use SQLColumns() to get the list of fields from a table. The sample PRG uses a different approach, reading the table definition from  a dictionary in a free table.
-2.  **Data Object** – If you have forms or classes that have data objects and you can readily extract the alias for the underlying table from these forms or classes, you can have the fields from the table appear in the IntellisenseX dropdown. There are probably an infinite number of ways that this could be implemented, and the sample demonstrates three of them:
-    *   If the parameter passed in is “This.oData” (such as from wwBusiness) and the class has a property “cAlias”, then it is used as the alias for the underlying table.
-    *   If the parameter passed in is “Thisform.oBusObj.oData” (such as from wwBusiness) and the class/form has a property “cAlias”, then it is used as the alias for the underlying table.
-    *   If the class name is “bo_” + {SomeName}, then {SomeName} is used as the alias for the underlying table.
+1.  **SQL server table** - 如果您使用SQLServer表，则可以使用SQLColumns（）从表中获取字段列表。 示例PRG使用不同的方法，从空闲表中的字典中读取表定义。
+2.  **Data Object** – 如果您有拥有包含数据对象的表单或类，并且可以从这些表单或类中轻松提取基础表的别名，则可以让表中的字段显示在IntellisenseX下拉列表中。 可能有无数种方法可以实施，样本可以演示其中的三种：
+    *   如果传入的参数是“This.oData”（例如来自wwBusiness）并且该类有一个属性“cAlias”，那么它将用作基础表的别名。
+    *   如果传入的参数是“Thisform.oBusObj.oData”（例如来自wwBusiness）并且类/表单具有属性“cAlias”，那么它将用作基础表的别名。
+    *   如果类名是“bo_”+ {SomeName}，那么{SomeName}将用作基础表的别名。
 
 ### <a name="OpenTable">**OpenTable**</a>
 
