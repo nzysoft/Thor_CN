@@ -24,18 +24,18 @@ Thor的结构提供了可以嵌入其他APP文件中对象。 特别是这两个
     Result = Execscript (_Screen.cThorDispatcher, cParameter)
 **cParameter** |**Result**
 ---|---
-Class= editorwin from pemeditor|Methods to access and modify the text in the currently open editing window (Select, Cut, Copy, Paste, etc ...)  - 参看 [Thor 编辑窗口对象](Thor_editorwindow_object.md)/
-Class= tools from pemeditor|A collection of various methods, not related to each other, but of value beyond their use in PEM Editor – 参看 [Thor 工具对象](Thor_tools_object.md)
+Class= editorwin from pemeditor|访问和修改当前打开的编辑窗口中的文本（选择，剪切，复制，粘贴等）的方法  - 参看 [Thor 编辑窗口对象](Thor_editorwindow_object.md)/
+Class= tools from pemeditor|各种方法的集合，彼此无关，但具有超越其在PEM编辑器中使用的价值 – 参看 [Thor 工具对象](Thor_tools_object.md)
 
 
 ### 内部工具：
     Result = Execscript (_Screen.cThorDispatcher, cParameter)
 **cParameter** |**Result**
 ---|---
-Class= ContextMenu|Returns an object used to create context menus - see [Thor ContextMenu](Thor_framework_contextmenu.md)
-Class= ThorFormSettings|Returns an object so that forms can save their settings (size, position, etc) and align the form to the mouse or cursor position – see [Thor FormSettings](Thor_framework_formsettings.md)
-Class= FindEXE|(documentation not yet available)
-Tool Folder=|Returns the name of Thor’s tool folder
+Class= ContextMenu|返回用于创建关联菜单的对象 - see [Thor 关联菜单](Thor_framework_contextmenu.md)
+Class= ThorFormSettings|返回一个对象，以便表单可以保存其设置（大小，位置等）并将表单与鼠标或光标位置对齐 – see [Thor FormSettings](Thor_framework_formsettings.md)
+Class= FindEXE|（文档尚未提供）
+Tool Folder=|返回Thor工具文件夹的名称
 Thor Register=|Returns an object so that an APP can self-register its own tools, such as is done by [GoFish 5](https://github.com/mattslay/GoFish) and [PEM Editor 7](https://github.com/VFPX/PEMEditor).
 Run|Runs Thor.  Same as  Do Thor with ‘Run’  or  Do RunThor
 Edit|Opens Thor form.  Same as Do Thor with ‘Edit’
