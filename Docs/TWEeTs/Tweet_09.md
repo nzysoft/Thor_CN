@@ -13,22 +13,22 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet9a.png)
 
-The form that pops up allows you to enter the name of the new variable, whether all occurrences of the string are to be replaced (if not, only the highlighted one will be), and whether tool ‘Create Locals’ should be run to add this new variable to your LOCAL statements.
+弹出的表单允许您输入新变量的名称，是否要替换所有出现的字符串（如果不是，只会突出显示的那个），以及是否应该运行工具“Create Locals”以添加 这个新的变量给你的LOCAL语句。
 
 ![](Images/Tweet9b.png)
 
-The modified code looks like this:
+修改后的代码如下所示：
 
 ![](Images/Tweet9c.png)
 
-**Extract to Constant** works in a similar fashion, except that it creates a #Define statement either at the top of the current code window or in any of the #Include files that apply to the code window:
+**提取到常量**以类似的方式工作，除了它会在当前代码窗口的顶部或应用于代码窗口的任何#Include文件中创建一个#Define语句：
 
 ![](Images/Tweet9d.png)
 
-I find that these three related tools, **Extract to Method / Variable / Constant**, to be of considerable value but I do not use any one of them often enough to assign hot keys to each of them.  Instead, I use a  [Popup Menu](../Thor_create_popup_menu.md), which I bring up by using a single hot key (I have chosen Ctrl+E, for “Extract”).
+我发现这三个相关的工具，**提取到方法/变量/常量**，具有相当大的价值，但我没有为使用它们中的任何一个而将热键分配给它们中的每一个。 相反，我使用了一个[Popup Menu](../Thor_create_popup_menu.md)，我为它使用一个热键（我选择了Ctrl + E来使用“提取”）。
 
 ![](Images/Tweet9e.png)
 
-There is a Thor tool to create this popup menu and a number of others.  Just execute **Create Sample menus** once and a number of menus will be created; see the first page of the Thor Configuration screen.
+有一个Thor工具可以创建这个弹出式菜单和其他一些菜单。 只需执行一次**创建示例菜单**并创建一些菜单; 请参阅Thor配置屏幕的第一页。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
