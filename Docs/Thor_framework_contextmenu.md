@@ -60,7 +60,7 @@ With loContextMenu
 Endwith
 ```
 
-### \* Sample 3:  与每个菜单项传递的内容不同，关键字与每个项目相关联。 如果.Activate（）返回.T。，则所选项目的关键字可用于以下代码。
+### \* Sample 3:  与每个菜单项传递的内容不同，关键字与每个项目相关联。 如果.Activate（）返回.T.，则所选项目的关键字可用于以下代码。
 
 ```foxpro
 loContextMenu = Execscript (_Screen.cThorDispatcher, 'class= Contextmenu')  
