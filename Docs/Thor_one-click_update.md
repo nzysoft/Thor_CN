@@ -10,7 +10,7 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 ![](Images/Thor_One-Cick_Update_SNAGHTML17f44631.png)
 
-It then proceeds to check for updates to all of the other available applications and tools, as shown below.  Note that [PEM Editor](https://github.com/VFPX/PEMEditor) and the [Thor Repository](Thor_repository.md) are essential parts of [Thor](Thor.md); you should download them immediately and update them any time that they show on the “Check for Updates” form. The items in green on the form are those that have been updated recently
+然后继续检查所有其他可用应用程序和工具的更新，如下所示。 请注意[PEM编辑器](https://github.com/VFPX/PEMEditor)和[Thor Repository](Thor_repository.md)是[Thor](Thor.md)的重要组成部分; 您应该立即下载它们，并随时在“检查更新”窗体上显示更新它们。 表格中绿色的项目是最近更新的项目
 
 ![](Images/Thor_One-Cick_Update_SNAGHTML1f1f7c63.png)
 
