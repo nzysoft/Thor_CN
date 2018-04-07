@@ -1,19 +1,20 @@
-﻿ContextMenu Object
+﻿ContextMenu 对象
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-This object provides a simple mechanism for creating pop-up context menus.
+该对象提供了一个用于创建弹出式上下文菜单的简单机制。
 
-It can be obtained from this single line of code:
+它可以从这一行代码中获得：
 
     loContextMenu = Execscript (_Screen.cThorDispatcher, 'class= Contextmenu')
 
-Items are added using the .AddMenuItem method, sub-menus are created by using the AddSubMenu / EndSubMenu pair, and the menu is activated with the Activate method.
+使用.AddMenuItem方法添加项目，使用AddSubMenu / EndSubMenu创建子菜单，并使用Activate方法激活菜单。
 
-The parameters to AddMenuItem allow you to define either a string to execute or a keyword/parameter pair which can be processed after the Activate method, allowing all processing to be contained in a single method.  See the last example.
+AddMenuItem参数允许您定义要执行的字符串或可在Activate方法之后处理的关键字/参数对，从而允许将所有处理包含在单个方法中。 看最后一个例子。
 
-This object can then be used as follows:
+这个对象然后可以如下使用：
 
-Method|Meaning|
+方法|含义
 ---|---
 .AddMenuItem(lcPrompt, lcExec, lcStatusBar, lcKeyStroke, lcKeyWord, lxParameters)|lcPrompt. Prompt for the menu Item
 .AddMenuItem parameter|lcExec|String to be executed.  This may be empty, in which case lcKeyword and lxParameters are used.
