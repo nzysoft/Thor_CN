@@ -5,7 +5,7 @@
 ---
 _本文档由 xinjie 于 2018-04-07 翻译_
 
-*The **Thor Repository** is a collection of IDE tools, accessible thru Thor, that have been written by members of the FoxPro community.*
+*** Thor Repository **是可通过Thor访问的IDE工具集合，由FoxPro社区成员编写。*
 
 ![](Images/Thor_greenline.png)
 
