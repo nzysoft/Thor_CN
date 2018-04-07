@@ -37,8 +37,8 @@ lxFormID也是
 
     loSettings = ExecScript(_Screen.cThorDispatcher, "Class= ThorFormSettings", lxFormID)
     Thisform.AddProperty ('oSettings', loSettings)
-    loSettings.Restore (Thisform) && Gets top, left, height, width
-    loSettings.Restore (Thisform, 'nObjectType, cSearchString') && and two other properties
+    loSettings.Restore (Thisform) && 获取顶部，左侧，高度，宽度
+    loSettings.Restore (Thisform, 'nObjectType, cSearchString') && 和另外两个属性
 
 lxFormID也是
 
@@ -48,4 +48,4 @@ lxFormID也是
 并且在表单的 ‘**Destroy’** 事件：
 
     This.oSettings.Save (This)
-    This.oSettings = .Null.```
+    This.oSettings = .Null.
