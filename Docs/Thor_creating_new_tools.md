@@ -1,14 +1,15 @@
-﻿Creating New Tools
+﻿创建新工具
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-To create a new tool, use the 'Create Tool' button on the second page (**Tool Definitions**) of the Thor form. 
+要创建一个新工具，请使用Thor表单第二页上的“创建工具”按钮（**工具定义**）。
 
  
 ![](Images\Thor_creating_new_tools_createtoolbutton.png)
 
-This will bring up the 'Create Tool' form, which guides you in selecting the folder and file name for the new tool. 
+这将显示“创建工具”表单，该表单将指导您为新工具选择文件夹和文件名。
 
-Thor look for files named **Thor_Tool_*.PRG** in the following folders:
+Thor在以下文件夹中查找名为**Thor_Tool _ *.PRG**的文件：
   
 1.  CurDir()  
 1. All folders in your path
