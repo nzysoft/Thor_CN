@@ -14,10 +14,10 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   垂直和水平间距可以一次更改一个像素，也可以更改指定的步长。
 *   有一个un-do按钮可以撤销表单获得焦点以来所做的任何更改。
 
-表单的大小和位置从一个用户到另一个用户是持久的。 该表单也是可停靠的，并且随着表单宽度的变化，六个容器将自行重新排列，从而允许各种期望的对接组合。
+表单的大小和位置从一个用户到另一个用户是保持不变的。 该表单也是可停靠的，并且随着表单宽度的变化，六个容器将自行重新排列，从而允许各种期望的对接组合。
 
 ![](Images/Tweet2b.png)
 
-Thanks to Cathy Knight for the concept and design.
+感谢 Cathy Knight 的理念和设计。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
