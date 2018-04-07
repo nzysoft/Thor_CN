@@ -164,30 +164,30 @@ U|按下按钮 Unselect all
 
 **快捷键** |**描述**
 ---|---
-\:|Set focus to the textbox Into Cursor
-C|Select option SQL Create...
-D|Set focus to the textbox Into Local Alias
-E|Select option SQL Select...
-F|Toggle checkbox Add From
-I|Select option SQL Insert...
-L|Toggle checkbox Add NVL()
-M|Click button Remove
-N|Select option ANSI Cast
-P|Select option SQL Update...
-T|Select option No Cast
-V|Select option VFP Cast
-W|Select option Browse
-X|Sets Local Alias to current alias
-Y|Select option Only fields
-1|Select option Into Table
-2|Select option Into Cursor
+\:|设置焦点到 Into Cursor 文本框
+C|选择选项 SQL Create...
+D|设置焦点到 Into Local Alias 文本框
+E|选择选项 SQL Select...
+F|切换 Add From 选择框
+I|选择选项 SQL Insert...
+L|切换 Add NVL() 选择框
+M|点击按钮 Remove
+N|选择选项 ANSI Cast
+P|选择选项 SQL Update...
+T|选择选项 No Cast
+V|选择选项 VFP Cast
+W|选择选项 Browse
+X|将本地别名设置为当前别名
+Y|选择选项 Only fields
+1|选择选项 Into Table
+2|选择选项 Into Cursor
 
-### Keyboard shortcuts while the main (right) grid is active:
+### 当主(右侧)Grid 为当前控件时的快捷键：
 
-#### **NB!** These shortcuts are only active in Read-Only mode!
+#### **注意** 这些快捷方式仅在只读模式下有效！
 
-**Button** |**Description**
+**快捷键** |**描述**
 ---|---
-Enter|Select left grid
-F|Set focus to the Searc Values textbox
-K|Select left grid
+Enter|选择左侧 grid
+F|设置焦点到 Searc Values 文本框
+K|选择左侧 grid
