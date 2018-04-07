@@ -1,27 +1,28 @@
-﻿Plug-in PRGs
+﻿插件PRG
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-Thor provides a large number of Plug-in PRGS that allow you to customize the behavior of various Thor tools.  These plug-ins can either replace existing behavior or add new behavior.
+Thor提供了大量插件PRGS，允许您自定义各种Thor工具的行为。 这些插件可以替换现有的行为或添加新的行为。
 
-You can access the list of all Plug-Ins from the Thor menu:
+您可以从Thor菜单访问所有插件的列表：
 
 ![](Images/Thor_add_plugins1.png)
 
-This opens a form from which you can create or modify existing plug-ins:
+这将打开一个表单，您可以从中创建或修改现有的插件：
 
 ![](Images/Thor_add_plugins2.png)
 
-When you click Create for one of these Plug-Ins, a sample PRG will be opened for you, with comments describing parameters, results, etc.
+当您为其中一个插件单击“创建”时，将为您打开一个样本PRG，并带有描述参数，结果等的注释。
 
-If you save it (Ctrl+S or Ctrl+W), it will be saved into your “My Tools” folder from which it will be accessed thereafter by Thor tools. The PRG name will also be saved in your [MRU list for PRGs](https://groups.google.com/forum/?fromgroups#!topic/FoxProThor/_hyu9XVSQ3A), so you can edit the Plug-In thereafter from the command line. (Note that the name of the PRG is not necessarily the same as the name that appears in the table).
+如果您保存它（Ctrl + S或Ctrl + W），它将被保存到您的“我的工具”文件夹中，之后将由Thor工具访问它。 PRG名称也将保存在您的[MRU PRG列表](https://groups.google.com/forum/?fromgroups#!topic/FoxProThor/_hyu9XVSQ3A)中，因此您可以从此处编辑插件 命令行。 （请注意，PRG的名称不一定与表中显示的名称相同）。
 
-You may find it more convenient to show only the Plug-Ins that apply to a particular Thor tool.  Starting from either the Tool Launcher or Thor Configuration form, select the tool and then click on the Plug-Ins link at the bottom right of the form, as show below.  The form shown above opens but shows only those Plug-Ins that apply to this tool.  Note that this link only appears if there are any Plug-Ins for the tool.
+您可能会发现仅显示适用于特定Thor工具的插件会更方便。 从Tool Launcher或Thor Configuration表单开始，选择该工具，然后单击表单右下方的Plug-Ins链接，如下所示。 上面显示的窗体打开，但只显示适用于此工具的插件。 请注意，此链接仅在该工具有任何插件时才会显示。
 
 ![](Images/Thor_add_plugins3.png)
 
-The available plug-in PRGs are:
+可用的插件PRG是：
 
-**Plug-in** |**Description**
+**插件** |**描述**
 ---|---
 AfterComponentInstall|Called during "Check For Updates" after a component is installed (in a sub-folder of Thor\Tools\Components).  Allows you to re-install the component in the folder where you normally use it within your APPs
 AutoRenameControl|Sets the new name for a control when auto-renaming. The "normal" new name is supplied as a parameter so it can be used in those cases where it is acceptable.
