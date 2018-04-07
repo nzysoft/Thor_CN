@@ -34,21 +34,21 @@ Thor Repository中提供了许多新的Thor工具。
     *   'Download VFP2Text for Beyond Compare V4'
     *   'VFP2Text Home Page'
 
-There have been some enhancements to **[SuperBrowse](Thor_superbrowse.md)** as well:
+还有一些对 **[SuperBrowse](Thor_superbrowse.md)** 的改进：
 
-*   As it can be quite cumbersome switching between Expression and Value in the filter box, you can now overwrite the current setting as follows:
-    *   To select Value, use a trailing ‘$’
-    *   To select Expression, use a leading ‘=’
-*   "Value" filters on all selected fields or, if none, all character fields.
-*   Double-clicking a row (to edit using Dynamic Forms) brings up a read-only form if the table is read-only.
-*   A new setting allows leading characters from memo fields to be displayed instead of "Memo".
-*   Double-clicking a memo fields brings up that field alone for editing.
-*   There are a number of new plug-ins:
-    *   Format field picker -- create alternative formats to those provided on the first page ("Picker") to conform to your own preferences
-    *   Bind column events -- bind events in the grid columns to this class
-    *   Grid context menu -- create context menus for the cells in the grid  
+*   由于在过滤器框中切换表达式和值可能非常麻烦，现在可以按如下方式覆盖当前设置：
+    *   要选择值，请使用尾随'$'
+    *   要选择表达式，请使用前导'='
+*   "值"过滤所有选定的字段，如果没有，则为全部字符型字段。
+*   如果表是只读的，双击一行（使用动态表单编辑）会显示一个只读表单。
+*   新设置允许显示备注字段中的前导字符而不是“Memo”。
+*   双击备注字段可单独编辑该字段。
+*   有许多新的插件：
+    *   格式字段选择器 - 为第一页上提供的选项创建替代格式（“选取器”）以符合您的偏好
+    *   绑定列事件 - 将Grid列中的事件绑定到此类
+    *   Grid 上下文菜单 - 为网格中的单元格创建上下文菜单  
 
-See also [History of all Thor TWEeTs](TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+同时可参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
 
 ---
 
