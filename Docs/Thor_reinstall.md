@@ -10,6 +10,6 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 此后，在第一次运行Thor时，新版本所需的任何更新都将自动安装，
 
-**[点击此处下载最新版本的 Thor](https://github.com/VFPX/Thor/archive/master.zip)
+**[点击此处下载最新版本的 Thor]**(https://github.com/VFPX/Thor/archive/master.zip)
 
 
