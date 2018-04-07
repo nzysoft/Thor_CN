@@ -24,14 +24,14 @@ Thor提供了大量插件PRGS，允许您自定义各种Thor工具的行为。 �
 
 **插件** |**描述**
 ---|---
-AfterComponentInstall|Called during "Check For Updates" after a component is installed (in a sub-folder of Thor\Tools\Components).  Allows you to re-install the component in the folder where you normally use it within your APPs
-AutoRenameControl|Sets the new name for a control when auto-renaming. The "normal" new name is supplied as a parameter so it can be used in those cases where it is acceptable.
-BeforeComponentInstall|Companion to AfterComponentInstall
-BuildProject|Provides the Build Project dialog used in Finder.
-CloseControlStructure|Sets the text that is pasted in as the closing line of code in control structures (IF/ENDIF, TRY/CATCH, and the like), which may include text from the opening line of code and which may depend on how many lines of code there are.
-[CreateLocalsStatements](#CreateLocalsStatements)|Creates the LOCAL statements as part of "Create Locals"; allows you to determine the order and format of LOCAL statements as well as which variables are to appear in the LOCAL statement.
-EditSourceX|Called to open files with non-FoxPro extensions
-FormatFieldPicker|Creates the "Field Picker" string for fields that have been selected in [SuperBrowse](Thor_superbrowse.md).
+AfterComponentInstall|在安装组件后（在Thor\Tools\Components的子文件夹中），在“检查更新”期间调用。 允许您将组件重新安装到您的应用程序中通常使用它的文件夹中
+AutoRenameControl|设置自动重命名时控件的新名称。 “正常的”新名称作为参数提供，因此可以在可接受的情况下使用。
+BeforeComponentInstall|伴随着AfterComponentInstall
+BuildProject|提供Finder中使用的Build Project对话框。
+CloseControlStructure|设置粘贴的文本作为控制结构中的代码的结束行（IF/ENDIF，TRY/CATCH等），其中可能包括来自代码的开始行的文本，并且可能取决于多少行代码 有。
+[CreateLocalsStatements](#CreateLocalsStatements)|创建LOCAL语句作为“Create Locals”的一部分; 允许您确定LOCAL语句的顺序和格式以及要在LOCAL语句中显示哪些变量。
+EditSourceX|打开带有非FoxPro扩展名的文件
+FormatFieldPicker|为已在[SuperBrowse](Thor_superbrowse.md)中选择的字段创建“字段选择器”字符串.
 GetDefaultValue|Sets the default value to be used for a new property created by PEM Editor based on the name of the property. The sample supplied uses the second character of the name.
 GetNewMethodHeader|Sets the header comment text that is used for any new method created by PEM Editor or IDE Tools
 GoToDefinition|Called if Go To Definition fails to find a match. Some documented features of Go To Definition are actually handled by this plug-in.
