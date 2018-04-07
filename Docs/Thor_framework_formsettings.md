@@ -1,25 +1,26 @@
-﻿FormSettings Object
+﻿FormSettings 对象
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-This object allows forms to save their settings (size, position, and any other form properties) and align the form to the mouse or cursor position.
+此对象允许表单保存其设置（大小，位置和任何其他表单属性），并将表单与鼠标或光标位置对齐。
 
-The FormSettings Object can be obtained from this single line of code, which is usually placed in a form’s Init method:
+FormSettings对象可以从这一行代码中获得，它通常放置在表单的Init方法中：
 
 ```loSettings = Execscript (_Screen.cThorDispatcher, 'class= ThorFormSettings', lxFormID)```
 
-Where lxFormID is either
+lxFormID也是
 
-*   ThisForm (but only if called within an SCX)
-*   or the name of the file to be used for saving settings (such as ‘GoToMethod.Settings’)
+*   ThisForm (但仅限于在SCX内部调用)
+*   或用于保存设置的文件名（例如'GoToMethod.Settings'）
 
-In order for this object to be used later (when the form closes), it must be saved as a form property:
+为了稍后使用此对象（表单关闭时），它必须保存为表单属性：
 
     Thisform.AddProperty(‘oSettings’, loSettings)
 
 
-### This object can then be used as follows:
+### 这个对象然后可以如下使用：
 
-Method|Meaning
+方法|含义
 ---|---
 .Restore(ThisForm)|Restores the saved settings for Top, Left, Height, and Width
 .Restore(ThisForm, ‘propertylist’)|Restores the values for all properties named in {propertylist}, which is a character string of existing property names, delimited with commas.
