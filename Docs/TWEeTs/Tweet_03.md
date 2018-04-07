@@ -1,13 +1,14 @@
-﻿Thor TWEeT #3: Remember MRUs?
+﻿Thor TWEeT #3: 记忆 MRUs?
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-Remember when you used to live in the Command Window and you would use MRU lists for opening forms, files, classes, etc?  
+还记得你以前住在命令窗口，你会用MRU列表打开窗体，文件，类等吗？ 
 
-When you began relying on other tools, like the Project Manager and Class Browser, you couldn't use MRU lists anymore, though, since these other tools did not update the MRU lists, nor were MRUs made available any way other than from the Command Window.
+当你开始依赖于其他工具，如项目管理器和类浏览器时，你不能再使用MRU列表，因为这些其他工具没有更新MRU列表，也没有任何方式可以使用除命令之外的其他任何方式 窗口。
 
-But now it's time to resume using MRUs since Thor tools resurrect them, maintaining them and providing new ways to access them.
+但是现在是时候恢复使用MRU了，因为Thor工具可以恢复它们，维护它们并提供访问它们的新方法。
 
-First of all, all Thor tools, most notably **[GoFish](https://github.com/mattslay/GoFish), [Finder](https://github.com/VFPX/Finder)**, and **[PEM Editor](https://github.com/VFPX/PEMEditor)**, but also all other Thor tools that open files, always update the appropriate MRU list when opening a file (whether form, class, table, report, etc.). In addition, they provide two other features:
+首先，所有Thor工具，最值得注意的是**[GoFish](https://github.com/mattslay/GoFish)，[Finder](https://github.com/VFPX/Finder)** 和 **[PEM编辑器](https://github.com/VFPX/PEMEditor)** ，以及所有其他打开文件的Thor工具，在打开文件时总是更新相应的MRU列表（无论是表单，类，表，报表 等）。 另外，他们还提供了两个其他功能：
 
 *   They maintain a new MRU list for all *class libraries* that are opened.
 *   They open each file using the same case for the file name as is found on disk, so that the case of file names is not changed.
