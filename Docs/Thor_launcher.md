@@ -1,9 +1,10 @@
-﻿Tool Launcher
+﻿工具启动器
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-Tool Launcher is a Thor tool to make it easy to find and run tools. It can also be configured to save a list of your favorite Thor tools for easy access.
+Tool Launcher是一个Thor工具，可以轻松查找和运行工具。 它也可以配置为保存您最喜爱的Thor工具列表，以便于访问。
 
-Tool Launcher can be started from the Thor menu, as shown below, by hot key, or each time you run Thor (if you have room for it to be always open).
+工具启动器可以从Thor菜单启动，如下图所示，通过热键或每次运行Thor（如果您有足够的空间让它始终打开）。
 
 ![](Images/Thor_Launcher_image_2.png)
 
