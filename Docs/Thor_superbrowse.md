@@ -1,5 +1,6 @@
 ﻿SuperBrowse
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
 ![](Images/Thor_Super_Browse_SNAGHTML8410e4d.png)
 
