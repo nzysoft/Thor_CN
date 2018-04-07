@@ -1,23 +1,24 @@
-﻿Thor EditorWindow Object
+﻿Thor EditorWindow 对象
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-All of the IDE features of PEM Editor which access and / or modify the text in the currently open editing window use the functions from **FoxTools.fll**.
+访问和/或修改当前打开的编辑窗口中的文本的所有PEM编辑器的IDE功能都使用** FoxTools.fll **中的函数。
 
-The Thor EditorWindow Object is made available to make it simple to build Thor tools which can also access or modify the text in the currently open editing window.  This object serves two purposes:
+Thor EditorWindow对象可用于构建Thor工具，这些工具还可以访问或修改当前打开的编辑窗口中的文本。 这个对象有两个目的：
 
-1.  It provides wrapper methods for the most useful functions in **FoxTools.fll**.
-2.  When accessed, it has already determined the handle for the current editing window.  All of its methods reference this handle, eliminating the need for the handle to be otherwise known or referenced.
+1.  它提供了**FoxTools.fll**中最有用功能的包装方法。
+2.  当被访问时，它已经确定当前编辑窗口的句柄。 它的所有方法都引用这个句柄，而不需要另外知道或引用句柄。
 
-The Thor EditorWindow Object can be obtained from this single line of code:
+Thor EditorWindow对象可以从这一行代码中获得：
 
 ```foxpro
 loEditorWin = Execscript (_Screen.cThorDispatcher, 'class= editorwin from pemeditor')
 ```
 
 
-Some further notes:
+一些进一步说明：
 
-1.  Character positions and line counts start at 0, not 1\. (i.e., be careful)
+1.  字符位置和行数从0开始，而不是1 \。 （即小心）
 2.  While this object only is available if PEM Editor has been installed, the PEM Editor form itself need not be open for it to work.
 3.  There are numerous uses of this object in the tools in the Thor Repository.
 
