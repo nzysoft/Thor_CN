@@ -8,7 +8,7 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 [Thor 视频](Thor_videos.md)
 
-[Thor 推特](TWEeTs/TWEeTs.md)
+[Thor 推特](TWEeTs.md)
 
 ![](Images/Thor_greenline.png)
 
@@ -48,7 +48,7 @@ Thor Repository中提供了许多新的Thor工具。
     *   绑定列事件 - 将Grid列中的事件绑定到此类
     *   Grid 上下文菜单 - 为网格中的单元格创建上下文菜单  
 
-同时可参看 [所有 Thor 推特的历史](TWEeTs/TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+同时可参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
 
 ---
 
@@ -151,7 +151,7 @@ VFPX添加了两个新项目，并可从“检查更新”中找到。
 * [VFP 9 SP2 Hotfix 3 Download](https://github.com/VFPX/VFP9SP2Hotfix3) 是VFP 9 SP2的最新修补程序。 此修补程序包括为VFP 9 SP2发布的所有三个修补程序
  
 
-参看 [所有 Thor 推特的历史](TWEeTs/TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
+参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
 
 添加到VFPX的两个新项目
 ---
@@ -165,7 +165,7 @@ VFPX添加了两个新项目，并可从“检查更新”中找到。
 * [StripeX](http://github.com/VFPX/StripeX) 是一个与Stripe.com合作的包装类。
  
 
-参看 [所有 Thor 推特的历史](TWEeTs/TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
+参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
 
 ---
 
