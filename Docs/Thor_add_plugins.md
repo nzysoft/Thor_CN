@@ -70,21 +70,21 @@ Spell Field Names|确定表格中字段名称的拼写。 请注意，已经提�
 
 ### <a name="OpenTable">**OpenTable**</a>
 
-A number of Thor tools, including IntellisenseX and Super Browse, work on open tables, identified by a table alias. If there is an open table (or view) matching that alias, all is well and processing commences. If not, however, they call the OpenTable plug-in in an attempt to open the table matching the alias.
+许多Thor工具（包括IntellisenseX和Super Browse）都在打开的表上工作，由表别名标识。 如果有一个与该别名匹配的打开的表（或视图），则一切正常，并且处理开始。 但是，如果不是，他们会调用OpenTable插件以尝试打开与别名匹配的表。
 
-The default processing for OpenTable is to try each of the following, in turn, in attempt to open the table:
+OpenTable的默认处理是依次尝试以下每个尝试打开表的操作：
 
-1.  Try to USE the file (opening a table from the current folder or path)
-2.  Check the MRU list for DBFs
-3.  If there is an open form, look for the file in the DataEnvironment
+1.  尝试打开（use）该文件（从当前文件夹或路径打开表格）
+2.  检查DBF的MRU列表
+3.  如果存在打开的表单，则在数据环境中查找该文件
 
-If this is not sufficient to open a table (for instance, if your file names do not match their aliases, or are not found in a folder in your path), modify OpenTable to suit your environment:
+如果还是无法打开表（例如，如果您的文件名称与他们的别名不匹配，或在路径中的文件夹中找不到），请修改OpenTable以适应您的环境：
  
-*   The parameter is the alias that is being searched for.
-*   The result is the alias that was opened (and need not be the same as the parameter!), or empty if not found.
+*   参数是正在搜索的别名。
+*   结果是已打开的别名（不必与参数相同！），如果未找到，则为空。
 
-You can also use this Plug-In to access SQL Server tables, for which there are a couple of uses:
-*   To provide the list of field names for IntellisenseX
-*   To provide the data structure visible in Super Browse, allowing creation of SELECT and other SQL statements on the “Picker” page
+您还可以使用此插件访问SQL Server表，但有几种用途：
+*   提供IntellisenseX的字段名称列表
+*   提供Super Browse中可见的数据结构，允许在“Picker”页面上创建SELECT和其他SQL语句
 
-The default PRG opened for you when you create OpenTable has examples of how to achieve this.
+创建OpenTable时为您打开的默认PRG具有如何实现此目的的示例。
