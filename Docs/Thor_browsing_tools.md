@@ -1,24 +1,25 @@
-Browsing the list of tools
+浏览工具列表
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-The second page (**Tool Definitions**) of the Thor form displays a grid showing all of the tools registered with Thor as well as what hot keys (if any) are assigned to them.  It can also be used to assign hot keys, to edit existing tools, and to create new tools.
+Thor表单的第二页（**工具定义**）显示一个表格，其中显示了在Thor中注册的所有工具以及分配给它们的热键（如果有）。 它也可用于分配热键，编辑现有工具以及创建新工具。
 
-The grid on the left shows all the tools registered with Thor. grouped by their _Source_.  Thus it is recommended that when you create your own tools, you assign the same _Source_ to all of them, so they will all be grouped together there (and in other places in Thor.)
+左侧的表格显示了Thor注册的所有工具。 按他们的_Source_分组。 因此，建议您在创建自己的工具时，将相同的_Source_分配给所有这些工具，以便将它们全部分组（在Thor的其他位置）。
 
-The second column shows the hot key that you have assigned to each tool, if any.
+第二列显示您已分配给每个工具的热键（如果有的话）。
 
-The third column shows the tools that you have chosen to be run each time that you run Thor.  While this is in fact meaningless for most tools, it may be found desirable for those tools that bring up forms that you want to remain visible throughout your IDE session (such as PEM Editor, Document TreeView, or Object Size and Position)
+第三列显示了每次运行Thor时选择运行的工具。 虽然这对于大多数工具来说实际上是没有意义的，但是对于那些希望在整个IDE会话中保持可见的表单（例如PEM编辑器，文档树视图或对象大小和位置）
 
-There are a few other features to note when browsing this page:
+浏览此页面时还有其他一些功能需要注意：
 
-1. You can use the Tool filter to narrow the list of tools shown.  Note that the filter is only applied when you exit the field.
-1. Most of the tools from PEM Editor and the Thor Repository have (or will have) more complete descriptions that appear in the large editbox on the right.  A reasonable approach when starting as a new user of Thor, or when getting a new collection of tools from the Thor Repository, is to step through all the tools, reading the descriptions for each.
-1. A number of tools, including most of the tools from PEM Editor, have (or will have) a link to the tool's home page for a thorough description of its use.  
+1. 您可以使用工具过滤器来缩小显示的工具列表。 请注意，该过滤器仅适用于您退出该字段时。
+1. PEM编辑器和Thor存储库中的大多数工具都有（或将有）更完整的描述，出现在右侧的大型编辑框中。 从Thor的新用户开始，或从Thor Repository获取新工具集合时，一种合理的方法是逐步浏览所有工具，阅读各个工具的描述。
+1. 许多工具（包括PEM编辑器的大多数工具）都有（或将要）链接到该工具的主页，以便详细说明其用法。
 
 ![](Images/Thor_Browsing_Tool_Definitions_1.png)
 
-**See also**
-* [Assigning hot keys to tools](Thor_assign_tool_hot_keys.md)
-* [Editing existing tools](Thor_editing_existing_tools.md)
-* [Creating new tools](Thor_creating_new_tools.md)
-* [Tools to make tools](Thor_tools_making_tools.md)
+**参看**
+* [将热键分配给工具](Thor_assign_tool_hot_keys.md)
+* [编辑现有工具](Thor_editing_existing_tools.md)
+* [创建新工具](Thor_creating_new_tools.md)
+* [制作工具的工具](Thor_tools_making_tools.md)
