@@ -1,10 +1,11 @@
-Table of all hot keys, macros, and On Key Label assignments
+所有快捷键、宏、On Key Label 列表
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-The third page of the Thor form (**Tool Definitions**) displays a grid of all hot keys that have been assigned in Thor for popup menus and tools as well as all keyboard macros and On Key Label definitions.  (While Thor does not manage the keyboard macros or On Key Label definitions, it is very handy to see all of these different definitions in one place.)
+Thor表单的第三页（**Tool Definitions**）显示Thor中为弹出式菜单和工具以及所有键盘宏和On Key Label定义分配的所有热键的表格。 （虽然Thor不管理键盘宏或On Key Label定义，但在一个地方查看所有这些不同定义非常方便。）
 
-Clicking on a column header will sort by that column.  Note that there are ***two*** different sorts available for the first column; consecutive clicks on the column heading will alternate between these two sorts.
+点击列标题将按该列进行排序。 请注意，第一列有两种不同的类型可供选择。 列标题上的连续点击将在这两种类型之间交替。
 
-For rows that are controlled by Thor (the bold rows), double-clicking on a row will allow you to re-define the hot key assigned.  To remove the hot key assignment, use the right-click context menu on the row.
+对于由Thor控制的行（粗体行），双击某一行将允许您重新定义分配的热键。 要删除热键分配，请使用该行上的右键单击上下文菜单。
 
 ![](Images/Thor_Hot_Key_List_AllHotKeyAssigments.png)
