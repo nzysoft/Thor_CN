@@ -19,21 +19,21 @@ _本文档由 xinjie 于 2018-04-07 翻译_
     *   GoFish的新插件用于设置Grid属性
     *   针对 SuperBrowse 中字段名的心的插件
 
-### Considered:
+### 考虑：
 
-*   “Find Objects” enhancements
+*   “查找对象”增强功能
 
-    *   Search contained objects only, instead of entire form or class
-    *   Edit directly in the grid
-*   Suggestions from Eric Selje (that he wants to work on!)
+    *   仅搜索包含的对象，而不是整个表单或类
+    *   直接在Grid中编辑
+*   Eric Selje的建议（他希望继续努力！）
 
-    *   New tool to Insert / Manage Snippets
-    *   New tool to replace “Append Blank” with ….
-    *   Enhancements to GoToDefinition to create arrays and methods with parameters
-    *   Enhancement to Extract to Method creates parameters and result?
+    *   插入/管理片段的新工具
+    *   用...替换“Append Blank”的新工具。
+    *   GoToDefinition的增强功能可以用参数创建数组和方法
+    *   提取到方法的增强功能会创建参数和结果？
 
-*   Class Browser enhancements
-*   Working on the performance of Highlight Control Structure when working on large files (1 Meg)
-*   “Open files” to allow selection of multiple files to open at once (Russell)
+*   类浏览器增强
+*   在处理大文件时处理高亮控制结构的性能（1 Meg）
+*   “打开文件”允许选择多个文件一次打开（Russell）
 
 
