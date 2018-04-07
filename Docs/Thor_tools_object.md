@@ -28,11 +28,11 @@ EditMethod(toObject, tcMethodName)|打开一个方法（或事件）进行编辑
 EditMethod (cont.)|* 一个对象引用，
 EditMethod (cont.)|* 针对当前表单或类， .T. 
 EditMethod (cont.)|* 如果为空，则指当前对象。
-EditSourceX(tcFileName, tcClass, tcMethodName, tnStartRange, tnEndRange)|Opens any file for editing (as **EditSource** does), with additional capabilities:
-EditSourceX (cont.)|* The file is added to its appropriate MRU library.
-EditSourceX (cont.)|* The file is opened with the correct case for the file name, so that when it is saved the case for the file name will not be changed.
-EditSourceX (cont.)|* If the file is a class library, and no class name is supplied, the class browser is opened.
-EditSourceX (cont.)|* You will be asked whether you want to check out the file from Source Code Control (if you use SCC and you have marked the appropriate item in the Preferences file.)
+EditSourceX(tcFileName, tcClass, tcMethodName, tnStartRange, tnEndRange)|打开任意文件进行编辑（作为** EditSource **），并具有其他功能：
+EditSourceX (cont.)|* 该文件被添加到其适当的MRU库。
+EditSourceX (cont.)|* 该文件以正确的文件名大小写打开，以便在保存时文件名的大小写不会被更改。
+EditSourceX (cont.)|* 如果该文件是类库，并且没有提供类名称，则会打开类浏览器。
+EditSourceX (cont.)|* 系统会询问您是否要从源代码管理中检出文件（如果您使用SCC并且已在首选项文件中标记了适当的项目）。
 FindObjects (tcSearchText)|Finds all objects matching the search criteria in {tcSearchText}. The search criteria are the same as are specified by the 'Find' (binoculars) search button. The result is a collection, where each item in the collection is an object with two properties:
 FindObjects (cont.)|1.  Object - a reference to the object
 FindObjects (cont.)|2.  FullObjectName - the full path name to the object
