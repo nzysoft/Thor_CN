@@ -18,18 +18,18 @@ THOR 必须安装在永久文件夹中; 它会创建一些必须始终可用的�
 
 ### **安装 Thor**
 
-After you have downloaded the Zip file into its installation folder, do the following:  
+将Zip文件下载到安装文件夹后，请执行以下操作： 
 
 
     Clear All
     Do Thor.APP
 
-This will
+这会
 
-*   create a folder named Thor in the installation folder
-*   create some sub-folders and files in that folder
-*   update the VFP system menu (by adding a menu pad for Thor)
-*   run ["Check for Updates"](Thor_one-click_update.md) so that you it can download and install [PEM Editor](https://github.com/VFPX/PEMEditor) and [The Thor Repository](Thor_repository.md), which are necessary components for Thor
-*   and open the Thor form.
+*   在安装文件夹中创建一个名为Thor的文件夹
+*   在该文件夹中创建一些子文件夹和文件
+*   更新VFP系统菜单（通过为Thor添加菜单实现）
+*   运行[“检查更新”](Thor_one-click_update.md)，以便它可以下载并安装[PEM编辑器](https://github.com/VFPX/PEMEditor)和[Thor Repository](Thor_repository.md)，这是Thor的必要组件
+*   然后打开Thor表单。
 
-Note the installation does not affect VFP in any other way (it does not SET any variables, modify foxcode, etc.) and may safely be repeated as many times as desired.
+请注意，安装不会以任何其他方式影响VFP（它不会设置任何变量，修改foxcode等），并且可以根据需要安全地重复多次。
