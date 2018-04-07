@@ -1,14 +1,15 @@
-﻿Thor TWEeT #9: Extract to Variable and Extract to Constant
+﻿Thor TWEeT #9: 提取到变量和提取为常量
 ===
 _本文档由 xinjie 于 2018-04-08 翻译_
-In [last week's TWEeT](Tweet_08.md), I showed how you can highlight a block of text from a code window and save it into a new method.
 
-There are two other closely related tools:
+在 [上星期的 TWEeT](Tweet_08.md) 中, 我展示了如何从代码窗口中突出显示一段文本并将其保存到新的方法中。
 
-*   **Extract to Variable**
-*   **Extract to Constant**
+还有另外两个密切相关的工具：
 
-Use **Extract to Variable** to replace text in a line of code with a reference to a local variable, such as in this example where `laFileList[lnJ, 1]` is referenced a couple of times:
+*   **提取到变量**
+*   **提取为常量**
+
+使用**提取到变量**将一行代码中的文本替换为局部变量的引用，例如，在本示例中，`laFileList [lnJ，1]`被多次引用：
 
 ![](Images/Tweet9a.png)
 
