@@ -1,33 +1,34 @@
-Installing tools published on VFPx
+安装在VFPx上发布的工具
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-There are a number of tools that can be downloaded directly from VFPx:
+有许多工具可以直接从VFPx下载：
 
 ### The Thor Repository
 
-Inherent in the design of Thor is the anticipation that members of the FoxPro community will have utilities of value that can well be shared throughout the community. The structure of the tool PRGs make such sharing simple.
+Thor设计的固有特征是FoxPro社区的成员将拥有可在整个社区共享的最大化的公共工具价值。 工具PRG的结构使这种共享变得简单。
 
-The 'Thor Repository' is a catalog of such tools.  The intent is that this repository grow over time, as developers submit tools to be included.  The starting repository has about a dozen such tools.
+'Thor Repository'是这些工具的目录。 目的是随着开发者提交包含的工具，这个资源库会随着时间而增长。 起始库有大约十几个这样的工具。
 
-To register the tools from the Repository, copy the PRGs from the ZIP file into the folder **Thor\Tools**
+要注册存储库中的工具，请将ZIP文件中的PRG复制到文件夹**Thor\Tools**
 
-[Click here for the Thor Repository](Thor_repository.md) 
+[点击这里查看Thor Repository](Thor_repository.md) 
 
 ### Tools from PEM Editor
 
-Version 7 of PEM Editor, now re-named 'PEM Editor w/ IDE Tools', contains more than three dozen tools that can be accessed through Thor.  These include some tools released in version 6 of PEM Editor, along with a large number of completely new tools.  These can be downloaded from the PEM Editor page.
+PEM编辑器的第7版，现在重新命名为''PEM Editor w/ IDE Tools'，包含三十多种可通过Thor访问的工具。 其中包括一些在PEM Editor 6版本中发布的工具，以及大量全新的工具。 这些可以从PEM编辑器页面下载。
 
-PEM Editor also "publishes" a pair of objects that simplify building further tools.  More than half of the original tools in the Thor Repository use these objects.
+PEM编辑器还“发布”了一对简化构建进一步工具的对象。 Thor Repository中超过一半的原始工具使用这些对象。
 
-Registration of the tools from PEM Editor occurs automatically (if Thor is running) when you install PEM Editor by executing:
+通过执行以下命令安装PEM编辑器时，将自动从PEM编辑器注册工具（如果Thor正在运行）：
 
     Do PEMEditor.APP
-[Click here for PEM Editor 7 with IDE Tools](https://github.com/VFPX/PEMEditor)
+[点击这里查看带有IDE工具的PEM Editor 7](https://github.com/VFPX/PEMEditor)
 
 ### GoFish5
 
-GoFish 5 is an advanced code search tool for fast searching of Visual FoxPro source code.  It can be integrated with Thor if Thor has been run in the current IDE session, as seen below:
+GoFish 5是一款用于快速搜索Visual FoxPro源代码的高级代码搜索工具。 如果Thor已经在当前的IDE会话中运行，它可以与Thor集成，如下所示：
 
 ![](Images/Thor_GoFish5.png)
 
-[Click here for GoFish4](https://github.com/mattslay/GoFish)
+[点击这里查看GoFish4](https://github.com/mattslay/GoFish)
