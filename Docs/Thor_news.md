@@ -151,25 +151,25 @@ VFPX添加了两个新项目，并可从“检查更新”中找到。
 * [VFP 9 SP2 Hotfix 3 Download](https://github.com/VFPX/VFP9SP2Hotfix3) 是VFP 9 SP2的最新修补程序。 此修补程序包括为VFP 9 SP2发布的所有三个修补程序
  
 
-See also [History of all Thor TWEeTs](TWEeTs.md) and the [Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
+参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
 
-Two New Projects added to VFPX
+添加到VFPX的两个新项目
 ---
 
 #### <a name="Headline38">#38, 2014-12-17</a>
  
 
-Two new projects have been added to VFPX and are available from Check For Updates.
+VFPX添加了两个新项目，并可从“检查更新”中找到。
 
-[VFP Runtime Installers](https://github.com/VFPX/VFPRuntimeInstallers) contains the runtime installers for VFP versions 6 thru 9 (since they are no longer available from Microsoft’s website)
-[StripeX](http://github.com/VFPX/StripeX) is a wrapper class for working with Stripe.com.
+[VFP Runtime Installers](https://github.com/VFPX/VFPRuntimeInstallers) 包含VFP版本6到9的运行时安装程序（因为它们不再可从Microsoft网站获得）
+[StripeX](http://github.com/VFPX/StripeX) 是一个与Stripe.com合作的包装类。
  
 
-See also [History of all Thor TWEeTs](TWEeTs.md) and the [Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
+参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
 
 ---
 
-Thor Version 1.40 released: Thor ToolBar
+Thor Version 1.40 发布: Thor 工具栏
 ---
 
 #### <a name="Headline18">#18, 2013-08-26</a>
