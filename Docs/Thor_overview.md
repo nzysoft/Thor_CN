@@ -11,18 +11,18 @@ Thor是用于管理IDE中的附加工具的工具。
 3.  通过在任何VFP系统菜单项（文件，编辑，视图等）下添加工具项，
 4.  通过在VFP系统菜单中创建新的菜单项并将这些工具添加到这些新菜单项下的菜单。
 
-There are four parts to Thor:
+Thor由四部分组成：
 
-1.  The catalog of tools managed by Thor. These are actually PRGs (see below).
-2.  The underlying free tables, which contain the definitions of the menus hot key assignments, etc.
-3.  The Thor form, accessible by either hot key or from a menu pad on the VFP system menu, which manages all the menu and hot key definitions stored in the tables. (Note that this form does not have Save or Cancel buttons; changes made to it are posted immediately.)
-4.  An APP which takes the definitions from the tables and updates the VFP system menu (if appropriate), creates the pop-up menus, and assigns the hot keys to the pop-up menus and/or individual tools. Since these definitions survive a CLEAR ALL, this need only be run once at the beginning of an IDE session.
+1.  Thor管理的工具目录。 这些实际上是PRG（见下文）。
+2.  基础自由表，其中包含菜单热键分配的定义等。
+3.  Thor表单可以通过热键或VFP系统菜单上的菜单键访问，该菜单可管理表中存储的所有菜单和热键定义。 （请注意，此表单没有保存或取消按钮;对其进行的更改会立即发布。）
+4.  一个APP，从表格中获取定义并更新VFP系统菜单（如果适用），创建弹出式菜单，并将热键分配给弹出式菜单和/或单个工具。 由于这些定义免疫 CLEAR ALL，因此只需在IDE会话开始时运行一次。
 
-#### **What are "Tools"?**
+#### **什么是“工具”？**
 
-Tools are PRGs that follow a particular structure so that Thor can recognize them.  
+工具是遵循特定结构的PRG，因此Thor可以识别它们。
 
-The "header" of each tool is a group of about 40 lines which act as a questionnaire, allowing the tool to tell Thor about itself. When creating a new tool when using the Thor form, it starts out looking like this:  
+每个工具的“标题”是一组40行左右的代码，让工具可以告诉 Thor 自己是什么。 当使用Thor表单创建新工具时，它看起来像这样：
 
 ![](Images/Thor_Overview_SampleToolHeader.png)
 
