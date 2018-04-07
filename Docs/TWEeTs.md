@@ -16,10 +16,10 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 #22: [发布 IntellisenseX 工具](TWEeTs/Tweet_22.md) (June 15, 2014)
 
-*   _AutoComplete_
-*   _Dropdown constants list_
-*   _Dropdown procedures list_
-*   _Dropdown table names_
+*   _自动完成_
+*   _下拉常数列表_
+*   _下拉程序清单_
+*   _下拉表名称_
 *   _DBC Tables by !_
 
 #21: [高级功能：用于IntellisenseX的插件](TWEeTs/Tweet_21.md) (June 4, 2014)
@@ -44,28 +44,28 @@ _本文档由 xinjie 于 2018-04-08 翻译_
     *   _应用自定义关键字列表到代码窗口_
     *   _浏览自定义关键字列表_
 
-#18: [IntellisenseX for Nested Objects](TWEeTs/Tweet_18.md) (May 10, 2014)
+#18: [IntellisenseX嵌套对象](TWEeTs/Tweet_18.md) (May 10, 2014)
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
 
-#17: [Using Local Aliases in IntellisenseX](TWEeTs/Tweet_17.md) (April 29, 2014)
+#17: [在IntellisenseX中使用本地别名](TWEeTs/Tweet_17.md) (April 29, 2014)
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
 
-#16: [Custom Keyword List for Field Names](TWEeTs/Tweet_16.md) (March 3, 2014)
+#16: [字段名称的自定义关键字列表](TWEeTs/Tweet_16.md) (March 3, 2014)
 
-*   _Add Keywords:_
-    *   _Add highlighted word_
-    *   _Add field names from current table_
+*   _添加关键字：_
+    *   _添加突出显示的词_
+    *   _从当前表中添加字段名称_
 *   _Super Browse_
-*   _Apply Custom Keyword List to code window_
-*   _Browse Custom Keyword List_
+*   _应用自定义关键字列表到代码窗口_
+*   _浏览自定义关键字列表_
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
 
-#15: [Table/Object Alias List](TWEeTs/Tweet_15.md) (Feb. 24, 2014)
+#15: [表/对象别名列表](TWEeTs/Tweet_15.md) (Feb. 24, 2014)
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
@@ -76,7 +76,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
 
-#13: [New (hidden) IntellisenseX Feature](TWEeTs/Tweet_13.md) (Feb. 10, 2014)
+#13: [新的（隐藏的）IntellisenseX功能](TWEeTs/Tweet_13.md) (Feb. 10, 2014)
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
@@ -86,120 +86,120 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
 
-#11: [IntellisenseX: Aliases for VFP Tables](TWEeTs/Tweet_11.md) (Jan. 27, 2014)
+#11: [IntellisenseX：VFP表的别名](TWEeTs/Tweet_11.md) (Jan. 27, 2014)
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
 
-#10: [IntellisenseX: Field names for SQL Tables](TWEeTs/Tweet_10.md) (Jan. 20, 2014)
+#10: [IntellisenseX：SQL表的字段名称](TWEeTs/Tweet_10.md) (Jan. 20, 2014)
 
 *   _IntellisenseX by Dot_
 *   _IntellisenseX by Hot Key_
 *   _Super Browse_
 
-#9: [Extract to Variable and Extract to Constant](TWEeTs/Tweet_09.md) (Jan. 13, 2014)
+#9: [提取到变量和提取为常量](TWEeTs/Tweet_09.md) (Jan. 13, 2014)
 
-*   _Extract to Variable_
-*   _Extract to Constant_
-*   _Create Sample Menus_
+*   _提取到变量_
+*   _提取为常量_
+*   _创建示例菜单_
 
-#8: [Creating Properties and Methods (Part 3)](TWEeTs/Tweet_08.md) (Jan. 5, 2014)
+#8: [创建属性和方法（第3部分）](TWEeTs/Tweet_08.md) (Jan. 5, 2014)
 
 *   _Extract to Method_
 
-#7: [Creating Properties and Methods (Part 2)](TWEeTs/Tweet_07.md) (Dec. 18, 2013)
+#7: [创建属性和方法（第2部分）](TWEeTs/Tweet_07.md) (Dec. 18, 2013)
 
 *   _Go to Definition_
 *   _PEM Editor_
 
-#6: [Creating Properties and Methods (Part 1)](TWEeTs/Tweet_06.md) (Dec. 11, 2013)
+#6: [创建属性和方法（第1部分）](TWEeTs/Tweet_06.md) (Dec. 11, 2013)
 
 *   _PEM Editor_
 *   _Add Property / Method_
 
-#5: [Object and Collection Inspector](TWEeTs/Tweet_05.md) (Dec. 4, 2013)
+#5: [对象和集合检查器](TWEeTs/Tweet_05.md) (Dec. 4, 2013)
 
-*   _Object and Collection Inspector_
+*   _对象和集合检查器_
 
-#4: [Insert full name of object under mouse](TWEeTs/Tweet_04.md) (Nov. 26, 2013)
+#4: [在鼠标下插入对象的全名](TWEeTs/Tweet_04.md) (Nov. 26, 2013)
 
-*   _Insert full name of object under mouse_
-*   _Inspect properties of object under mouse_
+*   _在鼠标下插入对象的全名_
+*   _检查鼠标下对象的属性_
 
-#3: [Remember MRUs?](TWEeTs/Tweet_03.md) (Nov. 18, 2013)
+#3: [记忆 MRUs?](TWEeTs/Tweet_03.md) (Nov. 18, 2013)
 
 *   _MRUs_
-*   _MRU Class Libraries_
-*   _HackCX4 from MRU forms or classes_
+*   _MRU 类库_
+*   _来自MRU表单或类的HackCX4_
 *   _Finder_
 *   _PEM Editor_
-*   _MRU Classes in this project_
-*   _MRU Files in this project_
-*   Updated Project Manager (ProjectHook Class)
-*   Updated Class Browser
+*   _这个项目中的MRU类_
+*   _这个项目中的MRU文件_
+*   更新的项目管理器（ProjectHook Class）
+*   更新的类浏览器
 
-#2: [Set Object Size and Position](TWEeTs/Tweet_02.md) (Nov. 12, 2013)
+#2: [设置对象大小和位置](TWEeTs/Tweet_02.md) (Nov. 12, 2013)
 
-*   _Set Object Size and Position_
+*   _设置对象大小和位置_
 
-#1: [Intro: PEM Editor, GoFish, and Replace code window context menu items](TWEeTs/Tweet_01.md) (Oct. 28, 2013)
+#1: [介绍：PEM编辑器，GoFish和替换代码窗口上下文菜单项](TWEeTs/Tweet_01.md) (Oct. 28, 2013)
 
 *   _PEM Editor_
 *   _GoFish_
-*   _Replace code window context menu items_
+*   _替换代码窗口上下文菜单项_
 
-**Upcoming TWEeTs (un-ordered)**
+**即将推出的TWEeT（无需订购）**
 
 *   Go To Definition
 *   Super Browse
-*   Super Browse enhancements
+*   Super Browse 增强
 
 *   #Include files
-    *   _Dropdown Constants List_
-    *   _Go To Include File_
+    *   _下拉常量列表_
+    *   _Go To Include 文件_
     *   _Go To Definition_
-    *   _Extract to Constant_
+    *   _提取到常量_
 *   Finder
 *   BeautifyX
 *   Create Locals
 *   MDots
-*   WITH / ENDWITH issues
-*   Cross References
-*   Highlight / close control structure
+*   WITH / ENDWITH 问题
+*   交叉引用
+*   突出显示/关闭控制结构
 *   Wrap text
     *   Wrap with IF / ELSE / ENDIF
     *   Wrap with TRY / CATCH / ENDTRY
     *   Wrap with WITH / ENDWITH
     *   Change IF / ENDIF to DO CASE / ENDCASE
-*   Inserting text
-*   Find objects
-*   Miscellaneous
-    *   Add object
-    *   Save As Class
-    *   Go to object
-*   Parent (and containing) classes
-    *   Edit Parent and Containing Classes
-    *   Re-Define Parent Class
-    *   Compare with Parent Class
-*   Refactoring
-    *   Copy (for comparing and pasting)
-    *   Edit Parent and Containing Classes
-    *   Paste properties and method code
-    *   Compare with Parent Class
-    *   Compare with copied object
+*   插入文字
+*   查找对象
+*   杂项
+    *   增加对象
+    *   另存为类
+    *   定位到类
+*   父（和包含）类
+    *   编辑父类和包含类
+    *   重新定义父类
+    *   与父类进行比较
+*   重构
+    *   复制（用于比较和粘贴）
+    *   编辑父类和包含类
+    *   粘贴属性和方法代码
+    *   与父类进行比较
+    *   与复制对象进行比较
 *   Go To Definition
-*   Working with .H files
+*   使用.H文件
 *   Super Browse
-*   Working with highlighted text
-    *   Extract to Method / Extract to Variable / Extract to Constant
-    *   Commenting / uncommenting
+*   使用突出显示的文本
+    *   提取到方法/提取到变量/提取到常量
+    *   注释/取消注释
     *   Wrapping text (IF/ENDIF, etc)
-    *   Highlight Control Structure / Close Control Structure
-*   Copying and pasting objects, and properties/methods in an object
-    *   Copy (for comparing and pasting)
-    *   Compare with copied object
-    *   Paste properties and method code
-    *   Compare with Parent Class
-    *   Paste Object
-    *   Add Object
-*   Working with Parent and Container Classes
+    *   突出显示控制结构/关闭控制结构
+*   在对象中复制和粘贴对象和属性/方法
+    *   复制（用于比较和粘贴）
+    *   与复制对象进行比较
+    *   粘贴属性和方法代码
+    *   与父类进行比较
+    *   粘贴对象
+    *   添加对象
+*   使用父类和容器类
