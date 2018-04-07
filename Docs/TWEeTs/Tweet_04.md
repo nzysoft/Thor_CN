@@ -15,7 +15,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 请记住这两个重要部分：
 
 1.  焦点必须放在代码窗口上，而不是你正在编辑的表单或类。
-2.  这个工具***只能使用热键***，因为它执行时会读取鼠标下的内容。
+2.  这个工具**只能使用热键**，因为它执行时会读取鼠标下的内容。
 
 You may have problems with remembering so many hot keys (at least I do), particularly for tools like this that you might not be using with great regularity.  The way that I handle this is to add the tool to the [Thor Tool Bar](https://groups.google.com/forum/?fromgroups#!searchin/FoxProThor/toolbar/foxprothor/DvZMXuxIEwM/3NK3XnAFyqsJ). When I need it, the tooltip shows me the hot key.
 
