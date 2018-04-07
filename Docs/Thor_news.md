@@ -8,7 +8,7 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 [Thor 视频](Thor_videos.md)
 
-[Thor 推特](TWEeTs.md)
+[Thor 推特](TWEeTs/TWEeTs.md)
 
 ![](Images/Thor_greenline.png)
 
@@ -48,7 +48,7 @@ Thor Repository中提供了许多新的Thor工具。
     *   绑定列事件 - 将Grid列中的事件绑定到此类
     *   Grid 上下文菜单 - 为网格中的单元格创建上下文菜单  
 
-同时可参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+同时可参看 [所有 Thor 推特的历史](TWEeTs/TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
 
 ---
 
@@ -57,49 +57,49 @@ Thor Repository中提供了许多新的Thor工具。
 
 **[#41, 2015-01-12 添加到VFPX的两个新项目](#Headline41)**
 
-**[#40, 2014-01-04 TWEeT #27: Go To Definition](Tweet_27.md)**
+**[#40, 2014-01-04 TWEeT #27: Go To Definition](TWEeTs/Tweet_27.md)**
 
-**[#39, 2014-12-22 TWEeT #26: 三个新的 Thor 工具](Tweet_26.md)**
+**[#39, 2014-12-22 TWEeT #26: 三个新的 Thor 工具](TWEeTs/Tweet_26.md)**
 
 **[#38, 2014-12-17 添加到VFPX的两个新项目](#Headline38)**
 
-**[#37, 2014-11-30 TWEeT #25: FoxBin2PRG的五个新Thor工具](Tweet_25.md)**
+**[#37, 2014-11-30 TWEeT #25: FoxBin2PRG的五个新Thor工具](TWEeTs/Tweet_25.md)**
 
-**[#36, 2014-11-25 TWEeT #24: 九个新的 Thor 工具](Tweet_24.md)**
+**[#36, 2014-11-25 TWEeT #24: 九个新的 Thor 工具](TWEeTs/Tweet_24.md)**
 
-**[#35, 2014-11-17 TWEeT #23: 检测到缓冲区溢出！](Tweet_23.md)**
+**[#35, 2014-11-17 TWEeT #23: 检测到缓冲区溢出！](TWEeTs/Tweet_23.md)**
 
-**[#34, 2014-06-11 TWEeT #22: 发布 IntellisenseX](Tweet_22.md)**
+**[#34, 2014-06-11 TWEeT #22: 发布 IntellisenseX](TWEeTs/Tweet_22.md)**
 
-**[#33, 2014-06-04 TWEeT #21: 高级功能：用于IntellisenseX的插件](Tweet_21.md)**
+**[#33, 2014-06-04 TWEeT #21: 高级功能：用于IntellisenseX的插件](TWEeTs/Tweet_21.md)**
 
-**[#32, 2014-05-29 TWEeT #20: IntellisenseX快速入门指南](Tweet_20.md)**
+**[#32, 2014-05-29 TWEeT #20: IntellisenseX快速入门指南](TWEeTs/Tweet_20.md)**
 
-**[#31, 2014-05-21 TWEeT #19: IntellisenseX中的缺陷（以及如何避免它们）...自定义关键字列表](Tweet_19.md)**
+**[#31, 2014-05-21 TWEeT #19: IntellisenseX中的缺陷（以及如何避免它们）...自定义关键字列表](TWEeTs/Tweet_19.md)**
 
-**[#30, 2014-05-10 TWEeT #18: IntellisenseX嵌套对象](Tweet_18.md)**
+**[#30, 2014-05-10 TWEeT #18: IntellisenseX嵌套对象](TWEeTs/Tweet_18.md)**
 
-**[#29, 2014-04-29 TWEeT #17: 在IntellisenseX中使用本地别名](Tweet_17.md)**
+**[#29, 2014-04-29 TWEeT #17: 在IntellisenseX中使用本地别名](TWEeTs/Tweet_17.md)**
 
-**[#28, 2014-03-03 TWEeT #16: 字段名称的自定义关键字列表](Tweet_16.md)**
+**[#28, 2014-03-03 TWEeT #16: 字段名称的自定义关键字列表](TWEeTs/Tweet_16.md)**
 
-**[#27, 2014-02-24 TWEeT #15: IntellisenseX和别名字典](Tweet_15.md)**
+**[#27, 2014-02-24 TWEeT #15: IntellisenseX和别名字典](TWEeTs/Tweet_15.md)**
 
-**[#26, 2014-02-17 TWEeT #14: IntellisenseX for Objects](Tweet_14.md)**
+**[#26, 2014-02-17 TWEeT #14: IntellisenseX for Objects](TWEeTs/Tweet_14.md)**
 
-**[#25, 2014-02-10 TWEeT #13: 新的（隐藏的）IntellisenseX功能](Tweet_13.md)**
+**[#25, 2014-02-10 TWEeT #13: 新的（隐藏的）IntellisenseX功能](TWEeTs/Tweet_13.md)**
 
-**[#24, 2014-02-03 TWEeT #12: IntellisenseX 使用"."操作符还是使用快捷键？](Tweet_12.md)**
+**[#24, 2014-02-03 TWEeT #12: IntellisenseX 使用"."操作符还是使用快捷键？](TWEeTs/Tweet_12.md)**
 
-**[#23, 2014-01-27 TWEeT #11: IntellisenseX: VFP表的别名](Tweet_11.md)**
+**[#23, 2014-01-27 TWEeT #11: IntellisenseX: VFP表的别名](TWEeTs/Tweet_11.md)**
 
-**[#22, 2014-01-20 TWEeT #10: IntellisenseX: SQL Server表中的字段名称](Tweet_10.md)**
+**[#22, 2014-01-20 TWEeT #10: IntellisenseX: SQL Server表中的字段名称](TWEeTs/Tweet_10.md)**
 
-**[#21, 2014-01-13 TWEeT #9: 提取到变量和提取为常量](Tweet_09.md)**
+**[#21, 2014-01-13 TWEeT #9: 提取到变量和提取为常量](TWEeTs/Tweet_09.md)**
 
-**[#20, 2014-01-05 TWEeT #8: 创建属性和方法 (#3)](Tweet_08.md)**
+**[#20, 2014-01-05 TWEeT #8: 创建属性和方法 (#3)](TWEeTs/Tweet_08.md)**
 
-**[#19, 2013-12-18 TWEeT #7: 创建属性和方法 (#2)](Tweet_07.md)**
+**[#19, 2013-12-18 TWEeT #7: 创建属性和方法 (#2)](TWEeTs/Tweet_07.md)**
 
 **[#18, 2013-08-26 Thor Version 1.40 发布: Thor 工具栏](#Headline18)**
 
@@ -151,7 +151,7 @@ VFPX添加了两个新项目，并可从“检查更新”中找到。
 * [VFP 9 SP2 Hotfix 3 Download](https://github.com/VFPX/VFP9SP2Hotfix3) 是VFP 9 SP2的最新修补程序。 此修补程序包括为VFP 9 SP2发布的所有三个修补程序
  
 
-参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
+参看 [所有 Thor 推特的历史](TWEeTs/TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
 
 添加到VFPX的两个新项目
 ---
@@ -165,7 +165,7 @@ VFPX添加了两个新项目，并可从“检查更新”中找到。
 * [StripeX](http://github.com/VFPX/StripeX) 是一个与Stripe.com合作的包装类。
  
 
-参看 [所有 Thor 推特的历史](TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
+参看 [所有 Thor 推特的历史](TWEeTs/TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).  
 
 ---
 
