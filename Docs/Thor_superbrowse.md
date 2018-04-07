@@ -92,7 +92,7 @@ Value 选项|输入你想要搜索的内容
 搜索选项最好由一些样本来描述：
 
 **选项类型** |**键入的内容**|**描述**
----|---
+---|---|---
 Expression|Name='Jim' 或 name = 'Tore'|自解释
 Expression|Obsolete|查找逻辑字段Obsolete是.T的每个记录。
 Expression|Inlist(custno,10,20,30)|自解释
