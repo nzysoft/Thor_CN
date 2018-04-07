@@ -1,16 +1,17 @@
-Assigning hot keys for popup menus
+为弹出菜单分配热键
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-When you click on one of the popup menus, you can assign a hot key to it by using the controls on the right.
+当您点击其中一个弹出菜单时，您可以使用右侧的控件为其分配热键。
 
-The hot key currently assigned to it appears in the disabled textbox.  (If there is one already assigned, you can remove it by using the 'Clear' button.)
+当前分配给它的热键出现在禁用文本框中。 （如果已经分配了一个，可以使用“清除”按钮将其删除。）
 
-You can then click on the '...' button to be prompted for the new hot key.  A small form will appear, requesting that you press the key combination to be used as the hot key.  You can use any combination of Shift, Ctrl, and Alt.
+然后你可以点击'...'按钮来提示输入新的热键。 将出现一个小表格，要求您按下组合键作为热键。 您可以使用Shift，Ctrl和Alt的任意组合。
 
-Note that not all key combinations can be captured, and some of them will not be accepted because they are pre-empted by Windows or FoxPro itself (Alt-F10, for instance.)
+请注意，并非所有组合键都可以被捕获，并且其中一些组合不会被接受，因为它们被Windows或FoxPro自己预先占用（例如，Alt-F10）。
 
-You also are protected from assigning the same hot key to more than one tool.
+您也不能将同一个热键分配给多个工具。
 
-To review all hot key assignments, including keyboard macros and On Key Label definitions, see the third page of the form ([Hot Key Assignments](Thor-Hot-Key-List)).  You can also change hot key assignments on that page.
+要查看所有热键分配（包括键盘宏和开关键标签定义），请参阅表单的第三页([热键分配](Thor-Hot-Key-List))。您也可以更改该页面上的热键分配。
 
 ![](Images/Thor_Assigning_hot_keys.png)
