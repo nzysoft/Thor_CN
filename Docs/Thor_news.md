@@ -283,49 +283,50 @@ Jim Nelson - PEM Editor 及相关工具
 
 这个项目与另一个VFPX项目IntellisenseX没有关系，尽管它们都提供了Intellisense增强功能。 FoxCodePlus提供更广泛的功能，并包含IntellisenseX提供的一些功能。 虽然尚未测试，但似乎可以同时使用两者。
 
-下载完成后（包括代码和文档），您可以使用系统菜单中的Thor菜单安装这些组件的文件夹：
+下载完成后（包括代码和文档），您可以使用系统菜单中的Thor菜单访问安装这些组件的文件夹：
 
 ![](Images/Tweet10_foxcodeplus.png)
 
 ---
 
-Easy access to all VFPX home pages
+轻松访问所有VFPX主页
 ---
 
 #### <a name="Headline9">#9, 2012-10-06</a>
  
 
-Thor now provides ready access to the home pages for all VFPX projects, available from the Thor menu pad.
+Thor现在可以访问Thor菜单上的所有VFPX项目的主页。
 
 ![](Images/Tweet9_vfpxp9jects.png)
 
 ---
 
-IntellisenseX released as a VFPX project
+IntellisenseX 作为 VFPX 项目发布
 ---
 
 #### <a name="Headline8">#8, 2012-09-30</a>
 
-IntellisenseX has been released as a VFPX project.
+IntellisenseX已经作为VFPX项目发布。
 
-*IntellisenseX* refers to a suite of Thor Tools that provide functionality similar to native Intellisense. These tools display lists of available variable names, field names, or members (properties, events, methods, and objects) while you type code, just like Intellisense. However, they cover those areas that Intellisense forgot (such as the list of field names in a table when editing in a code window) and provide8ew capabilities, available through customization, such as displaying the list of field names in an SQL table.
+*IntellisenseX*是指一套Thor工具，提供与原生Intellisense相似的功能。 这些工具在键入代码时显示可用变量名称，字段名称或成员（属性，事件，方法和对象）的列表，就像Intellisense一样。 但是，它们涵盖了Intellisense忘记的那些区域（例如，在代码窗口中编辑时在表格中的字段名称列表），并提供可通过定制提供的功能，例如在SQL表中显示字段名称列表。
 
-Visit the [IntellisenseX home page](https://github.com/VFPX/IntelliSenseX) and also watch the [Intellisense training videos](https://github.com/VFPX/IntelliSenseX#videos). <!-- TBL video -->
+访问[IntellisenseX主页](https://github.com/VFPX/IntelliSenseX)并观看[Intellisense培训视频](https://github.com/VFPX/IntelliSenseX#videos)。<!-- TBL video -->
 
-IntellisenseX is available from Check For Updates. <!-- TBL -->
+IntellisenseX可从检查更新中获得。 <!-- TBL -->
 
-All VFPX projects can be downloaded from Thor
+所有VFPX项目都可以从Thor下载
 ---
 
 #### <a name="Headline7">#7, 2012-09-19</a>
 
-The current version of all VFPX projects can now be downloaded directly from Check For Updates. <!-- TBL -->
+所有VFPX项目的当前版本现在可以直接从检查更新中下载。 <!-- TBL -->
 
-The projects listed in Check For Updates are listed alphabetically within these five groups:71. Projects that you have already downloaded for which there is a more current version. (see #4)
-1. Projects that you have not downloaded which have had updates in the last three months
-1. All other projects that you have not downloaded
-1. Projects that you have already downloaded and which are current
-1. All projects marked as “never update”.  This takes precedence over any of the categories above.
+检查更新中列出的项目在五个分组中按字母顺序列出： 
+1. 您已下载的项目有更新的版本。(参看 #4)
+1. 您尚未下载的项目在过去三个月内有更新
+1. 您尚未下载的所有其他项目
+1. 您已经下载并且是最新的项目
+1. 所有标记为“从不更新”的项目。 这优先于任何其他类别。
 
 ---
 
