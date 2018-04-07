@@ -1,33 +1,34 @@
 ﻿Running Thor
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-**Thor** needs to be started only once each IDE session, since it survives Clear All.
+**Thor** 只需在每个IDE会话中启动一次，因为它能够对Clear All免疫。
 
-There is a change in the recommended method for starting Thor, beginning with version 1.10.019, released Nov. 17.  This change allows ‘Check For Updates’ to be called automatically in the first IDE session of the day, at an interval of your choosing.
+从11月17日发布的版本1.10.019开始，启动Thor的推荐方法有所改变。此更改允许在当天的第一个IDE会话中自动调用“检查更新”，间隔时间可以选择。
 
-There is a PRG named RunThor.PRG, which is created in the Thor sub-folder and which can be copied anywhere (such as to a folder in the path).  It is to be called like this:  
+有一个名为RunThor.PRG的PRG，它是在Thor子文件夹中创建的，可以复制到任何地方（例如路径中的文件夹）。 它被这样调用：
 
     Do RunThor with tnDays, tlInstallAllUpdates
 
-This should be placed as early in the setup for your IDE as possible, certainly before any call to StartPEMEditor, so that any new updates can be downloaded before any other programs are running.  Remember that ‘Check for Updates’ performs a ‘Clear All’ if any updates are installed.
+在任何时候调用启动PEMEditor之前，你需要执行它，以便在运行其他程序之前下载任何可用更新。 请记住，如果安装更新，“检查更新”会执行“Clear All”。
 
-The parameter tnDays is the interval in days between calls to ‘Check for Updates’.  A value of 1 means that it will be performed in your first IDE session of each day; a value of 7 means once a week.
+参数tnDays是调用“检查更新”之间的间隔天数。 值为1表示它将在您每天的第一个IDE会话中执行; 7意味着每周一次。
 
-The parameter tlInstallAllUpdates is to be set to .T. if you want the updates to proceed without bothering to ask you whether you want to install them.
+参数tlInstallAllUpdates将被设置为.T。 如果您希望更新继续进行而不打扰问您是否要安装它们。
 
-The old mechanism for starting Thor, by calling Thor.App directly (see below), still works, but cannot invoke the ‘Check For Updates’ process.
+通过直接调用Thor.App来启动Thor的旧机制仍然有效，但无法调用“检查更新”进程。
 
     Do Thor.APP
 
-**Note**: The distinction here is that Thor.APP cannot be moved from its installation folder (if so, it has to be re-installed).  RunThor.PRG **can** be moved, as it contains an explicit reference to the folder where Thor.APP is installed.
+**注意**: 这里的区别在于Thor.APP不能从其安装文件夹移动（如果是这样，它必须重新安装）。 RunThor.PRG **可以**被移动，因为它包含对安装Thor.APP的文件夹的明确引用。
 
-Thor.App can also be called with a single parameter for a variety of related tasks:
+Thor.App也可以用一个参数来调用各种相关的任务：
 
-Parameter|Description
+参数|描述
 ---|---
-(none)|Runs Thor: Creates system menus and sub-menus, popup menus, and assigns hot keys to tools and popup menus.
-‘Edit’|Opens the Thor form
-‘Help’|Opens the Thor help page … [Thor Help](Thor_help.md)
-‘Clear HotKeys’|Removes all hot key assignments.
-‘Install’|Installs the current version of ‘Thor’.
-‘Run’|Same as no parameter (deprecated)
+(none)|运行Thor：创建系统菜单和子菜单，弹出菜单，并将热键分配给工具和弹出式菜单。
+‘Edit’|打开Thor表单
+‘Help’|打开Thor帮助页面 … [Thor 帮助](Thor_help.md)
+‘Clear HotKeys’|删除所有热键分配。
+‘Install’|安装当前版本的'Thor'。
+‘Run’|与无参数相同（不建议使用）
