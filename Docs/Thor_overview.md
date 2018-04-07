@@ -1,14 +1,15 @@
-﻿Overview of Thor
+﻿Thor概述
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-Thor is a tool for managing add-on tools in the IDE.  
+Thor是用于管理IDE中的附加工具的工具。
 
-It provides four different methods for accessing these tools:
+它提供了四种访问这些工具的不同方法：
 
-1.  By assigning hot keys to them
-2.  By creating pop-up menus accessible via hot keys
-3.  By adding the tools as bars under any of the VFP system pads (File, Edit, View, etc.)
-4.  By creating new pads in the VFP system menu and adding the tools as bars under these new pads
+1.  通过分配热键给他们
+2.  通过创建可通过热键访问的弹出菜单
+3.  通过在任何VFP系统菜单项（文件，编辑，视图等）下添加工具项，
+4.  通过在VFP系统菜单中创建新的菜单项并将这些工具添加到这些新菜单项下的菜单。
 
 There are four parts to Thor:
 
