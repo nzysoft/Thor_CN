@@ -69,36 +69,36 @@ Option 1\. Table|目标是一个表
 Option 2\. Cursor|目标是一个只读游标
 Option 3\. Cursor read/Write|目标是一个可读写的游标
 
-### Grid page:
+### Grid 页:
 
-This page is an advanced grid.
+此页是一个高级 grid。
 
-Click a column header to select/unselect a field.
+点击列标题可以选择/取消选择一个字段。
 
-Double-click any record to open it for editing in a separate window created by Dynamic Forms. This is not available if “Read-Only” checkbox is checked).
+双击任何记录都可以在由Dynamic Forms创建的单独窗口中打开并进行编辑。 如果选中“只读”复选框，则不可用）。
 
 ![](Images/Thor_Super_Browse_image_thumb_2.png)
 
-#### Filtering the grid:
+#### Grid 的过滤设置:
 
-**Control** |**Description**
+**控制** |**描述**
 ---|---
-Textbox Search Values|Enter what you want to search for
-Option Expression|Searches for the expression you type in. 
-Option Value|Enter what you want to search for
+Search Values 文本框|输入你想要搜索的内容
+Expression 选项|搜索您输入的表达式 
+Value 选项|输入你想要搜索的内容
 
-#### Searching in the table
+#### 在表中搜索
 
-The search options are best described by some samples:  
+搜索选项最好由一些样本来描述：
 
-**Option type** |**Entered value**|**Description**
+**选项类型** |**键入的内容**|**描述**
 ---|---
-Expression|Name='Jim' or name = 'Tore'|Self explanatory
-Expression|Obsolete|Finds every record where logical field Obsolete is .T.
-Expression|Inlist(custno,10,20,30)|Self explanatory
-Expression|'nit'$country|Finds every record where 'nit' is inside the field Country
-Value|usa|Finds every record where the word 'usa' is inside **any** of the selected fields
-Value|samsung 5110|Finds every record where the words 'samsung' **and** '5110' are inside **any** of the selected fields
+Expression|Name='Jim' 或 name = 'Tore'|自解释
+Expression|Obsolete|查找逻辑字段Obsolete是.T的每个记录。
+Expression|Inlist(custno,10,20,30)|自解释
+Expression|'nit'$country|查找“nit”位于字段Country内的每条记录
+Value|usa|查找“usa”一词所在的每个记录**任何**所选字段
+Value|samsung 5110|查找单词'samsung'**和**'5110'在**任何**所选字段内的每条记录
 Value|jim nelson kong|Finds every record where the words 'jim' and 'nelson' and 'kong' are inside **any** of the selected fields
 Expression|\*jim nelson kong|Same as above, the asterisk (*) forces a Value type search**any** of the selected fields
 Value|=price>100|Find all records with price > 100, the equal sign (=) forces an Expression type search**any** of the selected fields
