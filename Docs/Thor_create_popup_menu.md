@@ -1,17 +1,19 @@
-Creating Popup Menus
+创建弹出式菜单
 ===
-To create a new popup menu
-* Click on the **Popup Menus** node in the TreeView
-* Click on the Add Menu commandbutton
+_本文档由 xinjie 于 2018-04-08 翻译_
+
+创建一个新的弹出菜单
+* 单击TreeView中的**Popup Menus**节点
+* 点击添加菜单命令按钮
 
 ![](Images/Thor_Create_Popup_Menu1.png)
 
-You can now:
-* Assign the prompt for the new menu
-* Assign the text that will appear in the status bar
+你现在可以：
+* 为新菜单分配提示
+* 分配将出现在状态栏中的文本
 
 ![](Images/Thor_Create_Popup_Menu2.png)
 
-You can also take an existing menu (either a VFP system menu bar or a sub-menu) and make it available as a popup menu.  See [Duplicating menus](Thor_duplicating_menus.md).
+您也可以使用现有的菜单（VFP系统菜单栏或子菜单）并将其作为弹出式菜单提供。参看[复制菜单](Thor_duplicating_menus.md).
 
 
