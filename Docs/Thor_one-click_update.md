@@ -16,25 +16,25 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 检查更新中列出的项目在五个分组中按字母顺序列出：
 
-1.  您已下载的项目有更新的版本。(see #4)
-2.  Projects that you have not downloaded which have had updates in the last three months
-3.  All other projects that you have not downloaded
-4.  Projects that you have already downloaded and which are current
-5.  All projects marked as “never update”. This takes precedence over any of the other categories.
+1.  您已下载的项目有更新的版本。(参看 #4)
+2.  您尚未下载的项目在过去三个月内有更新
+3.  您尚未下载的所有其他项目
+4.  您已经下载并且是最新的项目
+5.  所有标记为“从不更新”的项目。 这优先于任何其他类别。
 
-### Where are these updates installed?
+### 这些更新安装在哪里？
 
-If you already have versions of [Thor](Thor.md), [PEM Editor](https://github.com/VFPX/PEMEditor), or [GoFish](https://github.com/mattslay/GoFish) installed, this update process will replace the installed versions with the newer versions.  You will ***not*** lose any work you had already done in the folders for these already installed tools.
+如果您已经有[Thor](Thor.md)，[PEM Editor](https://github.com/VFPX/PEMEditor)或[GoFish](https://github.com/mattslay/GoFish)的版本， 此更新过程将用新版本替换已安装的版本。 您将不会丢失已经在这些已安装工具的文件夹中完成的任何工作。
 
-If you did ***not*** have prior versions installed, then the update process will install them in a subfolder of the Thor folder (Thor\Tools\Apps).
+如果您**没有**安装过，则更新过程会将它们安装在Thor文件夹（Thor\Tools\Apps）的子文件夹中。
 
-### Important Note
+### 重要提示
 
-The applications that are automatically downloaded as part of ‘Checking for Updates’ are not only downloaded, but they are also installed and ready to run.  There is nothing else you need to do in order to start using them.
+作为“检查更新”一部分而自动下载的应用程序不仅可以下载，而且还可以安装并准备运行。 为了开始使用它们，您无需做任何其他事情。
 
-### Recommendations
+### 建议
 
-Thor is started by running RunThor.PRG, a file that is created as part of the installation process. This file can be copied into any other folder you wish (such as in your path), since it contains an explicit reference to the folder where you installed Thor.
+Thor通过运行RunThor.PRG启动，该文件是作为安装过程的一部分创建的。 该文件可以复制到您希望的任何其他文件夹中（例如在您的路径中），因为它包含对安装Thor的文件夹的明确引用。
 
-1.  Since this process works best if run right after launching FoxPro, before you begin working and BEFORE opening PEM Editor, and with no other FoxPro sessions running, we recommend that you call RunThor as part of your IDE setup
-2.  As Thor continues to evolved there are updates from time to time. We recommend calling RunThor with a parameter of 7 so that “Check For Updates” is run automatically every week.
+1.  由于此过程在启动FoxPro之后立即运行，因此在开始工作之前以及在打开PEM编辑器之前以及在没有其他FoxPro会话正在运行的情况下运行，我们建议您将RunThor作为IDE设置的一部分调用
+2.  随着Thor的不断发展，不时有更新。 我们建议使用参数7调用RunThor，以便每周自动运行“检查更新”。
