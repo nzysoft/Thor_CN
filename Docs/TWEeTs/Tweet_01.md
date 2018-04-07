@@ -1,25 +1,25 @@
-﻿Thor TWEeT #1: [PEM Editor](https://github.com/VFPX/PEMEditor), [GoFish](https://github.com/mattslay/GoFish), and Replace code window context menu items
+﻿Thor TWEeT #1: [PEM Editor](https://github.com/VFPX/PEMEditor), [GoFish](https://github.com/mattslay/GoFish), 和“替换代码窗口上下文菜单项”
 ===
 _本文档由 xinjie 于 2018-04-08 翻译_
 
-While at SW Fox, I realized that many of the tools from Thor aren't being used because there are simply so many of them. It seems that there might be wider usage if they were properly introduced, at a more relaxed pace.
+在SW Fox时，我意识到很多来自Thor的工具都没有被使用，因为它们的数量太多了。 看来，如果他们适当地被介绍，以更宽松的步伐，可能会有更广泛的使用。
 
-Thus, I will be describing one tool a week in something I will refer to as TWeeTs (**T**his **W**eek's **E**xc**e**ptional **T**ools).
+因此，我将在一周内描述一种工具，我将其称为TWeeTs (**T**his **W**eek's **E**xc**e**ptional **T**ools).
 
-I will take the easy way out this week, noting two tools that (ahem) you should not do without:  [PEM Editor](https://github.com/VFPX/PEMEditor) and [GoFish](https://github.com/mattslay/GoFish).
+我会在这个星期采取简单的方法，注意两个你不应该没有的工具：[PEM Editor](https://github.com/VFPX/PEMEditor) 和 [GoFish](https://github.com/mattslay/GoFish).
 
-I think that not much needs to be said about these two since their acceptance has been almost universal. (Except this: if you're not using them, you are really missing out)
+我认为对这两个工具没有什么需要说的，因为他们的接受几乎是普遍的。 （除了这个：如果你不使用它们，你真的错过了）
 
-There is a related Thor tool you should be aware of, a tool with a rather cumbersome name: **Replace code window context menu items**.
+有一个你应该知道的 Thor 相关工具，一个相当麻烦的工具： **替换代码窗口上下文菜单项**.
 
-This tool updates the _FoxRef system variable so that two options in the context menu in a code window use Thor tools instead:
+此工具更新_FoxRef系统变量，以便代码窗口中上下文菜单中的两个选项使用Thor工具：
 
-      Option "View Definition"       uses **Go To Definition** (I will describe this tool in another TWeeT)
+      Option "View Definition"       uses **Go To Definition** (我将在另一个TWeeT中描述这个工具)
 
       Option "Look up Reference" uses **GoFish**
 
-This will not affect the use of Code References from the VFP Tools Menu. (To be honest, even though I am the Project Manager in VFPX for Code References, I have not used Code References in years, as I use [GoFish](https://github.com/mattslay/GoFish) instead.)
+这不会影响VFP工具菜单中代码引用的使用。 （说实话，尽管我是VFPX中代码引用项目的项目经理，但我多年没有使用代码引用了，因为我使用[GoFish](https://github.com/mattslay/GoFish)代替）。
 
-**Replace code window context menu items** only needs to be executed once in each IDE session. The recommended way to do this is to check "Run at StartUp" on the Tool Definitions page.
+只需要在每个IDE会话中执行一次**替换代码窗口上下文菜单项**。 推荐的方法是在“工具定义”页面上选中“在启动时运行”。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
