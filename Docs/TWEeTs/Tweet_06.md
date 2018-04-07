@@ -22,8 +22,8 @@ Thor提供了相当多的工具来创建新的属性和方法。 
     *   您可以立即打开它进行编辑。
     *   您可以创建一个[Plug-In](../Thor_add_plugins.md)，它将填充新创建的方法的开始部分。
     
-When you use either of these tools, you are following the long-established two-step pattern where the process of creating the new property/method is distinct from using a reference to it.
+当您使用这些工具时，您将遵循早已建立的两步模式，其中创建新属性/方法的过程不同于使用对它的引用。
 
-In next week's TWEeT on this topic, I will demonstrate tools that establish a new pattern: you can create a property or method as you refer to it. Using these tools tends to provide less interruption to your programming flow, as you can create new properties and methods "on the fly".
+在下周关于此主题的TWEeT中，我将演示建立新模式的工具：您可以在引用它时创建属性或方法。 使用这些工具可以减少对编程流程的干扰，因为您可以“即时”创建新的属性和方法。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
