@@ -17,14 +17,14 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 1.  焦点必须放在代码窗口上，而不是你正在编辑的表单或类。
 2.  这个工具**只能使用热键**，因为它执行时会读取鼠标下的内容。
 
-You may have problems with remembering so many hot keys (at least I do), particularly for tools like this that you might not be using with great regularity.  The way that I handle this is to add the tool to the [Thor Tool Bar](https://groups.google.com/forum/?fromgroups#!searchin/FoxProThor/toolbar/foxprothor/DvZMXuxIEwM/3NK3XnAFyqsJ). When I need it, the tooltip shows me the hot key.
+您可能在记住这么多热键时遇到问题（至少我会这样做），特别是对于这样的工具，您可能没有经常使用这些工具。 我处理这个问题的方法是将该工具添加到[Thor Tool Bar](https://groups.google.com/forum/?fromgroups#!searchin/FoxProThor/toolbar/foxprothor/DvZMXuxIEwM/3NK3XnAFyqsJ)。 当我需要它时，工具提示将显示我定义的热键。
 
-This tool also works at run time. Place the cursor into the Command Window (instead of a code window) and the tool will paste into it a reference to the object under the mouse in an executing form.  
+该工具也可以在运行时运行。 将光标放在命令窗口中（而不是代码窗口），工具将在执行的表单上粘贴鼠标下的对象的引用。
 
-There is a closely related tool named **Inspect properties of object under mouse** (written by Andy Kramek) that also works at run time. Run this tool the same way and it pops up a MessageBox that displays the major properties of the object under the mouse.
+有一个密切相关的工具，名为**Inspect鼠标下的对象属性**（由Andy Kramek编写），它也可以在运行时工作。 以相同的方式运行此工具，并弹出一个MessageBox，其中显示鼠标下的对象的主要属性。
 
-Thor provides a neat tool for browsing the contents of objects and collections, **Object and Collection Inspector** -- more on that in next week's TWEeT.
+Thor提供了一个用于浏览对象和集合内容的简洁工具，** Object和Collection Inspector ** - 更多内容将在下周的TWEeT中进行介绍。
 
-_Tool written by Bernard Bout_
+_该工具由Bernard Bout编写_
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
