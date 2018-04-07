@@ -1,14 +1,15 @@
-Thor Form Usage Notes
+Thor 表单使用说明
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-There are a few very important considerations to keep in mind when using the Thor form:
+使用Thor表单时需要注意一些非常重要的注意事项：
 
-* There are no 'Save', 'Cancel', or 'Undo' buttons on the form.  Any changes made on the form are posted to the underlying tables immediately, and there is no provision for canceling or un-doing any changes.
+* 表单上没有“保存”，“取消”或“撤消”按钮。 对表单所做的任何更改都会立即发布到基础表中，并且没有规定取消或取消任何更改。
 
-* When the form is opened, it reads the catalog of all tools and uses that catalog from there on.  Thus, changes made to tools, or tools that are added while the form is opened, are not automatically included in the catalog.  To synchronize the form with the catalog of all tools, use the Refresh button:
+* 当表单被打开时，它读取所有工具的目录并从那里使用该目录。 因此，对工具或在打开表单时添加的工具所做的更改不会自动包含在目录中。 要将表单与所有工具的目录同步，请使用“刷新”按钮：
 
 ![](Images/Thor_Form_Usage_Notes_RefreshButton.png)
 
-* Any updates made to the VFP system menu, pop-up menus, or hot key assignments are not applied until the form is closed.  To synchronize the VFP system menu, etc, with the form, use the Thor button:
+* 在表单关闭之前，不会应用对VFP系统菜单，弹出式菜单或热键分配所做的任何更新。 要使VFP系统菜单等与表单同步，请使用Thor按钮：
 
 ![](Images/Thor_Form_Usage_Notes_ThorButton.png)
