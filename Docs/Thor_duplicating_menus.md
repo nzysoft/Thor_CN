@@ -1,27 +1,29 @@
-Duplicating menus
+复制菜单
 ===
+_本文档由 xinjie 于 2018-04-07 翻译_
 
-There are three different types of menus (VFP system menu pads, pop-up menus), and any menu you create can be used multiple times, as one or more of these three types.
+有三种不同类型的菜单（VFP系统菜单，弹出式菜单），并且您创建的任何菜单都可以多次使用，可以是这三种类型中的一种或多种。
 
-Just to be clear, this means that the ***same*** menu can appear in multiple places.  Internally, it will be the same menu, and any change made to it in one place will be replicated in all the other places as well.
+只需要清楚，这意味着***同样的***菜单可以出现在多个地方。 在内部，它将是相同的菜单，并且在一个地方对其进行的任何更改也将在所有其他地方复制。
 
-### To make a popup menu or sub-menu into a menu pad on the VFP system menu bar
-1. Click on the menu (in the example below, a popup menu is chosen; it works the same for any sub-menu.)
-1. Click on 'Add as Top Level'
+### 在VFP系统菜单栏上的弹出式菜单或子菜单进入菜单栏
+
+1. 点击菜单（在下面的例子中，选择了一个弹出式菜单;它对任何子菜单都是一样的）。
+1. 点击“添加为顶级”
 
 ![](Images/Thor_Duplicating_Menus_SaveAsTopLevel.png)
 
 
-### To make a VFP system menu or sub-menu into a Popup Menu
-1. Click on the menu
-1. Click on 'Add as Popup'
+### 使VFP系统菜单或子菜单进入弹出式菜单
+1. 点击菜单
+1. 点击'Add as Popup'
 
 ![](Images/Thor_Duplicating_Menus_SaveAsPopUp.png)
 
-### To make ***any*** menu into a sub-meu
-1. Click on the menu you want to make into a sub-menu
-1. Click on 'Copy Menu'
-1. Click on the menu that you want to add the sub-menu
-1. Click on 'Add Copied Menu'
+### 使***任何***菜单进入子菜单
+1. 点击您想要制作的菜单进入子菜单
+1. 点击“复制菜单”
+1. 点击您想添加子菜单的菜单
+1. 点击'添加复制菜单'
 
 ![](Images/Thor_Duplicating_Menus_SaveCopiedMenu.png)
