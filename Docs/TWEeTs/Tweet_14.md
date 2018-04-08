@@ -29,15 +29,15 @@ IntellisenseX为基于PRG的类提供了THIS和WITH THIS的下拉列表。
 
 ![](Images/Tweet14b.png)
 
-On the options page on the Thor Configuration form you can indicate the level of detail you want to see (either custom properties and methods in this class only, or all inherited properties and methods)
+在Thor Configuration窗体上的选项页面上，您可以指定想要查看的详细程度（仅限该类中的自定义属性和方法，或所有继承的属性和方法）
 
 ![](Images/Tweet14c.png)
 
 #### 按Ctrl-Enter粘贴参数列表
 
-As can be seen, the display has a second column, showing the parameters list for methods and events.
+可以看出，显示有第二列，显示方法和事件的参数列表。
 
-If you select an item from the list and press Ctrl+Enter, the parameters list will be inserted into your code, as shown below. This is not necessary when default Intellisense provides the Quick Info window for parameters but is of considerable value for the cases (described below) where IntellisenseX provides assistance where default Intellisense does not.
+如果您从列表中选择一个项目并按下Ctrl + Enter，参数列表将被插入您的代码中，如下所示。 当默认的Intellisense为参数提供快速信息窗口时，这不是必需的，但对于IntellisenseX在默认的Intellisense不提供帮助的情况下（如下所述）具有相当大的价值。
 
 ![](Images/Tweet14d.png)
 
