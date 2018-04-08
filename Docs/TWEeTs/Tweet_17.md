@@ -1,15 +1,15 @@
-﻿Thor TWEeT #17: 在 <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a> 中使用本地别名
+﻿Thor TWEeT #17: 在 <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a> 中使用局部别名
 ===
 _本文档由 xinjie 于 2018-04-08 翻译_
 
-在早些时候关于[VFP表的别名](Tweet_15.md)的TWEeT中，有关于本地别名的简短的论述。 但是，它提供了一些值得讨论的有价值的功能。
+在早些时候关于[VFP表的别名](Tweet_15.md)的TWEeT中，有关于局部别名的简短的论述。 但是，它提供了一些值得讨论的有价值的功能。
 
 在两个方面它和 Local 语句(`"Local name as class of classlib”`)是类似的：
 
 *   他们为您的代码提供注释，以便IntellisenseX可以提供一个下拉列表。
 *   它们只适用于当前的方法或程序。
 
-有三种等同的方法来定义本地别名：
+有三种等同的方法来定义局部别名：
 
 * `{{ SomeAlias = What-It-Stand-For }}`  … 在任意的注释中
 * `*#Alias SomeAlias = What-It-Stand-For`    … 在代码行的开始
@@ -17,7 +17,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 > _(上面的粗体文本必须完全按照原样输入，不得插入空格。)_
 
-> **注意：根据大众需求，上述第一条语句（带双花括号的语句）适用于*整个* PRG，而不仅仅是它所在的过程或函数。**
+> **注意：根据大多数情况，上述第一条语句（带双花括号的语句）适用于*整个* PRG，而不仅仅是它所在的过程或函数。**
 
 `“What-It-Stands-For”` 可以是引用表或者对象的任意一种形式。
 
@@ -36,10 +36,10 @@ Select MyTable
 Scatter Name loObject && {{ loObject = MyTable }}
 ```
 
-This provides the dropdown list for the table MyTable when the properties of loObject are referenced.
+这将可以提供引用loObject的属性时表MyTable的下拉列表。
 
-Note also that `“SomeAlias”` can also refer to compound names, such as `This.oMainObj` or `This.oMainObj.oData`; the substitution rules work the same way.
+还要注意`"SomeAlias"`也可以引用复合名称，比如`This.oMainObj`或`This.oMainObj.oData`; 替代规则以相同的方式工作。
 
-This TWEeT has addressed Local Aliases; the earlier TWEeT on [the Alias Dictionary](Tweet_15.md) addressed global aliases; and an upcoming TWEet will address Aliases that apply to an entire form or class (both VCX and PRG-based).
+本TWEeT说明了局部别名; 更早的[别名词典](Tweet_15.md)说明了全局别名; 即将推出的TWEet将描述适用于整个表单或类（基于VCX和PRG）的别名。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
