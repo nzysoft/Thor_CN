@@ -80,6 +80,7 @@ PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。
 ### 示例
 
 系统菜单中两个新的菜单(Thor 和个人定制菜单 JRN)以及在 Thor 菜单中的菜单选项：
+**(译者注：此截图和最新版本略有区别！)**
 
 ![](Docs/Images/Thor_image_4.png)
 
@@ -87,7 +88,7 @@ PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。
 
 Thor 1.40 – 发布日期 2013-08-26
 
-增加 Thor 工具栏。通过配置表单中的选择，你可以将工具添加到工具栏，如下图所示(也可用于[Tool Launcher](Docs/Thor_launcher.md).)
+增加 Thor 工具栏。通过配置表单中的选择，你可以将工具添加到工具栏，如下图所示(也可用于[工具启动器](Docs/Thor_launcher.md).)
 
 ![](Docs/Images/Thor_SNAGHTMLf389404.png)
 
@@ -95,11 +96,11 @@ Thor 1.40 – 发布日期 2013-08-26
 
 ![](Docs/Images/Thor_SNAGHTMLf3b4e2e.png)
 
-工具栏尺寸、位置、停靠以及从一个 session 到另一个的过程中保持显示（persist from one session to the next）。(说实话，这个保持显示一直有问题。)
+工具栏的尺寸、位置、停靠以及在工作期切换时保持稳定。(事实是，工作期切换时一直有问题。)
 
 Thor 1.30 – 发布日期 2012-08-19
 
-*   增加 [Tool Launcher](Docs/Thor_launcher.md), 通过VFP系统菜单中 Thor 菜单可以调用它
+*   增加 [工具启动器](Docs/Thor_launcher.md), 通过VFP系统菜单中 Thor 菜单可以调用它
 
 ![](Docs/Images/Thor_SNAGHTML39362d.png)
 
@@ -121,7 +122,7 @@ Thor I Beta 5 - 发布日期 2011-08-09 (91 downloads)
 
 Thor I Beta 4 - 发布日期 2011-07-17 (125 downloads)
 
-*   重新安装将以自动的方式进行。你只需要简单的执行最新版本的 Thor.app 就可以完成。
+*   重装将以自动的方式进行。你只需要简单的执行最新版本的 Thor.app 就可以完成。
 *   包含完整在线文档。
 
 Thor I Beta 3 - 发布日期 2011-07-06 (94 downloads)  
