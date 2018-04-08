@@ -37,7 +37,7 @@ Thor:
 *   它提供了注册工具的统一的方法。
 *   简化了开发者之间的共享。
 
-Thor 附带两个工具：**Thor 仓库** 和 ** PEM Editor** 。(详见下文)
+Thor 附带两个工具：**Thor 仓库**和**PEM Editor** 。(详见下文)
 
 与 ON KEY LABEL 不同，Thor 可以提供全方位的多键组合 (例如：{Ctrl + Alt + A})。
 
@@ -75,7 +75,7 @@ PEM Editor Version 7， 现在已经改名为 '具有 IDE 工具的 PEM Editor'�
 
 PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。Thor 仓库 中超过一半的内置工具使用了它们。
 
-下载和安装`具有 IDE 工具的 PEM Editor`的步骤已经是[一键更新 Thor](Docs/Thor_one-click_update.md) 的一部分.
+下载和安装**具有 IDE 工具的 PEM Editor**的步骤已经是[一键更新 Thor](Docs/Thor_one-click_update.md) 的一部分.
 
 ### 示例
 
