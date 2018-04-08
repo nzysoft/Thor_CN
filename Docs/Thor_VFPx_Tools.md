@@ -8,19 +8,19 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 Thor 设计的初衷是为了使 VFP 社区成员可以共享有价值的工具。PRG工具的结构使这种共享变得异常简单。
 
-`Thor Repository`是这些工具的目录。随着开发者不断提交新的工具，它也会不断的增长。在初始阶段，它大约包含十几个工具。
+`Thor 仓库`是这些工具的目录。随着开发者不断提交新的工具，它也会不断的增长。在初始阶段，它大约包含十几个工具。
 
 要注册库中的工具，请将 ZIP 文件中的 PRG 复制到文件夹 **Thor\Tools**
 
-[点击这里查看Thor 仓库](Thor_repository.md) 
+[点击这里查看 Thor 仓库](Thor_repository.md) 
 
-### Tools from PEM Editor
+### 来自 PEM 编辑器的工具
 
-PEM编辑器的第7版，现在重新命名为''PEM Editor w/ IDE Tools'，包含三十多种可通过Thor访问的工具。 其中包括一些在PEM Editor 6版本中发布的工具，以及大量全新的工具。 这些可以从PEM编辑器页面下载。
+PEM Editor Version 7，现在重新命名为`具有 IDE 工具的 PEM 编辑器`，它包含可以通过 Thor 访问的超过30个工具，其中一部分是 PEM Editor Version 6 中包含的，其余的是全新开发的工具。这些工具可以从 PEM 编辑器主页下载。
 
-PEM编辑器还“发布”了一对简化构建进一步工具的对象。 Thor Repository中超过一半的原始工具使用这些对象。
+PEM 同时"发布" 一对儿用于简单的构建更多工具的对象。`Thor 仓库`中超过一半的内置工具使用了它们。
 
-通过执行以下命令安装PEM编辑器时，将自动从PEM编辑器注册工具（如果Thor正在运行）：
+通过执行以下命令安装`PEM 编辑器`时，将自动从`PEM 编辑器`注册工具（如果Thor正在运行）：
 
     Do PEMEditor.APP
 [点击这里查看带有IDE工具的PEM Editor 7](https://github.com/VFPX/PEMEditor)
