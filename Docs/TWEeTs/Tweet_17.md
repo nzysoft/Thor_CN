@@ -1,5 +1,6 @@
-﻿Thor TWEeT #17: Using Local Aliases in <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a>
+﻿Thor TWEeT #17: 在 <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a> 中使用本地别名
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
 In an earlier TWEeT about [Aliases for VFP Tables](Tweet_15.md), there was a brief and dismissive discussion about Local Aliases.  However, they provide some worthwhile features that are worth discussing.
 
