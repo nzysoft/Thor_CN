@@ -16,25 +16,25 @@
 *   _Dropdown Table Names –_ 当前路径中的所有表。
 *   _DBC Tables by ! –_ 在DBC中找到的所有表。
 
-All of these tools work essentially the same way. When you invoke them, you get a dropdown list that you can select from, just as when you select from dropdown lists created by IntellisenseX. The following example demonstrates a use of _AutoComplete_, showing all the names referenced in this procedure.
+所有这些工具的工作方式基本相同。 当您调用它们时，您会看到一个可从中进行选择的下拉列表，就像您从IntellisenseX创建的下拉列表中进行选择一样。 以下示例演示 _AutoComplete_ 的用法，显示此过程中引用的所有名称。
 
 ![](Images/Tweet22b.png)
 
-You can also begin typing part of the name before invoking the tool, such as in this example where “Temp” was entered before invoking _AutoComplete_.
+您也可以在调用该工具之前开始输入名称的一部分，例如在本例中调用AutoComplete之前输入了“Temp”。
 
 ![](Images/Tweet22c.png)
 
-Finally, if you type in enough of a name to uniquely identify it (such as “New” in this example, which matches only “lcNewSourceFile”), the match is pasted in immediately without even showing the pop-up.  When this becomes familiar, it is extremely handy, reducing both keystrokes and keying errors.
+最后，如果您输入了足够的名称来唯一标识它（例如本例中的“New”，它仅与“lcNewSourceFile”匹配），则匹配即时粘贴而不显示弹出窗口。 当这变得熟悉时，它非常方便，减少了击键和键控错误。
 
-There are a few things to note about each of these tools:
+关于这些工具中的每一个，有几点需要注意：
 
-*   _AutoComplete_ – has its own plug-in to allow you to change the names that are displayed or their order. (My personal version of this recognizes my convention for naming tables and cursors).
-*   _Dropdown Constants List –_ The dropdown list shows not only the names of matching defined constants, but also their values and any comment on the same line.  Furthermore, the matching is also done against the comments as well. For instance, in the example below, entering “nisst” matches all the entries that have “NISStatus” (a field name) in the comment.
+*   _AutoComplete_ – 有自己的插件允许您更改显示的名称或其顺序。 （我的个人版本可以识别我的约定，用于命名表和游标）。
+*   _Dropdown Constants List –_ 下拉列表不仅显示匹配的已定义常量的名称，还显示它们的值以及同一行上的任何注释。 此外，匹配也是针对评论完成的。 例如，在下面的示例中，输入“nisst”会匹配注释中具有“NISStatus”（字段名称）的所有条目。
 
 ![](Images/Tweet22d.png)
 
-*   _Dropdown Procedures List –_ shows the names of procedures and functions, but not their parameters. Though that was the original intent,  including the parameters caused it to be so slow it was worthless.  Even as it is, without parameters, it can be very slow.
-*   _Dropdown Table Names –_ has its own plug-in to search in different folders, etc.
-*   _DBC Tables by ! –_ This one is not quite like the others, as it assigns an On Key Label for when you enter the ‘!’. Thus, you can only use this tool that way (not from menus or the Thor Toolbar, for instance)
+*   _Dropdown Procedures List –_ 显示程序和功能的名称，但不显示它们的参数。 尽管这是最初的意图，其中包括导致它变得如此缓慢的参数，但它毫无价值。 即使没有参数，它也可能非常缓慢。
+*   _Dropdown Table Names –_ 有自己的插件来搜索不同的文件夹等。
+*   _DBC Tables by ! –_ 这与其他不太一样，因为它为您输入'！'时分配了一个开启标签。 因此，您只能以这种方式使用此工具（例如，不能从菜单或Thor工具栏中使用）
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
