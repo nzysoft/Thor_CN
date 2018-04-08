@@ -21,9 +21,9 @@ PEM Editor Version 7，现在重新命名为`具有 IDE 工具的 PEM 编辑器`
 PEM 同时"发布" 一对儿用于简单的构建更多工具的对象。`Thor 仓库`中超过一半的内置工具使用了它们。
 
 通过执行以下命令安装`PEM 编辑器`时，将自动从`PEM 编辑器`注册工具（如果Thor正在运行）：
-`foxpro
+```foxpro
     Do PEMEditor.APP
-`
+```
 [点击这里查看带有IDE工具的 PEM 编辑器 7](https://github.com/VFPX/PEMEditor)
 
 ### GoFish5
