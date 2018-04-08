@@ -24,55 +24,55 @@ IntellisenseX 最严重的问题是，在 VCX 或 SCX 中获取属性和方法�
 
 ![](Images/Tweet19b.png)
 
-Finally, mark these checkboxes for option “Add all words in code window” as well, so that new words you create going forward, including properties and methods created by [PEM Editor](https://github.com/VFPX/PEMEditor) or any of its related tools, are automatically added to the Custom Keyword List. Do so even if you don’t used BeautifyX (but more on that in a bit).
+最后，将这些复选框标记为“在代码窗口中添加所有单词”选项，以便您创建的新单词，包括由[PEM 编辑器](https://github.com/VFPX/PEMEditor)创建的属性和方法， 或其任何相关工具都会自动添加到“自定义关键字列表”中。 即使你没有使用BeautifyX（但更多的是这个）。
 
 ![](Images/Tweet19c.png)
 
-After performing these three steps, you’re on your way.
+执行这三个步骤后，你就可以开始使用了。
 
-#### Updating the Custom Keyword List Programmatically
+#### 以编程方式更新自定义关键字列表
 
-You can programmatically add words to this list at any time by using any of the following Thor tools:
+您可以通过使用以下任何一个 Thor 工具随时以编程方式向此列表添加单词：
 
 *   _Add all words from folder or project_
 *   _Add all words in code window_
 *   _Add PEMS from current class or form_
 *   _Add fields names from current table_
 
-If there are any new words encountered, a form opens for you to approve the new words; if there are any words found that conflict with words already in the table, a separate form opens for you to select which you want to use.
+如果遇到任何新单词，将打开一个表单以便于你应用新单词; 如果发现任何与表中已有单词相冲突的单词，将打开一个单独的表单供您选择要使用的单词。
 
 ![](Images/Tweet19d.png)
 
-#### What does “Locked” mean?
+#### “锁定”是什么意思？
 
-Some words may have inconsistent usages – “Openexcelfile” or “OpenExcelfile” or “OpenExcelFile” or ?  Marking a word as “Locked” indicates that that is your preferred usage and you will never be asked about possible conflicts again.
+有些词可能有不一致的用法 - “Openexcelfile”或“OpenExcelfile”或“OpenExcelFile”或？ 将单词标记为“已锁定”表示这是您的首选用法，您将永远不会再被问到可能发生的冲突。
 
-#### Updating the Custom Keyword List Manually
+#### 手动更新自定义关键字列表
 
-You can  use the tool _Add highlighted word_ to add or update a word directly to the Custom Keyword List (this also marks it as Locked – your preferred usage).
+您可以使用工具 _Add highlighted word_ 将单词直接添加或更新到自定义关键字列表（这也将其标记为锁定 - 您的首选用法）。
 
-You can also open the table with tool _Browse Custom Keyword List_ and make any modifications as needed. This table is found in your “My Tools” folder.
+您还可以使用工具 _Browse Custom Keyword List_ 打开表并根据需要进行任何修改。 此表位于“My Tools”文件夹中。
 
 ```foxpro
 _Screen.cThorFolder + 'Tools\My Tools\KeywordList.DBF'
 ```
 
 
-#### Using BeautifyX
+#### 使用 BeautifyX
 
-If you’re not already using Thor tool BeautifyX all the time, it’s time to change.  It provides a wide range of features and you can choose which ones work for you – but some of them them definitely will.
+如果您还没有一直使用 Thor 工具 BeautifyX ，那么现在是时候改变了。它提供了广泛的功能，您可以选择适合您的功能 - 肯定会有的。
 
-The options include
+选项包括：
 
-*   Apply native Beautify
-*   Provide consistent spacing around operators and commas, align semi-colons, indentation for continuation lines
-*   Highly customizable formatting for SQL-SELECT, SQL-UPDATE, SQL-DELETE, and REPLACE statements, (conditionally within TEXT / ENDTEXT structures)
-*   Run Thor tool “Create Locals’
-*   Add MDots
-*   Check for RETURNs between WITH/ENDWITH (these create latent C5 errors)
-*   Apply Custom Keyword List
-*   Add words to Custom Keyword List.
+*   应用固有的美化
+*   在操作符和逗号前后提供一致的间距，对齐分号和连续行的缩进
+*   SQL-SELECT，SQL-UPDATE，SQL-DELETE 和 REPLACE 语句的高度可定制格式（有条件地在TEXT / ENDTEXT结构中）
+*   运行 Thor 工具 “Create Locals’
+*   为变量添加"."(译者注：例如 a = 1 转变为 m.a = 1)
+*   检查 WITH / ENDWITH 之间的RETURN（这些会产生潜在的C5错误）
+*   应用自定义关键字列表
+*   添加单词到自定义关键字列表。
 
-Make it your practice to use BeautifyX on all the code you write.
+在您编写的所有代码上使用 BeautifyX 应该是您的一个好习惯。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
