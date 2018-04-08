@@ -28,21 +28,21 @@ IntellisenseX现在可识别USE打开的表的别名（在同一过程中引用�
 
 ![](Images/Tweet11c.png)
 
-#### Where the alias is a constant alias used throughout an application
+#### 别名是在整个应用程序中使用的常量别名
 
-IntellisenseX also supports the case where an alias refers to the same table throughout an application.
+IntellisenseX还支持别名在整个应用程序中引用同一个表的情况。
 
-_In my own environment, tables are never referred to by name. They are always opened by a UDF (called with the alias), which uses a meta-table to determine the name and folder for the table. Thus the alias name can always be used to open the table._
+_在我自己的环境中，表格永远不会按名称引用。 它们总是由UDF打开（使用别名调用），该UDF使用元数据表来确定表的名称和文件夹。 因此，别名可以始终用于打开表。_
 
-This is handled by creating the [Plug-In](Thor_add_plugins.md) “OpenTable”. This plug-in works very simply – it is called with a single parameter, the (potential) alias.
+这是通过创建[Plug-In](Thor_add_plugins.md)“OpenTable”来处理的。 这个插件工作非常简单 - 它通过一个参数被调用，即（潜在的）别名。
 
-If that alias can be used to open the desired table, do so, and return the alias as a result; if not, return a logical or empty result
+如果该别名可用于打开所需的表，那么就打开它，并返回别名作为结果; 如果不是，则返回逻辑或空结果
 
-All of this work is done in the (originally empty) procedure OpenMyTable.  Just modify to fit your own environment.
+所有这些工作都是在（最初是空的）过程OpenMyTable中完成的。 只需修改以适应您自己的环境。
 
-#### Directives to specify the table than an alias refers to.
+#### 直接指定表而不是别名
 
-This last alternative is the least satisfying – you can add directives in you code to indicate the table than an alias refers to.  You might use this, for instance, where a table is opened in one procedure or method and referenced in another.
+最后一种选择是最不理想的 - 您可以在代码中添加指令来指定表，而不是别名引用的指令。 例如，您可以使用此方法，即在一个过程或方法中打开表并在另一个过程或方法中引用该表格。
 
 There are two (very similar) directives:
 
