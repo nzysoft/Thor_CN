@@ -11,7 +11,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 有三种等同的方法来定义局部别名：
 
-* “`{{ SomeAlias = What-It-Stand-For }}`“  … 在任意的注释中
+* `{{ SomeAlias = What-It-Stand-For }}`  … 在任意的注释中
 * `*#Alias SomeAlias = What-It-Stand-For`    … 在代码行的开始
 * `&&#Alias SomeAlias = What-It-Stand-For`   … 在代码行的结尾
 
