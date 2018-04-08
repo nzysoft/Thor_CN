@@ -1,8 +1,8 @@
-安装在VFPx上发布的工具
+安装在 VFPX 发布的工具
 ===
 _本文档由 xinjie 于 2018-04-08 翻译_
 
-有许多工具可以直接从VFPx下载：
+有许多工具可以直接从 VFPX 下载：
 
 ### Thor 仓库
 
@@ -27,7 +27,7 @@ PEM 同时"发布" 一对儿用于简单的构建更多工具的对象。`Thor �
 
 ### GoFish5
 
-GoFish 5 是一款用于快速搜索 Visual FoxPro 源代码的高级代码搜索工具。 如果Thor已经在当前的IDE会话中运行，它可以与Thor集成，如下所示：
+GoFish 5 是一款用于快速搜索 Visual FoxPro 源代码的高级代码搜索工具。 如果 Thor 已经在当前的 IDE 会话中运行，它可以与 Thor 集成，如下所示：
 
 ![](Images/Thor_GoFish5.png)
 
