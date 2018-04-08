@@ -44,7 +44,7 @@ Thor 附带两个工具：Thor 仓库 和 PEM Editor。(详见下文)
 它所管理的“工具”其实是很简单的PRG，它们具有以下特征：
 
 *   PRG的命名方式为：**Thor_Tool_*.PRG**
-*   PRG文件必须保存在搜索目录下，或者在两个 Tools 目录下（它们在安装时被创建） -- 一个用于（通过Thor）下载工具，一个用于个人制作的工具。
+*   PRG文件必须保存在搜索目录下，或者在两个 Tools 目录下（它们在安装时被创建） -- 一个用于（通过Thor）下载的工具，一个用于个人制作的工具。
 *   PRG文件的前大概40行代码必须遵循固定的模板格式，用于 Thor 获取该工具的名称、描述等信息。
 
 ### 文档
@@ -57,25 +57,25 @@ Thor 附带两个工具：Thor 仓库 和 PEM Editor。(详见下文)
 
 [点击此处查看安装说明](Docs/Thor_install.md).
 
-### Thor社区
+### Thor 社区
 
-请访问[Thor社区](http://groups.google.com/group/FoxProThor) 提出问题、建议，报告BUG以及提交你对该工具的期望功能。 这是所有Thor相关主题的最佳去处。
+请访问[Thor 社区](http://groups.google.com/group/FoxProThor) 提交问题、建议，报告BUG以及你对该工具的期望。 这里集中了所有 Thor 相关的主题，是你的最佳去处。
 
-### The Thor Repository
+### Thor 仓库
 
-Thor 设计的初衷是为了使 VFP 社区成员可以通过在社区的共享使其价值最大化. PRG工具的结构使这种共享变得异常简单。  
+Thor 设计的初衷是为了使 VFP 社区成员可以共享有价值的工具。PRG工具的结构使这种共享变得异常简单。  
 
-'Thor Repository' 就是这些工具的目录结构。随着开发者不断的提交新的工具，它也会不断的增长。在初始阶段，它大约包含十几个工具。点击此处可以查看[The Thor Repository](Docs/Thor_repository.md)的帮助。
+'Thor 仓库' 就是这些工具的目录。随着开发者不断提交新的工具，它也会不断的增长。在初始阶段，它大约包含十几个工具。点击此处可以查看[Thor 仓库](Docs/Thor_repository.md)的帮助。
 
 作为[一键更新 Thor](Docs/Thor_one-click_update.md)的一部分，它将被自动下载并予以安装。
 
-### IDE Tools from PEM Editor
+### 来自 PEM Editor 的 IDE 工具
 
-PEM Editor Version 7， 现在已经改名为 'PEM Editor w/ IDE Tools'，包含可以通过 Thor 访问的超过30个工具，其中一部分是 PEM Editor Version 6 中包含的，其余的是全新开发的工具。这些工具可以从 PEM Editor 主页下载。点击此处访问帮助页面：[PEM Editor w/IDE Tools 帮助](https://github.com/VFPX/PEMEditor)  
+PEM Editor Version 7， 现在已经改名为 '具有 IDE 工具的 PEM Editor'，它包含可以通过 Thor 访问的超过30个工具，其中一部分是 PEM Editor Version 6 中包含的，其余的是全新开发的工具。这些工具可以从 PEM Editor 主页下载。点击此处访问帮助页面：[具有 IDE 工具的 PEM Editor 帮助](https://github.com/VFPX/PEMEditor)  
 
-PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。Thor Repository 中超过一半的内置工具使用了它们。
+PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。Thor 仓库 中超过一半的内置工具使用了它们。
 
-下载和安装 PEM Editor 7 with IDE Tools 的步骤已经作为[一键更新 Thor](Docs/Thor_one-click_update.md) 的一部分.
+下载和安装`具有 IDE 工具的 PEM Editor`的步骤已经是[一键更新 Thor](Docs/Thor_one-click_update.md) 的一部分.
 
 ### 示例
 
