@@ -1,9 +1,10 @@
-﻿Thor TWEeT #15:  The Alias Dictionary
+﻿Thor TWEeT #15:  别名字典
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-There have been some improvements in the handling of table aliases since the earlier TWEet on [IntellisenseX: Aliases for VFP Tables](Tweet_11.md).
+自早期的 TWEet[IntellisenseX：VFP表的别名](Tweet_11.md)以来，在处理表别名方面进行了一些改进。
 
-The difficulty in what was described there is that the solutions do not go far enough.  The first example shows that <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a> recognizes aliases create by USE statements:
+The difficulty in what was described there is that the solutions do not go far enough.  第一个示例显示<a href="https://github.com/VFPX/IntelliSenseX" target="_blank"> IntellisenseX </a>识别由USE语句创建的别名：
 
 ![](Images/Tweet11a.png)
 
