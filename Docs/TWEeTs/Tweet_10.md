@@ -25,22 +25,22 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet10c.png)
 
-但是会出现意想不到的情况，因为在指定别名之前，您可能会在SQL语句的开头引用字段列表中的别名。 解决这个问题的方法是以一种内在的方式创建你的声明 - 也就是说，首先创建你的FROM和JOIN短语（或者至少创建别名来创建别名），然后你就可以拥有 当指定字段列表时IntellisenseX的支持。
+但是会出现意想不到的情况，因为在指定别名之前，您可能会在SQL语句的开头引用字段列表中的别名。 解决这个问题的方法是以一种内在的方式创建你的声明 - 也就是说，首先创建你的FROM和JOIN短语（或者至少尽可能多地创建别名），然后你就可以拥有 当指定字段列表时IntellisenseX的支持。
 
 ![](Images/Tweet10d.png)
 
-See also the example further on showing how to access aliases in a plain VFP Select statement (that is, not within a Text/EndText structure).
+另请参阅示例以了解如何访问纯VFP Select语句中的别名（即，不在Text / EndText结构中）。
 
-#### How does this work, anyway?
+#### 无论如何，这是如何工作的？
 
-When you invoke IntellisenseX, it goes through a lot of hoops to determine whether the name immediately before the dot could refer to an object or an open table/cursor/view. If none of those apply, it then tries to do you a favor and open the table/view for you. (This has been true from day one).
+当您调用IntellisenseX时，会经历很多循环来确定紧挨在“.”之前的名称是否是引用对象或打开表格/游标/视图。 如果这些都不适用，它会试图帮你一个忙，并为你打开表格/视图。 （从第一天起就是这样）。
 
-What has been added is that if you supply a connection string (as previously noted), it will also try to read at least the structure from your SQL table. In doing so, it creates a cursor (with “_SQL4ISX_” prefixed to the name of your SQL table) which can be used by IntellisenseX. (See also the discussion below about how this applies to other tools, such as [**SuperBrowse**](../Thor_superbrowse.md).)
+使用你增加的一个连接字符串（如前所述），它也会尝试从你的SQL表中读取基本结构。 这样做时，它会创建一个游标（带有“_SQL4ISX_”，前缀为SQL表的名称），IntellisenseX可以使用该游标。 （另请参阅下面关于这如何适用于其他工具的讨论，例如 [**SuperBrowse**](../Thor_superbrowse.md).)
 
-#### <a name="SQLDictionary"></a>What is that “SQL Dictionary” referred to on the options page? <!-- TBL: Check anchor -->
+#### <a name="SQLDictionary"></a>什么是选项页面上提到的“SQL字典”？<!-- TBL: Check anchor -->
 
 
-An alternative method to using a connection string (which accesses the table each time) is to create a local VFP table with a list of all fields from all your SQL tables.  The statement below creates a table with the desired structure.  (You can expand the first two character fields as needed.)  To create the entries in this table, you can use SQLTables() to get a list of all tables and SQLColumns() on each table to get the list of fields.
+使用连接字符串（每次访问表）的另一种方法是创建一个本地VFP表，其中包含所有SQL表中所有字段的列表。 下面的声明创建了一个具有所需结构的表。 （您可以根据需要扩展前两个字符字段）。要创建此表，你可以使用SQLTables（）获取所有表名的列表，以及使用SQLColumns（）获取每个表的字段列表。
 
 ```foxpro
 Create Table MySQLTableName ( ;  
@@ -52,24 +52,24 @@ Create Table MySQLTableName ( ;
 ```
 
 
-#### What if a single connection string is not enough?
+#### 单一的连接字符串存在哪些不足?
 
-There is no provision currently to make it easy to switch between different SQL databases, which would  require multiple connection strings. However, it is possible to change the connection string programmatically, by executing the following:
+目前没有办法可以很容易地在不同的SQL数据库之间切换，这需要多个连接字符串。 但是，可以通过执行以下命令以编程方式更改连接字符串：
 
     Execscript(_Screen.cThorDispatcher, 'Set Option=', 'Connection String', 'Opening Tables', NewConnectionString)
 
-and this could be used in a Thor tool to select which database to read from.
+这可以用于Thor工具来选择要读取的数据库。
 
-#### Does any of this apply to other tools?
+#### 这是否适用于其他工具？
 
-There are a number of other tools (most notable [**Super Browse**](Thor_superbrowse.md)) which use the same sub-routine for opening tables as is used by IntellisenseX. Thus, if you use Super Browse to help you create a list of fields for an SQL statement, you can click on the name of the table (be it a VFP table or SQL table) and execute Super Browse and away you will go.
+还有一些其他工具（最明显的是[**Super Browse**](Thor_superbrowse.md)），它使用与IntellisenseX相同子例程来打开表。 因此，如果您使用Super Browse来帮助您创建SQL语句，那么您可以单击该表的名称（无论是VFP表还是SQL表），然后执行Super Browse 就可以了。
 
-#### How do you use aliases in SELECT statements not inside a Text/EndText structure?
+#### 如何在不属于Text / EndText结构的SELECT语句中使用别名？
 
-The strategy for using IntellisenseX to provide field names for aliases in a SELECT statement (as explained above) is the same when not inside a Text/EndText structure , but with one additional consideration.
+当不在Text / EndText结构中时，使用IntellisenseX为SELECT语句中的别名提供字段名称的策略（如上所述）是相同的，但需要额外考虑一些问题。
 
-Inside a Text/EndText structure, the end of the statement is clearly identified by the keyword “EndText”. In a plain VFP statement, however, there is no such clear ending, so IntellisenseX must rely on the use of the semi-colon to show continuation lines. Thus, the rule that is followed is that the line where you are typing is assumed to have a semi-colon (because you haven’t gotten to the end of the line yet) and the SELECT statement continues through the following lines until one is reached that does not end in a semi-colon.
+在Text / EndText结构中，语句的末尾由关键字“EndText”清楚地标识。 然而，在一个普通的VFP声明中，没有这样清晰的结尾，所以IntellisenseX必须依靠使用分号来显示连续行。 因此，遵循的规则是假设你输入的那一行有一个分号（因为你还没有到达行的末尾），并且SELECT语句继续执行下列行，直到 达到了不以分号结尾。
 
 ![](Images/Tweet10e.png)
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
