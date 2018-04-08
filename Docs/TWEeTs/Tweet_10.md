@@ -7,26 +7,25 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 ![](Images/Tweet10a.png)
 
 您所看到的是名为“Terms”的SQL表中的字段名称的下拉列表。 您可能会想到，这看起来与VFP表中的列表完全相同。 你是完全正确的，因为IntellisenseX现在给你 FoxPro表和SQL表的字段列表，并且都以**相同的**方式访问。
-What your are seeing is a dropdown list of field names from an SQL table named “Terms”. It may occur to you that this looks exactly like the list from a VFP table.  You would be completely correct, as IntellisenseX now gives you field lists from ***both*** FoxPro tables and SQL Tables, and both are accessed the same way.
 
-You need follow only a few steps  to activate this:
+您只需按照以下几个步骤来激活它：
 
-1.  Open the Thor Configuration form
-2.  Go to the Options page
-3.  Click on “Opening Tables” on the left
-4.  Enter your connection string on the right
+1.  打开Thor配置表单
+2.  转到选项页面
+3.  点击左侧的“打开表”
+4.  在右侧输入您的连接字符串
 
 ![](Images/Tweet10b.png)
 
-If you read no further, you have all you need to know to get started using IntellisenseX on SQL tables; what remains in this article is a discussion of the finer points.
+即使您没有进一步阅读，你也知道在SQL表上如何使用IntellisenseX; 这篇文章中还有一个关于细节的讨论。
 
-#### [IntellisenseX](https://github.com/VFPX/IntelliSenseX) recognizes aliases within an SQL statement
+#### [IntellisenseX](https://github.com/VFPX/IntelliSenseX) 识别SQL语句中的别名
 
-As shown below, aliases within an SQL statement are handled as desired.
+如下所示，根据需要处理SQL语句中的别名。
 
 ![](Images/Tweet10c.png)
 
-But something unexpected will occur because you will probably refer to the aliases in the list of fields, at the beginning of your SQL statement, before you have specified the aliases. The way around this is to create your statement in sort of an inside-out fashion – that is, create your FROM and JOIN phrases first (or, at least as much of them as necessary to create the aliases) and then you’ll have the IntellisenseX support when specifying the field list.
+但是会出现意想不到的情况，因为在指定别名之前，您可能会在SQL语句的开头引用字段列表中的别名。 解决这个问题的方法是以一种内在的方式创建你的声明 - 也就是说，首先创建你的FROM和JOIN短语（或者至少创建别名来创建别名），然后你就可以拥有 当指定字段列表时IntellisenseX的支持。
 
 ![](Images/Tweet10d.png)
 
