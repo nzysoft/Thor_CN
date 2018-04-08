@@ -1,19 +1,20 @@
-﻿Thor TWEeT #20: Quick Start Guide to [IntellisenseX](https://github.com/VFPX/IntelliSenseX)
+﻿Thor TWEeT #20: [IntellisenseX](https://github.com/VFPX/IntelliSenseX) 快速入门指南
 ===
+本文档由 xinjie 于 2018-04-09 翻译
 
-When I began writing TWEeTs about [IntellisenseX](https://github.com/VFPX/IntelliSenseX) (back in **January!**), I could never have guessed that the topic would not be exhausted by now. But writing those TWEeTs engendered discussions and new ideas, so that much of what was described in the most recent TWEeTs was not even imagined back then.
+当我开始编写关于[IntellisenseX](https://github.com/VFPX/IntelliSenseX)的TWEeT时，我绝不会猜到这个话题到现在还没完没了。但是编写这些TWEeT会产生讨论和新的想法，所以最近TWEeT中所描述的大部分内容都不是当初设想的内容。
 
-In re-reading those TWEeTS, one glaring omission jumped out at me – they explain how IntellisenseX works and how you can customize it, but they never touched on the first step – how to get started in the first place.  So here we go.
+在重新阅读这些TWEeTS时，我意识到有一个明显的环节缺失 - 他们解释了 IntellisenseX 如何工作以及如何定制它，但他们从未触及第一步 - 如何从头开始。 所以，Let's Go!
 
-#### Getting started with [IntellisenseX](https://github.com/VFPX/IntelliSenseX)
+#### 开始使用 [IntellisenseX](https://github.com/VFPX/IntelliSenseX)
 
-There are only a few steps to getting IntellisenseX up and running to provide a number of extensions to native FoxPro Intellisense.  Once set up, you will find that using the dot (whether after object references or table references) produces the helpful dropdown list in a lot of different places that instantly feel natural. There are also some further customizations you can make, most quite minor, that allow IntellisenseX to provide its assistance in a number of quite surprising ways.
+启动IntellisenseX只需几个步骤即可为本地FoxPro Intellisense提供大量扩展。 设置完成后，您会发现使用点（无论是在对象引用还是表引用之后）可以在很多不同的地方生成有用的下拉列表，这些地方立即感觉很自然。 还有一些您可以制作的更多的自定义功能，其中最小的功能允许IntellisenseX以许多令人惊讶的方式提供帮助。
 
-To get started, open Tool Launcher, enter “IntellisenseX” in the filter box, and then click on the tool “IntellisenseX – by Dot” in the TreeView on the left.
+首先，请打开`工具启动器`，在过滤器框中输入“IntellisenseX”，然后在左侧的 TreeView 中点击工具“IntellisenseX - by Dot”。
 
-Check off “Run at startup”. This will cause IntellisenseX to be enabled each time you start Thor in your IDE.  (The tool “IntellisenseX – by Dot” is actually a toggle, enabling/disabling IntellisenseX; however the occasions where it was desirable to have it disabled have been eradicated, so it can be turned on and left on.)
+选择“启动时运行”。 这会导致 IntellisenseX 每次在 IDE 中启动 Thor 时都会被启用。 （“IntellisenseX - by Dot”工具实际上是一个切换键，可以启用/禁用IntellisenseX;但是，希望禁用它的场合已经不存在了，因此你可以打开并一直让它随时待命。）
 
-Then, click on the Options link to open the  IntellisenseX options page in the Thor Configuration form.
+然后，单击选项链接打开 Thor Configuration 表单中的 IntellisenseX 选项页面。
 
 ![](Images/Tweet20a.png)
 
