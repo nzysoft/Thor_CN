@@ -12,17 +12,17 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 **别名字典**具有同样的限制 – 要使它有意义，就必须在引用表的每个单独的方法中使用它。
 
-由 _别名字典_ 提供的解决方案是一个表（由Thor维护），它包含表的**全局**>定义 - （或对象，我们将在后面讨论）。
+由 _别名字典_ 提供的解决方案是一个表（由Thor维护），它包含表的**全局**定义 - （或对象，我们将在后面讨论）。
 
-You can add records to this table by executing Thor tool **Browse Table/Object Alias List**, which does exactly that – it opens a browse window where you can add records (or edit existing records), like this:
+您可以通过执行Thor工具**浏览表/对象别名列表**，将记录添加到此表中，该工具就是这样做的 - 它会打开一个浏览窗口，您可以在其中添加记录（或编辑现有记录），如下所示：
 
 ![](Images/Tweet15b.png)
 
-Henceforward, whenever you enter “SomeAlias” and invoke IntellisenseX as you always do, by pressing the dot (or [hot key](Tweet_12.md)), it will open table “PartsListFields”.
+此后，每当您输入“SomeAlias”并像往常一样调用IntellisenseX时，通过按点（或[热键](Tweet_12.md)），它将打开表“PartsListFields”。
 
->Note well: This is truly a *global* definition for “SomeAlias”. It is not relative to the current form, class, folder, project, or application, or anything else.
+>请注意：这是“SomeAlias”真正的*全局*定义。 它与当前的表单，类，文件夹，项目或应用程序或其他任何内容无关。
 
-For the table name you can enter also enter full path or relative paths.
+对于表名称，您也可以输入完整路径或相对路径。
 
 ![](Images/Tweet15c.png)
 
