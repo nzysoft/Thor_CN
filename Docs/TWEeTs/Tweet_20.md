@@ -29,24 +29,24 @@
 
 ![](Images/Tweet20d.png)
 
-The fourth and last page (“**Display**”) controls the display of the dropdown list used in IntellinsenseX. Be careful not to set the Display Count too large as you can get undesirable behavior if the dropdown list can’t fit either above or below the current screen position.  This setting should not matter too much, however, as you become familiar with IntellisenseX, since the filtering (set on the first page) will rapidly reduce your list to only a few entries.
+第四个和最后一个页面（“**Display**”）控制IntellinsenseX中使用的下拉列表的显示。 小心不要将显示计数设置得太大，因为如果下拉列表无法在当前屏幕位置的上方或下方放置，您可能会收到不良行为。 但是，随着您对IntellisenseX的熟悉，此设置无关紧要，因为过滤（在第一页上设置）会将您的列表快速减少到仅有的几个条目。
 
 ![](Images/Tweet20e.png)
 
-Having set these few options, you have enough to begin using IntellisenseX.  There are a number of features immediately available for you to take advantage of, described in earlier TWEeTs:
+设置了这几个选项后，你就足够可以开始使用 IntellisenseX 了。 以前的 TWEeT 中描述的功能立马可用：
 
-*   IntellisenseX recognizes aliases for VFP tables created a number of different ways.  See [#11 IntellisenseX: Aliases for VFP Tables](Tweet_11.md).
-*   A unique IntellisenseX feature provides a drop-down list for all fields in all tables referenced in FROM and JOIN statements in SQL statements. See  [#13 New (hidden) IntellisenseX Feature](Tweet_13.md).
-*   IntellisenseX recognizes objects referenced in code in a variety of formats and provides dropdown lists for them (including the familiar native LOCAL … AS … command).  See [#14 IntellisenseX for Objects](Tweet_14.md).
+*   IntellisenseX 识别以多种不同方式创建的 VFP 表的别名。 请参见[＃11 IntellisenseX：VFP表的别名](Tweet_11.md).
+*   独特的 IntellisenseX 功能，为SQL语句中的 FROM 和 JOIN 语句中引用的所有表中的所有字段提供了一个下拉列表。 请参见[#13 新的（隐藏的）IntellisenseX 功能](Tweet_13.md).
+*   IntellisenseX以各种格式识别代码中引用的对象，并为它们提供下拉列表（包括熟悉的本地LOCAL ... AS ...命令）。 请参见[＃14 IntellisenseX for Objects](Tweet_14.md).
 
-In addition, a number of other significant enhancements are available after some further configuration.
+另外，在进一步配置之后，还可以使用其他一些重要的增强功能。
 
-*   Creating the “Custom Keyword List” eliminates the problem in referencing objects in VCXs and SCXs (noted earlier in the description of the “**Objects**” page) and creates a uniform list of words used throughout your applications (overriding the select of field names described above in the “**Fields**” page). See TWEeTs  [#19: Deficiencies in IntellisenseX (and how to avoid them) … The Custom Keyword List](Tweet_19.md) and [#16 Cuord Listom Keywst for Field Names](Tweet_16.md).
-*   You can obtain the list of field names from your SQL Server tables when creating SQL statements (including those within TEXT/ENDTEXT blocks).  See [#10 IntellisenseX: Field names from SQL Server Tables](Tweet_10.md).
-*   You can create local aliases for table or object names that apply throughout a specific procedure (these have the same scope as local variables).  See [#17: Using Local Aliases in IntellisenseX](Tweet_17.md) .  (See also note below.)
-*   You can create global aliases for table or object names that apply throughout all  your applications, using the _Alias Dictionary_ (a free table)   See [#15 The Alias Dictionary](Tweet_15.md).  (See also note below.)
-*   You can create aliases that apply within a form or class, creating dropdown lists for nested objects, such as “This.oBusObj” and “This.oBusObj.oData”and “This.oBusObj.oJobs.oData”.  See [#18: IntellisenseX for Nested Objects](Tweet_18.md).  (See also note below.)
+*   创建“自定义关键字列表”消除了引用VCX和SCX中的对象时出现的问题（前面在“**Objects**”页面的描述中提到），并创建了整个应用程序中使用的统一的单词列表（覆盖选择 字段名称在“**Fields**”页面中描述）。 请参阅TWEeTs [＃19：IntellisenseX中的缺陷（以及如何避免它们）...自定义关键字列表](Tweet_19.md) 和 [#16 字段名的自定义关键字列表](Tweet_16.md).
+*   创建 SQL 语句（包括 TEXT / ENDTEXT 块中的那些语句）时，可以从 SQL Server 表中获取字段名称列表。 请参见[＃10 IntellisenseX：SQL Server表中的字段名称](Tweet_10.md).
+*   您可以为在整个特定过程中应用的表或对象名称创建局部别名（这些别名与本地变量具有相同的范围）。 请参阅[＃17：在IntellisenseX 中使用局部别名](Tweet_17.md) .  (另请参阅下面的注释。)
+*   您可以使用 _Alias Dictionary_ （一个自由表）为所有应用程序中的表或对象名称创建全局别名。请参见[＃15 别名字典](Tweet_15.md).  (另请参阅下面的注释。)
+*   您可以创建在表单或类中应用的别名，为嵌套对象创建下拉列表，例如“This.oBusObj”和“This.oBusObj.oData”和“This.oBusObj.oJobs.oData”。 请参阅[＃18：嵌套对象的 IntellisenseX](Tweet_18.md).  (另请参阅下面的注释。)
 
-_Note:_ IntellisenseX treats tables (whether VFP tables or SQL Server tables) merely as a special type of object, one where each member has a data type and (possibly) width.  Thus, in all cases where you read “object” in any of the references above, understand that the object could be an actual VFP object or the fields referenced in a table. The references to “oData” in the last bullet point above can actually be references to the field names related to a business object.
+_Note:_ IntellisenseX仅将表（不论是 VFP 表还是 SQL Server 表）视为一种特殊类型的对象，其中每个成员都有一个数据类型和（可能）宽度。 因此，在上述任何参考文献中阅读“对象”的所有情况下，请理解该对象可能是实际的 VFP 对象或表中引用的字段。 上面最后一个项目中对“oData”的引用实际上可以是对与业务对象相关的字段名称的引用。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
