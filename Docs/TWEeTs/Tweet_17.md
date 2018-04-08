@@ -11,9 +11,9 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 有三种等同的方法来定义本地别名：
 
-* `**{{** SomeAlias = What-It-Stand-For **}}**`  … 在任意的注释中
-* `***#Alias** SomeAlias = What-It-Stand-For`    … 在代码行的开始
-* `**&&#Alias** SomeAlias = What-It-Stand-For`   … 在代码行的结尾
+* `{{ SomeAlias = What-It-Stand-For }}`  … 在任意的注释中
+* `*#Alias SomeAlias = What-It-Stand-For`    … 在代码行的开始
+* `&&#Alias SomeAlias = What-It-Stand-For`   … 在代码行的结尾
 
 > _(上面的粗体文本必须完全按照原样输入，不得插入空格。)_
 
