@@ -1,4 +1,4 @@
-﻿Thor TWEeT #13: 新的（隐藏的）IntellisenseX功能
+﻿Thor TWEeT #13: 新的（隐藏的） IntellisenseX 功能
 ===
 _本文档由 xinjie 于 2018-04-08 翻译_
 
