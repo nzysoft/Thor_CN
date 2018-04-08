@@ -38,7 +38,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 有两种替代方法可以用来代替调用NewObject（）：
 
 *   您可以复制LOCAL语句并将其直接粘贴到表中。
-*   你可以用大括号括起类名和类库名，例如**{ClassName，ClassLib.VCX}**。如果要CreateObject（）实际上返回正确的对象，那么类库名是可选的。
+*   你可以用大括号括起类名和类库名，例如*{ClassName，ClassLib.VCX}* 。如果要CreateObject（）实际上返回正确的对象，那么类库名是可选的。
 
 ![](Images/Tweet15e.png)
 
