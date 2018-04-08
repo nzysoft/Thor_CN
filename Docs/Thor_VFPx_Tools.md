@@ -23,12 +23,12 @@ PEM 同时"发布" 一对儿用于简单的构建更多工具的对象。`Thor �
 通过执行以下命令安装`PEM 编辑器`时，将自动从`PEM 编辑器`注册工具（如果Thor正在运行）：
 
     Do PEMEditor.APP
-[点击这里查看带有IDE工具的PEM Editor 7](https://github.com/VFPX/PEMEditor)
+[点击这里查看带有IDE工具的 PEM 编辑器 7](https://github.com/VFPX/PEMEditor)
 
 ### GoFish5
 
-GoFish 5是一款用于快速搜索Visual FoxPro源代码的高级代码搜索工具。 如果Thor已经在当前的IDE会话中运行，它可以与Thor集成，如下所示：
+GoFish 5 是一款用于快速搜索 Visual FoxPro 源代码的高级代码搜索工具。 如果Thor已经在当前的IDE会话中运行，它可以与Thor集成，如下所示：
 
 ![](Images/Thor_GoFish5.png)
 
-[点击这里查看GoFish4](https://github.com/mattslay/GoFish)
+[点击这里查看 GoFish4](https://github.com/mattslay/GoFish)
