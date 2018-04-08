@@ -2,7 +2,7 @@
 ===
 _本文档由 xinjie 于 2018-04-08 翻译_
 
-字段名称的自定义关键字列表的新功能已在早期的TWEeT（包括下文中的[来自IntellisenseX：VFP表的别名](Tweet_11.md)）中的许多图中显示，这里不再进行描述。
+字段名称的自定义关键字列表的新功能已在早期的TWEeT（包括下文中的[IntellisenseX：VFP表的别名](Tweet_11.md)）中的许多图中显示，这里不再进行描述。
 
 ![](Images/Tweet16a.png)
 
