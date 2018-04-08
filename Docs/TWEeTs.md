@@ -22,137 +22,137 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   _下拉表名称_
 *   _使用 ! 标记的数据库(DBC)表_
 
-#21: [高级功能：用于 IntellisenseX 的插件](TWEeTs/Tweet_21.md) (June 4, 2014)
+#21: [高级功能：用于 IntellisenseX 的插件](TWEeTs/Tweet_21.md) (2014年6月4日)
 
 *   _通过“.”操作符调用 IntellisenseX_
 *   _通过快捷键调用 IntellisenseX_
 
-#20: [IntellisenseX 快速入门指南](TWEeTs/Tweet_20.md) (May 29, 2014)
+#20: [IntellisenseX 快速入门指南](TWEeTs/Tweet_20.md) (2014年5月29日)
 
 *   _通过“.”操作符调用 IntellisenseX_
 *   _通过快捷键调用 IntellisenseX_
 
-#19: [IntellisenseX 中的缺陷（以及如何避免它们）...自定义关键字列表](TWEeTs/Tweet_19.md) (May 21, 2014)
+#19: [IntellisenseX 中的缺陷（以及如何避免它们）...自定义关键字列表](TWEeTs/Tweet_19.md) (2014年5月21日)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 *   _自定义关键字列表_
     *   _添加文件夹或项目中的所有单词_
     *   _在代码窗口中添加所有单词_
     *   _从当前类或表单中添加PEM_
-    *   _添加突出显示的词_
+    *   _添加高亮单词_
     *   _应用自定义关键字列表到代码窗口_
     *   _浏览自定义关键字列表_
 
-#18: [IntellisenseX嵌套对象](TWEeTs/Tweet_18.md) (May 10, 2014)
+#18: [IntellisenseX 嵌套对象](TWEeTs/Tweet_18.md) (2014年5月10日)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 
-#17: [在IntellisenseX中使用局部别名](TWEeTs/Tweet_17.md) (April 29, 2014)
+#17: [在 IntellisenseX 中使用局部别名（Local Aliases）](TWEeTs/Tweet_17.md) (2014年4月29日)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 
-#16: [字段名称的自定义关键字列表](TWEeTs/Tweet_16.md) (March 3, 2014)
+#16: [字段名的自定义关键字列表](TWEeTs/Tweet_16.md) (2014年3月3日)
 
 *   _添加关键字：_
-    *   _添加突出显示的词_
-    *   _从当前表中添加字段名称_
-*   _Super Browse_
+    *   _添加高亮单词_
+    *   _从当前表中添加字段名_
+*   _超级浏览器_
 *   _应用自定义关键字列表到代码窗口_
 *   _浏览自定义关键字列表_
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 
-#15: [表/对象别名列表](TWEeTs/Tweet_15.md) (Feb. 24, 2014)
+#15: [表/对象别名列表](TWEeTs/Tweet_15.md) (2014年2月24日)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
-*   _Super Browse_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
+*   _超级浏览器_
 
-#14: [IntellisenseX for Objects](TWEeTs/Tweet_14.md) (Feb. 17, 2014)
+#14: [对象的 IntellisenseX](TWEeTs/Tweet_14.md) (2014年2月17日)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 
-#13: [新的（隐藏的）IntellisenseX功能](TWEeTs/Tweet_13.md) (Feb. 10, 2014)
+#13: [新的（隐藏的）IntellisenseX 功能](TWEeTs/Tweet_13.md) (2014年2月10日)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 
-#12: [IntellisenseX by Dot or by Hot Key?](TWEeTs/Tweet_12.md) (Feb. 3, 2014)
+#12: [使用“.”操作符还是使用快捷键来调用 IntellisenseX ？](TWEeTs/Tweet_12.md) (2014年2月3日)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 
-#11: [IntellisenseX：VFP表的别名](TWEeTs/Tweet_11.md) (Jan. 27, 2014)
+#11: [IntellisenseX：VFP表的别名](TWEeTs/Tweet_11.md) (2014年1月27日)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 
-#10: [IntellisenseX：SQL表的字段名](TWEeTs/Tweet_10.md) (Jan. 20, 2014)
+#10: [IntellisenseX：SQL表的字段名](TWEeTs/Tweet_10.md) (2014年1月20日)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
-*   _Super Browse_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
+*   _超级浏览器_
 
-#9: [提取到变量和提取为常量](TWEeTs/Tweet_09.md) (Jan. 13, 2014)
+#9: [提取到变量和提取为常量](TWEeTs/Tweet_09.md) (2014年1月13日)
 
 *   _提取到变量_
 *   _提取为常量_
 *   _创建示例菜单_
 
-#8: [创建属性和方法（第3部分）](TWEeTs/Tweet_08.md) (Jan. 5, 2014)
+#8: [创建属性和方法（第3部分）](TWEeTs/Tweet_08.md) (2014年1月5日)
 
 *   _提取为方法_
 
-#7: [创建属性和方法（第2部分）](TWEeTs/Tweet_07.md) (Dec. 18, 2013)
+#7: [创建属性和方法（第2部分）](TWEeTs/Tweet_07.md) (2013年12月18日)
 
 *   _转到定义_
-*   _PEM Editor_
+*   _PEM 编辑器_
 
-#6: [创建属性和方法（第1部分）](TWEeTs/Tweet_06.md) (Dec. 11, 2013)
+#6: [创建属性和方法（第1部分）](TWEeTs/Tweet_06.md) (2013年12月11日)
 
-*   _PEM Editor_
+*   _PEM 编辑器_
 *   _添加属性/方法_
 
-#5: [对象和集合检查器](TWEeTs/Tweet_05.md) (Dec. 4, 2013)
+#5: [对象和集合检查器](TWEeTs/Tweet_05.md) (2013年12月4日)
 
 *   _对象和集合检查器_
 
-#4: [在鼠标下插入对象的全名](TWEeTs/Tweet_04.md) (Nov. 26, 2013)
+#4: [在鼠标下插入对象的全名](TWEeTs/Tweet_04.md) (2013年11月26日)
 
 *   _在鼠标下插入对象的全名_
 *   _检查鼠标下对象的属性_
 
-#3: [记忆 MRUs?](TWEeTs/Tweet_03.md) (Nov. 18, 2013)
+#3: [记忆 MRUs？](TWEeTs/Tweet_03.md) (2013年11月18日)
 
 *   _MRUs_
 *   _MRU 类库_
-*   _来自MRU表单或类的HackCX4_
+*   _来自MRU表单或类的 HackCX4_
 *   _Finder_
-*   _PEM Editor_
-*   _这个项目中的MRU类_
-*   _这个项目中的MRU文件_
-*   更新的项目管理器（ProjectHook Class）
+*   _PEM 编辑器r_
+*   _这个项目中的 MRU 类_
+*   _这个项目中的 MRU 文件_
+*   更新的项目管理器（项目钩子类）
 *   更新的类浏览器
 
-#2: [设置对象大小和位置](TWEeTs/Tweet_02.md) (Nov. 12, 2013)
+#2: [设置对象大小和位置](TWEeTs/Tweet_02.md) (2013年11月12日)
 
 *   _设置对象大小和位置_
 
-#1: [介绍：PEM编辑器，GoFish和替换代码窗口上下文菜单项](TWEeTs/Tweet_01.md) (Oct. 28, 2013)
+#1: [介绍：PEM编辑器，GoFish和替换代码窗口关联菜单项](TWEeTs/Tweet_01.md) (2013年10月28日)
 
-*   _PEM Editor_
+*   _PEM 编辑器_
 *   _GoFish_
-*   _替换代码窗口上下文菜单项_
+*   _替换代码窗口关联菜单项_
 
 **即将推出的TWEeT（无需订阅）**
 
 *   转到定义
-*   Super Browse
-*   Super Browse 增强
+*   超级浏览器
+*   超级浏览器的增强
 
 *   #Include files
     *   _下拉常量列表_
@@ -166,11 +166,11 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   WITH / ENDWITH 问题
 *   交叉引用
 *   突出显示/关闭控制结构
-*   Wrap text
-    *   Wrap with IF / ELSE / ENDIF
-    *   Wrap with TRY / CATCH / ENDTRY
-    *   Wrap with WITH / ENDWITH
-    *   Change IF / ENDIF to DO CASE / ENDCASE
+*   文本包装
+    *   使用 IF / ELSE / ENDIF 结构包装
+    *   使用 TRY / CATCH / ENDTRY 结构包装
+    *   使用 WITH / ENDWITH 结构包装
+    *   更改 IF / ENDIF 结构为 DO CASE / ENDCASE 结构
 *   插入文字
 *   查找对象
 *   杂项
@@ -189,12 +189,12 @@ _本文档由 xinjie 于 2018-04-08 翻译_
     *   与复制对象进行比较
 *   转到定义
 *   使用.H文件
-*   Super Browse
-*   使用突出显示的文本
+*   超级浏览器
+*   使用高亮文本
     *   提取到方法/提取到变量/提取到常量
     *   注释/取消注释
-    *   Wrapping text (IF/ENDIF, etc)
-    *   突出显示控制结构/关闭控制结构
+    *   文本包装(IF/ENDIF等结构)
+    *   高亮控制结构/关闭控制结构
 *   在对象中复制和粘贴对象及属性/方法
     *   复制（用于比较和粘贴）
     *   与复制对象进行比较
