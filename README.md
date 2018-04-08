@@ -11,7 +11,7 @@ _本文档由 xinjie 于 2018-04-06 翻译_
 
 ***
 
-_**Thor** 是一个管理IDE中插件工具的的管理器，用于管理访问IDE工具的菜单和快捷键。_
+_**Thor** 是一个管理 IDE 中插件工具的的管理器，用于管理访问 IDE 工具的菜单和快捷键。_
 
 [此版本新增功能](#WhatsNew)
 
@@ -23,29 +23,29 @@ _**Thor** 是一个管理IDE中插件工具的的管理器，用于管理访问I
 
 **帮助:** [点击此处查看完整在线文档](Docs/Thor_help.md)
 
-**讨论组:** [点击此处在 Thor 讨论组发布你的问题、BUG报告以及参与讨论](http://groups.google.com/group/FoxProThor)
+**讨论组:** [点击此处在 Thor 讨论组提交你的问题、BUG报告并参与讨论](http://groups.google.com/group/FoxProThor)
 
-**Thor 工具: [具有 IDE 工具的 PEM Editor](https://github.com/VFPX/PEMEditor),[The Thor Repository](Docs/Thor_repository.md),  [GoFish4](https://github.com/mattslay/GoFish)**
+**Thor 工具: [具有 IDE 工具的 PEM Editor](https://github.com/VFPX/PEMEditor),[Thor 仓库](Docs/Thor_repository.md),  [GoFish4](https://github.com/mattslay/GoFish)**
 
 Thor:
 
-*   它具有一个用户界面，用来工具和用户自定义菜单快捷键的指定。UI提供了四种方式来访问这些工具：
-    1.  使用所定义的热键
-    2.  创建可使用热键的弹出菜单
-    3.  在固有系统菜单下创建新的自定义菜单项(文件、编辑、查看等)
+*   它具有一个用户界面，用来指定工具和用户自定义菜单的快捷键。UI 提供了四种方式来访问这些工具：
+    1.  使用所定义的快捷键
+    2.  创建可使用快捷键的弹出菜单
+    3.  在固有系统菜单(文件、编辑、查看等)下创建新的自定义菜单项
     4.  在VFP系统菜单中创建新的菜单
 *   它提供了注册工具的统一的方法。
-*   简化了开发者之间共享任务。
+*   简化了开发者之间的共享。
 
-Thor 附带两个工具：Thor Repository 和 PEM Editor。(见下文)
+Thor 附带两个工具：Thor 仓库 和 PEM Editor。(详见下文)
 
-与 ON KEY LABEL 不同，Thor 可以提供全方位的多建组合 (例如：{Ctrl + Alt + A})。
+与 ON KEY LABEL 不同，Thor 可以提供全方位的多键组合 (例如：{Ctrl + Alt + A})。
 
 它所管理的“工具”其实是很简单的PRG，它们具有以下特征：
 
 *   PRG的命名方式为：**Thor_Tool_*.PRG**
 *   PRG文件必须保存在搜索目录下，或者在两个 Tools 目录下（它们在安装时被创建） -- 一个用于（通过Thor）下载工具，一个用于个人制作的工具。
-*   PRG文件的前大概40行代码必须遵循固定的模板格式，用于 Thor 获得该工具的名称、描述等信息。
+*   PRG文件的前大概40行代码必须遵循固定的模板格式，用于 Thor 获取该工具的名称、描述等信息。
 
 ### 文档
 
