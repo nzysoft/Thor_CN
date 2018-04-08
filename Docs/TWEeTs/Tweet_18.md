@@ -12,13 +12,13 @@
 
 该属性的值基本上与用于局部别名（仅适用于当前过程;请参阅[在IntellisenseX中使用局部别名](Tweet_17.md)）或全局别名（适用于任何地方;请参见[别名字典](Tweet_15.md)）的一样。 它可以表或对象中的任何一种。
 
-*   A table, cursor, or view name
-*   The full or relative path name to a table
-*   The name of an SQL table
-*   A reference to class from a class library; thus,  “`{class, classlibrary}`“  _See note below for Forms and VCX classes._
-*   A reference to class using the same syntax as the LOCAL command; thus,  “`Local loPAL as PAL of BO_PAL.VCX`“
-*   A reference to an object; thus,  “`Thisform.oParts` “
-*   An executable expression that returns an object or the name of an table, cursor, or view. This executable must start with an “=”; thus, something like “`= MyGetObject(‘Parts’)` “.  _See note below for Forms and VCX classes._
+*   表名、游标名或视图名
+*   表的完整或相对路径名称
+*   SQL 表名
+*   对类库的引用; 像这样，“`{class，class library}`” _请参阅下面有关表单和 VCX 类的注释._
+*   对类使用与 LOCAL 命令相同的语法的引用; 像这样,  “`Local loPAL as PAL of BO_PAL.VCX`“
+*   对对象的引用; 像这样,  “`Thisform.oParts` “
+*   一个可执行表达式，它返回一个对象或表，光标或视图的名称。 这个可执行文件必须以“=”开头;像这样, “`= MyGetObject(‘Parts’)` “.  _有关Forms和VCX类，请参阅下面的注释。_
 
 > _An unexpected problem arises when when using the Property Sheet or PEM Editor to set the values for the two items noted above – values inside curly braces are converted to dates, and values beginning with an = sign are saved as expressions. To avoid these issues, prefix the values with && – thus:_
 > 
