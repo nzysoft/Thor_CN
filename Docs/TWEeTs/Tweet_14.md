@@ -16,16 +16,16 @@ IntellisenseX提供属性，事件和方法（PEM）的下拉列表，与默认I
 *   使用 loObject
 *   使用自定义关键字列表
 
-#### In SCXs and VCXs
+#### 在 SCXs 和 VCXs 中
 
-In SCXs and VCXs, IntellisenseX provides a drop down list for objects referenced by THISFORM or THIS that is very similar to that given my default Intellisense:
+在 SCXs 和 VCXs 中, IntellisenseX为THISFORM或THIS引用的对象提供了一个下拉列表，这与给定我的默认Intellisense非常相似：
 
 ![](Images/Tweet14a.png)
 
 
-#### In PRG-based classes
+#### 在 PRG 格式的类中
 
-IntellisenseX provides drop down lists for THIS and WITH THIS inside PRG-based classes.
+IntellisenseX为基于PRG的类提供了THIS和WITH THIS的下拉列表。
 
 ![](Images/Tweet14b.png)
 
@@ -33,7 +33,7 @@ On the options page on the Thor Configuration form you can indicate the level of
 
 ![](Images/Tweet14c.png)
 
-#### Ctrl-Enter to paste in parameters list
+#### 按Ctrl-Enter粘贴参数列表
 
 As can be seen, the display has a second column, showing the parameters list for methods and events.
 
@@ -41,25 +41,25 @@ If you select an item from the list and press Ctrl+Enter, the parameters list wi
 
 ![](Images/Tweet14d.png)
 
-#### Inside WITH/ENDWITH structures
+#### 在 WITH/ENDWITH 结构中
 
 IntellisenseX provides drop down lists inside WITH/ENDWITH structures for a variety of cases not supported by default Intellisense, including WITH THISFORM, WITH THIS.PARENT, and embedded WITHs.
 
 ![](Images/Tweet14e.png)
 
-#### In LOCAL Statements
+#### 在 LOCAL 语句中
 
 IntellisenseX now recognizes objects identified in LOCAL statements (as default Intellisense does).
 
 ![](Images/Tweet14f.png)
 
-#### After NEWOBJECT or  CREATEOBJECT
+#### 在 NEWOBJECT 或  CREATEOBJECT 之后
 
 IntellisenseX also recognizes objects created by NEWOBJECT or CREATEOBJECT even if there is no corresponding LOCAL statement. This can be quite handy when first writing a procedure.
 
 ![](Images/Tweet14g.png)
 
-#### After UDFs that create objects
+#### 在创建对象的 UDF 之后
 
 IntellisenseX also provides a [Plug-In](../Thor_add_plugins.md) (named “NewObject”) that allows it to recognize when you have called a UDF that creates an object. In the example below, my personal use of the plug-in allows Intellisense to recognize my use of a UDF named NewSessionObject (which happens to use the same parameters as NEWOBJECT, but this is not necessary).
 
@@ -67,13 +67,13 @@ For specifics of the use of this Plug-in, see [IntellisenseX Customization](Twee
 
 ![](Images/Tweet14h.png)
 
-#### With loObject
+#### 使用 loObject
 
 Finally, when you have objects defined by any of the examples noted above, IntellisenseX will work on that object when referenced after WITH, as shown below.
 
 ![](Images/Tweet14i.png)
 
-#### Using the Custom Keyword List
+#### 使用自定义关键字列表
 
 The default behavior from IntellisenseX when presenting names of properties, methods and events in SCXs and VCXs is to use _MemberData to use the correct case for presenting the names. This can be quite slow.
 
