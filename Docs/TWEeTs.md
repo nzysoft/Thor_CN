@@ -1,7 +1,7 @@
 ## <u>T</u>his <u>W</u>eeks <u>E</u>xc<u>e</u>ptional <u>T</u>ools
 _本文档由 xinjie 于 2018-04-08 翻译_
 
-#27: [Go To Definition](TWEeTs/Tweet_27.md) (Jan. 4, 2015)
+#27: [转到定义](TWEeTs/Tweet_27.md) (Jan. 4, 2015)
 
 #26: [三个新的 Thor 工具](TWEeTs/Tweet_26.md) (Dec. 22, 2014)
 
@@ -20,22 +20,22 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   _下拉常数列表_
 *   _下拉程序清单_
 *   _下拉表名称_
-*   _DBC Tables by !_
+*   _使用 ! 标记的数据库(DBC)表_
 
 #21: [高级功能：用于IntellisenseX的插件](TWEeTs/Tweet_21.md) (June 4, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 
 #20: [IntellisenseX快速入门指南](TWEeTs/Tweet_20.md) (May 29, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 
 #19: [IntellisenseX中的缺陷（以及如何避免它们）...自定义关键字列表](TWEeTs/Tweet_19.md) (May 21, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 *   _自定义关键字列表_
     *   _添加文件夹或项目中的所有单词_
     *   _在代码窗口中添加所有单词_
@@ -46,13 +46,13 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 #18: [IntellisenseX嵌套对象](TWEeTs/Tweet_18.md) (May 10, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 
-#17: [在IntellisenseX中使用本地别名](TWEeTs/Tweet_17.md) (April 29, 2014)
+#17: [在IntellisenseX中使用局部别名](TWEeTs/Tweet_17.md) (April 29, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 
 #16: [字段名称的自定义关键字列表](TWEeTs/Tweet_16.md) (March 3, 2014)
 
@@ -62,39 +62,39 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   _Super Browse_
 *   _应用自定义关键字列表到代码窗口_
 *   _浏览自定义关键字列表_
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 
 #15: [表/对象别名列表](TWEeTs/Tweet_15.md) (Feb. 24, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 *   _Super Browse_
 
 #14: [IntellisenseX for Objects](TWEeTs/Tweet_14.md) (Feb. 17, 2014)
 
-*   _IntellisenseX by Dot_
+*   _通过“.”操作符调用IntellisenseX_
 *   _IntellisenseX by Hot Key_
 
 #13: [新的（隐藏的）IntellisenseX功能](TWEeTs/Tweet_13.md) (Feb. 10, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 
 #12: [IntellisenseX by Dot or by Hot Key?](TWEeTs/Tweet_12.md) (Feb. 3, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 
 #11: [IntellisenseX：VFP表的别名](TWEeTs/Tweet_11.md) (Jan. 27, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 
-#10: [IntellisenseX：SQL表的字段名称](TWEeTs/Tweet_10.md) (Jan. 20, 2014)
+#10: [IntellisenseX：SQL表的字段名](TWEeTs/Tweet_10.md) (Jan. 20, 2014)
 
-*   _IntellisenseX by Dot_
-*   _IntellisenseX by Hot Key_
+*   _通过“.”操作符调用IntellisenseX_
+*   _通过快捷键调用IntellisenseX_
 *   _Super Browse_
 
 #9: [提取到变量和提取为常量](TWEeTs/Tweet_09.md) (Jan. 13, 2014)
@@ -105,17 +105,17 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 #8: [创建属性和方法（第3部分）](TWEeTs/Tweet_08.md) (Jan. 5, 2014)
 
-*   _Extract to Method_
+*   _提取为方法_
 
 #7: [创建属性和方法（第2部分）](TWEeTs/Tweet_07.md) (Dec. 18, 2013)
 
-*   _Go to Definition_
+*   _转到定义_
 *   _PEM Editor_
 
 #6: [创建属性和方法（第1部分）](TWEeTs/Tweet_06.md) (Dec. 11, 2013)
 
 *   _PEM Editor_
-*   _Add Property / Method_
+*   _添加属性/方法_
 
 #5: [对象和集合检查器](TWEeTs/Tweet_05.md) (Dec. 4, 2013)
 
@@ -148,21 +148,21 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   _GoFish_
 *   _替换代码窗口上下文菜单项_
 
-**即将推出的TWEeT（无需订购）**
+**即将推出的TWEeT（无需订阅）**
 
-*   Go To Definition
+*   转到定义
 *   Super Browse
 *   Super Browse 增强
 
 *   #Include files
     *   _下拉常量列表_
-    *   _Go To Include 文件_
-    *   _Go To Definition_
+    *   _转到包含文件(.H 文件)_
+    *   _转到定义_
     *   _提取到常量_
 *   Finder
 *   BeautifyX
-*   Create Locals
-*   MDots
+*   创建 Locals 语句
+*   “.”操作符
 *   WITH / ENDWITH 问题
 *   交叉引用
 *   突出显示/关闭控制结构
@@ -187,7 +187,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
     *   粘贴属性和方法代码
     *   与父类进行比较
     *   与复制对象进行比较
-*   Go To Definition
+*   转到定义
 *   使用.H文件
 *   Super Browse
 *   使用突出显示的文本
@@ -195,7 +195,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
     *   注释/取消注释
     *   Wrapping text (IF/ENDIF, etc)
     *   突出显示控制结构/关闭控制结构
-*   在对象中复制和粘贴对象和属性/方法
+*   在对象中复制和粘贴对象及属性/方法
     *   复制（用于比较和粘贴）
     *   与复制对象进行比较
     *   粘贴属性和方法代码
