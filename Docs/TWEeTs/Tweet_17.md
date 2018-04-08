@@ -17,7 +17,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 > _(上面的粗体文本必须完全按照原样输入，不得插入空格。)_
 
-> **Note: Bowing to popular demand, the first of the statements above (the one with the double curly braces) applies to the *entire* PRG, not merely the Procedure or Function in which it lives.**
+> **注意：根据大众需求，上述第一条语句（带双花括号的语句）适用于*整个* PRG，而不仅仅是它所在的过程或函数。**
 
 `“What-It-Stands-For”` can be any one of a number of things, referring to either tables or objects.
 
