@@ -1,24 +1,25 @@
-﻿Thor TWEeT #23: Buffer overrun detected!
+﻿Thor TWEeT #23: 检测到缓冲区溢出！
 ===
+本文档由 xinjie 于 2018-04-09 翻译
 
-There is a nasty error, “Buffer overrun”, that be-devils a small number of users of PEM Editor and IntellisenseX:
+有一个令人讨厌的错误，“缓冲区溢出”，这是PEM编辑器和智能感知的一小部分用户的噩梦：
 
 ![](Images/Tweet23a.png)
 
-This error is a close cousin of the better known C5 error: it blows your FoxPro session away and all un-saved changes are lost. Unlike C5, though, there is no hint in the _vfp9err.log_ file.
+这个错误是已知的C5错误的一个近亲：它摧毁你的FoxPro会话，所有未保存的更改都将丢失。 但是，与C5不同， _vfp9err.log_ 文件中没有提示。
 
-When this error was first reported back in 2009, the cause was unknown, although it was learned that the error only occurred for some specific classes (always occurring for these classes). Furthermore, it was determined that the error was reproducible outside of PEM Editor, like this:
+当这个错误在2009年第一次被报告时，原因不明，尽管据悉这种错误只发生在某些特定类别（总是发生在这些类别中）。 此外，确定该错误在PEM编辑器之外是可再现的，如下所示：
 
 ![](Images/Tweet23b.png)
 
-A work-around was added to PEM Editor, wherein this call to AMembers was avoided for classes whose names were found in a table created for this use.  While cumbersome, this solution was better than nothing.
+PEM编辑器中添加了解决方法，其中对 AMembers 的这种调用避免了在为此用途创建的表中找到名称的类。 虽然麻烦，但这个解决方案总比没有好。
 
-Recently, I encountered this problem for the first time in my own code and was able to identify the root cause of the problem.  Curiously, it happens because of the innocuous code shown here:
+最近，我第一次在自己的代码中遇到了这个问题，并能够找出问题的根本原因。 奇怪的是，这是因为这里显示的无害代码发生的：
 
 ![](Images/Tweet23c.png)
 
-After some testing (and getting blown out of FoxPro many times), I was able to learn that the problem has to do with the length of the LParameters statement.  The limit is 255 characters (not a surprise) but the character count includes all the white space, semi-colons, carriage returns and line feeds. When I modified that statement to fit all on one line, removing all the extra unneeded space, the error evaporated.
+经过一些测试（并且多次遭遇 FoxPro 的嘲笑）后，我得知这个问题与 LParameters 声明的长度有关。 限制是255个字符（不是一个惊喜），但字符数包括所有的空格，分号，回车和换行符。 当我修改该语句以适合所有行，删除所有额外的不必要的空间时，错误消失了。
 
-I was contacted by Tore Bleken this past week about these Buffer Overun problems in classes based on classes of FoxInCloud.  He has reported that changing the LParameters statements in the parent classes cured the problem.
+过去一周，Tore Bleken 就基于 FoxInCloud 类的课程中的缓冲区溢出问题与我联系。 他报告说，改变父类中的 LParameters 语句可以解决问题。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [History of all Thor TWEeTs](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
