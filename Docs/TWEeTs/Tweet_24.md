@@ -1,8 +1,8 @@
-﻿Thor TWEeT #24: New Thor Tools
+﻿Thor TWEeT #24: 新的Thor工具
 ===
+本文档由 xinjie 于 2018-04-09 翻译
 
-There are nine new tools that have been added in the last month to the Thor Repository:
-
+在上个月向Thor 仓库添加了九个新工具：
 *   _[Pack VCXs, SCXs, etc. from a project or folder](#T1)_
 *   _[Hack Intellisense](#T2)_
 *   _[Dropdown Intellisense Scripts](#T3)_
@@ -15,9 +15,9 @@ There are nine new tools that have been added in the last month to the Thor Repo
 
 ### <a name="T1"></a>Pack VCXs, SCXs, etc. from a project or folder
 
-The new tool _Pack VCXs, SCXs, etc. from a project or folder_ prompts for a project/folder and then packs all the X-files found in that project/folder.
+新工具 _Pack VCXs, SCXs, etc. from a project or folder_ 提示输入项目/文件夹，然后打包该项目/文件夹中找到的所有文件。
 
-You can bypass the prompts by invoking the Thor procedure directly:
+您可以直接通过调用 Thor 过程来绕过提示：
 
 [1]  To pack files in the current project:
 
