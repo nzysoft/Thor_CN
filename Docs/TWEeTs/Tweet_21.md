@@ -1,32 +1,33 @@
 ﻿Thor TWEeT #21: 高级功能：用于 [IntellisenseX](https://github.com/VFPX/IntelliSenseX) 的插件
 ===
+本文档由 xinjie 于 2018-04-09 翻译
 
-There are five [Plug-Ins](../Thor_add_plugins.md) that provide the last type of customization available for [IntellisenseX](https://github.com/VFPX/IntelliSenseX).  Even though they may seem quite obscure at first, they can each provide quite powerful enhancements, far beyond what you might first expect.  Some personal examples are provided to illustrate how they can be used (although these examples are certainly not the only way they can be used).
+有五个[Plug-Ins](../Thor_add_plugins.md) 提供[IntellisenseX](https://github.com/VFPX/IntelliSenseX)的定制. 尽管起初他们看起来很模糊，但他们每个都可以提供相当强大的增强功能，远远超出您的预期。 这里提供了一些个人示例来说明如何使用它们（尽管这些示例当然不是它们可以使用的唯一方式）。
 
-To access them, follow these steps:
+要访问它们，请按照下列步骤操作：
 
-1.  Open Tool Launcher
-2.  Enter “IntellisenseX” in the filter box
-3.  Click on the tool “IntellisenseX – by Dot” in the TreeView on the left.
-4.  Click on the Plug-Ins link to open the Plug-Ins Form.
+1.  打开工具启动器
+2.  在过滤器框中输入“IntellisenseX”
+3.  点击左侧TreeView中的工具“IntellisenseX - by Dot”。
+4.  点击插件链接打开插件表单。
 
 ![](Images/Tweet21a.png)
 
-The Plug-Ins form (when accessed this way) shows only those Plug-Ins that apply to IntellisenseX:
+插件表单（以这种方式访问时）仅显示适用于 IntellisenseX 的插件：
 
 ![](Images/Tweet21b.png)
 
-There is no natural order to these Plug-Ins (there really is no relationship between them), so they are explored in the order in which they appear in the form, which is alphabetical. Note, however, that for some of them their usage has changed over time, so the names are not necessarily clear explanations of what they do.
+这些插件没有自然顺序（它们之间确实没有关系），因此按照它们按字母顺序排列的顺序进行探索。 但是，请注意，对于其中一些而言，它们的使用情况随时间而改变，因此名称不一定是他们所做工作的明确解释。
 
-Each of the plug-ins contain comments that explain (or, at least, should explain) the parameters that are passed in and the form of the result. Thus, the explanations here address the general concepts of their usage.
+每个插件都包含解释（或者至少应该解释）传入的参数和结果形式的注释。 因此，这里的解释说明了它们使用的一般概念。
 
-It can be very helpful to think of these plug-ins as event handlers.  Until you are quite familiar with the use of IntellisenseX, their relevance may be hard to see, just as the relevance of many event handlers for a FoxPro object may be hard to see at first.  Eventually, though, you may come across a situation where IntellisenseX does not provide a dropdown, but you can imagine it would be possible to do so. At that time, search through the list of plug-ins to see which might apply, open it up and dig through the sample code.
+将这些插件视为事件处理程序会非常有帮助。 在熟悉 IntellisenseX 的使用之前，它们的相关性可能很难看出，正如很多事件处理程序对于 FoxPro 对象的相关性起初可能很难看出一样。 但最终，您可能会遇到 IntellisenseX 不提供下拉列表的情况，这时你会是束手无策。 那时，可以通过插件列表来查看哪些可能适用，打开它并挖掘示例代码。
 
-You need not be concerned about when a plug-in is called, just as you are not concerned about when an event handler fires. The plug-in will be called when it is appropriate.
+您不必担心何时调用插件，就像您不关心何时触发事件处理程序一样。 插件将在适当时被调用。
 
-#### “Data Objects” Plug-In
+#### “数据对象”插件
 
-This plug-in allows you to identify an object (or table) referenced in some form of nested usage, such as:
+该插件允许您识别以某种形式的嵌套用法引用的对象（或表），例如：
 
 *   This.oCustomers
 *   ThisForm.oBusObj
@@ -34,46 +35,46 @@ This plug-in allows you to identify an object (or table) referenced in some form
 *   Thisform.oJob.oCustomers.oData
 *   loJob.oData
 
-The plug-in is called when IntellisenseX has been able to resolve part of the name (“Thisform” or “Thisform.oBusObj” e.g.,) into a real object but not the member name (“oData” or “oParts”, e.g.) and is called with the object (in a unique structure – see the comments) and the member name as parameters.  The Plug-In can return the appropriate object or table reference, if appropriate.
+当IntellisenseX已经能够将部分名称（例如，“Thisform”或“Thisform.oBusObj”）解析为真实对象而不是成员名称（例如，“oData”或“oParts”）时，调用该插件。 并用对象（在一个独特的结构中 - 请参阅注释）和成员名称作为参数调用。 如果适用，插件可以返回适当的对象或表引用。
 
-Expanding on the previous bullet points:
+一点扩展：
 
-*   This.oCustomers – if a consistent naming conventions is used for objects (such as “oCustomers” here), the plug-in could take the characters after the “o” and see if there is a business object to handle that name, returning that object.
-*   ThisForm.oBusObj – similar to the previous item, but the plug-in could look for an property (“cAlias”, e.g.,) that identifies the table for the business object being referenced.
-*   ThisForm.oBusObj.oData – similar to the previous item, but instead of returning the business object being referenced, returns the alias referred to in the property (“cAlias”), causing the drop down to show the fields from that table.
-*   Thisform.oJob.oCustomers.oData – the plug-in may be called multiple times to obtain a single dropdown list; in this case, first to resolve “Thisform.oJob”, then “Thisform.oJob.oCustomers”, and finally “Thisform.oJob.oCustomers.oData”. This is transparent to you, however.
-*   loJob.oData – can provide the dropdown list of fields from the loJob table – if loJob can already have been resolved into an object. That can be done by the next Plug-In, “IntellisenseX”.
+*   This.oCustomers – 如果一致的命名约定用于对象（例如这里的“oCustomers”），则插件可以将字符放在“o”之后，并查看是否有业务对象处理该名称，并返回该对象。
+*   ThisForm.oBusObj – 与前一项类似，但插件可以查找标识正在引用的业务对象的表的属性（“cAlais”）。
+*   ThisForm.oBusObj.oData – 与前一项类似，但不是返回被引用的业务对象，而是返回属性中引用的别名（“cAlias”），导致下拉列表显示该表中的字段。
+*   Thisform.oJob.oCustomers.oData – 插件可能被多次调用以获得单个下拉列表; 在这种情况下，首先解析“Thisform.oJob”，然后解析“Thisform.oJob.oCustomers”，最后解析“Thisform.oJob.oCustomers.oData”。 然而，这对你来说是透明的。
+*   loJob.oData – 可以提供loJob表中字段的下拉列表 - 如果loJob已经被解析为对象。 这可以通过下一个插件“IntellisenseX”来完成。
 
-#### “IntellisenseX” Plug-In
+#### “IntellisenseX”插件
 
-This plug-in allows you to identify an object (or table) based on the entire text that precedes the dot that you entered. That entire text is passed in as a parameter. 
+该插件允许您根据您输入的点之前的整个文本标识对象（或表）。 整个文本作为参数传递。 
 
-This plug-in is closely related to the “Data Objects” plug-in, and is called in all cases where the “Data Objects” plug-in was unable to return a usable result. The difference between the two is the parameters that are passed in.
+该插件与“数据对象”插件密切相关，并且在“数据对象”插件无法返回可用结果的所有情况下都会调用该插件。 两者之间的差异是传入的参数。
 
-But it can also handle getting “loJob” as a parameter (in this case, the “Data Objects” plug-in is not called).  If “loJob” can be resolved into an object by this plug-in, there will be a dropdown list for loJob.
+但它也可以处理获取“loJob”作为参数（在这种情况下，不会调用“数据对象”插件）。 如果可以通过此插件将“loJob”解析为对象，则会有loJob的下拉列表。
 
-This plug-in is also called by PEM Editor when you are setting the values of properties, allowing you to get dropdown lists for tables of data objects when setting a ControlSource.
+当您设置属性值时，该插件也会被PEM编辑器调用，允许您在设置控制源时获取数据对象表的下拉列表。
 
-#### “New Object” Plug-In
+#### “新的对象”插件
 
-Use this plug-in when you use a UDF to create objects, instead of NEWOBJECT() or CREATEOBJECT().  In the example below, my personal use of the plug-in allows Intellisense to recognize my use of a UDF named NewSessionObject (which happens to use the same parameters as NEWOBJECT, but this is not necessary).
+使用 UDF 创建对象时使用此插件，而不是 NEWOBJECT（） 或 CREATEOBJECT（） 。 在下面的示例中，我个人使用插件允许 IntellisenseX 识别我使用名为 NewSessionObject 的 UDF （恰好使用与 NEWOBJECT 相同的参数，但这不是必需的）。
 
 ![](Images/Tweet21c.png)
 
-#### “Open Table” Plug-In
+#### “打开表”插件
 
-When IntellisenseX encounters a single (non-nested) name before the dot, it checks whether the name corresponds to an existing alias, or (optionally) the name a of table in your SQL Server database, or the name of a file in the path, in the Data Environment or an open DBC, or (optionally) in the MRU list. All of this is handled by the default version of this plug-in.
+当 IntellisenseX 在点之前遇到单个（非嵌套）名称时，它将检查名称是否与现有别名相对应，或者（可选） SQL Server 数据库中的表名称或路径中文件的名称 ，在数据环境或打开的DBC中，或（可选）在MRU列表中。 所有这些都由该插件的默认版本处理。
 
-The plug-in is called with the potential table name as its parameter. In my universe, all table names and the folders they are found in are themselves stored in a table, where the alias is used as a key to the table. These tables are only opened by a single UDF which takes the alias as a parameter. My personal version of this plug-in calls this UDF to open the table.
+该插件将以潜在表名作为其参数进行调用。 在我的环境中，所有表名和它们所在的文件夹本身都存储在一个表中，其中别名用作表的键。 这些表只能由一个将别名作为参数的单个 UDF 打开。 我的这个插件的个人版本调用这个 UDF 来打开表格。
 
-There are examples of other uses in the comments in the code.
+示例代码的注释中有其他用途的示例。
 
-#### “Spell Field Names” Plug-In
+#### “拼写字段名称”插件
 
-This plug-in has been essentially superseded by the [Custom Keyword List](Tweet_19.md), but can be used in cases where the Custom Keyword List is not used, is insufficient, or there are other rules for field names (such as project or customer specific rules).
+该插件基本上已被[自定义关键字列表](Tweet_19.md)取代，但可用于未使用“自定义关键字列表”的情况，或自定义关键字缺少，或者有其他字段名称的规则（例如项目或客户特定的规则）。
 
-******Other IntellisenseX tools******
+******其他 IntellisenseX 工具******
 
-There are a number of other IntellisenseX-related tools that show up in the Tool Launcher when you filter by “IntellisenseX”.  These tools use the same framework developed to give the dropdown lists when you press a dot, but provide other features that are activated differently.  They will be described in the next TWEeT.
+当您使用“IntellisenseX”进行过滤时，还会在工具启动器中显示其他一些与 IntellisenseX 相关的工具。 这些工具使用相同的框架开发，以便在按下点时显示下拉列表，但提供以不同方式激活的其他功能。 他们将在下一个TWEeT中进行介绍。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
