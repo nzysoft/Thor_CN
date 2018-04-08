@@ -1,4 +1,4 @@
-﻿Thor TWEeT #21: Advanced Features: Plug-Ins for [IntellisenseX](https://github.com/VFPX/IntelliSenseX)
+﻿Thor TWEeT #21: 高级功能：用于 [IntellisenseX](https://github.com/VFPX/IntelliSenseX) 的插件
 ===
 
 There are five [Plug-Ins](../Thor_add_plugins.md) that provide the last type of customization available for [IntellisenseX](https://github.com/VFPX/IntelliSenseX).  Even though they may seem quite obscure at first, they can each provide quite powerful enhancements, far beyond what you might first expect.  Some personal examples are provided to illustrate how they can be used (although these examples are certainly not the only way they can be used).
