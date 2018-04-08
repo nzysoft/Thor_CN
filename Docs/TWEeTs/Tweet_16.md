@@ -6,16 +6,16 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet16a.png)
 
-Did you notice that some of the field names use upper case(“Field_Type”, e.g.,) in the middle? The Custom Keyword List allows you to define the case that is to be used for field names.
+您是否注意到某些字段名称中间使用大写字母（例如“Field_Type”）？ 自定义关键字列表允许您定义要用于字段名称的大小写。
 
-#### How is this done?
+#### 这是如何完成的？
 
-Thor maintains a table of **global** definitions of field names (and for other names, but that is addressed in another TWEeT, [Custom Keyword List - all other names](Tweet_19.md)).  The table has a single field, containing the field names as you want them to be represented.  You can open the table for editing by using Thor tool **Browse Custom Keyword List**, although that’s not a very convenient way to go about building the table.
+Thor维护了一个**全局**定义的字段名称表（以及其他名称，在另一个TWEeT中，[自定义关键字列表 - 所有其他名称](Tweet_19.md)）中都有解释。 该表具有单个字段，其中包含您希望表示的字段名称。 您可以通过使用Thor工具**浏览自定义关键字列表**来打开表格进行编辑，尽管这不是一个建立表格的非常方便的方法。
 
-Instead, there are a number of Thor tools you can use:
+相反，您可以使用多种Thor工具：
 
-*   **Add highlighted word** – adds the currently highlighted word to the KCL.  If the word is already in the list, the highlighted word replaces it.
-*   **Add field names from current table** – opens separate forms for words that are new to the list or might replace existing words on the list. You can edit the values in the “New Value” column (but you can’t change the spelling, only which letters are upper case).
+*   **Add highlighted word** – 将当前突出显示的单词添加到KCL。 如果该单词已经在列表中，则突出显示的单词将替换它。
+*   **Add field names from current table** – 为列表中新增的单词打开单独的表单，或者可能会替换列表中的现有单词。 您可以在“新值”列中编辑值（但不能更改拼写，只能更改字母的大小写）。
 
 ![](Images/Tweet16b.png)
 
