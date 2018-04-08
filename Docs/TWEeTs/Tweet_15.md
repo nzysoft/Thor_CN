@@ -10,10 +10,9 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 但是这个别名只能在与USE语句相同的过程中被IntellisenseX识别。 如果此表在表单的LOAD事件中打开，那么该别名将在此处可用 - 而不是其他方法。
 
-#别名字典#具有同样的限制 – 要使它有意义，就必须在引用表的每个单独的方法中使用它。
+**别名字典**具有同样的限制 – 要使它有意义，就必须在引用表的每个单独的方法中使用它。
 
-由_别名字典_提供的解决方案是有一个表（由Thor维护），它包含表（或对象的全局**>定义 - 但我们将在后面讨论）。
-The solution offered by the _Alias Dictionary_ is that there is a table (maintained by Thor) that contains **global**> definitions of tables (or objects – but we will get to that later on).
+由 _别名字典_ 提供的解决方案是一个表（由Thor维护），它包含表的**全局**>定义 - （或对象，我们将在后面讨论）。
 
 You can add records to this table by executing Thor tool **Browse Table/Object Alias List**, which does exactly that – it opens a browse window where you can add records (or edit existing records), like this:
 
