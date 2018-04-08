@@ -25,10 +25,10 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet9d.png)
 
-我发现这三个相关的工具，**提取到方法/变量/常量**，具有相当大的价值，但我没有为使用它们中的任何一个而将热键分配给它们中的每一个。 相反，我使用了一个[Popup Menu](../Thor_create_popup_menu.md)，我为它使用一个热键（我选择了Ctrl + E来使用“提取”）。
+我发现这三个相关的工具，**提取到方法/变量/常量**，具有相当大的价值，但我没有为使用它们中的任何一个而将快捷键分配给它们中的每一个。 相反，我使用了一个[Popup Menu](../Thor_create_popup_menu.md)，我为它使用一个快捷键（我选择了 Ctrl + E 来使用“提取”）。
 
 ![](Images/Tweet9e.png)
 
-有一个Thor工具可以创建这个弹出式菜单和其他一些菜单。 只需执行一次**创建示例菜单**并创建一些菜单; 请参阅Thor配置屏幕的第一页。
+有一个 Thor 工具可以创建这个弹出式菜单和其他一些菜单。 只需执行一次**创建示例菜单**并创建一些菜单; 请参阅 Thor 配置表单的第一页。
 
 参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
