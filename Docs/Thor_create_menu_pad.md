@@ -9,9 +9,9 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 你现在可以：
 
-* 为新菜单分配提示
-* 分配将出现在状态栏中的文本
-* 将新菜单移至想要显示的位置。参看 [移动菜单](Thor_moving_menu_pads.md).
+* 为新菜单指定提示信息
+* 指定将出现在状态栏中的文本
+* 将新菜单移至您想要显示的位置。参看 [移动菜单](Thor_moving_menu_pads.md).
 
 ![](Images/Thor_Create_Menu_Pad_CreateMenuPad2.png)
 
