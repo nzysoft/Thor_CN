@@ -69,16 +69,16 @@ IntellisenseX还提供了一个[Plug-In](../Thor_add_plugins.md）（名为“Ne
 
 #### 使用 loObject
 
-Finally, when you have objects defined by any of the examples noted above, IntellisenseX will work on that object when referenced after WITH, as shown below.
+最后，当你有上述任何一个例子定义的对象时，IntellisenseX将在WITH后引用该对象，如下所示。
 
 ![](Images/Tweet14i.png)
 
 #### 使用自定义关键字列表
 
-The default behavior from IntellisenseX when presenting names of properties, methods and events in SCXs and VCXs is to use _MemberData to use the correct case for presenting the names. This can be quite slow.
+在呈现SCX和VCX中的属性，方法和事件名称时，IntellisenseX的默认行为是使用_MemberData来使用正确的大小写来呈现名称。 这可能很慢。
 
-For PRG-based classes, the default behavior is to use the correct case from custom properties and methods in the class, and upper case for all inherited properties and methods.
+对于基于PRG的类，默认行为是使用类中自定义属性和方法的正确大小写，大写字母表示所有继承的属性和方法。
 
-As an alternative, you can create a [Custom Keyword List](Tweet_16.md), a global table used by IntellisenseX and other Thor tools. This table contains a list of all the “keywords” (field names, property names, object names, and any other kind of name) for which you want to indicate how the case of the name should be presented. (For example, see  “CalcMainSummary” in the example directly above.)  This provides a consistent way for handing the case of the names throughout your applications.
+作为替代，您可以创建一个[自定义关键字列表](Tweet_16.md)，它是IntellisenseX和其他Thor工具使用的全局表。 这个表格包含了你想要表示名称大小写的所有“关键字”（字段名称，属性名称，对象名称和其他任何类型的名称）的列表。 （例如，请参阅上面示例中的“CalcMainSummary”。）这为在整个应用程序中处理名称大小写提供了一致的方法。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
