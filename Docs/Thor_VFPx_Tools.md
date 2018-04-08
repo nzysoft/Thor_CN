@@ -4,15 +4,15 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 有许多工具可以直接从VFPx下载：
 
-### The Thor Repository
+### Thor 仓库
 
-Thor设计的固有特征是FoxPro社区的成员将拥有可在整个社区共享的最大化的公共工具价值。 工具PRG的结构使这种共享变得简单。
+Thor 设计的初衷是为了使 VFP 社区成员可以共享有价值的工具。PRG工具的结构使这种共享变得异常简单。
 
-'Thor Repository'是这些工具的目录。 目的是随着开发者提交包含的工具，这个资源库会随着时间而增长。 起始库有大约十几个这样的工具。
+`Thor Repository`是这些工具的目录。随着开发者不断提交新的工具，它也会不断的增长。在初始阶段，它大约包含十几个工具。
 
-要注册存储库中的工具，请将ZIP文件中的PRG复制到文件夹**Thor\Tools**
+要注册库中的工具，请将 ZIP 文件中的 PRG 复制到文件夹 **Thor\Tools**
 
-[点击这里查看Thor Repository](Thor_repository.md) 
+[点击这里查看Thor 仓库](Thor_repository.md) 
 
 ### Tools from PEM Editor
 
