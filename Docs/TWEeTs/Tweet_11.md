@@ -44,13 +44,13 @@ _在我自己的环境中，表格永远不会按名称引用。 它们总是由
 
 最后一种选择是最不理想的 - 您可以在代码中添加指令来指定表，而不是别名引用的指令。 例如，您可以使用此方法，即在一个过程或方法中打开表并在另一个过程或方法中引用该表格。
 
-There are two (very similar) directives:
+有两个（非常相似的）指令：
 
     *#Alias SomeAlias = MyTable  … at the beginning of a line
     &&#Alias SomeAlias = MyTable  … at the end of a line
 
-For instance,
+例如，
 
 ![](Images/Tweet11d.png)
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
