@@ -19,16 +19,16 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 > **注意：根据大众需求，上述第一条语句（带双花括号的语句）适用于*整个* PRG，而不仅仅是它所在的过程或函数。**
 
-`“What-It-Stands-For”` can be any one of a number of things, referring to either tables or objects.
+`“What-It-Stands-For”` 可以是引用表或者对象的任意一种形式。
 
-*   A table, cursor, or view name
-*   The full or relative path name to a table
-*   The name of an SQL table
-*   A reference to class from a class library; thus,  `"{{ loObject == {class, classlibrary} }}` “
-*   A reference to an object; thus,  “`{{ loObject == Thisform.oParts}}` “
-*   An executable expression that returns an object or the name of an table, cursor, or view. This executable must start with an “=”; thus, something like “`{{ loObject = = MyGetObject(‘Parts’)}}` “.  (Note the double ‘=’ signs.)
+*   表、游标或视图名
+*   表的完整或相对路径名称
+*   SQL 表名
+*   对类库的引用; 例如  `"{{ loObject == {class, classlibrary} }}` “
+*   对一个对象的引用；例如   “`{{ loObject == Thisform.oParts}}` “
+*   一个可执行表达式，它返回一个对象或表，游标或视图的名称。 这个可执行表达式必须以“=”开头;例如，有时是像这样 “`{{ loObject = = MyGetObject(‘Parts’)}}` “.  (请注意双'='字符。)
 
-One handy use of this occurs with variables created using the SCATTER NAME command. 
+使用SCATTER NAME命令创建的变量会发生这种情况。
 
 ```foxpro
 Select MyTable
