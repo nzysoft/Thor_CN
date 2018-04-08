@@ -42,16 +42,16 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet15e.png)
 
-Actually, *any* executable expression (preceded by '”=”) will work, as long as the result is one of these:
+实际上，只要结果是下列之一，*任何*可执行表达式（以“=”开头）都可以工作：
 
-*   an object
-*   the alias of an open table
-*   the alias of a table that Thor can open
-*   an object containing an array named ‘aList’. This array may have up to three columns and the contents of the array will populate the drop down list.
+*   一个对象
+*   已打开的表的别名
+*   Thor 可以打开的表的别名
+*   一个包含名为'aList'数组的对象。 该数组最多可以有三列，数组的内容将填充下拉列表。
 
-#### Nested Objects in the Alias Field
+#### 别名字段中的嵌套对象
 
-The alias field may also contain references to nested objects.  Consider, for instance, the sample below, where oData is actually understood to be populated (at run time) by a Scatter from the Jobs table.
+别名字段也可能包含对嵌套对象的引用。 例如，考虑下面的示例，其中oData实际上被理解为由Jobs表中的Scatter填充（在运行时）。
 
 ![](Images/Tweet15f.png)
 
