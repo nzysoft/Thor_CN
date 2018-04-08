@@ -26,7 +26,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet15c.png)
 
-As noted earlier, you can also add entries to this table that correspond to global objects. To do this, you can enter “=” followed by an executable expression in the Table field.
+如前所述，您还可以向此表中添加与全局对象相对应的条目。 为此，您可以在表格字段中输入“=”，然后输入可执行表达式。
 
 ![](Images/Tweet15d.png)
 
