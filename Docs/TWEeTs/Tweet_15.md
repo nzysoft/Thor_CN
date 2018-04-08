@@ -55,11 +55,11 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet15f.png)
 
-This is achieved by the entry shown below.
+这可以通过下面键入的记录来实现。
 
 ![](Images/Tweet15g.png)
 
-All of the discussion above describing the various combinations that can be used in the Table field apply equally well when using a nested object in the alias field.  Below we have the the definition of “oApp.oAdmin” so that it will present the list of properties from the Admin object defined in the Table field. (Note that any of the values in the Table field for “dataAdmin”, “dataAdmin2”, or “dataAdmin3” would have worked just as well.)
+当在别名字段中使用嵌套对象时，上面描述可以在表格字段中使用的各种组合的所有讨论都同样适用。 下面我们定义了“oApp.oAdmin”，这样它将显示来自表格字段中定义的Admin对象的属性列表。 （请注意，“dataAdmin”，“dataAdmin2”或“dataAdmin3”的表格字段中的任何值都可以正常工作。）
 
 ![](Images/Tweet15h.png)
 
