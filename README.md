@@ -25,7 +25,7 @@ _**Thor** 是一个管理 IDE 中插件工具的的管理器，用于管理访�
 
 **讨论组:** [点击此处在 Thor 讨论组提交你的问题、BUG报告并参与讨论](http://groups.google.com/group/FoxProThor)
 
-**Thor 工具: [具有 IDE 工具的 PEM Editor](https://github.com/VFPX/PEMEditor),[Thor 仓库](Docs/Thor_repository.md),  [GoFish4](https://github.com/mattslay/GoFish)**
+**Thor 工具: [具有 IDE 工具的 PEM 编辑器](https://github.com/VFPX/PEMEditor),[Thor 仓库](Docs/Thor_repository.md),  [GoFish4](https://github.com/mattslay/GoFish)**
 
 Thor:
 
@@ -37,7 +37,7 @@ Thor:
 *   它提供了注册工具的统一的方法。
 *   简化了开发者之间的共享。
 
-Thor 附带两个工具：**Thor 仓库**和**PEM Editor** 。(详见下文)
+Thor 附带两个工具：**Thor 仓库**和**PEM 编辑器** 。(详见下文)
 
 与 ON KEY LABEL 不同，Thor 可以提供全方位的多键组合 (例如：{Ctrl + Alt + A})。
 
@@ -71,11 +71,11 @@ Thor 设计的初衷是为了使 VFP 社区成员可以共享有价值的工具�
 
 ### 来自 PEM Editor 的 IDE 工具
 
-PEM Editor Version 7， 现在已经改名为`具有 IDE 工具的 PEM Editor`，它包含可以通过 Thor 访问的超过30个工具，其中一部分是 PEM Editor Version 6 中包含的，其余的是全新开发的工具。这些工具可以从 PEM Editor 主页下载。点击此处访问帮助页面：[具有 IDE 工具的 PEM Editor 帮助](https://github.com/VFPX/PEMEditor)  
+PEM Editor Version 7， 现在已经改名为`具有 IDE 工具的 PEM 编辑器`，它包含可以通过 Thor 访问的超过30个工具，其中一部分是 PEM Editor Version 6 中包含的，其余的是全新开发的工具。这些工具可以从 PEM 编辑器主页下载。点击此处访问帮助页面：[具有 IDE 工具的 PEM 编辑器的帮助](https://github.com/VFPX/PEMEditor)  
 
-PEM Editor 同时"发布" 一对儿用于简单的构建更多工具的对象。`Thor 仓库`中超过一半的内置工具使用了它们。
+`PEM 编辑器`同时"发布" 一对儿用于简单的构建更多工具的对象。`Thor 仓库`中超过一半的内置工具使用了它们。
 
-下载和安装`具有 IDE 工具的 PEM Editor`的步骤已经是[一键更新 Thor](Docs/Thor_one-click_update.md)的一部分.
+下载和安装`具有 IDE 工具的 PEM 编辑器`的步骤已经是[一键更新 Thor](Docs/Thor_one-click_update.md)的一部分.
 
 ### 示例
 
