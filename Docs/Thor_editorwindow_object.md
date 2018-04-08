@@ -2,34 +2,34 @@
 ===
 _本文档由 xinjie 于 2018-04-07 翻译_
 
-访问和/或修改当前打开的编辑窗口中的文本的所有PEM编辑器的IDE功能都使用** FoxTools.fll **中的函数。
+访问和/或修改当前打开的编辑窗口中的文本的所有`PEM 编辑器`的 IDE 功能都使用**FoxTools.fll**中的函数。
 
-Thor EditorWindow对象可用于构建Thor工具，这些工具还可以访问或修改当前打开的编辑窗口中的文本。 这个对象有两个目的：
+Thor EditorWindow 对象可用于构建 Thor 工具，这些工具还可以访问或修改当前打开的编辑窗口中的文本。 这个对象有两个作用：
 
-1.  它提供了**FoxTools.fll**中最有用功能的包装方法。
-2.  当被访问时，它已经确定当前编辑窗口的句柄。 它的所有方法都引用这个句柄，而不需要另外知道或引用句柄。
+1.  它提供了**FoxTools.fll**中最有用功能的封装。
+2.  当被访问时，它已经确定了当前编辑窗口的句柄。 它的所有方法都引用这个句柄，而不需要另外知道或引用句柄。
 
-Thor EditorWindow对象可以从这一行代码中获得：
+Thor EditorWindow 对象可以从这一行代码中获得：
 
 ```foxpro
 loEditorWin = Execscript (_Screen.cThorDispatcher, 'class= editorwin from pemeditor')
 ```
 
 
-一些进一步说明：
+一些进一步的说明：
 
 1.  字符位置和行数从0开始，而不是1 。 （小心）
-2.  虽然只有安装了PEM编辑器才能使用此对象，但PEM编辑器表单本身无需打开即可使用。
-3.  Thor Repository中这个工具有很多用途。
+2.  虽然只有安装了`PEM 编辑器`才能使用此对象，但`PEM 编辑器`表单本身无需打开即可使用该对象。
+3.  在`Thor 仓库`中的工具中该对象具有很多用途。
 
 ### 窗口操作：句柄，大小，位置，标题等
 
 方法(参数)|描述
 ---|---
 CloseWindow()|关闭当前窗口
-FindLastWindow()|返回最近使用的窗口的句柄，它是来自Form或Class Designer的PRG或方法代码。
+FindLastWindow()|返回最近使用的窗口的句柄，它是来自 Form 或 Class Designer 的 PRG 或方法代码。
 FindWindow() |保存当前活动窗口的句柄，并返回其窗口类型：
-FindWindow() return value x|x=0: 命令窗口，表单和类设计器，其他FoxPro窗口|
+FindWindow() return value x|x=0: 命令窗口，表单和类设计器，其他 FoxPro 窗口|
 FindWindow() return value x|x=1: 程序文件 (MODIFY COMMAND)|
 FindWindow() return value x|x=2: 文本编辑器 (MODIFY FILE)|
 FindWindow() return value x|x=8: 菜单代码编辑窗口|
