@@ -6,7 +6,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet10a.png)
 
-您所看到的是名为“Terms”的SQL表中的字段名称的下拉列表。 您可能会想到，这看起来与VFP表中的列表完全相同。 你是完全正确的，因为IntellisenseX现在给你 FoxPro表和SQL表的字段列表，并且都以***相同的***方式访问。
+您所看到的是名为“Terms”的SQL表中的字段名称的下拉列表。 您可能会想到，这看起来与VFP表中的列表完全相同。 你是完全正确的，因为IntellisenseX现在给你 FoxPro表和SQL表的字段列表，并且都以**相同的**方式访问。
 What your are seeing is a dropdown list of field names from an SQL table named “Terms”. It may occur to you that this looks exactly like the list from a VFP table.  You would be completely correct, as IntellisenseX now gives you field lists from ***both*** FoxPro tables and SQL Tables, and both are accessed the same way.
 
 You need follow only a few steps  to activate this:
