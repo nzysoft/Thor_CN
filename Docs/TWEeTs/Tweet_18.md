@@ -1,15 +1,16 @@
 ﻿Thor TWEeT #18: 嵌套对象的 <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a> 
 ===
+本文档由 xinjie 于 2018-04-09 翻译
 
-[IntellisenseX](https://github.com/VFPX/IntelliSenseX) provides dropdown lists for nested objects. These dropdown list are available throughout an entire form or class, as shown in this example:
+[IntellisenseX](https://github.com/VFPX/IntelliSenseX) 为嵌套对象提供下拉列表。 这些下拉列表可在整个表单或类中使用，如下例所示：
 
 ![](Images/Tweet18a.png)
 
-The key to making this work is to define a property that can used by IntellisenseX to determine the dropdown list. 
+使这成为可能的关键是定义一个属性，IntellisenseX 可以使用该属性来确定下拉列表。
 
-The name of the property is the name of the nested property (“oParts” in the example above) with “_Def” added as a suffix.
+该属性的名称是嵌套属性的名称（上例中为“oParts”），并将“_Def”添加为后缀。
 
-The value of the property is basically the same as used for Local Aliases (which apply only to the current procedure; see [Using Local Aliases in IntellisenseX](Tweet_17.md)) or for Global Aliases (which apply everywhere; see [the Alias Dictionary](Tweet_15.md)). It can be any one of a number of things, referring to either tables or objects.
+该属性的值基本上与用于局部别名（仅适用于当前过程;请参阅[在IntellisenseX中使用局部别名](Tweet_17.md)）或全局别名（适用于任何地方;请参见[别名字典](Tweet_15.md)）的一样。 它可以表或对象中的任何一种。
 
 *   A table, cursor, or view name
 *   The full or relative path name to a table
