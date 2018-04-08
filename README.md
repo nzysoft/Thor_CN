@@ -5,7 +5,7 @@
 
 [此版本新增功能](#WhatsNew)
 
-_仅可以运行于 VFP9_
+_本工具仅可运行于 VFP9_
 
 _本文档由 xinjie 于 2018-04-06 翻译_
 
@@ -25,7 +25,7 @@ _**Thor** 是一个管理IDE中插件工具的的管理器，用于管理访问I
 
 **讨论组:** [点击此处在 Thor 讨论组发布你的问题、BUG报告以及参与讨论](http://groups.google.com/group/FoxProThor)
 
-**Thor 工具: [PEM Editor w/IDE Tools](https://github.com/VFPX/PEMEditor),** [The Thor Repository](Docs/Thor_repository.md),  [GoFish4](https://github.com/mattslay/GoFish)  
+**Thor 工具: [具有 IDE 工具的 PEM Editor](https://github.com/VFPX/PEMEditor),[The Thor Repository](Docs/Thor_repository.md),  [GoFish4](https://github.com/mattslay/GoFish)**
 
 Thor:
 
