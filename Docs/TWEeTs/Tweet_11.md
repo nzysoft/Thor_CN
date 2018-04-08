@@ -11,20 +11,20 @@ IntellisenseX现在还识别用于VFP表的别名，有三种不同的方式：
 
 **在使用USE或UDF打开表的**过程代码**中**
 
-IntellisenseX now recognizes aliases of tables opened by USE (when referenced in the same procedure). This happens automatically and is not dependent on the order of the phrases in the USE command.
+IntellisenseX现在可识别USE打开的表的别名（在同一过程中引用时）。 这是自动发生的，不依赖于USE命令中短语的顺序。
 
 ![](Images/Tweet11a.png)
 
-Similarly, IntellisenseX recognizes aliases of tables opened by a UDF as long as the name of the table and its alias are passed as parameters to the UDF. In the following example, the UDF `UseTable` is called with the first parameter being the name of the table and the third being the alias.
+同样，只要表的名称及其别名作为参数传递给UDF，IntellisenseX就会识别由UDF打开的表的别名。 在下面的例子中，UDF`UseTable`被调用，第一个参数是表的名字，第三个参数是别名。
 
 ![](Images/Tweet11b.png)
 
-In order for this to work, you must record the name of your UDF, etc., in the Thor Configuration form:
+为了达到此目的，您必须在Thor 配置表单中记录UDF等的名称：
 
-1.  Open the Thor Configuration form
-2.  Go to the Options page
-3.  Click on “Table Aliases” on the left
-4.  Fill in the name of the UDF and the positions in the parameter list for the name of the table and the alias.
+1.  打开Thor配置表单
+2.  转到选项页面
+3.  点击左侧的“表别名”
+4.  填写UDF的名称和参数列表中的位置以获取表名和别名。
 
 ![](Images/Tweet11c.png)
 
