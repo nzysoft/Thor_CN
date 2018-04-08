@@ -1,4 +1,4 @@
-﻿SuperBrowse
+﻿超级浏览器
 ===
 _本文档由 xinjie 于 2018-04-07 翻译_
 
@@ -19,7 +19,7 @@ Show Schema(显示概要)|在浏览器中打开关于表的详细描述。
 
 ### Picker 页
 
-此页面是一个SQL和Browse语法构建器。
+此页面是一个 SQL 和 Browse 语法构建器。
 
 ![](Images/Thor_Super_Browse_image_thumb_3.png)
 
@@ -60,10 +60,10 @@ ANSI|创建 ANSI 类型的 Cast()
 ---|---
 “From:” 文本框|显示当前表名
 “Add From” 选择框|将“From”短语添加到Select语句
-“Close afterwards” 选择框|SuperBrowse退出时关闭表
-“As:” 文本框|填写Table_Alias
-“=TableName” 按钮|在As文本框中填写当前表名
-“Remove” 按钮|As文本框置空
+“Close afterwards” 选择框|超级浏览器退出时关闭表
+“As:” 文本框|填写 Table_Alias
+“=TableName” 按钮|在 As 文本框中填写当前表名
+“Remove” 按钮|As 文本框置空
 “Into Table” 文本框|填写目标表/游标的名称
 Option 1\. Table|目标是一个表
 Option 2\. Cursor|目标是一个只读游标
@@ -75,7 +75,7 @@ Option 3\. Cursor read/Write|目标是一个可读写的游标
 
 点击列标题可以选择/取消选择一个字段。
 
-双击任何记录都可以在由Dynamic Forms创建的单独窗口中打开并进行编辑。 如果选中“只读”复选框，则不可用）。
+双击任何记录都可以在由`Dynamic Forms`创建的单独窗口中打开并进行编辑。 如果选中“只读”复选框，则不可用）。
 
 ![](Images/Thor_Super_Browse_image_thumb_2.png)
 
@@ -94,9 +94,9 @@ Value 选项|输入你想要搜索的内容
 **选项类型** |**键入的内容**|**描述**
 ---|---|---
 Expression|Name='Jim' 或 name = 'Tore'|自解释
-Expression|Obsolete|查找逻辑字段Obsolete是.T的每个记录。
+Expression|Obsolete|查找逻辑字段 Obsolete 是.T的每个记录。
 Expression|Inlist(custno,10,20,30)|自解释
-Expression|'nit'$country|查找“nit”位于字段Country内的每条记录
+Expression|'nit'$country|查找“nit”位于字段 Country 内的每条记录
 Value|usa|查找“usa”一词所在的每个记录**任何**所选字段
 Value|samsung 5110|查找单词'samsung'**和**'5110'在**任何**所选字段内的每条记录
 Value|jim nelson kong|查找每个记录中**任意**所选字段包含'jim'和'nelson'以及'kong'字样的记录
@@ -127,18 +127,18 @@ Sort 列表框|选择当前的排序顺序
 按钮 +|添加一条新记录
 按钮 Edit|在单独的表单上编辑当前记录
 Read-Only 选择框|自解释
-Hide unselected fields 选择框|使 Grid仅显示选定的字段
+Hide unselected fields 选择框|使 Grid 仅显示选定的字段
 按钮 Modify Structure|给你修改结构的可能性。 如果表是共享打开的，则会询问您是否要将其重新打开。
 
 ### Index 页
 
-列出所有活动的索引标记，并显示重新创建索引文件的语法。 可以通过用鼠标标记文本并按下Ctrl-C将其复制到剪贴板。
+列出所有活动的索引标记，并显示重新创建索引文件的语法。 可以通过用鼠标标记文本并按下 Ctrl-C 将其复制到剪贴板。
 
 ### Settings 页
 
 此页是自解释的。
-提示：ForeColor和BackColor是查找颜色的RGB值的好工具。 选择任何颜色，按确定，您将看到该值。
-请注意！通常最好使用ForeColor，因为默认值是Black。
+提示：ForeColor 和 BackColor 是查找颜色的 RGB 值的好工具。 选择任何颜色，按确定，您将看到该值。
+请注意！通常最好使用 ForeColor，因为默认值是 Black。
 
 ### 在左侧 Grid 处于活动状态时的键盘快捷键：
 
