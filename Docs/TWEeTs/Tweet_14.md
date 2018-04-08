@@ -1,19 +1,20 @@
 ﻿Thor TWEeT #14: IntellisenseX for Objects
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-IntellisenseX provides dropdown lists of properties, events, and methods (PEMs), similar to what is provided by default Intellisense, for all the cases provided by default Intellisense as well quite a few other cases as well.
+IntellisenseX提供属性，事件和方法（PEM）的下拉列表，与默认Intellisense提供的类似，默认Intellisense提供的所有情况以及其他一些情况。
 
-This TWEeT addresses the following topics about IntellisenseX for Objects
+此TWEeT解决 IntellisenseX for Objects 的以下主题 ：
 
-*   In SCXs and VCXs
-*   In PRG-based classes
-*   Ctrl-Enter to paste in parameters list
-*   Inside WITH/ENDWITH structures
-*   In LOCAL Statements
-*   After NEWOBJECT or  CREATEOBJECT
-*   After UDFs that create objects
-*   With loObject
-*   Using the Custom Keyword List
+*   在 SCXs 和 VCXs 中
+*   在 PRG 格式的类中
+*   按Ctrl-Enter粘贴参数列表
+*   在 WITH/ENDWITH 结构中
+*   在 LOCAL 语句中
+*   在 NEWOBJECT 或  CREATEOBJECT 之后
+*   在创建对象的 UDF 之后
+*   使用 loObject
+*   使用自定义关键字列表
 
 #### In SCXs and VCXs
 
