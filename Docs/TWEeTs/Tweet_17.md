@@ -10,11 +10,11 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   它们只适用于当前的方法或程序。
 
 有三种等同的方法来定义本地别名：
-
-*   `**{{** SomeAlias = What-It-Stand-For **}}**`  … 在任意的注释中
-*   `***#Alias** SomeAlias = What-It-Stand-For`    … 在代码行的开始
-*   `**&&#Alias** SomeAlias = What-It-Stand-For`   … 在代码行的结尾
-
+```foxpro
+*   **{{** SomeAlias = What-It-Stand-For **}}**  … 在任意的注释中
+*   ***#Alias** SomeAlias = What-It-Stand-For    … 在代码行的开始
+*   **&&#Alias** SomeAlias = What-It-Stand-For   … 在代码行的结尾
+```
 > _(上面的粗体文本必须完全按照原样输入，不得插入空格。)_
 
 > **注意：根据大众需求，上述第一条语句（带双花括号的语句）适用于*整个* PRG，而不仅仅是它所在的过程或函数。**
