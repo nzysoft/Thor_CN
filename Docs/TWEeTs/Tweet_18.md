@@ -1,4 +1,4 @@
-﻿Thor TWEeT #18: <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a> for Nested Objects
+﻿Thor TWEeT #18: 嵌套对象的 <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a> 
 ===
 
 [IntellisenseX](https://github.com/VFPX/IntelliSenseX) provides dropdown lists for nested objects. These dropdown list are available throughout an entire form or class, as shown in this example:
