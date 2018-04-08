@@ -4,17 +4,17 @@
 
 ### (以及如何避免它们)
 
-### … The Custom Keyword List …
+### … 自定义关键字列表 …
 
-The most serious problem with IntellisenseX is that it is SO SLOW when getting the list of properties and methods in a VCX or SCX.  The process of getting the correct case for names in a VCX/SCX, requiring parsing MemberData in parent class(es), takes more time than anybody would be willing to wait each time you enter THISFORM followed by a dot.
+IntellisenseX 最严重的问题是，在 VCX 或 SCX 中获取属性和方法列表时，速度太慢。 在 VCX / SCX 中获取名称的正确大小写，需要在父类中解析 MemberData 的过程需要比每次进入 THISFORM 后都有人愿意等待的时间更长。
 
-There is a similar problem when working in PRG-based classes where the parent class is anything other than a FoxPro base class. There is no good way to obtain the correct case for inherited names (PRG-based classes don’t even use MemberData), so all inherited custom names end up in lower case.
+在基于 PRG 的类中工作时，父类是 FoxPro 基类以外的任何类型都有类似的问题。 没有好的方法来获取继承名称的正确大小写（基于 PRG 的类甚至不使用 MemberData），因此所有继承的自定义名称都以小写字母结尾。
 
-The remedy for these two problems is the same – the Custom Keyword List.  This is just a simple table with the list of all words from your programming universe, where each word is saved with the mixture of upper/lower case that you prefer. This table can be created easily, updated automatically, and applied to any block of code.  Not only does this eliminate the problems mentioned above, it ensures that your words are always used consistently (same upper/lower case).
+这两个问题的解决方法是相同的 - 自定义关键字列表。 这只是一个简单的表，其中包含您的编程世界中所有单词的列表，其中每个单词都以您喜欢的大写/小写混合形式保存。 该表格可以很容易地创建，自动更新并应用于任何代码块。 这不仅可以消除上述问题，还可以确保您的文字始终保持一致（大写/小写相同）。
 
-#### Getting Started
+#### 入门
 
-First, create the Custom Keyword List by running Thor Tool _Add all words from folder or project._ (You can find all the tools referenced here by filtering on “Custom Keyword” in the Thor Launcher.)
+首先，通过运行 Thor Tool 创建自定义关键字列表_添加来自文件夹或项目的所有单词_ 。（您可以通过在Thor Launcher中的“自定义关键字”上进行过滤来找到此处引用的所有工具。）
 
 ![](Images/Tweet19a.png)
 
