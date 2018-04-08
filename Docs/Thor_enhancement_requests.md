@@ -13,23 +13,23 @@ _本文档由 xinjie 于 2018-04-07 翻译_
     *   显示如何使用所有工具的一系列短视频; 相关工具将显示在同一个视频中，并不是所有的工具都会显示出来
 *   新的工具
 
-    *   BeautifyMany – 应用BeautifyX并将“.”操作符添加到整个文件，文件夹或项目中。 由Tore Bleken撰写，由Koen Pillar和Claus Schuster测试
-    *   本地智能感应助手 – 来自Ian Simcock。
+    *   BeautifyMany – 应用 BeautifyX 并将“.”操作符添加到整个文件，文件夹或项目中。 由 Tore Bleken 撰写，由 Koen Pillar 和 Claus Schuster 测试
+    *   本地智能感应助手 – 来自 Ian Simcock。
 *   新的维护插件列表，现在在PEM编辑器中
-    *   GoFish的新插件用于设置Grid属性
-    *   针对 SuperBrowse 中字段名的心的插件
+    *   GoFish 的新插件用于设置 Grid 属性
+    *   针对`超级浏览器`中字段名的新的插件
 
 ### 考虑：
 
 *   “查找对象”增强功能
 
     *   仅搜索包含的对象，而不是整个表单或类
-    *   直接在Grid中编辑
-*   Eric Selje的建议（他希望继续努力！）
+    *   直接在 Grid 中编辑
+*   Eric Selje 的建议（他希望继续努力！）
 
     *   插入/管理片段的新工具
     *   用...替换“Append Blank”的新工具。
-    *   GoToDefinition的增强功能可以用参数创建数组和方法
+    *   GoToDefinition 的增强功能可以用参数创建数组和方法
     *   提取到方法的增强功能会创建参数和结果？
 
 *   类浏览器增强
