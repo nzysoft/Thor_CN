@@ -18,15 +18,14 @@
 
 ![](Images/Tweet20a.png)
 
-On the first page of the IntellisenseX pageframe (“**Filtering**”), select the three options indicated below.  The first two combine to form one of the sweet enhancements of IntellisenseX – the dropdown list is filtered as you type to show only matching entries and the matches can be anywhere in the each row, not just to the leading characters.
+在 IntellisenseX 页框的第一页（“**过滤**”）上，选择下面显示的三个选项。 前两者结合起来形成 IntellisenseX 的重要增强功能之一 - 下拉列表在您键入时进行过滤，只显示匹配的条目，而匹配可以位于每行的任何位置，而不仅限于前导字符。
 
 ![](Images/Tweet20b.png)
 
-The second page (“**Fields**”), controls how field names are displayed in drop down lists. I suggest setting the first two options as shown here and setting the third (“case for field names”) according to your own style. There is further customization available, to be addressed later.
+第二页（“**Fields**”）控制字段名称在下拉列表中的显示方式。 我建议设置如前所示的前两个选项，并根据自己的风格设置第三个（“字段名称的情况”）。 还有更多的定制可供使用，稍后将予以解决。
 
 ![](Images/Tweet20c.png)
-
-The third page (“**Objects**”) determines when IntellisenseX displays the drop down lists for objects in a visual class (THISFORM or THIS) or PRG-based class.  Originally, you will want to use the default FoxPro Intellisense for SCXs and VCXs.  Without some additional configuration, IntellisenseX is simply too ponderously slow for objects in SCXs and VCXs.  However, once you have created your Custom Keyword List (see TWEeTs  [#19: Deficiencies in IntellisenseX (and how to avoid them) … The Custom Keyword List](Tweet_19.md)), you will want to select the second option (IntellisenseX).
+第三页（“**Objects**”）确定 IntellisenseX 何时显示可视类（THISFORM 或 THIS）或基于 PRG 的类中对象的下拉列表。 最初，您会希望为 SCX 和 VCX 使用默认的FoxPro智能感知。 如果没有一些额外的配置，IntellisenseX 对于 SCX 和 VCX 中的对象来说运行过于缓慢。 但是，一旦您创建了自定义关键字列表（请参阅[TWEeTs ＃19：IntellisenseX中的缺陷（以及如何避免它们）...自定义关键字列表](Tweet_19.md)），您就希望选择第二个选项（IntellisenseX）。
 
 ![](Images/Tweet20d.png)
 
