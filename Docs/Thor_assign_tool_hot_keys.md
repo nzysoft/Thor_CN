@@ -12,7 +12,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 您也不能将同一个快捷键分配给多个工具。
 
-要查看所有指定的快捷键（包括键盘宏和 On Key Label 定义），请参阅表单的第三页([指定快捷键](Thor_hot_key_list.md))。您也可以更改该页面上的快捷键定义。
+要查看所有指定的快捷键（包括键盘宏和 On Key Label 定义），请参阅表单的第三页([指定的快捷键](Thor_hot_key_list.md))。您也可以更改该页面上的快捷键定义。
 
 ![](Images/Thor_Assign_tool_hot_key.png)
 
