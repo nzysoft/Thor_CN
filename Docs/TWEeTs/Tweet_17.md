@@ -15,7 +15,7 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   `***#Alias** SomeAlias = What-It-Stand-For`    … 在代码行的开始
 *   `**&&#Alias** SomeAlias = What-It-Stand-For`   … 在代码行的结尾
 
-> _(The bold text above must be entered exactly as is, with no intervening spaces.)_
+> _(上面的粗体文本必须完全按照原样输入，不得插入空格。)_
 
 > **Note: Bowing to popular demand, the first of the statements above (the one with the double curly braces) applies to the *entire* PRG, not merely the Procedure or Function in which it lives.**
 
