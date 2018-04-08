@@ -2,18 +2,18 @@
 ===
 _本文档由 xinjie 于 2018-04-08 翻译_
 
-In an earlier TWEeT about [Aliases for VFP Tables](Tweet_15.md), there was a brief and dismissive discussion about Local Aliases.  However, they provide some worthwhile features that are worth discussing.
+在早些时候关于[VFP表的别名](Tweet_15.md)的TWEeT中，有关于本地别名的简短的论述。 但是，它提供了一些值得讨论的有价值的功能。
 
-Local Aliases are like LOCAL statements (`"Local name as class of classlib”`) in two ways:
+在两个方面它和 Local 语句(`"Local name as class of classlib”`)是类似的：
 
-*   they provide an annotation to your code so that IntellisenseX can provide a drop-down list.
-*   they apply only to the current method or procedure.
+*   他们为您的代码提供注释，以便IntellisenseX可以提供一个下拉列表。
+*   它们只适用于当前的方法或程序。
 
-There are three equivalent ways to define Local Aliases:
+有三种等同的方法来定义本地别名：
 
-*   `**{{** SomeAlias = What-It-Stand-For **}}**`                  … in any comment
-*   `***#Alias** SomeAlias = What-It-Stand-For`    … at the beginning of a line
-*   `**&&#Alias** SomeAlias = What-It-Stand-For`         … at the end of a line
+*   `**{{** SomeAlias = What-It-Stand-For **}}**`  … 在任意的注释中
+*   `***#Alias** SomeAlias = What-It-Stand-For`    … 在代码行的开始
+*   `**&&#Alias** SomeAlias = What-It-Stand-For`   … 在代码行的结尾
 
 > _(The bold text above must be entered exactly as is, with no intervening spaces.)_
 
