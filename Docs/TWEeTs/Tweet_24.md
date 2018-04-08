@@ -19,19 +19,19 @@
 
 您可以直接通过调用 Thor 过程来绕过提示：
 
-[1]  To pack files in the current project:
+[1]  在当前项目中打包文件：
 
 ```foxpro
 lcOption = ExecScript(_Screen.cThorDispatcher, 'Thor_Proc_PackProject', .T.)
 ```
 
-[2]  To pack files in a specific project:
+[2]  在特定项目中打包文件：
 
 ```foxpro
 lcOption = ExecScript(_Screen.cThorDispatcher, 'Thor_Proc_PackProject', cProjectName)
 ```
 
-[3]  To pack files in a specific folder:
+[3]  将文件打包到特定文件夹中：
 
 ```foxpro
 lcOption = ExecScript(_Screen.cThorDispatcher, 'Thor_Proc_PackProject', cFolderName)
@@ -40,7 +40,7 @@ lcOption = ExecScript(_Screen.cThorDispatcher, 'Thor_Proc_PackProject', cFolderN
 
 ### <a name="T2"></a>Hack Intellisense
 
-The new tool _Hack Intellisense_ provides an extremely usable alternative to the native Intellisense Manager (shown below) for working with your custom Intellisense scripts.
+新工具 _Hack Intellisense_ 为原生 Intellisense 管理器（如下所示）提供了一个非常有用的替代方案，可用于处理您的定制 Intellisense 脚本。
 
 ![](Images/Tweet24a.png)
 
