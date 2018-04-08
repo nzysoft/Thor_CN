@@ -9,8 +9,8 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 ![](Images/Thor_Create_Popup_Menu1.png)
 
 你现在可以：
-* 为新菜单分配提示
-* 分配将出现在状态栏中的文本
+* 为新菜单指定提示信息
+* 指定将出现在状态栏中的文本
 
 ![](Images/Thor_Create_Popup_Menu2.png)
 
