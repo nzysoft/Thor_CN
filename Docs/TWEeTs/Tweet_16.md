@@ -1,7 +1,8 @@
-﻿Thor TWEeT #16: Custom Keyword List for Field Names
+﻿Thor TWEeT #16: 字段名称的自定义关键字列表
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-The new feature of Custom Keyword List for field names has been shown in a number of images in earlier TWEeTs (including the one below, from [IntellisenseX: Aliases for VFP Tables](Tweet_11.md)), without ever being described.
+字段名称的自定义关键字列表的新功能已在早期的TWEeT（包括下文中的[来自IntellisenseX：VFP表的别名](Tweet_11.md)）中的许多图中显示，这里不再进行描述。
 
 ![](Images/Tweet16a.png)
 
