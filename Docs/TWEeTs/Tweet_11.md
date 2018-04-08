@@ -1,15 +1,15 @@
-﻿Thor TWEeT #11: <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a>: Aliases for VFP Tables
+﻿Thor TWEeT #11: <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a>: VFP表的别名
 ===
 
-Last week’s [TWEeT #10](Tweet_10.md) demonstrated that IntellisenseX recognizes aliases for tables used within SELECT statements.
+上星期的 [TWEeT #10](Tweet_10.md) 证明IntellisenseX可以识别SELECT语句中使用的表的别名。
 
-IntellisenseX now also recognizes aliases used for VFP tables, in three different varieties:
+IntellisenseX现在还识别用于VFP表的别名，有三种不同的方式：
 
-*   In procedures where the table is opened using either USE or by a UDF.
-*   Where the alias is a constant alias used throughout an application and can be opened by a [Plug-In](../Thor_add_plugins.md).
-*   By specifying an special directive in your code that identifies the file that an alias refers to
+*   在使用USE或UDF打开表的**过程代码**中。
+*   别名是在整个应用程序中使用的常量别名，并且可以由[Plug-In](../Thor_add_plugins.md)打开。
+*   通过在代码中指定一个特殊指令来标识别名引用的文件
 
-**Procedures where the table is opened using either USE or by a UDF**
+**在使用USE或UDF打开表的**过程代码**中**
 
 IntellisenseX now recognizes aliases of tables opened by USE (when referenced in the same procedure). This happens automatically and is not dependent on the order of the phrases in the USE command.
 
