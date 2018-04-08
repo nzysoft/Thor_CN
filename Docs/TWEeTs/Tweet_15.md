@@ -79,16 +79,16 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet15k.png)
 
-And similarly for the Customer table ….
+对于Customer table ...也是如此。
 
 ![](Images/Tweet15l.png)
 
-If you happen to name your objects consistently, you can pass the extracted text as a parameter to your own UDF, which should return the object as a result. (Note the necessary use of quote marks around <*>.)
+如果您碰巧为您的对象命名一致，您可以将提取的文本作为参数传递给您自己的UDF，该UDF将作为结果返回对象。 （请注意必须使用<*>周围的引号）。
 
 ![](Images/Tweet15m.png)
 
-The following shows how ‘PartsList’ is passed as a parameter to my UDF “MyLookerUpper”, which returns the object for ‘PartsList’ as a result. As noted before, UDF “MyLookerUpper” should call NewObject() with a third parameter of zero so that its INIT does not execute.
+下面显示了'PartsList'是如何作为参数传递给我的UDF“MyLookerUpper”的，它返回'PartsList'的对象。 如前所述，UDF“MyLookerUpper”应该使用第三个参数0调用NewObject（），以使其在INIT不执行。
 
 ![](Images/Tweet15n.png)
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
