@@ -25,6 +25,7 @@
 第二页（“**Fields**”）控制字段名称在下拉列表中的显示方式。 我建议设置如前所示的前两个选项，并根据自己的风格设置第三个（“字段名称的情况”）。 还有更多的定制可供使用，稍后将予以解决。
 
 ![](Images/Tweet20c.png)
+
 第三页（“**Objects**”）确定 IntellisenseX 何时显示可视类（THISFORM 或 THIS）或基于 PRG 的类中对象的下拉列表。 最初，您会希望为 SCX 和 VCX 使用默认的FoxPro智能感知。 如果没有一些额外的配置，IntellisenseX 对于 SCX 和 VCX 中的对象来说运行过于缓慢。 但是，一旦您创建了自定义关键字列表（请参阅[TWEeTs ＃19：IntellisenseX中的缺陷（以及如何避免它们）...自定义关键字列表](Tweet_19.md)），您就希望选择第二个选项（IntellisenseX）。
 
 ![](Images/Tweet20d.png)
