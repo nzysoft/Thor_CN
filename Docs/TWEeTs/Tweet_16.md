@@ -14,8 +14,8 @@ Thor维护了一个**全局**定义的字段名称表（以及其他名称，在
 
 相反，您可以使用多种Thor工具：
 
-*   **Add highlighted word** – 将当前突出显示的单词添加到KCL。 如果该单词已经在列表中，则突出显示的单词将替换它。
-*   **Add field names from current table** – 为列表中新增的单词打开单独的表单，或者可能会替换列表中的现有单词。 您可以在“新值”列中编辑值（但不能更改拼写，只能更改字母的大小写）。
+*   **添加突出显示的词** – 将当前突出显示的单词添加到KCL。 如果该单词已经在列表中，则突出显示的单词将替换它。
+*   **从当前表中添加字段名称** – 为列表中新增的单词打开单独的表单，或者可能会替换列表中的现有单词。 您可以在“新值”列中编辑值（但不能更改拼写，只能更改字母的大小写）。
 
 ![](Images/Tweet16b.png)
 
@@ -23,10 +23,10 @@ Thor维护了一个**全局**定义的字段名称表（以及其他名称，在
 
 ![](Images/Tweet16c.png)
 
-*   **Add all words from folder or project** – This is the big papa of them all, as it adds all names (not only field names) from all your code to the KCL. Once processing is complete (which may take a few minutes), it brings up the same two forms as shown above under **Add field names from current table.** (Just with a lot more entries).  This is described in more detail in [Custom Keyword List - all other names](Tweet_19.md).
+*   **添加文件夹或项目中的所有单词** – 它将所有代码中的所有名称（不仅是字段名称）添加到KCL中。 一旦处理完成（可能需要几分钟），它将显示与上面显示的相同的两种表单，即**从当前表格添加字段名称**（仅仅添加了更多的记录）。 这在[自定义关键字列表 - 所有其他名称](Tweet_19.md)中有更详细的描述。
 
-#### Where are these field names in the Custom Keyword List used?
+#### 自定义关键字列表中的这些字段名称在哪里使用？
 
-These field names from the Custom Keyword List are used every place in IntellisenseX where tables are referenced (and for both VFP Tables and SQL Server Tables) and as show in SuperBrowse, above.
+自定义关键字列表中的这些字段名称用于IntellisenseX中引用该表（VFP表和SQL Server表）以及上述SuperBrowse中显示的每个位置。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
