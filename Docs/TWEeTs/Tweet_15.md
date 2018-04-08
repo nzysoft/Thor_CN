@@ -4,14 +4,15 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 自早期的 TWEet[IntellisenseX：VFP表的别名](Tweet_11.md)以来，在处理表别名方面进行了一些改进。
 
-The difficulty in what was described there is that the solutions do not go far enough.  第一个示例显示<a href="https://github.com/VFPX/IntelliSenseX" target="_blank"> IntellisenseX </a>识别由USE语句创建的别名：
+我们已经看到的解决方案其实离事实真相还非常遥远。第一个示例显示<a href="https://github.com/VFPX/IntelliSenseX" target="_blank"> IntellisenseX </a>识别由USE语句创建的别名：
 
 ![](Images/Tweet11a.png)
 
-But this alias is only recognized by IntellisenseX within the same procedure as the USE statement. If this table were opened in the LOAD event of a form, the alias would be available there – and in no other methods.
+但是这个别名只能在与USE语句相同的过程中被IntellisenseX识别。 如果此表在表单的LOAD事件中打开，那么该别名将在此处可用 - 而不是其他方法。
 
-And the #Alias directive has the same limitation – to be of value, it must be inserted into every single method referencing the table.
+#别名字典具有同样的限制 – 要使它有意义，就必须在引用表的每个单独的方法中使用它。
 
+由_别名字典_提供的解决方案是有一个表（由Thor维护），它包含表（或对象的全局**>定义 - 但我们将在后面讨论）。
 The solution offered by the _Alias Dictionary_ is that there is a table (maintained by Thor) that contains **global**> definitions of tables (or objects – but we will get to that later on).
 
 You can add records to this table by executing Thor tool **Browse Table/Object Alias List**, which does exactly that – it opens a browse window where you can add records (or edit existing records), like this:
