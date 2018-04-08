@@ -1,7 +1,8 @@
-﻿Thor TWEeT #19: Deficiencies in [IntellisenseX](https://github.com/VFPX/IntelliSenseX)
+﻿Thor TWEeT #19: [IntellisenseX](https://github.com/VFPX/IntelliSenseX) 的缺陷
 ===
+本文档由 xinjie 于 2018-04-09 翻译
 
-### (and how to avoid them)
+### (以及如何避免它们)
 
 ### … The Custom Keyword List …
 
