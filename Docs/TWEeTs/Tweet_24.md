@@ -44,73 +44,73 @@ lcOption = ExecScript(_Screen.cThorDispatcher, 'Thor_Proc_PackProject', cFolderN
 
 ![](Images/Tweet24a.png)
 
-I always found the Intellisense Manager page to be remarkably opaque, to the point where I simply gave up trying to add any new scripts to it. 
+我总是发现 Intellisense Manager 页面非常不透明，直到我放弃尝试添加任何新脚本为止。
 
-The tool _Hack Intellisense_ provides a different UI to update your FoxCode table, making everything much clearer. It also provides a number of niceties, including:
+工具 _Hack Intellisense_ 提供了一个不同的 UI 来更新你的 FoxCode 表，使得一切都更清晰。 它还提供了许多细节，包括：
 
-*   Filtering by text or type of script (I suggest trying "User" filter)
-*   Sorting
-*   Buttons to duplicate or remove a script.
-*   Buffering of your changes, so that you can commit or revert as desired
-*   Backing up of your FoxCode table.
-*   Customizable signature
-*   "Edit" and "Test" buttons for your more intricate code (in field "data")
+*   通过文本或脚本类型过滤（我建议尝试“USER”过滤器）
+*   排序
+*   用于复制或删除脚本的按钮。
+*   缓冲您的更改，以便您可以根据需要进行提交或恢复
+*   备份你的 FoxCode 表。
+*   可定制的签名
+*   用于更复杂代码的“编辑”和“测试”按钮（在“DATA”字段中）
 
 ![](Images/Tweet24b.png)
 
-In the short time that this tool has been available, I have already found that I am taking advantage of these custom scripts much more frequently.
+在这个工具可在短时间内学会使用，我已经更频繁地利用这些自定义脚本。
 
-There are also plans of enhancing _Hack Intellisense_ to facilitate sharing of scripts that we have each created over time. I will keep you posted of any developments.
+还有增强计划 _Hack Intellisense_ 以便于共享我们每次创建的脚本。 我会告诉你任何事态发展。
 
-Note also a related tool, _DropDown Intellisense Scripts_, announced last week, which helps you find and use scripts you have created without using this form.
+另请注意，上周发布的相关工具 _DropDown Intellisense Scripts_ 可帮助您查找并使用您创建的脚本，而无需使用此表单。
 
-_Hack Intellisense_ was written by Rick Schummer, with some tweaks by Todd Landrum and myself.
+_Hack Intellisense_ 是由 Rick Schummer 编写的，Todd Landrum 和我自己做了一些调整。
 
 ### <a name="T3"></a>Dropdown Intellisense Scripts
 
-Announcing a new tool, _Dropdown Intellisense Scripts_, to help you find and use Intellisense scripts created using the Intellisense Manager or the new tool _Hack Intellisense_ .
+宣布新工具, _Dropdown Intellisense Scripts_, 以帮助您查找和使用使用 Intellisense Manager 或新工具  _Hack Intellisense_  创建的 Intellisense 脚本。
 
-This tool works like a number of other "Dropdown" tools as part of IntellisenseX.  It provides a drop-down list of all of the native Intellisense scripts (including any you have added).  
+此工具与其他一些“Dropdown”工具一样工作，作为 Intellisense 的一部分。 它提供了所有原生 Intellisense 脚本（包括您添加的任何内容）的下拉列表。
 
-The filtering applies not only to the script abbreviation ("TGO" in the example below) but also its description (if any). 
+该过滤不仅适用于脚本缩写（下面示例中的“TGO”），还适用于其描述（如果有）。
 
-Selecting any item from the list will cause that item to be expanded, just as normal Intellisense would have expanded it.
+从列表中选择任何项目都会导致该项目被扩展，就像正常的 Intellisense 扩展它一样。
 
-There's also a new wrinkle here -- this works anywhere in a text line, unlike normal Intellisense, which only works at the beginning of a line.
+这里还有一个新的窍门 - 它可以在文本行中的任何位置工作，而不像普通的 Intellisense，它只能在行的开头起作用。
 
 ![](Images/Tweet24c.png)
 
 ### <a name="T4"></a>Keyboard Macro Expansion
 
-The new tool _Keyboard Macro Expansion_ is an extension to native Intellisense. Native Intellisense expands custom scripts, but only at the beginning of a line of code in the command window or code window.
+新工具 _Keyboard Macro Expansion_ 是原生 Intellisense 的扩展。 原生 Intellisense 扩展自定义脚本，只能在命令窗口或代码窗口中的一行代码的开头。
 
-Thus, when I type **TGO** (one of my custom Intellisense scripts) into the command window and follow it by a space, it is expanded by Intellisense to:
+因此，当我在命令窗口中输入**TO**（我的一个自定义 Intellisense 脚本）并按照空格进行操作时，Intellisense 将其展开为：
 
 ```foxpro
 ExecScript(_Screen.cThorDispatcher, 'Get Option=', 'KEY', 'TOOL')
 ```
 
-The new tool _Keyboard Macro Expansion_ also expands Intellinsense scripts, but is not limited to doing so at the beginning of a line.
+新工具 _Keyboard Macro Expansion_ 也扩展了 Intellisense 脚本，但不限于在行首。
 
-If I enter the following:
+如果我输入以下内容：
 
 ```foxpro
 lcOption = TGO
 ```
 
-and then call this new tool (which I have assigned to the hot key Ctrl+I), it expands to:
+然后调用这个新工具（我已将其分配给热键 Ctrl + I ），它将展开为：
 
 ```foxpro
 lcOption = ExecScript(_Screen.cThorDispatcher, 'Get Option=', 'KEY', 'TOOL')
 ```
-(This works by reading the same definitions from the FoxCode table as used by native Intellisense.)
+(这通过从原生 Intellisense 使用的 FoxCode 表中读取相同的定义来工作。)
 
-There is a second extension, provided in the plug-in for  _Keyboard Macro Expansion_ (see [Plug-Ins](../Thor_add_plugins.md)). The plug-in provides an alternative to the FoxCode table so that you can programmatically evaluate the word that is to be substituted for and replace it as desired.  The sample code in the plug-in demonstrates how
+ _Keyboard Macro Expansion_ 插件中提供了第二个扩展 (参看 [Plug-Ins](../Thor_add_plugins.md)). 该插件提供了 FoxCode 表的替代方案，以便您可以通过编程方式评估要替换的单词并根据需要替换它。 插件中的示例代码演示了如何来做这些。
 
 ```foxpro
 loAnything
 ```
-becomes
+变为
 
 ```foxpro
 Local loAnything as Anything of Anything.prg
@@ -119,33 +119,33 @@ Local loAnything as Anything of Anything.prg
 
 ### <a name="T6"></a>Browse SQL Data Dictionary
 
-IntellisenseX and Super Browse can both access field names from SQL Tables, as described in  [Thor TWEeT 10](Tweet_10.md).
+Intellisense 和`超级浏览器`都可以从SQL表中访问字段名称，参看[Thor TWEeT 10](Tweet_10.md).
 
-The natural way to access these field names is to use a connection string to access the SQL Server database.
+访问这些字段名称的自然方法是使用连接字符串来访问 SQL Server 数据库。
 
-Alternatively, you can create an  [SQL Dictionary](Tweet_10.md#SQLDictionary) that contains the names of all tables and their fields, and IntellisenseX will use those field names even if the SQL database is not available. 
+或者，您可以创建包含所有表及其字段的名称的[SQL 字典](Tweet_10.md＃SQLDictionary)，即使SQL数据库不可用，IntellisenseX也将使用这些字段名称。
 
 
-The name of the SQL Data Dictionary is entered in the Thor configuration form (and note the typo!)
+SQL数据字典的名称在Thor配置表单中输入（并注意错字！）
 
 ![](Images/Tweet24d.png)
 
 ### <a name="T9"></a>MRU Tables
 
-The new tool _MRU Tables_ provides a dropdown list of MRU tables; the selected table is opened with _Super Browse._
+新工具 _MRU Tables _ 提供 MRU 表的下拉列表; 所选表格以 _超级浏览器_ 打开
 
-Note that all Thor tools that open tables (including _Super Browse_, _Go To Definition_, and others) add any table that they open to the system MRU list for tables
+请注意，所有打开表的 Thor 工具（包括“超级浏览”，“转到定义”等）都会将它们打开的任何表添加到表的系统 MRU 列表中
 
-This MRU dropdown list is also available from the right-click context menu of the “File Search” command button in _Finder_.
+此 MRU 下拉列表也可从 Finder 中“文件搜索”命令按钮的右键单击上下文菜单中获得。
 
 ![](Images/Tweet24e.png)
 
 ### <a name="T8"></a>Toggle PEM Editor Event Handler
 
-PEM Editor, if open, provides design time event handing. The most familiar use is evaluating the Anchor properties when resizing controls so that a form or class resizes as it would at run time. See the PEM Editor help file for more on this.
+`PEM编辑器`如果打开，则提供设计时的事件处理。 最常见的用法是在调整控件大小时对锚定属性进行评估，以便表单或类在运行时调整大小。 有关详情，请参阅`PEM编辑器`帮助文件。
 
 ### <a name="T7"></a>Toggle Debugger
 
-Nothing magic about this one, other than it’s handy to have a single tool that is available on a hot key.
+除了一个可以在热键上使用的工具之外，这件工具没有什么神奇之处。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
