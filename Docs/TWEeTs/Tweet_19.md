@@ -14,13 +14,13 @@ IntellisenseX 最严重的问题是，在 VCX 或 SCX 中获取属性和方法�
 
 #### 入门
 
-首先，通过运行 Thor Tool 创建自定义关键字列表_添加来自文件夹或项目的所有单词_ 。（您可以通过在Thor Launcher中的“自定义关键字”上进行过滤来找到此处引用的所有工具。）
+首先，通过运行 Thor Tool 创建自定义关键字列表： _添加来自文件夹或项目的所有单词_ 。（您可以通过在Thor 启动器中的“自定义关键字”上进行过滤来找到此工具。）
 
 ![](Images/Tweet19a.png)
 
-This tool will run for a few minutes as it scours an entire folder or project for all programming words.  Eventually, a form will come up showing you the list of all words in found. You can do some editing of the list, but for starters the suggestion is to simply save everything.
+此工具将运行几分钟，因为它会扫描整个文件夹或项目以查找所有编程单词。 最终，会出现一张表单，向您显示找到的所有单词列表。 你可以对列表进行一些编辑，但对于初学者来说，建议是简单地保存所有内容。
 
-Next, go to the options page for IntellisenseX in the Thor Configuration form to select the settings such that IntellisenseX will use the Custom Keyword List.
+接下来，进入Thor Configuration表单中 IntellisenseX 的选项页面，选择 IntellisenseX 将使用的自定义关键字列表的设置。
 
 ![](Images/Tweet19b.png)
 
