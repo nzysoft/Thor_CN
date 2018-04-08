@@ -61,9 +61,9 @@ IntellisenseX现在识别LOCAL语句中标识的对象（默认为Intellisense�
 
 #### 在创建对象的 UDF 之后
 
-IntellisenseX also provides a [Plug-In](../Thor_add_plugins.md) (named “NewObject”) that allows it to recognize when you have called a UDF that creates an object. In the example below, my personal use of the plug-in allows Intellisense to recognize my use of a UDF named NewSessionObject (which happens to use the same parameters as NEWOBJECT, but this is not necessary).
+IntellisenseX还提供了一个[Plug-In](../Thor_add_plugins.md）（名为“NewObject”)，它允许识别何时调用了创建对象的UDF。 在下面的示例中，我个人使用插件允许Intellisense识别我使用名为NewSessionObject的UDF（恰好使用与NEWOBJECT相同的参数，但这不是必需的）。
 
-For specifics of the use of this Plug-in, see [IntellisenseX Customization](Tweet_18.md).
+具体使用这个插件,参看 [IntellisenseX Customization](Tweet_18.md).
 
 ![](Images/Tweet14h.png)
 
