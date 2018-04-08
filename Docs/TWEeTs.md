@@ -1,20 +1,20 @@
-## <u>T</u>his <u>W</u>eeks <u>E</u>xc<u>e</u>ptional <u>T</u>ools
+## 本周的优秀工具
 _本文档由 xinjie 于 2018-04-08 翻译_
 
-#27: [转到定义](TWEeTs/Tweet_27.md) (Jan. 4, 2015)
+#27: [转到定义](TWEeTs/Tweet_27.md) (2015年1月4日)
 
-#26: [三个新的 Thor 工具](TWEeTs/Tweet_26.md) (Dec. 22, 2014)
+#26: [三个新的 Thor 工具](TWEeTs/Tweet_26.md) (2014年12月22日)
 
-#25: [FoxBin2PRG的五个新Thor工具](TWEeTs/Tweet_25.md) (Nov. 30, 2014)
+#25: [FoxBin2PRG的五个新 Thor 工具](TWEeTs/Tweet_25.md) (2014年11月30日)
 
-#24: [九个新的 Thor 工具](TWEeTs/Tweet_24.md) (Nov. 25, 2014)
+#24: [九个新的 Thor 工具](TWEeTs/Tweet_24.md) (2014年11月25日)
 
-#23: [缓冲区溢出错误](TWEeTs/Tweet_23.md) (Nov. 17, 2014)
+#23: [缓冲区溢出错误](TWEeTs/Tweet_23.md) (2014年11月17日)
 
-*   _PEM Editor_
+*   _PEM 编辑器_
 *   _IntellisenseX_
 
-#22: [发布 IntellisenseX 工具](TWEeTs/Tweet_22.md) (June 15, 2014)
+#22: [发布 IntellisenseX 工具](TWEeTs/Tweet_22.md) (2014年6月15日)
 
 *   _自动完成_
 *   _下拉常数列表_
@@ -22,17 +22,17 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 *   _下拉表名称_
 *   _使用 ! 标记的数据库(DBC)表_
 
-#21: [高级功能：用于IntellisenseX的插件](TWEeTs/Tweet_21.md) (June 4, 2014)
+#21: [高级功能：用于 IntellisenseX 的插件](TWEeTs/Tweet_21.md) (June 4, 2014)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 
-#20: [IntellisenseX快速入门指南](TWEeTs/Tweet_20.md) (May 29, 2014)
+#20: [IntellisenseX 快速入门指南](TWEeTs/Tweet_20.md) (May 29, 2014)
 
-*   _通过“.”操作符调用IntellisenseX_
-*   _通过快捷键调用IntellisenseX_
+*   _通过“.”操作符调用 IntellisenseX_
+*   _通过快捷键调用 IntellisenseX_
 
-#19: [IntellisenseX中的缺陷（以及如何避免它们）...自定义关键字列表](TWEeTs/Tweet_19.md) (May 21, 2014)
+#19: [IntellisenseX 中的缺陷（以及如何避免它们）...自定义关键字列表](TWEeTs/Tweet_19.md) (May 21, 2014)
 
 *   _通过“.”操作符调用IntellisenseX_
 *   _通过快捷键调用IntellisenseX_
