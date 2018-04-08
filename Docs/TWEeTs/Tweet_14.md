@@ -43,19 +43,19 @@ IntellisenseX为基于PRG的类提供了THIS和WITH THIS的下拉列表。
 
 #### 在 WITH/ENDWITH 结构中
 
-IntellisenseX provides drop down lists inside WITH/ENDWITH structures for a variety of cases not supported by default Intellisense, including WITH THISFORM, WITH THIS.PARENT, and embedded WITHs.
+Intellisense在WITH / ENDWITH结构内部提供了默认Intellisense不支持的各种情况下的下拉列表，包括WITH FORM，WITH THIS.PARENT和嵌入的WITH结构。
 
 ![](Images/Tweet14e.png)
 
 #### 在 LOCAL 语句中
 
-IntellisenseX now recognizes objects identified in LOCAL statements (as default Intellisense does).
+IntellisenseX现在识别LOCAL语句中标识的对象（默认为Intellisense）。
 
 ![](Images/Tweet14f.png)
 
 #### 在 NEWOBJECT 或  CREATEOBJECT 之后
 
-IntellisenseX also recognizes objects created by NEWOBJECT or CREATEOBJECT even if there is no corresponding LOCAL statement. This can be quite handy when first writing a procedure.
+即使没有相应的LOCAL语句，IntellisenseX也可识别由NEWOBJECT或CREATEOBJECT创建的对象。 这在第一次编写程序时可能非常方便。
 
 ![](Images/Tweet14g.png)
 
