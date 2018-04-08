@@ -30,15 +30,15 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet15d.png)
 
-There are a few points of interest worth noting:
+有几点值得注意的是：
 
-*   NewObject() is used in this example, instead of CreateObject(), because NewObject() accepts a third parameter of zero so that the INIT method does not fire.
-*   If CreateObject() would in fact return the correct object, you can supply an empty (‘’) second parameter to NewObject().
+*   在此示例中使用NewObject（）而不是CreateObject（），因为NewObject（）接受第三个参数为零，因此INIT方法不会被触发。
+*   如果使用CreateObject（）事实上会返回正确的对象，那么可以向NewObject（）提供一个空的（''）第二个参数。
 
-There are two alternatives that can be used instead of calling NewObject():
+有两种替代方法可以用来代替调用NewObject（）：
 
-*   You can copy a LOCAL statement and paste it directly into the table.
-*   You can enclose the class name and class library name in curly braces, such as **{ClassName,ClassLib.VCX}.** The class library name is optional if CreateObject() would in fact return the correct object.
+*   您可以复制LOCAL语句并将其直接粘贴到表中。
+*   你可以用大括号括起类名和类库名，例如**{ClassName，ClassLib.VCX}**。如果要CreateObject（）实际上返回正确的对象，那么类库名是可选的。
 
 ![](Images/Tweet15e.png)
 
