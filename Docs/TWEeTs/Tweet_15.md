@@ -63,19 +63,19 @@ _本文档由 xinjie 于 2018-04-08 翻译_
 
 ![](Images/Tweet15h.png)
 
-#### Wildcards in the Alias Field
+#### 别名字段中的通配符
 
-You can also use a single “*” as a wildcard in the Alias field.
+您也可以在别名字段中使用单个“*”作为通配符。
 
 ![](Images/Tweet15i.png)
 
-This allows you to see the PEMs for the this particular object any time that it is referenced, regardless of the parent object that owns it.
+这允许您在任何时候查看这个特定对象的PEM，而不管它是否拥有父对象。
 
-Finally, the characters that the wildcard represents can be used in the Table field; simply use <*> (as shown below)
+最后，通配符表示的字符可以在表格字段中使用; 只需使用<*> （如下所示）
 
 ![](Images/Tweet15j.png)
 
-Thus, in this example, “*” replaces the text “PartsList”, so the fields from the PartsList table are displayed.
+因此，在此示例中，“*”替换文本“PartsList”，以便显示PartsList表中的字段。
 
 ![](Images/Tweet15k.png)
 
