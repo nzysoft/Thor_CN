@@ -1,5 +1,6 @@
 ﻿Thor TWEeT #11: <a href="https://github.com/VFPX/IntelliSenseX" target="_blank">IntellisenseX</a>: VFP表的别名
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
 上星期的 [TWEeT #10](Tweet_10.md) 证明IntellisenseX可以识别SELECT语句中使用的表的别名。
 
