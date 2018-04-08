@@ -24,25 +24,25 @@ Thor 提供了大量 PRG 插件，它们允许您自定义各种 Thor 工具的�
 
 **插件** |**描述**
 ---|---
-AfterComponentInstall|在安装组件后（在Thor\Tools\Components的子文件夹中），在“检查更新”期间调用。 允许您将组件重新安装到您的应用程序中通常使用它的文件夹中
-AutoRenameControl|设置自动重命名时控件的新名称。 “正常的”新名称作为参数提供，因此可以在可接受的情况下使用。
-BeforeComponentInstall|伴随着AfterComponentInstall
-BuildProject|提供Finder中使用的Build Project对话框。
-CloseControlStructure|设置粘贴的文本作为控制结构中的代码的结束行（IF/ENDIF，TRY/CATCH等），其中可能包括来自代码的开始行的文本，并且可能取决于多少行代码 有。
-[CreateLocalsStatements](#CreateLocalsStatements)|创建LOCAL语句作为“Create Locals”的一部分; 允许您确定LOCAL语句的顺序和格式以及要在LOCAL语句中显示哪些变量。
+AfterComponentInstall|在安装组件后（在 Thor\Tools\Components 文件夹中），在“检查更新”期间调用。 允许您将组件重新安装到您的应用程序通常使用它的位置
+AutoRenameControl|设置自动重命名时控件的新名称。 “常规的”新名称作为参数提供，因此可以在可接受的情况下使用。
+BeforeComponentInstall|与 AfterComponentInstall 配合使用
+BuildProject|提供 Finder 中使用的 Build Project 对话框。
+CloseControlStructure|设置粘贴的文本作为控制结构中的代码的结束行（IF/ENDIF，TRY/CATCH 等），其中可能包括来自代码的开始行的文本，并且可能取决于有多少行代码。
+[CreateLocalsStatements](#CreateLocalsStatements)|作为“Create Locals”的一部分创建 LOCAL 语句; 它将允许您确定 LOCAL 语句的顺序和格式以及要在 LOCAL 语句中显示哪些变量。
 EditSourceX|打开带有非FoxPro扩展名的文件
-FormatFieldPicker|为已在[SuperBrowse](Thor_superbrowse.md)中选择的字段创建“字段选择器”字符串.
-GetDefaultValue|根据属性的名称设置用于PEM编辑器创建的新属性的默认值。 提供的示例使用名称的第二个字符。
-GetNewMethodHeader|设置用于由PEM Editor或IDE Tools创建的任何新方法的标题注释文本
-GoToDefinition|如果转到定义无法找到匹配，则调用。 Go To Definition的某些记录功能实际上由该插件处理。
-[IntellisenseX](#IntellisenseX)|为IntellisenseX提供对SQL表格，数据对象等字段名称下拉列表的扩展。当IntellisenseX另外找不到任何内容时显示。
-IsOperator|限制“环绕操作符添加空格”因文件名中包含特殊字符（例如+或 - ）而导致问题
-[OpenTable](#OpenTable)|通过任何尝试打开表格的工具调用。
-OpenVCXFile|当PEM编辑器或IDE工具打开VCX时调用。 默认行为是使用类浏览器。
-SetGridHighLighting|为PEM编辑器表格中的行设置突出显示（着色）
-SetGridSortOrder|设置用于对PEM编辑器表格中的行进行排序的索引表达式
-SortAutoComplete|允许从AutoComplete修改下拉列表
-Spell Field Names|确定表格中字段名称的拼写。 请注意，已经提供的选项是[lower\|UPPER\|混合\|匈牙利法（cName）]
+FormatFieldPicker|为已在[超级浏览器](Thor_superbrowse.md)中选择的字段创建“字段选择器”字符串.
+GetDefaultValue|根据属性的名称设置用于`PEM 编辑器`创建的新属性的默认值。 提供的示例使用名称的第二个字符。
+GetNewMethodHeader|设置用于由`PEM 编辑器`或 IDE Tools 创建的任何新方法的标题注释文本
+GoToDefinition|如果`转到定义`无法找到匹配的结果，则被调用。`转到定义`的某些功能实际上由该插件处理。
+[IntellisenseX](#IntellisenseX)|为 IntellisenseX 提供对 SQL表，数据对象等字段名下拉列表的扩展。当 IntellisenseX 另外找不到任何内容时显示。
+IsOperator|防止`在操作符前后添加空格`因文件名中包含特殊字符而导致问题（例如 + 或 - ）
+[OpenTable](#OpenTable)|可以被任何尝试打开表的工具所调用。
+OpenVCXFile|当`PEM 编辑器`或 IDE 工具打开 VCX 时被调用。默认行为是使用类浏览器。
+SetGridHighLighting|为`PEM 编辑器`中 Grid 的行设置高亮显示（着色）
+SetGridSortOrder|设置用于对`PEM 编辑器`中 Grid 的行进行排序的索引表达式
+SortAutoComplete|允许从`自动完成`修改下拉列表
+Spell Field Names|确定表中字段名的拼写。请注意，已经提供的选项是[lower\|UPPER\|混合\|匈牙利命名法（cName）]
 
 ### <a name="CreateLocalsStatements">**CreateLocalsStatements**</a>
 
