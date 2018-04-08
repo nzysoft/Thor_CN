@@ -19,7 +19,7 @@ Thor维护了一个**全局**定义的字段名称表（以及其他名称，在
 
 ![](Images/Tweet16b.png)
 
-*   [**SuperBrowse**](../Thor_superbrowse.md) – if you mark the checkbox under the list of field names, that list becomes editable, allowing you to change which letters are to be upper case. Simply click on any field name and edit it so that it appears as you would like it to.  Any field name that you change is posted immediately to the Custom Keyword List and will be used any time this field name is referenced for *any* table, not just the current one. (No, you *can't* modify the structure of the file this way -- all you can change is which characters are upper case.)
+*   [**SuperBrowse**](../Thor_superbrowse.md) – 如果您将在字段名称列表下方复选框标记，则该列表变为可编辑，允许您更改哪些字母为大写。 只需点击任何字段名称并进行编辑，以便按照您的喜好显示。 您更改的任何字段名称都会立即发布到“自定义关键字列表”中，并且将在任何时候为*任意*表引用此字段名称时使用，而不仅仅是当前名称。 （不，你*不能*以这种方式修改文件的结构 - 你可以改变的是哪些字符是大写。）
 
 ![](Images/Tweet16c.png)
 
