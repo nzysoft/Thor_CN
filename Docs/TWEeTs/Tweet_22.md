@@ -1,19 +1,20 @@
-﻿Thor TWEeT #22: Related [IntellisenseX](https://github.com/VFPX/IntelliSenseX) Tools
+﻿Thor TWEeT #22: 有关的 [IntellisenseX](https://github.com/VFPX/IntelliSenseX) 工具
 ===
+本文档由 xinjie 于 2018-04-09 翻译
 
-There are a number of Thor tools other than [_IntellisenseX_](https://github.com/VFPX/IntelliSenseX) that provide dropdown lists of names to select from.  These are not the familiar lists that native FoxPro Intellisense provides (member names or field names), but rather other lists that make sense in your FoxPro IDE.  These lists are not activated by pressing the dot (like IntellisenseX), so you will need to access them another way (by assigning a hot key or by adding them to the Thor toolbar or a menu)
+除[_IntellisenseX_](https://github.com/VFPX/IntelliSenseX)之外，还有许多 Thor 工具提供了可供选择的名称的下拉列表。 这些不是 FoxPro Intellisense 提供的熟悉列表（成员名称或字段名称），而是在您的 FoxPro IDE 中有意义的其他列表。 这些列表不是通过按点（如IntellisenseX）激活的，因此您需要以另一种方式访问它们（通过分配热键或将它们添加到Thor工具栏或菜单中）
 
-These tools can be found using the Tool [Launcher](../Thor_launcher.md):
+这些工具可以在工具[启动器](../Thor_launcher.md)中找到:
 
 ![](Images/Tweet22a.png)
 
-The dropdown lists provided by these tools are:
+这些工具提供的下拉列表是：
 
-*   _AutoComplete_ – All names referenced in the current procedure, except for VFP Keywords. Thus, variables, field names, table names and aliases, procedures, objects, property and method names, and so on
-*   _Dropdown Constants List –_ All constants defined in the current procedure (#Define statements) as well as all constants defined in referenced #Include statements.
-*   _Dropdown Procedures List –_ All procedures and functions referenced in either the current project (if there is one open) or the current path.
-*   _Dropdown Table Names –_ All tables in the current path.
-*   _DBC Tables by ! –_ All tables found in a DBC.
+*   _AutoComplete_ – 当前过程中引用的所有名称，VFP关键字除外。 因此，变量，字段名称，表名和别名，过程，对象，属性和方法名称等等
+*   _Dropdown Constants List –_ 在当前过程中定义的所有常量（#Define语句）以及在引用的#Include语句中定义的所有常量。
+*   _Dropdown Procedures List –_ 当前项目中引用的所有过程和函数（如果有一个打开）或当前路径。
+*   _Dropdown Table Names –_ 当前路径中的所有表。
+*   _DBC Tables by ! –_ 在DBC中找到的所有表。
 
 All of these tools work essentially the same way. When you invoke them, you get a dropdown list that you can select from, just as when you select from dropdown lists created by IntellisenseX. The following example demonstrates a use of _AutoComplete_, showing all the names referenced in this procedure.
 
