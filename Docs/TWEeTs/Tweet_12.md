@@ -1,26 +1,27 @@
 ﻿Thor TWEeT #12: IntellisenseX by Dot or by Hot Key?
 ===
+_本文档由 xinjie 于 2018-04-08 翻译_
 
-There are two different ways that you can invoke [IntellisenseX](https://github.com/VFPX/IntelliSenseX):
+有两种不同的方式可以调用 [IntellisenseX](https://github.com/VFPX/IntelliSenseX):
 
-*   Tool **IntellisenseX by Dot** is a toggle that turns on/turns off the use of IntellisenseX. When turned on, IntellisenseX is invoked every time you press the dot (the period).
-*   Tool **IntellisenseX by HotKey** causes IntellisenseX to be invoked only when you press the hot key you have assigned to it. You press the hot key when you want IntellisenseX (and it supplies the dot for you)
+*   工具 **IntellisenseX by Dot** 是一个开关/关闭IntellisenseX的使用。 打开时，每次按下圆点（句点）时都会调用IntellisenseX。
+*   工具 **IntellisenseX by HotKey** 仅在您按下分配给它的热键时才会调用IntellisenseX。 当你想使用IntellisenseX时，你可以按下热键（2支持“.”操作符）。
 
-Watch this video:  [“IntellisenseX by Dot” vs “IntellisenseX by Hot Key”](http://www.youtube.com/watch?v=71psd6RH2Ls&hd=1&rel=0) (3:29)
+观看视频：  [“IntellisenseX by Dot” vs “IntellisenseX by Hot Key”](http://www.youtube.com/watch?v=71psd6RH2Ls&hd=1&rel=0) (3:29)
 
-**IntellisenseX by Dot** is the “natural” way to invoke IntellisenseX, as it mimics the way native Intellisense works. There are some minor issues with it, however, including the following:
+**IntellisenseX by Dot** 是调用IntellisenseX的“自然”方法，因为它模仿原生Intellisense的工作方式。 但有一些小问题，包括以下内容：
 
-*   The selection box may be slow in coming up, particularly when listing properties and methods for an object. (This may be addressed to some degree with the release of an upcoming suite of tools “Custom Keyword List”.)
-*   It may stumble over itself a little when you enter any of .T., .F., or .NULL. This can be avoided by typing slower, but nobody wants to do that.
-*   It uses a timer that fires every second, which can cause annoying behavior in the debugger. The timer is absolutely essential since **IntellisenseX by Dot** must be disabled when the focus is not on a code window
+*   选择框可能会很慢，特别是在列出对象的属性和方法时。 （这可能会在一定程度上导致即将推出的一套工具“自定义关键字列表”。）
+*   当你输入任何.T.，.F.或.NULL.时，它可能会有点磕磕碰碰。 这可以通过较慢的键入来避免，但没有人想这样做。
+*   它使用一个每秒触发的计时器，这会在调试器中引起恼人的行为。 定时器是绝对必要的，因为当焦点不在代码窗口时，**必须禁用**IntellisenseX
 
-All of these issues can be overcome by using **IntellisenseX by HotKey** instead, each time you want to invoke IntellisenseX.  However, besides learning to use a different key than dot to invoke Intellisense, there is another drawback as well – as you will see in upcoming TWEeTs, there are features available from IntellisenseX not provided by native Intellisense. These will come as a pleasant surprise if using **IntellisenseX by Dot** (the selection box will simply appear when you press the dot). The solution is to use **Intellisense by HotKey** when you’d like it if IntellisenseX were available (even if you know native Intellisense will do nothing).
+所有这些问题都可以通过使用**热键**的IntellisenseX来解决，而不是每次你想调用IntellisenseX。 但是，除了学习使用不同于dot的键来调用Intellisense之外，还有另一个缺点 - 就像在即将到来的TWEeT中将会看到的那样，IntellisenseX提供的功能不是由本地Intellisense提供的。 如果使用**IntellisenseX by Dot**（当您按下点时，选择框将会出现）这些将会带来惊喜。 如果IntellisenseX可用（即使您知道本机智能感知无效），解决方法是使用**Intellisense by HotKey**。
 
-#### Other features from IntellisenseX by Hot Key
+#### IntellisenseX by Hot Key 的其他特性
 
-There are two features that are only available from **IntellisenseX by HotKey:**
+有两个功能仅可用于 **IntellisenseX by HotKey:**
 
-*   If you enter the name of a DBC following by a ‘!’ and then use **IntellisenseX by HotKey**, the selection box lists all tables and views in that DBC.  (If the database is already open, you need not enter the DBC name). This list, curiously, also include files from the Data Environment of a form being edited.
-*   If you enter a ‘*’ followed by **IntellisenseX by HotKey**, the selection box lists all tables in the current folder and the path.
+*   如果您通过'！'输入DBC的名称，然后通过**IntellisenseX by HotKey**使用 IntellisenseX，则选择框将列出该DBC中的所有表和视图。 （如果数据库已经打开，则不需要输入DBC名称）。 奇怪的是，这个列表还包括正在编辑的表单的数据环境中的文件。
+*   如果您通过热键使用的同时随后键入一个星号，IntellisenseX的选择框会列出当前文件夹中的所有表格和路径。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [History of all Thor TWEeTs](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
