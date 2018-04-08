@@ -37,7 +37,7 @@ Thor:
 *   它提供了注册工具的统一的方法。
 *   简化了开发者之间的共享。
 
-Thor 附带两个工具：Thor 仓库 和 PEM Editor。(详见下文)
+Thor 附带两个工具：**Thor 仓库** 和 ** PEM Editor** 。(详见下文)
 
 与 ON KEY LABEL 不同，Thor 可以提供全方位的多键组合 (例如：{Ctrl + Alt + A})。
 
