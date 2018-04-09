@@ -16,6 +16,10 @@
 	#Define _Update_Grid_Head4_Caption			[Status]
 	#Define _Update_Grid_Head6_Caption			[Update]
 	#Define _Update_Grid_Head7_Caption			[Never Update]
+
+	#Define _HomePage_Caption					[Home Pages for VFPX Projects]
+	#Define _HomePage_Grid_Header4_Caption		[Pratuoject]
+	#Define _HomePage_Grid_Header9_Caption		[status]
 	
 #ELSE Version(3) = [86]		&& Simplified Chinese
 	#Define _Manage_Plug_in_PRGs				[插件管理器]
@@ -35,4 +39,9 @@
 	#Define _Update_Grid_Head4_Caption			[状态]
 	#Define _Update_Grid_Head6_Caption			[更新]
 	#Define _Update_Grid_Head7_Caption			[从不更新]
+	
+
+	#Define _HomePage_Caption					[VFPX 项目主页]
+	#Define _HomePage_Grid_Header4_Caption		[项目]
+	#Define _HomePage_Grid_Header9_Caption		[状态]
 #ENDIF
