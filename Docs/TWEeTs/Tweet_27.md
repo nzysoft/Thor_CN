@@ -24,21 +24,21 @@ PRG 中的过程和函数|打开PRG并高亮显示PROC或FUNC的开始
 常量 (#Define …)|打开 #Include 文件, 并高亮显示该常量
 表单|打开表单
 报表|打开报表
-Fully highlighted file name|Opens the file for editing; should work for all file extensions.
-Class Name|Opens the class, whether it is in a VCX or PRG
-CREATEOBJECT or NEWOBJECT|Opens the class, whether it is in a VCX or PRG
-LOCAL loObject as someclass of somelibrary|Opens the class (when you click on “LOCAL”)
-{{ loObject = { someclass, someclasslibrary } }}|Opens the class (when you click on “loObject”)
-Define Class xxx as xxxParent (of xxxLibrary)|Opens the parent class xxx Parent (when you click on “Define”)
+完全高亮的文件名|打开文件进行编辑; 应该适用于所有文件扩展名。
+类名|打开类，无论是在 VCX 还是 PRG 中
+CREATEOBJECT 或 NEWOBJECT|打开类，无论是在 VCX 还是 PRG 中
+LOCAL loObject as someclass of somelibrary|打开类 (当你点击在 “LOCAL” 时)
+{{ loObject = { someclass, someclasslibrary } }}|打开类 (当你点击在 “loObject” 上时)
+Define Class xxx as xxxParent (of xxxLibrary)|打开父类 xxx（当您单击“Define”时）
 
-If the search is to be conducted looking in file(s) other than the form or class being edited, the files in the active project, if any are searched; if there is no active project, then all files in the path are searched.
+如果要搜索除正在编辑的表单或类以外的文件，则搜索活动项目中的文件（如果有的话）; 如果没有活动项目，则搜索路径中的所有文件。
 
-#### Creating New Properties and Methods
+#### 创建新的属性和方法
 
-_Go To Definition_ can also be used to create new properties and methods. Simply call Go To Definition when the cursor is in the name of a potential new property or method and the form for creating new properties or methods is opened.
+_转到定义_ 也可以用来创建新的属性和方法。 当光标位于潜在的新属性或方法的名称中时，只需调用**转到定义**即可，并且打开用于创建新属性或方法的表单。
 
 ![](Images/Tweet27a.png)
 
-_Personal note: I rely heavily on this tool. In fact, I use it to create most of my new properties and methods, rarely using PEM Editor for that purpose any more._
+_个人说明：我非常依赖这个工具。 实际上，我用它来创建大部分新的属性和方法，很少再使用PEM编辑器。_
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [Thor 社区](https://groups.google.com/forum/?fromgroups#!forum/FoxProThor).
