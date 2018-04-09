@@ -8,7 +8,7 @@
 [PRG 插件](Thor_add_plugins.md)|[为工具指定快捷键](Thor_assign_tool_hot_keys.md)|[为弹出菜单指定快捷键](Thor_assigning_hot_keys.md)|[浏览工具列表](Thor_browsing_tools.md)
 [创建新的菜单](Thor_create_menu_pad.md)|[创建弹出式菜单](Thor_create_popup_menu.md)|[创建新工具](Thor_creating_new_tools.md)|[创建子菜单](Thor_creating_sub-menus.md)
 [复制菜单](Thor_duplicating_menus.md)|[编辑现有工具](Thor_editing_existing_tools.md)|[Thor EditorWindow 对象](Thor_editorwindow_object.md)|[Thor 计划](Thor_enhancement_requests.md)
-[Thor 表单使用说明](Thor_form_usage_notes.md)|[ContextMenu 对象](Thor_framework_contextmenu.md)|[FormSettings 对象](Thor_framework_formsettings.md)|[Thor 在线帮助](Thor_help.md)
+[Thor 表单使用说明](Thor_form_usage_notes.md)|[ContextMenu 对象](Thor_framework_contextmenu.md)|[FormSettings 对象](Thor_framework_formsettings.md)|***[Thor 在线帮助](Thor_help.md)***
 [所有快捷键、宏、On Key Label 列表](Thor_hot_key_list.md)|[首次和手动安装Thor](Thor_install.md)|[工具启动器](Thor_launcher.md)|[移动菜单项](Thor_moving_menu_pads.md)
 ***[Thor 推文（新闻）](Thor_news.md)***|[一键更新 Thor](Thor_one-click_update.md)|[打开 Thor 表单](Thor_open_form.md)|[选项](Thor_options.md)
 [Thor 概述](Thor_overview.md)|[重新排序菜单中的工具和子菜单](https://github.com/vfp9/Thor_CN/blob/master/Docs/Thor_re-ordering%20tools.md)|[安装和更新 Thor](Thor_reinstall.md)|[Thor 仓库](Thor_repository.md)
