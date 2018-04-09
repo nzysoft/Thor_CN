@@ -17,7 +17,7 @@
 
 *   _[Create/Edit FoxBin2Prg "SendTo" shortcuts](#T5)_
 
-所有这些工具都假定您已经下载并安装了 FoxBin2PRG。 如果您使用 Thor 的 _检查更新_ 进行下载，它会自动运行，因为他们知道在哪里查找它。 否则，您可以修改[Plug-In](../ Thor_add_plugins.md) “Get FoxBin2PRG Folder” 以指向您安装 FoxBin2PRG 的文件夹。
+所有这些工具都假定您已经下载并安装了 FoxBin2PRG。 如果您使用 Thor 的 _检查更新_ 进行下载，它会自动运行，因为他们知道在哪里查找它。 否则，您可以修改 [Plug-In](../Thor_add_plugins.md) “Get FoxBin2PRG Folder” 以指向您安装 FoxBin2PRG 的文件夹。
 
 ![](Images/Tweet25a.png)
 
