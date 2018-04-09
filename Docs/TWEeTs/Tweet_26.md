@@ -1,7 +1,8 @@
-﻿Thor TWEeT #26: Three New Thor Tools
+﻿Thor TWEeT #26: 三个新的 Thor 工具
 ===
+本文档由 xinjie 于 2018-04-09 翻译
 
-Three new tools have been added recently to the Thor Repository.
+**Thor 仓库**最近添加了三个新工具。
 
 *   _[Split a Procedure File](#T1)_
 *   _[Find Buffer Overrun Threats](#T2)_
@@ -9,25 +10,25 @@ Three new tools have been added recently to the Thor Repository.
 
 ### <a name="T1"></a>Split a Procedure File
 
-The tool _Split a Procedure File_ splits out all procedures and functions from a PRG file into separate PRG files. 
+工具 _Split a Procedure File_ 将PRG文件中的所有程序和功能拆分为单独的PRG文件。 
 
-It first prompts for the name of the procedure file and then for the folder in which the new PRGs are to be created.
+它首先提示输入过程文件的名称，然后提示要创建新PRG的文件夹。
 
-Note that this creates new PRGs for procedures and functions, but does nothing for classes.
+请注意，这为程序和函数创建了新的RPG，但对类没有任何作用。
 
-Thanks to Tamar Granor for this contribution.
+感谢 Tamar Granor 为此所做的贡献。
 
 ### <a name="T2"></a>Find Buffer Overrun Threats
 
-As described in [TWEeT #23: Buffer Overruns](Tweet_23.md), you may encounter buffer overrun errors when using PEM Editor or IntellisensesX on some forms and classes.  This unusual error, which blows away your session like a C5 error, is caused by long Parameter or LParameter statements.
+如 [TWEeT＃23：缓冲区溢出](Tweet_23.md)中所述，在某些表单和类上使用`PEM 编辑器`或 IntellisensesX 时，可能会遇到缓冲区溢出错误。 这个不寻常的错误，会像C5错误一样摧毁你的会话，这是由长 Parameter 或 LParameter 语句引起的。
 
-The tool _Find Buffer Overrun Threats_ searches a project or folder with sub-folders for statements which might cause buffer overrun errors. Note the use of the word “might”; it is difficult to pin down the exact case where these errors occur, as the rules are different in PRGs than in VCXs and are affected by internal comments.
+工具 _Find Buffer Overrun Threats_ 使用子文件夹搜索项目或文件夹，查找可能导致缓冲区溢出错误的语句。 注意这里使用了“可能”这个词; 很难确定发生这些错误的具体情况，因为 PRG 中的规则与 VCX 中的规则不同，并受到内部注释的影响。
 
-The result from running this tool is a cursor, shown using _Super Browse_.
+运行此工具的结果是一个光标，使用 _超级浏览器_ 显示。
 
 ![](Images/Tweet26a.png)
 
-To test whether any of the threats identified in the cursor will actually generate a buffer overrun, run the following:
+要测试游标中确定的任何威胁是否实际上会生成缓冲区溢出，请运行以下命令：
 
 ```foxpro
 oObject = Newobject(‘yourclass’, ‘yourclasslib’, 0)
@@ -37,8 +38,8 @@ oObject = Newobject(‘yourclass’, ‘yourclasslib’, 0)
 
 ### <a name="T3"></a>Compress Parameters List
 
-Use tool _Compress Parameters List_ to fix any long Parameters lists that are causing buffer overrun errors.
+使用工具 _Compress Parameters List_ 修复导致缓冲区溢出错误的任何长参数列表。
 
-Navigate to the problem code, highlight the entire parameters statement, and run this tool.  It will remove all un-necessary characters from the statement (including spaces, tabs, CRs, LFs, semi-colons, and end-of-line comments.)
+导航到问题代码，突出显示整个参数语句，然后运行此工具。 它将删除语句中的所有不必要的字符（包括空格，制表符，CR，LF，分号和行尾注释）。
 
-See also [History of all Thor TWEeTs](../TWEeTs.md) and [the Thor Forum](https://groups.google.com/forum/?fromgroups#%21forum/FoxProThor).
+参看 [所有Thor TWEeTs的历史](../TWEeTs.md) 和 [tThor 社区](https://groups.google.com/forum/?fromgroups#%21forum/FoxProThor).
