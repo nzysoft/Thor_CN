@@ -12,7 +12,7 @@
 [所有快捷键、宏、On Key Label 列表](Thor_hot_key_list.md)|[首次和手动安装Thor](Thor_install.md)|[工具启动器](Thor_launcher.md)|[移动菜单项](Thor_moving_menu_pads.md)
 ***[Thor 推文（新闻）](Thor_news.md)***|[一键更新 Thor](Thor_one-click_update.md)|[打开 Thor 表单](Thor_open_form.md)|[选项](Thor_options.md)
 [Thor 概述](Thor_overview.md)|[重新排序菜单中的工具和子菜单](https://github.com/vfp9/Thor_CN/blob/master/Docs/Thor_re-ordering%20tools.md)|[安装和更新 Thor](Thor_reinstall.md)|[Thor 仓库](Thor_repository.md)
-[运行 Thor](Thor_running.md)|[超级浏览器](Thor_superbrowse.md)|[The Thor Framework: 制作工具的工具](Thor_tools_making_tools.md)|[Thor 工具对象](Thor_tools_object.md)
+[运行 Thor](Thor_running.md)|[超级浏览器](Thor_superbrowse.md)|[Thor 工具对象](Thor_tools_object.md)|[The Thor Framework: 制作工具的工具](Thor_tools_making_tools.md)
 [视频](Thor_videos.md)|[工具：VCD4PRG](VCD4PRG.md)||
 
 ## Readme
