@@ -13,3 +13,7 @@
 . 在 IDE 里执行 APP，完成安装。
 
 . 特别说明，运行安装后，会在子文件夹下生成一个 RunThor.prg ，你可以把它放置在任意你调用方便的位置，再次运行 Thor 时，最好是执行该文件。
+
+
+## Readme
+This folder is a compiled simplified Chinese version of APP.
