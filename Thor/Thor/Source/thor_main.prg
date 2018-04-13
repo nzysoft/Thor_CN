@@ -6,6 +6,17 @@ Lparameters tcAction, tlParam
 * to the Source folder and use the parent folder (the development directory) as
 * the root. Otherwise, use the folder the application is running from as the
 * root.
+*
+* CN:
+* 如果我们直接运行此PRG（即在Thor开发期间），请设置Source文件夹的路径并使用父文件夹（开发目录）作为根目录。
+* 否则，使用运行该应用程序的文件夹作为根目录。
+
+* Add by JingChun Niu     2018.04.09
+* The string in the program is extracted as a constant. There is no special commentary for this matter 
+* In addition, I have added some Chinese Internet links to the Internet in the code (if there is a Chinese language).
+* CN:
+* 按照VFPX的版权协议，我应该标注所有的更改，对于常量的提取所造成的更改，我就不单独标注了。
+* 此外，我将代码中的一些因特网链接也增加了中文版的链接地址（如果有中文的话）
 
 Local loGetThor As 'RunThor'
 Local laStack[1], lcAction, lcApp, lcFolder, lcMessage, loThor
@@ -49,9 +60,9 @@ Do Case
 
 	Case lcAction = 'INSTALL'
 		ThorInstall (lcFolder)
-		lcMessage = 'Please use the Thor Forum for your questions, comments, etc. --'
-		lcMessage = lcMessage + ccCR + "        Choose Forums->Thor from the main Thor menu."
-		ExecScript(_screen.cThorDispatcher, 'Thor_Proc_Messagebox', lcMessage, 0, 'Thor Help and the Thor Community')
+		lcMessage = _Thor_Main_Install1Desc_loc
+		lcMessage = lcMessage + ccCR + _Thor_Main_Install2Desc_loc
+		ExecScript(_screen.cThorDispatcher, 'Thor_Proc_Messagebox', lcMessage, 0, _Thor_Main_InstallMsgTitle_loc)
 
 	Case ThorInstalled (lcFolder)
 
@@ -92,8 +103,9 @@ Function ThorInstalled (lcFolder)
 Endfunc
 
 
-
 Procedure ThorInstall (lcFolder)
+
+	*!* CN: Thor 的安装过程：
 
 	CreateDirectoryStructure (lcFolder)
 
@@ -108,9 +120,9 @@ Procedure ThorInstall (lcFolder)
 	Close Tables 
 
 	If PemStatus(_screen, 'cThorDispatcher', 5)
-		ExecScript(_screen.cThorDispatcher, 'Thor_Proc_Messagebox', ccTHORVERSION + ' installed', 0, 'Installation complete')
+		ExecScript(_screen.cThorDispatcher, 'Thor_Proc_Messagebox', ccTHORVERSION + _Thor_Main_Installed_loc, 0, _Thor_Main_InstallationComplete_loc)
 	Else 
-		MessageBox(ccTHORVERSION + ' installed', 0, 'Installation complete', 3000)
+		MessageBox(ccTHORVERSION + _Thor_Main_Installed_loc, 0, _Thor_Main_InstallationComplete_loc, 3000)
 	EndIf 
 
 Endproc
@@ -120,6 +132,7 @@ Endproc
 Procedure CreateDirectoryStructure
 
 	* Create the Thor directory structure if it doesn't already exist.
+	* CN: 如果目录结构不存在，则创建它。
 
 	Lparameters tcFolder
 
@@ -152,6 +165,7 @@ Procedure CreateThorTables
 	Lparameters tcFolder
 
 	* Create the Thor tables if they do not already exist
+	* CN: 如果所需的表不存在则创建之
 
 	Local loMenuDefs
 	CreateHotKeyDefinitions (tcFolder)
@@ -314,19 +328,19 @@ Procedure 	CreateMenuDefinitions (tcFolder)
 		Index On HotKeyID Tag HotKeyID
 
 		Insert Into MenuDefinitions (Prompt, Internal, TopLevel, PopupName, SortOrder)		;
-			Values ('File', .T., .T., '_mFile', 1)
+			Values (_Thor_Main_Menu_File_loc, .T., .T., '_mFile', 1)
 		Insert Into MenuDefinitions (Prompt, Internal, TopLevel, PopupName, SortOrder)		;
-			Values ('Edit', .T., .T., '_mEdit', 2)
+			Values (_Thor_Main_Menu_Edit_loc, .T., .T., '_mEdit', 2)
 		Insert Into MenuDefinitions (Prompt, Internal, TopLevel, PopupName, SortOrder)		;
-			Values ('View', .T., .T., '_mView', 3)
+			Values (_Thor_Main_Menu_View_loc, .T., .T., '_mView', 3)
 		Insert Into MenuDefinitions (Prompt, Internal, TopLevel, PopupName, SortOrder)		;
-			Values ('Tools', .T., .T., '_mTools', 4)
+			Values (_Thor_Main_Menu_Tools_loc, .T., .T., '_mTools', 4)
 		Insert Into MenuDefinitions (Prompt, Internal, TopLevel, PopupName, SortOrder)		;
-			Values ('Program', .T., .T., '_mProg', 5)
+			Values (_Thor_Main_Menu_Program_loc, .T., .T., '_mProg', 5)
 		Insert Into MenuDefinitions (Prompt, Internal, TopLevel, PopupName, SortOrder)		;
-			Values ('Window', .T., .T., '_mWindow', 6)
+			Values (_Thor_Main_Menu_Window_loc, .T., .T., '_mWindow', 6)
 		Insert Into MenuDefinitions (Prompt, Internal, TopLevel, PopupName, SortOrder)		;
-			Values ('Help', .T., .T., '_mSystem', 7)
+			Values (_Thor_Main_Menu_Help_loc, .T., .T., '_mSystem', 7)
 		Insert Into MenuDefinitions (Prompt, Internal, TopLevel, PopupName, SortOrder)		;
 			Values ('Tho\<r', .F., .T., 'Thor_Internal', 8)
 	Else
@@ -338,15 +352,16 @@ Procedure 	CreateMenuDefinitions (tcFolder)
 	Endif
 
 	loMenuDefs = Createobject('Empty')
-	AddProperty(loMenuDefs, 'RunAllTools', 	CreateMenuDef('Tho\<r Tools', 	.F., .T., ccRunAllTools, 101))
-	AddProperty(loMenuDefs, 'More', 		CreateMenuDef('More', 			.F., .F., 'Thor_More', 104))
+
+	AddProperty(loMenuDefs, 'RunAllTools', 	CreateMenuDef(_Thor_Main_Menu_ThorTools_loc, 	.F., .T., ccRunAllTools, 101))
+	AddProperty(loMenuDefs, 'More', 		CreateMenuDef(_Thor_Main_Menu_More_loc, 		.F., .F., 'Thor_More', 104))
 
 	* Seemingly out of order, but done here because of already installed menus
 	Locate For PopupName = 'Thor_Internal'
-	Replace StatusBar With 'Configures Thor, gives access to help pages, the Thor framework, and the Thor discussion group; runs Check For Updates'
+	Replace StatusBar With _Thor_Main_Menu_Thor_StatusBar_loc
 
 	Locate For PopupName = ccRunAllTools
-	Replace StatusBar With 'Runs all Thor Tools'
+	Replace StatusBar With _Thor_Main_Menu_ThorTools_StatusBar_loc
 
 	Use
 
@@ -473,35 +488,36 @@ Endproc
 Procedure AddThorMainMenuItems(tcFolder, loMenuDefs)
 
 	Local lnMoreID
-	AddThorMainMenuItem (8, 'Thor_Tool_ThorInternalRunTool', 105, 'Launcher', 'Find and run tools, explore descriptions, etc')
-	AddThorMainMenuItem (8, ccINTERNALEDITPRG, 110, 'Configure', 'Assign hot keys, create menus and sub-menus, etc.')
-	AddThorMainMenuItem (8, ccCHECKFORUPDATES, 120, 'Check for Updates', 'Check for and install any outstanding updates')
+	AddThorMainMenuItem (8,	'Thor_Tool_ThorInternalRunTool',	105,	_Thor_Main_PopupMenu_Launcher_loc,			_Thor_Main_PopupMenu_Launcher_Status_loc)
+	AddThorMainMenuItem (8,	ccINTERNALEDITPRG,					110,	_Thor_Main_PopupMenu_Configure_loc,			_Thor_Main_PopupMenu_Configure_Status_loc)
+	AddThorMainMenuItem (8,	ccCHECKFORUPDATES,					120,	_Thor_Main_PopupMenu_CheckForUpdates_loc,	_Thor_Main_PopupMenu_CheckForUpdates_Status_loc)
 
 	AddThorMainMenuSeparator (8, 200, 'SEPARATOR1')
 
-	AddThorMainMenuItem (8, ccThorNews, 	205, 	'Thor News', 'All the latest and greatest news about Thor and Thor tools.')
-	AddThorMainMenuItem (8, ccThorTWEeTs, 	206, 	'Thor TWEeTs', "History of all Thor TWEeTs (This Week's Exceptional Tools")
-	AddThorMainMenuItem (8, 'Thor-Forums', 	214, 	'Forums', '')
-	AddThorMainMenuItem (8, 'Thor-Blogs', 	217, 	'Blogs', '')
-	AddThorMainMenuItem (8, ccINTERNALHELPPRG, 220, 'Home Pages for VFPX Projects', 'Help for Thor')
-	AddThorMainMenuItem (8, 'Thor-Videos', 	230,	'Thor videos', '')
+	AddThorMainMenuItem (8,	ccThorNews,							205,	_Thor_Main_PopupMenu_ThorNews_loc,			_Thor_Main_PopupMenu_ThorNews_Status_loc)
+	AddThorMainMenuItem (8,	ccThorTWEeTs,						206,	_Thor_Main_PopupMenu_ThorTWEeTs_loc,		_Thor_Main_PopupMenu_ThorTWEeTs_Status_loc)
+	AddThorMainMenuItem (8,	'Thor-Forums',						214,	_Thor_Main_PopupMenu_Forums_loc,			'')
+	AddThorMainMenuItem (8,	'Thor-Blogs',						217,	_Thor_Main_PopupMenu_Blogs_loc,				'')
+	AddThorMainMenuItem (8,	ccINTERNALHELPPRG,					220,	_Thor_Main_PopupMenu_VFPxHomePage_loc,		_Thor_Main_PopupMenu_VFPxHomePage_Status_loc)
+	AddThorMainMenuItem (8,	'Thor-Videos',						230,	_Thor_Main_PopupMenu_ThorVideos_loc,		'')
 
 	AddThorMainMenuSeparator (8, 300, 'SEPARATOR11')
-	AddThorSubMenu (8, loMenuDefs.More, 999, 'More')
+
+	AddThorSubMenu (8, loMenuDefs.More, 999, _Thor_Main_Menu_More_loc)
 
 	lnMoreID = loMenuDefs.More
-	AddThorMainMenuItem (lnMoreID, ccMANAGEPLUGINS, 210, 'Manage Plug-Ins', 'Manages plug-in PRGS used by some tools')
-	AddThorMainMenuItem (lnMoreID, ccOPENFOLDERS, 220, 'Open Folder', 'Opens various Thor folders')
-	AddThorMainMenuItem (lnMoreID, ccUSAGESUMMARY, 235, 'Thor Usage Summary', 'Summary of usage of Thor tools')
+	AddThorMainMenuItem (lnMoreID, ccMANAGEPLUGINS,		210,	_Thor_Main_PopupMenu_ManagePlugIns_loc,		_Thor_Main_PopupMenu_ManagePlugIns_Status_loc)
+	AddThorMainMenuItem (lnMoreID, ccOPENFOLDERS,		220,	_Thor_Main_PopupMenu_OpenFolder_loc,		_Thor_Main_PopupMenu_OpenFolder_Status_loc)
+	AddThorMainMenuItem (lnMoreID, ccUSAGESUMMARY,		235,	_Thor_Main_PopupMenu_UsageSummary_loc,		_Thor_Main_PopupMenu_UsageSummary_Status_loc)
 
 	AddThorMainMenuSeparator (lnMoreID, 300, 'SEPARATOR3')
 
-	AddThorMainMenuItem (lnMoreID, ccINTERNALFRAMEWORK, 310, 'Thor Framework', 'Framework of tools to assist in creating tools')
-	AddThorMainMenuItem (lnMoreID, ccDEBUGMODE, 320, 'Debug Mode', 'Toggles debug mode for working on Thor and IDE Tools')
+	AddThorMainMenuItem (lnMoreID, ccINTERNALFRAMEWORK,	310,	_Thor_Main_PopupMenu_ThorFrameWork_loc,		_Thor_Main_PopupMenu_ThorFrameWork_Status_loc)
+	AddThorMainMenuItem (lnMoreID, ccDEBUGMODE,			320,	_Thor_Main_PopupMenu_DebugMode_loc,			_Thor_Main_PopupMenu_DebugMode_Status_loc)
 
 	AddThorMainMenuSeparator (lnMoreID, 400, 'SEPARATOR41')
-	AddThorMainMenuItem	(lnMoreID, 'Thor-ChangeLogs', 410, 'Change Logs', '')
-	AddThorMainMenuItem	(lnMoreID, 'Thor-ERs', 420, 'Thor ERs', '')
+	AddThorMainMenuItem	(lnMoreID, 'Thor-ChangeLogs',	410,	_Thor_Main_PopupMenu_ChangeLogs_loc,		'')
+	AddThorMainMenuItem	(lnMoreID, 'Thor-ERs',			420,	_Thor_Main_PopupMenu_ThorERs_loc,			'')
 Endproc
 
 
@@ -519,22 +535,22 @@ EndProc
 
 Procedure RemoveOldThorMainMenuItems(tcFolder, loMenuDefs)
 	
-	RemoveThorMainMenuItem (loMenuDefs.More, ccSOURCEFILES, 230, 'Source Files', 'Downloads source files for APPs')
-	RemoveThorMainMenuItem (8, ccINTERNALALLTOOLSPRG, 120, 'Run Tool', 'All tools registered with Thor')
+	RemoveThorMainMenuItem (loMenuDefs.More,	ccSOURCEFILES,			230,	_Thor_Main_Remove_SourceFiles_loc,	_Thor_Main_Remove_SourceFiles_Status_loc)
+	RemoveThorMainMenuItem (8,					ccINTERNALALLTOOLSPRG,	120,	_Thor_Main_Remove_RunTool_loc,		_Thor_Main_Remove_RunTool_Status_loc)
 
-	RemoveThorMainMenuItem (8, ccINTERNALMODIFY, 210, 'Modify Tool', 'Open tool with Modify Command')
-	RemoveThorMainMenuItem (8, ccMANAGEPLUGINS, 215, 'Manage Plug-Ins', 'Manages plug-in PRGS used by some tools')
-	RemoveThorMainMenuItem (8, ccCOMMUNITY, 210, 'Community / Discussions', 'Community for discussing Thor, Thor Repository, and related topics.')
-	RemoveThorMainMenuItem (8, ccOPENFOLDERS, 220, 'Open Folder', 'Opens various Thor folders')
-	RemoveThorMainMenuItem (8, ccSOURCEFILES, 230, 'Source Files', 'Downloads source files for APPs')
-	RemoveThorMainMenuItem (8, ccINTERNALFRAMEWORK, 240, 'Thor Framework', 'Framework of tools to assist in creating tools')
-	RemoveThorMainMenuItem (8, ccDEBUGMODE, 250, 'Debug Mode', 'Toggles debug mode for working on Thor and IDE Tools')
+	RemoveThorMainMenuItem (8,					ccINTERNALMODIFY,		210,	_Thor_Main_Remove_ModifyTool_loc,	_Thor_Main_Remove_ModifyTool_Status_loc)
+	RemoveThorMainMenuItem (8,					ccMANAGEPLUGINS,		215,	_Thor_Main_Remove_PlugIns_loc,		_Thor_Main_Remove_PlugIns_Status_loc)
+	RemoveThorMainMenuItem (8,					ccCOMMUNITY,			210,	_Thor_Main_Remove_Community_loc,	_Thor_Main_Remove_Community_Status_loc)
+	RemoveThorMainMenuItem (8,					ccOPENFOLDERS,			220,	_Thor_Main_Remove_OpenFolder_loc,	_Thor_Main_Remove_OpenFolder_Status_loc)
+	RemoveThorMainMenuItem (8,					ccSOURCEFILES,			230,	_Thor_Main_Remove_SourceFiles_loc,	_Thor_Main_Remove_SourceFiles_Status_loc)
+	RemoveThorMainMenuItem (8,					ccINTERNALFRAMEWORK,	240,	_Thor_Main_Remove_FrameWork_loc,	_Thor_Main_Remove_FrameWork_Status_loc)
+	RemoveThorMainMenuItem (8,					ccDEBUGMODE,			250,	_Thor_Main_Remove_Debug_loc,		_Thor_Main_Remove_Debug_Status_loc)
 
 	RemoveThorMainMenuSeparator (8, 500, 'SEPARATOR3')
 	RemoveThorMainMenuSeparator (8, 300, 'SEPARATOR2')
 
-	RemoveThorMainMenuItem (8, ccINTERNALRepostitory, 320, 'Repository Home Page', 'Home page for Thor Repository')
-	RemoveThorMainMenuItem (8, ccINTERNALTOOLLINK, 330, 'Tool Home Pages', 'Home page for each tool (if any)')
+	RemoveThorMainMenuItem (8,					ccINTERNALRepostitory,	320,	 _Thor_Main_Removre_RepositoyHomePage_loc,	_Thor_Main_Remove_RepositoyHomePage_Status_loc)
+	RemoveThorMainMenuItem (8,					ccINTERNALTOOLLINK,		330,	 _Thor_Main_Remove_ToolHomePage_loc,		_Thor_Main_Remove_ToolHomePage_Status_loc)
 
 EndProc
 
@@ -580,10 +596,12 @@ Endproc
 Procedure CreateRunThorPRG
 
 	* Create the RunThor.PRG
+	* CN: 创建 RunThor.PRG 
 
 	Lparameters tcFolder
 
 	Local lcFolder, lcRunThor
+
 	Text To lcRunThor Noshow Textmerge
 Lparameters tnInterval, tlInstallAllUpdates
 
@@ -607,7 +625,7 @@ If Not Empty (tnInterval) And 'N' = VarType (tnInterval) And tnInterval > 0
 		Replace LastDate With Date()
 		Use
 
-		Do '<<tcFolder>>Thor.APP' With 'Run', .T. && installs Thor, but without startups
+		Do '<<tcFolder>>Thor.APP' With 'Run', .T. && installs Thor, but without startups				CN: 仅安装 Thor
 
 		Execscript (_Screen.cThorDispatcher, 'Thor_Tool_Thor_CheckForUpdates', tlInstallAllUpdates)
 	Else
@@ -616,7 +634,7 @@ If Not Empty (tnInterval) And 'N' = VarType (tnInterval) And tnInterval > 0
 
 Endif	
 
-Do '<<tcFolder>>Thor.APP' With 'Run', .F. && normal installation of Thor (with startups)
+Do '<<tcFolder>>Thor.APP' With 'Run', .F. && normal installation of Thor (with startups)				CN: 正常安装 Thor 并启动
 
 Endtext
 
@@ -738,7 +756,7 @@ Procedure CreateThorInternalTools
         lcToolsFolder + 'Thor_Tool_ThorInternalEdit.PRG')
 
     InstallTool(GetTHOR_TOOL_THORINTERNALFRAMEWORK (tcFolder), ;
-        lcToolsFolder + 'THOR_TOOL_THORINTERNALFRAMEWORK.PRG')
+        lcToolsFolder + 'Thor_Tool_ThorInternalFrameWork.PRG')
 
     InstallTool(GetThor_Tool_ThorInternalFrameworkHelp (tcFolder), ;
         lcToolsFolder + 'Thor_Tool_ThorInternalFrameworkHelp.PRG')
@@ -768,10 +786,10 @@ Procedure CreateThorInternalTools
         lcToolsFolder + 'Thor_Tool_ThorInternalToolLink.PRG')
 
     InstallTool(GetTHOR_TOOL_THORINTERNALTWEETS (tcFolder), ;
-        lcToolsFolder + 'THOR_TOOL_THORINTERNALTWEETS.PRG')
+        lcToolsFolder + 'Thor_Tool_ThorInternalTWEeTS.PRG')
 
     InstallTool(GetTHOR_TOOL_THORINTERNALUSAGESUMMARY (tcFolder), ;
-        lcToolsFolder + 'THOR_TOOL_THORINTERNALUSAGESUMMARY.PRG')
+        lcToolsFolder + 'Thor_Tool_ThorInternalUsageSummary.PRG')
 
     InstallTool(GetThor_Tool_Thor_CheckForUpdates (tcFolder), ;
         lcToolsFolder + 'Thor_Tool_Thor_CheckForUpdates.PRG')
@@ -838,7 +856,6 @@ Procedure CreateThorInternalTools
 
     InstallTool(GetThor_Proc_WriteToCFULog (tcFolder), ;
         lcToolsFolder + 'Procs\Thor_Proc_WriteToCFULog.PRG')
-
 EndProc
 
 
@@ -848,25 +865,69 @@ Procedure InstallTool(tcCode, tcFileName)
 
 EndProc
 
+*!*******************************************************************************
+*!* Thor Tools's definition starts here. list:
+*!* CN: 以下代码定义的 Thor 工具列表，这里是列表
+*!*	Thor_Tool_ThorInternalAllTools.PRG
+*!*	Thor_Tool_ThorInternalEdit.PRG
+*!*	Thor_Tool_ThorInternalFrameWork.PRG
+*!*	Thor_Tool_ThorInternalFrameworkHelp.PRG
+*!*	Thor_Tool_ThorInternalHelp.PRG
+*!*	Thor_Tool_ThorInternalManagePlugIns.PRG
+*!*	Thor_Tool_ThorInternalModifyTool.PRG
+*!*	Thor_Tool_ThorInternalRepository.PRG
+*!*	Thor_Tool_ThorInternalRepositoryHomePage.PRG
+*!*	Thor_Tool_ThorInternalRunTool.PRG
+*!*	thor_tool_thorinternalthornews.PRG
+*!*	Thor_Tool_ThorInternalToolLink.PRG
+*!*	Thor_Tool_ThorInternalTWEets.PRG
+*!*	Thor_Tool_ThorInternalUsageSummary.PRG
+*!*	Thor_Tool_Thor_CheckForUpdates.PRG
+*!*	Thor_Tool_Thor_Community.PRG
+*!*
+*!*	Procs\Thor_Proc_AfterComponentInstall.PRG
+*!*	Procs\Thor_Proc_BeforeComponentInstall.PRG
+*!*	Procs\Thor_Proc_CheckForUpdate.PRG
+*!*	Procs\Thor_Proc_CheckInternetConnection.PRG
+*!*	Procs\Thor_Proc_Check_For_Updates.PRG
+*!*	Procs\Thor_Proc_DownloadAndExtractToPath.PRG
+*!*	Procs\Thor_Proc_DownloadAndInstallUpdates.PRG
+*!*	Procs\Thor_Proc_DownloadFileFromURL.PRG
+*!*	Procs\Thor_Proc_Expand_Bitly_Url.PRG
+*!*	Procs\Thor_Proc_ExtractFiles.PRG
+*!*	Procs\Thor_Proc_ExtractFilesFromZip.PRG
+*!*	Procs\Thor_Proc_ExtractToPath.PRG
+*!*	Procs\Thor_Proc_GetAvailableVersionInfo.PRG
+*!*	Procs\Thor_Proc_GetUpdateList.PRG
+*!*	Procs\Thor_Proc_GetUpdaterObject.PRG
+*!*	Procs\Thor_Proc_GetUpdaterObject2.PRG
+*!*	Procs\Thor_Proc_MessageBox.PRG
+*!*	Procs\Thor_Proc_SetLibrary.PRG
+*!*	Procs\Thor_Proc_UpdateWaitWindow.PRG
+*!*	Procs\Thor_Proc_WriteToCFULog.PRG
+*!*******************************************************************************
+
+*!*===============================================Thor_Tool_ThorInternalAllTools======================================================================
 Procedure GetThor_Tool_ThorInternalAllTools (tcFolder)
 
 	Local lcCode, lcVersion
 	lcVersion = ccTHORVERSION
+
 	Text To lcCode Noshow Textmerge
 Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'All Thor Tools'
-		.Description = 'Menu of all tools registered with Thor'
+		.Prompt		 =  _Thor_Main_ThorInternalAllTools_Prompt_loc 
+		.Description =  _Thor_Main_ThorInternalAllTools_Description_loc 
 		.Source		 = 'Thor'
 		.Version     = '<<lcVersion>>'
 		.Sort		 = 30
@@ -882,36 +943,41 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
+* CN: 这个工具的正常处理从这里开始。
+
 Procedure ToolCode
 	Do '<<tcFolder>>Thor.APP' with 'All Tools'
 EndProc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*============================================Thor_Tool_ThorInternalEdit=========================================================================
 
 Procedure GetThor_Tool_ThorInternalEdit (tcFolder)
 
 	Local lcCode, lcVersion
 	lcVersion = ccTHORVERSION
+
 	Text To lcCode Noshow Textmerge
 Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'Edit Thor'
-		.Summary     = 'Form for Thor'
-		.Description = 'Opens main Thor form: assign hot keys to tools, create popup menus and assign hot keys to them,';
-			+ ' modify VFP system menus, etc.'
+		.Prompt		 =  _Thor_Main_ThorInternalEdit_Prompt_loc 
+		.Summary     =  _Thor_Main_ThorInternalEdit_Summary_loc 
+		.Description =  _Thor_Main_ThorInternalEdit_Description_loc 
 		.FolderName	 = '<<tcFolder>>'
 		.Source		 = 'Thor'
 		.Version     = '<<lcVersion>>'
@@ -928,15 +994,18 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Do '<<tcFolder>>Thor.APP' with 'Edit'
 EndProc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
 
+*!*============================================THOR_TOOL_ThorInternalFrameWork=========================================================================
 Procedure GetTHOR_TOOL_THORINTERNALFRAMEWORK (tcFolder)
 
 	Local lcCode, lcVersion
@@ -951,16 +1020,16 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 
 If Pcount() = 1								;
 		And 'O' = Vartype (lxParam1)		;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'Framework'
-		.Description = 'Framework of tools to assist in creating tools'
+		.Prompt		 =  _Thor_Main_ThorInternalFrameWork_Prompt_loc 
+		.Description =  _Thor_Main_ThorInternalFrameWork_Description_loc 
 		.Source		 = 'Thor'
 		.Version     = '<<lcVersion>>'
 		.Sort		 = 30
@@ -977,7 +1046,7 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
-
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Local loFramework As Object
 	Local laLines[1], lcDisplay, lcFileName, lcHomePage, lcIndent, lcLine, lcThisLine, lcVariable
@@ -986,12 +1055,17 @@ Procedure ToolCode
 	lcIndent	= '' && Chr(9)
 	loFramework	= Execscript (_Screen.cThorDispatcher, '?')
 
-	lcDisplay = '* ' + [<<lcVersion>>] + ccCRLF + ccCRLF		;
-		+  '*   Thor Framework home page =  http://vfpx.codeplex.com/wikipage?title=Thor%20Tools%20Making%20Tools'
+	If Version(3) = [86]	&& CN: 简体中文			EN:Simplified Chinese
+		lcDisplay = '* ' +  ccTHORVERSION  + ccCRLF + ccCRLF		;
+			+   _Thor_Main_ThorInternalFrameWork_Display_loc  + '=  https://github.com/vfp9/Thor_CN/blob/master/Docs/Thor_tools_making_tools.md'
+	Else
+		lcDisplay = '* ' +  ccTHORVERSION  + ccCRLF + ccCRLF		;
+			+   _Thor_Main_ThorInternalFrameWork_Display_loc  + '=  https://github.com/VFPX/Thor/blob/master/Docs/Thor_tools_making_tools.md'
+	EndIf 
 
 	If Not Empty (loFramework.External)
 		lnCount	  = Alines ( laLines, loFramework.External, 5)
-		lcDisplay = lcDisplay + ccCRLF + ccCRLF +  + Replicate ('*', 40) + ' External APPs ' + Replicate ('*', 40)
+		lcDisplay = lcDisplay + ccCRLF + ccCRLF +  + Replicate ('*', 40) +  _Thor_Main_ThorInternalFrameWork_Display2_loc  + Replicate ('*', 40)
 		For lnI = 1 To lnCount
 			lcLine = laLines[lnI]
 			If '||' $ lcLine
@@ -1007,7 +1081,7 @@ Procedure ToolCode
 				lcHomePage = Substr (lcLine, lnPos + 1)
 				lcThisLine = Left (lcLine, lnPos - 1)
 				lcDisplay = lcDisplay + ccCRLF													;
-					+ ccCRLF + lcIndent + '* ' + Getwordnum (lcThisLine, 2) + ' home page = ' + lcHomePage ;
+					+ ccCRLF + lcIndent + '* ' + Getwordnum (lcThisLine, 2) +  _Thor_Main_ThorInternalFrameWork_Display3_loc  + lcHomePage ;
 					+ CreateLocalIntellisense (lcVariable, lcThisLine)							;
 					+ ccCRLF + lcIndent + lcVariable + 'ExecScript(_Screen.cThorDispatcher, "' + lcThisLine;
     				 + IIF(0 = (Occurs(["], lcThisLine) % 2), '"', '') + ')'
@@ -1020,7 +1094,7 @@ Procedure ToolCode
 		Endfor
 	Endif
 
-	lcDisplay = lcDisplay + ccCRLF + ccCRLF + Replicate ('*', 40) + '* Internal *' + Replicate ('*', 40)
+	lcDisplay = lcDisplay + ccCRLF + ccCRLF + Replicate ('*', 40) +  _Thor_Main_ThorInternalFrameWork_Display4_loc  + Replicate ('*', 40)
 	lnCount	  = Alines ( laLines, loFramework.Internal, 5)
 
 	For lnI = 1 To lnCount
@@ -1077,9 +1151,12 @@ Procedure CreateLocalIntellisense (lcVariable, lcThisLine)
 Endproc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*===============================================Thor_Tool_ThorInternalFrameworkHelp======================================================================
 
 Procedure GetThor_Tool_ThorInternalFrameworkHelp (tcFolder)
 
@@ -1090,20 +1167,25 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'Help for Thor Framework'
-		.Description = 'Follows link to Thor Home Page'
+		.Prompt		 =  _Thor_Main_ThorInternalFrameworkHelp_Prompt_loc 
+		.Description =  _Thor_Main_ThorInternalFrameworkHelp_Description_loc 
 		.Source		 = 'Thor'
 		.Version     = '<<lcVersion>>'
 		.Sort		 = 20
-		.Link        = 'http://vfpx.codeplex.com/wikipage?title=Thor%20Help'
+		
+		If Version(3) = [86]
+			.Link        = 'https://github.com/vfp9/Thor_CN/blob/master/Docs/Thor_help.md'			
+		Else 
+			.Link        = 'https://github.com/VFPX/Thor/blob/master/Docs/Thor_help.md'
+		EndIf 
 	Endwith
 
 	Return lxParam1
@@ -1116,14 +1198,18 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Do '<<tcFolder>>Thor.APP' with 'Help'
 EndProc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Tool_ThorInternalHelp=======================================================================
 
 Procedure GetThor_Tool_ThorInternalHelp (tcFolder)
 
@@ -1134,20 +1220,25 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'Help for Thor'
-		.Description = 'Follows link to Thor Home Page'
+		.Prompt		 =  _Thor_Main_ThorInternalFrameworkHelp_Prompt_loc 
+		.Description =  _Thor_Main_ThorInternalFrameworkHelp_Description_loc 
 		.Source		 = 'Thor'
 		.Version     = '<<lcVersion>>'
 		.Sort		 = 20
-		.Link        = 'http://vfpx.codeplex.com/wikipage?title=Thor%20Help'
+		
+		If Version(3) = [86]
+			.Link        = 'https://github.com/vfp9/Thor_CN/blob/master/Docs/Thor_help.md'			
+		Else 
+			.Link        = 'https://github.com/VFPX/Thor/blob/master/Docs/Thor_help.md'
+		EndIf 
 	Endwith
 
 	Return lxParam1
@@ -1160,15 +1251,19 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	lcFormFileName = Execscript (_Screen.cThorDispatcher, 'Full Path=Thor_Proc_ProjectHomePages.SCX')
 	Do Form (lcFormFileName)
 EndProc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Tool_ThorInternalManagePlugIns=======================================================================
 
 Procedure GetThor_Tool_ThorInternalManagePlugIns (tcFolder)
 
@@ -1179,8 +1274,8 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
@@ -1188,19 +1283,21 @@ If Pcount() = 1						  ;
 
 	With lxParam1
 
-		* Required
-		.Prompt	 = 'Manage Plug-In PRGs'
-		.Summary = 'Manage Plug-In PRGs'
+		* Required					CN: 必需的
+		.Prompt	 =  _Thor_Main_ThorInternalManagePlugIns_Prompt_loc 
+		.Summary =  _Thor_Main_ThorInternalManagePlugIns_Prompt_loc 
 
-		* Optional
-		.Description = 'Manage Plug-In PRGs'
+		* Optional					CN: 可选的
+		.Description =  _Thor_Main_ThorInternalManagePlugIns_Prompt_loc 
 
 		* These are used to group and sort tools when they are displayed in menus or the Thor form
-		.Category = 'Settings & Misc.' && allows categorization for tools with the same source
-		.Sort	  = 999 && the sort order for all items from the same Source, Category and Sub-Category
+		* CN: 当它们显示在菜单或Thor表单中时，它们用于对工具进行分组和排序
+		.Category = 'Settings & Misc.' && allows categorization for tools with the same source				CN: 当它们显示在菜单或Thor表单中时，它们用于对工具进行分组和排序
+		.Sort	  = 999 && the sort order for all items from the same Source, Category and Sub-Category		CN: 来自同一来源，类别和子类别的所有项目的排序顺序
 		.PlugInClasses = 'clsBeforeComponentInstall, clsAfterComponentInstall'
 
 		* For public tools, such as PEM Editor, etc.
+		* CN: 用于公共工具，如PEM编辑器等
 		.Author        = 'Jim Nelson'
 		.CanRunAtStartup = .F.
 
@@ -1220,6 +1317,7 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.                  
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Lparameters lxParam1
 
@@ -1229,7 +1327,7 @@ Procedure ToolCode
 		lcFileName    = Execscript (_Screen.cThorDispatcher, 'Full Path=Thor_Tool_ThorInternalManagePlugIns.SCX')
 		Do Form  (lcFileName)
 	Else
-		Messagebox ('Thor is not active; this tool requires Thor', 16, 'Thor is not active', 0)
+		Messagebox ( _Thor_Main_ThorInternalManagePlugIns_ToolCode_Msg_loc , 16,  _Thor_Main_ThorInternalManagePlugIns_ToolCode_MsgTitle_loc , 0)
 	Endif
 
 Endproc
@@ -1241,9 +1339,9 @@ Endproc
 Define Class clsBeforeComponentInstall As Custom
 
 	Source				= 'Thor'
-	PlugIn				= 'BeforeComponentInstall'
-	Description			= 'Called during "Check For Updates" before a component is installed (in a sub-folder of Thor\Tools\Components).'
-	Tools				= 'Check For Updates'
+	PlugIn				=  _Thor_Main_ThorInternalManagePlugIns_clsBeforeComponentInstall_PlugIn_loc 
+	Description			=  _Thor_Main_ThorInternalManagePlugIns_clsBeforeComponentInstall_Description_loc 
+	Tools				=  _Thor_Main_ThorInternalManagePlugIns_clsBeforeComponentInstall_Tools_loc 
 	FileNames			= 'Thor_Proc_BeforeComponentInstall.PRG'
 	DefaultFileName		= '*Thor_Proc_BeforeComponentInstall.PRG'
 	DefaultFileContents	= ''
@@ -1268,9 +1366,9 @@ Enddefine
 Define Class clsAfterComponentInstall As Custom
 
 	Source				= 'Thor'
-	PlugIn				= 'AfterComponentInstall'
-	Description			= 'Called during "Check For Updates" after a component is installed (in a sub-folder of Thor\Tools\Components).'
-	Tools				= 'Check For Updates'
+	PlugIn				=  _Thor_Main_ThorInternalManagePlugIns_clsAfterComponentInstall_PlugIn_loc 
+	Description			=  _Thor_Main_ThorInternalManagePlugIns_clsAfterComponentInstall_Description_loc 
+	Tools				=  _Thor_Main_ThorInternalManagePlugIns_clsAfterComponentInstall_Tools_loc 
 	FileNames			= 'Thor_Proc_AfterComponentInstall.PRG'
 	DefaultFileName		= '*Thor_Proc_AfterComponentInstall.PRG'
 	DefaultFileContents	= ''
@@ -1290,9 +1388,12 @@ Enddefine
 
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*=============================================Thor_Tool_ThorInternalModifyTool========================================================================
 
 Procedure GetThor_Tool_ThorInternalModifyTool (tcFolder)
 
@@ -1303,16 +1404,15 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
-
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'Modify Tool'
-		.Description = 'Menu to open Thor tools for modification with Modify Command'
+		.Prompt		 =  _Thor_Main_ThorInternalModifyTool_Prompt_loc 
+		.Description =  _Thor_Main_ThorInternalModifyTool_Description_loc 
 		.Source		 = 'Thor'
 		.Version     = '<<lcVersion>>'
 		.Sort		 = 30
@@ -1328,14 +1428,18 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Do '<<tcFolder>>Thor.APP' with 'All Tools'
 EndProc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Tool_ThorInternalRepository=======================================================================
 
 Procedure GetThor_Tool_ThorInternalRepository (tcFolder)
 
@@ -1346,16 +1450,15 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
-
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'All Thor Repository Tools'
-		.Description = 'Menu of all tools registered in the Thor Repository'
+		.Prompt		 =  _Thor_Main_ThorInternalRepository_Prompt_loc 
+		.Description =  _Thor_Main_ThorInternalRepository_Description_loc 
 		.Source		 = 'Thor'
 		.FolderName	 = '<<tcFolder>>Thor\Tools\'
 		.Version     = '<<lcVersion>>'
@@ -1372,36 +1475,45 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Do '<<tcFolder>>Thor.APP' with 'Thor Repository'
 EndProc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*===============================================Thor_Tool_ThorInternalRepositoryHomePage======================================================================
 
 Procedure GetThor_Tool_ThorInternalRepositoryHomePage (tcFolder)
 
 	Local lcCode, lcVersion
 	lcVersion = ccTHORVERSION
 	Text To lcCode Noshow Textmerge
-#Define ThorFrameworkURL 		'http://vfpx.codeplex.com/wikipage?title=Thor%20Repository'
+
+#IF Version(3) = [00]
+	#Define ThorFrameworkURL 		'https://github.com/VFPX/Thor/blob/master/Docs/Thor_repository.md'
+#ELSE Version(3) = [86]
+	#Define ThorFrameworkURL 		'https://github.com/vfp9/Thor_CN/blob/master/Docs/Thor_repository.md'
+#ENDIF
 
 Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'Link to Thor Repository'
-		.Description = 'Link to Home Page for Thor Repository'
+		.Prompt		 =  _Thor_Main_ThorInternalRepositoryHomePage_Prompt_loc 
+		.Description =  _Thor_Main_ThorInternalRepositoryHomePage_Description_loc 
 		.Source		 = 'Thor'
 		.Version     = '<<lcVersion>>'
 		.Sort		 = 20
@@ -1418,6 +1530,7 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Local loLink
 	loLink = Newobject ('_ShellExecute', Home() + 'FFC\_Environ.vcx')
@@ -1425,9 +1538,12 @@ Procedure ToolCode
 EndProc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Tool_ThorInternalRunTool=======================================================================
 
 Procedure GetThor_Tool_ThorInternalRunTool (tcFolder)
 
@@ -1438,8 +1554,8 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 
 If Pcount() = 1								;
 		And 'O' = Vartype (lxParam1)		;
@@ -1447,8 +1563,8 @@ If Pcount() = 1								;
 
 	With lxParam1
 
-		.Prompt		 = 'Tool Launcher'
-		.Description = 'Find and run tools, browse descriptions, set options, ...'
+		.Prompt		 =  _Thor_Main_ThorInternalRunTool_Prompt_loc 
+		.Description =  _Thor_Main_ThorInternalRunTool_Description_loc 
 		.Source		 = 'Thor'
 		.Version     = '<<lcVersion>>'
 		.Sort		 = 20
@@ -1471,6 +1587,7 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.                  
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Lparameters lxParam1
 
@@ -1479,34 +1596,46 @@ Procedure ToolCode
 Endproc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*=============================================thor_tool_thorinternalthornews========================================================================
 
 Procedure Getthor_tool_thorinternalthornews (tcFolder)
 
 	Local lcCode, lcVersion
 	lcVersion = ccTHORVERSION
 	Text To lcCode Noshow Textmerge
-#Define 	ccThorNewsURL 		'http://vfpx.codeplex.com/wikipage?title=Thor%20News'
+#IF Version(3) = [86]		&& 简体中文			EN: Simplified Chinese
+	#Define 	ccThorNewsURL 		'https://github.com/vfp9/Thor_CN/blob/master/Docs/Thor_news.md'
+	#Define 	ccTool 				'Thor 新闻'
+	#Define     ccCheckForCFU		'Thor 新闻/CFU'
+	#Define     ccRunThor			'Thor 新闻/运行 Thor'
+	#Define     ccRunThorInterval	'Thor 新闻/运行 Thor Interval'
+	#Define     ccDateLastSeen   	'Thor 新闻/信息快报'
+	#Define     ccLastVersionSeen	'Thor 新闻/最新版本'
 
-#Define 	ccTool 				'Thor News'
-#Define     ccCheckForCFU		'Thor News/CFU'
-#Define     ccRunThor			'Thor News/Run Thor'
-#Define     ccRunThorInterval	'Thor News/Run Thor Interval'
-#Define     ccDateLastSeen   	'Thor News/Last News - Date'
-#Define     ccLastVersionSeen	'Thor News/Last News Version'
+#ELSE						&& 英文				EN: English
+	#Define 	ccThorNewsURL 		'https://github.com/VFPX/Thor/blob/master/Docs/Thor_news.md'
+	#Define 	ccTool 				'Thor News'
+	#Define     ccCheckForCFU		'Thor News/CFU'
+	#Define     ccRunThor			'Thor News/Run Thor'
+	#Define     ccRunThorInterval	'Thor News/Run Thor Interval'
+	#Define     ccDateLastSeen   	'Thor News/Last News - Date'
+	#Define     ccLastVersionSeen	'Thor News/Last News Version'
+#ENDIF
 
 #Define     ccEditClassName 	'clsThorNews'
-
 #Define ccCR  Chr[13]
 
 Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具在 Thor 中进行正确注册。
 
 If Pcount() = 1								;
 		And 'O' = Vartype (lxParam1)		;
@@ -1514,17 +1643,19 @@ If Pcount() = 1								;
 
 	With lxParam1
 
-		* Required
-		.Prompt		   = 'Thor News' && used in menus
+		* Required				CN; 必需的
+		.Prompt		   =  _Thor_Main_thorinternalthornews_Prompt_loc  && used in menus				CN: 用于菜单
 
-		* Optional
-		.Description   = 'News headlines about Thor'
+		* Optional				CN: 可选的
+		.Description   =  _Thor_Main_thorinternalthornews_Description_loc 
 		.StatusBarText = ''
 
 		* These are used to group and sort tools when they are displayed in menus or the Thor form
-		.Category      = 'Thor' && creates categorization of tools; defaults to .Source if empty
+		* CN: 当它们显示在菜单或Thor表单中时，它们用于对工具进行分组和排序
+		.Category      = 'Thor' && creates categorization of tools; defaults to .Source if empty		CN: 创建工具的分类; 如果为空，则默认为.Source
 
 		* For public tools, such as PEM Editor, etc.
+		* CN: 用于公共工具，如PEM编辑器等
 		.Author		   = 'Jim Nelson'
 		.OptionClasses = 'clsCheckForUpdates, clsRunThor, clsRunThorInterval, clsLastNewsDate, clsLastNewsVersion'
 		.OptionTool	   = ccTool 
@@ -1558,7 +1689,7 @@ Procedure GetForumNames
 	lcForums = '-Thor' && - Causes this to appear first; remainder are alphabetical
 	lcForums = lcForums + chr(13) + 'OFUG'
 	lcForums = lcForums + chr(13) + 'GoFish'
-	lcForums = lcForums + chr(13) + 'Dynamic Forms'
+	lcForums = lcForums + chr(13) +  _Thor_Main_thorinternalthornews_GetForumNames_Forums_loc 
 	Return lcForums
 Endproc
 
@@ -1574,10 +1705,10 @@ Endproc
 Procedure GetChangeLogNames
 	Local lcChangeLogs
 	lcChangeLogs = '-Thor'  && - Causes this to appear first; remainder are alphabetical
-	lcChangeLogs = lcChangeLogs + chr(13) + 'PEM Editor'
-	lcChangeLogs = lcChangeLogs + chr(13) + 'Thor Repository'
+	lcChangeLogs = lcChangeLogs + chr(13) +  _Thor_Main_thorinternalthornews_GetChangeLogNames_ChangeLogs1_loc 
+	lcChangeLogs = lcChangeLogs + chr(13) +  _Thor_Main_thorinternalthornews_GetChangeLogNames_ChangeLogs2_loc 
 	lcChangeLogs = lcChangeLogs + chr(13) + 'IntellisenseX'
-	lcChangeLogs = lcChangeLogs + chr(13) + 'VFPX Projects'
+	lcChangeLogs = lcChangeLogs + chr(13) +  _Thor_Main_thorinternalthornews_GetChangeLogNames_ChangeLogs3_loc 
 	Return lcChangeLogs
 Endproc
 
@@ -1594,6 +1725,7 @@ Endproc
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.                  
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Lparameters lxParam1
 
@@ -1602,12 +1734,13 @@ Procedure ToolCode
 	Local lnHTMLVersion
 	If Not Execscript (_Screen.cThorDispatcher, 'Thor_Proc_CheckInternetConnection')
 		If 'L' = Vartype (lxParam1)
-			Messagebox ('No Internet Connection Found!', 16, 'No Internet Connection', 0)
+			Messagebox ( _Thor_Main_thorinternalthornews_ToolCode_Msg_loc , 16,  _Thor_Main_thorinternalthornews_ToolCode_MsgTitle_loc , 0)
 			Return .F.
 		Endif
 	Endif
 
 	* Main Thor Engine ... needed to get / set options
+	* CN: Thor 主引擎...需要 get/set 选项
 	llShowIt	 = .T.
 	llCheckFirst = .F.
 	Do Case
@@ -1751,7 +1884,7 @@ Define Class clsThorNews As Container
 		*##*TEXT To loRenderEngine.cBodyMarkup Noshow Textmerge
 		
 			.Class	   = 'Label'
-			.Caption   = 'Check for updates to Thor News:'
+			.Caption   =  _Thor_Main_thorinternalthornews_clsThorNews_Label1_Caption_loc 
 			.FontBold  = .T.
 			.Left      = 40
 			.Autosize  = .T.
@@ -1760,7 +1893,7 @@ Define Class clsThorNews As Container
 			.Width	   = 300
 			.Left	   = 25
 			.ZWordWrap = .T.
-			.Caption   = 'After running Check For Updates'
+			.Caption   =  _Thor_Main_thorinternalthornews_clsThorNews_CheckBox1_Caption_loc 
 			.cTool	   = ccTool
 			.cKey	   = ccCheckForCFU
 			|
@@ -1768,12 +1901,12 @@ Define Class clsThorNews As Container
 			.Width	   = 300
 			.Left	   = 25
 			.ZWordWrap = .T.
-			.Caption   = 'After running RunThor'
+			.Caption   =  _Thor_Main_thorinternalthornews_clsThorNews_CheckBox2_Caption_loc 
 			.cTool	   = ccTool
 			.cKey	   = ccRunThor
 			|
 			.Class	   = 'Label'
-			.Caption   = 'Number of days between checking:'
+			.Caption   =  _Thor_Main_thorinternalthornews_clsThorNews_Label2_Caption_loc 
 			.Autosize  = .T.
 			.Left      = 40
 			|
@@ -1798,6 +1931,8 @@ Enddefine
 
 EndProc
 
+*!*===============================================Thor_Tool_ThorInternalToolLink======================================================================
+
 Procedure GetThor_Tool_ThorInternalToolLink (tcFolder)
 
 	Local lcCode, lcVersion
@@ -1807,19 +1942,19 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具告诉Thor自己。
 
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'Tool Home Page'
-		.Description     = 'Menu to access home page (or description) for any tool'
-		.Source		 = 'Thor'
-		.Version     = '<<lcVersion>>'
-		.Sort		 = 30
+		.Prompt			=  _Thor_Main_ThorInternalToolLink_Prompt_loc 
+		.Description	=  _Thor_Main_ThorInternalToolLink_Description_loc 
+		.Source			= 'Thor'
+		.Version		= '<<lcVersion>>'
+		.Sort			= 30
 	Endwith
 
 	Return lxParam1
@@ -1832,14 +1967,18 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Do '<<tcFolder>>Thor.APP' with 'All Tools'
 EndProc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*===============================================THOR_TOOL_THORINTERNALTWEETS======================================================================
 
 Procedure GetTHOR_TOOL_THORINTERNALTWEETS (tcFolder)
 
@@ -1852,8 +1991,8 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具告诉Thor自己。
 
 If Pcount() = 1								;
 		And 'O' = Vartype (lxParam1)		;
@@ -1861,17 +2000,19 @@ If Pcount() = 1								;
 
 	With lxParam1
 
-		* Required
-		.Prompt		   = 'Thor TWEeTs' && used in menus
+		* Required				CN: 必需的
+		.Prompt		   =  _Thor_Main_THORINTERNALTWEETS_Prompt_loc  && used in menus
 
-		* Optional
-		.Description   = 'Home page for Thor TWEeTs'
+		* Optional				CN: 可选的
+		.Description   =  _Thor_Main_THORINTERNALTWEETS_Description_loc 
 		.StatusBarText = ''
 
 		* These are used to group and sort tools when they are displayed in menus or the Thor form
-		.Category      = 'Thor' && creates categorization of tools; defaults to .Source if empty
+		* CN: 当它们显示在菜单或Thor表单中时，它们用于对工具进行分组和排序
+		.Category      = 'Thor' && creates categorization of tools; defaults to .Source if empty			CN: 创建工具的分类; 如果为空，则默认为.Source
 
 		* For public tools, such as PEM Editor, etc.
+		* CN: 用于公共工具，如PEM编辑器等
 		.Author		   = 'Jim Nelson'
 
 	Endwith
@@ -1892,27 +2033,31 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.                  
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Lparameters lxParam1
 
 	If Not Execscript (_Screen.cThorDispatcher, 'Thor_Proc_CheckInternetConnection')
 		If 'L' = Vartype (lxParam1)
-			Messagebox ('No Internet Connection Found!', 16, 'No Internet Connection', 0)
+			Messagebox ( _Thor_Main_thorinternalthornews_ToolCode_Msg_loc , 16,  _Thor_Main_thorinternalthornews_ToolCode_MsgTitle_loc , 0)
 			Return .F.
 		Endif
 	Endif
 
-	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_Shell', 'https://vfpx.codeplex.com/wikipage?title=TWEeTs')
-
-
+	If Version(3) = [86]
+		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_Shell', 'https://github.com/vfp9/Thor_CN/blob/master/Docs/TWEeTs.md')
+	Else 
+		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_Shell', 'https://github.com/VFPX/Thor/blob/master/Docs/TWEeTs.md')
+	EndIf 
 Endproc
 
-
-
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================THOR_TOOL_THORINTERNALUSAGESUMMARY=======================================================================
 
 Procedure GetTHOR_TOOL_THORINTERNALUSAGESUMMARY (tcFolder)
 
@@ -1923,8 +2068,8 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具告诉Thor自己。
 
 If Pcount() = 1								;
 		And 'O' = Vartype(lxParam1)			;
@@ -1932,16 +2077,18 @@ If Pcount() = 1								;
 
 	With lxParam1
 
-		* Required
-		.Prompt		   = 'Thor usage summary' && used in menus
+		* Required					CN: 必需的
+		.Prompt		   =  _Thor_Main_THORINTERNALUSAGESUMMARY_Prompt_loc  && used in menus				CN: 用于菜单
 
-		* Optional
-		.Description = 'Summary of usage of Thor tools'
+		* Optional					CN: 可选的
+		.Description =  _Thor_Main_THORINTERNALUSAGESUMMARY_Description_loc 
 
 		* These are used to group and sort tools when they are displayed in menus or the Thor form
-		.Category      = 'Thor' && creates categorization of tools; defaults to .Source if empty
+		* CN: 当它们显示在菜单或Thor表单中时，它们用于对工具进行分组和排序
+		.Category      = 'Thor' && creates categorization of tools; defaults to .Source if empty			CN: 创建工具的分类; 如果为空，则默认为.Source
 
 		* For public tools, such as PEM Editor, etc.
+		* CN: 用于公共工具，如PEM编辑器等
 		.Author        = 'Jim Nelson'
 
 	Endwith
@@ -1959,7 +2106,8 @@ Return
 
 ****************************************************************
 ****************************************************************
-* Normal processing for this tool begins here.                  
+* Normal processing for this tool begins here.                 
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Lparameters lxParam1
 
@@ -1992,9 +2140,12 @@ Procedure ToolCode
 Endproc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Tool_Thor_CheckForUpdates=======================================================================
 
 Procedure GetThor_Tool_Thor_CheckForUpdates (tcFolder)
 
@@ -2014,6 +2165,8 @@ Execscript (_Screen.cThorDispatcher, 'Thor_Proc_Check_For_Updates')
 
 EndProc
 
+*!*===============================================Thor_Tool_Thor_Community======================================================================
+
 Procedure GetThor_Tool_Thor_Community (tcFolder)
 
 	Local lcCode, lcVersion
@@ -2025,16 +2178,15 @@ Lparameters lxParam1
 
 ****************************************************************
 ****************************************************************
-* Standard prefix for all tools for Thor, allowing this tool to
-*   tell Thor about itself.
-
+* Standard prefix for all tools for Thor, allowing this tool to tell Thor about itself.
+* CN: 所有Thor工具的标准前缀，允许这个工具告诉Thor自己。
 If Pcount() = 1						  ;
 		And 'O' = Vartype (lxParam1)  ;
 		And 'thorinfo' = Lower (lxParam1.Class)
 
 	With lxParam1
-		.Prompt		 = 'Community / Discussions'
-		.Description = 'Link to home page for discussions about Thor'
+		.Prompt		 =  _Thor_Main_ThorCommunity_Prompt_loc 
+		.Description =  _Thor_Main_ThorCommunity_Description_loc 
 		.Source		 = 'Thor'
 		.Version     = '<<lcVersion>>'
 		.Sort		 = 30
@@ -2052,6 +2204,7 @@ Return
 ****************************************************************
 ****************************************************************
 * Normal processing for this tool begins here.
+* CN: 这个工具的正常处理从这里开始。
 Procedure ToolCode
 	Local loLink
 	loLink = Newobject ('_ShellExecute', Home() + 'FFC\_Environ.vcx')
@@ -2059,9 +2212,12 @@ Procedure ToolCode
 EndProc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*=============================================Thor_Proc_AfterComponentInstall========================================================================
 
 Procedure GetThor_Proc_AfterComponentInstall (tcFolder)
 
@@ -2070,11 +2226,13 @@ Procedure GetThor_Proc_AfterComponentInstall (tcFolder)
 	Text To lcCode Noshow Textmerge
 Lparameters tcApplicationName, tcInstallationFolder, tcZipFile
 
-
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*=============================================Thor_Proc_BeforeComponentInstall========================================================================
 
 Procedure GetThor_Proc_BeforeComponentInstall (tcFolder)
 
@@ -2083,11 +2241,12 @@ Procedure GetThor_Proc_BeforeComponentInstall (tcFolder)
 	Text To lcCode Noshow Textmerge
 Lparameters tcApplicationName, tcInstallationFolder
 
-
 	EndText
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*============================================Thor_Proc_CheckForUpdate=========================================================================
 
 Procedure GetThor_Proc_CheckForUpdate (tcFolder)
 
@@ -2102,9 +2261,12 @@ toUpdateInfo = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_GetAvailableVersi
 Execscript (_Screen.cThorDispatcher, 'Result=', toUpdateInfo) 
 Return toUpdateInfo  
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*===========================================Thor_Proc_CheckInternetConnection==========================================================================
 
 Procedure GetThor_Proc_CheckInternetConnection (tcFolder)
 
@@ -2131,18 +2293,21 @@ lnFlags = 0
 
 If InternetGetConnectedState(@lnFlags, 0) = 1
     llResult = .T.
-		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Internet connection test passed.')    
+		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_CheckInternetConnection_Pass_loc )    
 Else
     llResult = .F.
-		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Internet connection test FAILED!!!')        
+		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_CheckInternetConnection_Failed_loc )        
 EndIf
 
 Return ExecScript(_Screen.cThorDispatcher, 'Result=', llResult)
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*=============================================Thor_Proc_Check_For_Updates========================================================================
 
 Procedure GetThor_Proc_Check_For_Updates (tcFolder)
 
@@ -2154,28 +2319,28 @@ Local laFiles[1], lcToolFolder, lcUpdateFolder, llAutoRun, lnFileCount, lnI, lnR
 
 #Define UpdaterURL 'http://vfpxrepository.com/dl/thorupdate/Updater_PRGs/Updates.zip'
 
-WritetoCFULog('Begin CFU - ' + Transform(Datetime()))
+WritetoCFULog( _Thor_Main_ProcCheckForUpdates_WritetoCFULog_Begin_loc  + Transform(Datetime()))
 
 If Not Execscript (_Screen.cThorDispatcher, 'Thor_Proc_CheckInternetConnection')
-	Messagebox ('No Internet Connection Found!', 16, 'No Internet Connection', 0)
+	Messagebox ( _Thor_Main_thorinternalthornews_ToolCode_Msg_loc , 16,  _Thor_Main_thorinternalthornews_ToolCode_MsgTitle_loc , 0)
 	Return .F.
 Endif
 
-WritetoCFULog('Checking for updates to Thor', .T.)
+WritetoCFULog( _Thor_Main_ProcCheckForUpdates_WritetoCFULog_CheckForUpdate_loc , .T.)
 
 If Execscript (_Screen.cThorDispatcher, 'Thor_Proc_DownloadAndInstallUpdates', .T.) >= 0
 
 	lcToolFolder   = Execscript (_Screen.cThorDispatcher, 'Tool Folder=')
-	WritetoCFULog('Erasing Thor FXP files...')
+	WritetoCFULog( _Thor_Main_ProcCheckForUpdates_WritetoCFULog_ErasFXP_loc )
 	EraseFXPFiles (lcToolFolder)
-	WritetoCFULog('Erasing Thor FXP files from Thor Procs folder...')
+	WritetoCFULog( _Thor_Main_ProcCheckForUpdates_WritetoCFULog_ErasFXPFromThor_loc )
 	EraseFXPFiles (lcToolFolder + 'Procs')
-	WritetoCFULog('Erasing Thor FXP files from Thor MyTools folder...')
+	WritetoCFULog( _Thor_Main_ProcCheckForUpdates_WritetoCFULog_ErasFXPFromMY_loc )
 	EraseFXPFiles (lcToolFolder + 'My Tools')
 
 	lcUpdateFolder = Addbs (lcToolFolder) + 'Updates\'
 	lnFileCount	   = Adir (laFiles, lcUpdateFolder + '*.PRG')
-	WritetoCFULog('Processing (' + transform(lnFileCount) + ') Thor updater programs...')
+	WritetoCFULog( _Thor_Main_ProcCheckForUpdates_WritetoCFULog_Processing_loc  + transform(lnFileCount) +  _Thor_Main_ProcCheckForUpdates_WritetoCFULog_ThorUpdaePro_loc )
 
 	For lnI = 1 To lnFileCount
 		If Not Upper (laFiles[lnI, 1]) == Upper ('Thor_Update_Thor.PRG')
@@ -2196,7 +2361,7 @@ If Execscript (_Screen.cThorDispatcher, 'Thor_Proc_DownloadAndInstallUpdates', .
 		llAutoRun = llAutoRun Or 'RUNTHOR' $ Upper (Sys(16, lnI))
 	Endfor
 
-	WritetoCFULog('Checking for updates to all other apps', .T.)
+	WritetoCFULog( _Thor_Main_ProcCheckForUpdates_WritetoCFULog_CheckForAllOtherApp_loc , .T.)
 	
 	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_DownloadAndInstallUpdates', .F., llAutoRun)
 
@@ -2204,7 +2369,7 @@ If Execscript (_Screen.cThorDispatcher, 'Thor_Proc_DownloadAndInstallUpdates', .
 
 Endif
 
-Execscript (_Screen.cThorDispatcher, 'Thor_Tool_ThorInternalThorNews', 'Check For Updates')
+Execscript (_Screen.cThorDispatcher, 'Thor_Tool_ThorInternalThorNews',  _Thor_Main_PopupMenu_CheckForUpdates_loc )
 
 Wait Clear
 
@@ -2230,9 +2395,12 @@ Procedure WritetoCFULog(tcText, tlDivider)
 EndProc 
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_DownloadAndExtractToPath=======================================================================
 
 Procedure GetThor_Proc_DownloadAndExtractToPath (tcFolder)
 
@@ -2269,9 +2437,12 @@ lnReturn = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_ExtractToPath'  ;
 Return Execscript (_Screen.cThorDispatcher, 'Result=', lnReturn)
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_DownloadAndInstallUpdates=======================================================================
 
 Procedure GetThor_Proc_DownloadAndInstallUpdates (tcFolder)
 
@@ -2286,8 +2457,6 @@ lnReturn = CheckForUpdates_Main (tlIsThor, llAutoRun)
 Execscript (_Screen.cThorDispatcher, 'Result=', lnReturn)
 
 Return
-
-
 
 ***************************************************************
 #Define ccUpdateDelimiter      Chr(0)
@@ -2305,7 +2474,7 @@ Procedure CheckForUpdates_Main (tlIsThor, llAutoRun)
 
 	Local lcCol, lcRow, lnCurrentUpdateCount, lnResult, loUpdateList
 
-	WritetoCFULog('Getting list of Updaters')
+	WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_WritetoCFULog_GetListOfUpdate_loc )
 	loUpdateList		 = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_GetUpdateList', tlIsThor)
 	lnCurrentUpdateCount = loUpdateList.Count
 
@@ -2316,7 +2485,7 @@ Procedure CheckForUpdates_Main (tlIsThor, llAutoRun)
 	loUpdateList = GetAvailableVersionInfo (loUpdateList)
 	Wait Clear
 	If 'O' # Vartype (loUpdateList) && failure to get update list?
-		WritetoCFULog('Aborting ... no update list found')
+		WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_WritetoCFULog_Abort_loc )
 		Return - 1
 	Endif
 
@@ -2338,12 +2507,12 @@ Procedure CheckForUpdates_Main (tlIsThor, llAutoRun)
 		InstallUpdates (loUpdateList)
 
 		Wait Clear
-		? 'Updating complete'
+		? _Thor_Main_Updatingcomplete_loc
 
-		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_MessageBox', 'Updating completed', 0, 'Thor Updates...')
+		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_MessageBox',  _Thor_Main_DownloadAndInstallUpdates_Msg_loc , 0,  _Thor_Main_DownloadAndInstallUpdates_MsgTitle_loc )
 		Return 1
 	Else
-		WritetoCFULog('Exiting ... no updates selected')
+		WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_WritetoCFULog_Exit_loc )
 	Endif
 
 	Return lnResult
@@ -2361,7 +2530,7 @@ Procedure GetAvailableVersionInfo (toUpdateList)
 	For lnI = 1 To toUpdateList.Count
 		loUpdateInfo = toUpdateList[lnI]
 		If loUpdateInfo.NeverUpdate # 'Y'
-			WritetoCFULog('Getting available version info for ' + loUpdateInfo.ApplicationName)
+			WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_GetVersionInfo_loc  + loUpdateInfo.ApplicationName)
 			loUpdateInfo = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_GetAvailableVersionInfo', loUpdateInfo)
 		Endif
 		If loUpdateInfo.ErrorCode = 0
@@ -2407,10 +2576,10 @@ Procedure CheckIfReadyToGo (toUpdateList)
 	Endfor
 
 	If toUpdateList.Count > 0
-		lcMessage = 'Ready to install ' + Transform (toUpdateList.Count) + ' update(s):' + Chr(13) + lcNames
+		lcMessage =  _Thor_Main_DownloadAndInstallUpdates_ReadToGo1_loc  + Transform (toUpdateList.Count) +  _Thor_Main_DownloadAndInstallUpdates_ReadToGo2_loc  + Chr(13) + lcNames
 		lnResponse = Messagebox (lcMessage + Chr(13) + Chr(13) +								;
-			  'CLEAR ALL and CLOSE ALL statements must be run in order to update.' + Chr(13) + Chr(13) + ;
-			  'Do you wish to continue?', 4, 'Allow CLEAR ALL, etc.?')
+			   _Thor_Main_DownloadAndInstallUpdates_ReadToGo3_loc  + Chr(13) + Chr(13) + ;
+			   _Thor_Main_DownloadAndInstallUpdates_ReadToGo4_loc , 4,  _Thor_Main_DownloadAndInstallUpdates_ReadToGo5_loc )
 		Return Iif (lnResponse = 6, 1, -1)
 	Else
 		Return 0
@@ -2518,11 +2687,11 @@ Procedure CreateUpdatesCursor (toUpdateList)
 					  Upper(AppName)	
 					  
 			Replace	Status	 With														;
-					  Icase(Left(SortKey, 1) = 'A', 'Update available',					;
-						Left(SortKey, 1) = 'B', 'New Project',							;
-						Left(SortKey, 1) = 'C', 'Current',								;
-						Left(SortKey, 1) = 'D', 'Recently Updated',						;
-						'Not Installed') 															
+					  Icase(Left(SortKey, 1) = 'A',  _Thor_Main_DownloadAndInstallUpdates_Status1_loc ,					;
+						Left(SortKey, 1) = 'B',  _Thor_Main_DownloadAndInstallUpdates_Status2_loc ,							;
+						Left(SortKey, 1) = 'C',  _Thor_Main_DownloadAndInstallUpdates_Status3_loc ,								;
+						Left(SortKey, 1) = 'D',  _Thor_Main_DownloadAndInstallUpdates_Status4_loc ,						;
+						 _Thor_Main_DownloadAndInstallUpdates_Status5_loc ) 															
 						
 			llAnyFound = llAnyFound Or UpdateNow
 
@@ -2639,7 +2808,7 @@ Procedure InstallUpdates (toUpdateList)
 	Local lcDownloadsFolder, lcExecPhrase, lcInstallationFolder, lcToolFolder, lcUpdatePhrase
 	Local lcVersionFile, lnI, lnReturn, loException, loUpdate, ltFileTimeStamp
 
-	WritetoCFULog('Downloading and installing selected updates', .T.)
+	WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_WritetoCFULog_Downloading_loc , .T.)
 	lcToolFolder	  = Addbs (Execscript (_Screen.cThorDispatcher, 'Tool Folder='))
 	lcDownloadsFolder = Addbs (SyS(2023)) + 'Thor Downloads\'
 	CreateFolder (lcDownloadsFolder)
@@ -2676,17 +2845,17 @@ Procedure InstallUpdates (toUpdateList)
 
 		_Screen.AddProperty ('cThorLastZipFile', '')
 
-		WritetoCFULog('Download ' + loUpdate.ApplicationName)
+		WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_WritetoCFULog_Download_loc  + loUpdate.ApplicationName)
 		If loUpdate.Component = 'Yes'
 			Execscript (_Screen.cThorDispatcher, 'Thor_Proc_BeforeComponentInstall', loUpdate.ApplicationName, lcInstallationFolder)
 		Endif
 
 		If Not Empty (loUpdate.SourceFileURL)
-			WritetoCFULog('Attempting download of ' + loUpdate.SourceFileURL)
+			WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_WritetoCFULog_AttemptDown_loc  + loUpdate.SourceFileURL)
 			lnReturn = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_DownloadAndExtractToPath'		;
 				  , loUpdate.SourceFileURL, lcInstallationFolder, 'Y' $ Upper (loUpdate.ShowErrorMessage), loUpdate.ApplicationName)
 			If lnReturn < 0 And Pemstatus(loUpdate, 'AltSourceFileURL', 5) And Not Empty(loUpdate.AltSourceFileURL)
-				WritetoCFULog('Download failed; attempting alternate download of ' + loUpdate.AltSourceFileURL)
+				WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_WritetoCFULog_DownloadFailed_loc  + loUpdate.AltSourceFileURL)
 				lnReturn = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_DownloadAndExtractToPath'	;
 					  , loUpdate.AltSourceFileURL, lcInstallationFolder, 'Y' $ Upper (loUpdate.ShowErrorMessage), loUpdate.ApplicationName)
 			Endif
@@ -2696,7 +2865,7 @@ Procedure InstallUpdates (toUpdateList)
 				  , loUpdate.ApplicationName, lcInstallationFolder, 'Y' $ Upper (loUpdate.ShowErrorMessage))
 		Endif
 		
-		WritetoCFULog('Copy Zip ' + loUpdate.ApplicationName)
+		WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_WritetoCFULog_CopyZIP_loc  + loUpdate.ApplicationName)
 		* copy zip to our new Downloads folder
 		lcDownloadedZip = _Screen.cThorLastZipFile
 		Try
@@ -2712,7 +2881,7 @@ Procedure InstallUpdates (toUpdateList)
 		Endif
 
 		If lnReturn > 0
-			WritetoCFULog('Install ' + loUpdate.ApplicationName)
+			WritetoCFULog( _Thor_Main_DownloadAndInstallUpdates_WritetoCFULog_Install_loc  + loUpdate.ApplicationName)
 			If loUpdate.Component = 'Yes'
 				Execscript (_Screen.cThorDispatcher, 'Thor_Proc_AfterComponentInstall', loUpdate.ApplicationName, lcInstallationFolder, lcDownloadedZip)
 			Endif
@@ -2740,11 +2909,11 @@ Procedure InstallUpdates (toUpdateList)
 			Erase (lcVersionFile)
 			Strtofile (loUpdate.AvailableVersion, lcVersionFile)
 
-			? loUpdate.AvailableVersion + ' ... Updated'
+			? loUpdate.AvailableVersion +  _Thor_Main_DownloadAndInstallUpdates_Writeto_Updated_loc 
 		Else
 			?
-			? '********** Failed: ' + loUpdate.AvailableVersion
-			? '********** See ' + lcDestZip
+			?  _Thor_Main_DownloadAndInstallUpdates_Writeto_Failed_loc  + loUpdate.AvailableVersion
+			?  _Thor_Main_DownloadAndInstallUpdates_Writeto_See_loc  + lcDestZip
 			? 
 		Endif
 	Endfor && lnI = 1 to loUpdateList.Count
@@ -2754,12 +2923,12 @@ Endproc
 Procedure ShowErrorMsg
 	Lparameters loException
 
-	Messagebox ('Error: ' + Transform (loException.ErrorNo)     + Chr(13) + Chr(13) +		;
-		  'Message: ' + loException.Message                     + Chr(13) + Chr(10) +		;
-		  'Procedure: ' + loException.Procedure                 + Chr(13) + Chr(10) +		;
-		  'Line: ' + Transform (loException.Lineno)             + Chr(13) + Chr(10) +		;
-		  'Code: ' + loException.LineContents												;
-		  , 0        + 48, 'Error')
+	Messagebox ( _Thor_Main_Error_loc  + Transform (loException.ErrorNo)	+ Chr(13) + Chr(13) +		;
+		   _Thor_Main_Message_loc  + loException.Message					+ Chr(13) + Chr(10) +		;
+		   _Thor_Main_Proc_loc  + loException.Procedure                 	+ Chr(13) + Chr(10) +		;
+		   _Thor_Main_Line_loc  + Transform (loException.Lineno)			+ Chr(13) + Chr(10) +		;
+		   _Thor_Main_Code_loc  + loException.LineContents												;
+		  , 0        + 48,  _Thor_Main_ErrorTitle_loc )
 Endproc
 
 
@@ -2798,10 +2967,14 @@ Endfunc
 Procedure WritetoCFULog (tcText, tlDivider)
 	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', tcText, tlDivider, 1)
 EndProc 
+
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_DownloadFileFromURL=======================================================================
 
 Procedure GetThor_Proc_DownloadFileFromURL (tcFolder)
 
@@ -2832,11 +3005,7 @@ DECLARE short InternetCloseHandle IN wininet.DLL INTEGER hInst
  
 local lsAgent, lhInternetSession, lhUrlFile, llOk, lnOk, lcRetVal, lcReadBuffer, lnBytesRead
  
-
- 
- 
- 
-ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow", 'Contacting server.... Please wait.') 
+ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow",  _Thor_Main_DownloadFileFromURL_Contacting_loc ) 
 
 *--- 2011-11-02 M. Slay: Added this guard against empty parameters being passed
 If Empty(pcUrlName) or Empty(tcDownloadDestinationFile)
@@ -2847,15 +3016,15 @@ EndIf
 
 *--- 2011-11-02: Added support for expanding Bitly URL to long URL
 If 'http://bit.ly' $ lower(pcUrlName)
-	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Expanding bitly link [' + pcUrlName + ']')
+	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_DownloadFileFromURL_ExpandingBitlyLink_loc  + pcUrlName + '】')
 	pcUrlName = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_Expand_Bitly_Url', pcUrlName)
 	If !Empty(pcUrlName)
-		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Expanded bitly link to [' + pcUrlName + ']')	
+		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_DownloadFileFromURL_ExpandingBitlyLink_loc  + pcUrlName + '】')	
 	Endif
 EndIf
 			
 If Empty(pcUrlName)
-	lcMessage = "Requested URL is an empty string."
+	lcMessage =  _Thor_Main_DownloadFileFromURL_URLIsEmpty_loc 
 	ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow", lcMessage)
 	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', lcMessage)	
 	llReturn = .f.
@@ -2878,16 +3047,16 @@ lhInternetSession = InternetOpen(lsAgent, INTERNET_OPEN_TYPE_PRECONFIG, '', '', 
 *-- WAIT WINDOW "Internet session handle: " + LTRIM(STR(lhInternetSession))
  
 IF lhInternetSession = 0
-	lcMessage = "Internet session cannot be established"
+	lcMessage =  _Thor_Main_DownloadFileFromURL_SessionCanNot_loc 
 	ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow", lcMessage)
 	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', lcMessage)	
 	llReturn = .f.
 	Execscript (_Screen.cThorDispatcher, 'Result=', llReturn)
 	Return llReturn
 Else
-	lcMessage = 'Requesting file ' + JustFname(pcUrlName) + ' from server.' 
+	lcMessage =  _Thor_Main_DownloadFileFromURL_RequestFile_loc  + JustFname(pcUrlName) +  _Thor_Main_DownloadFileFromURL_FromServer_loc 
 	ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow", lcMessage)
-	lcMessage = 'Requesting file ' + JustFname(lcUrl) + ' from server.' 
+	lcMessage =  _Thor_Main_DownloadFileFromURL_RequestFile_loc  + JustFname(lcUrl) +  _Thor_Main_DownloadFileFromURL_FromServer_loc 
 	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', lcMessage)	
 ENDIF
  
@@ -2897,14 +3066,14 @@ ENDIF
 *-- WAIT WINDOW "URL Handle: " + LTRIM(STR(lhUrlFile))
  
 IF lhUrlFile = 0
-	lcMessage = "URL cannot be opened"
+	lcMessage =  _Thor_Main_DownloadFileFromURL_URLCanNot_loc 
 	ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow", lcMessage)
 	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', lcMessage)	
 	llReturn = .f.
 	Execscript (_Screen.cThorDispatcher, 'Result=', llReturn)
 	Return llReturn
 Else
-	lcMessage = "Downloading..."
+	lcMessage =  _Thor_Main_DownloadFileFromURL_Download_loc 
 	ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow", lcMessage)
 	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', lcMessage)	
 ENDIF
@@ -2934,10 +3103,10 @@ Try
 	Erase (tcDownloadDestinationFile)
 	StrToFile(lcRetVal, tcDownloadDestinationFile,0)
 	llReturn = .t.
-	lcMessage = "Download complete."
+	lcMessage =  _Thor_Main_DownloadFileFromURL_DownloadComplete_loc 
 Catch
 	llReturn = .f.
-	lcMessage = "Error downloading or saving file."
+	lcMessage =  _Thor_Main_DownloadFileFromURL_ErrorSave_loc 
 Endtry
 	
 ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow", lcMessage)
@@ -2947,9 +3116,12 @@ Return llReturn
 
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*=============================================Thor_Proc_Expand_Bitly_Url========================================================================
 
 Procedure GetThor_Proc_Expand_Bitly_Url (tcFolder)
 
@@ -2984,9 +3156,12 @@ Return lcVersionFileUrl
 
   
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_ExtractFiles=======================================================================
 
 Procedure GetThor_Proc_ExtractFiles (tcFolder)
 
@@ -3008,7 +3183,7 @@ Procedure GetThor_Proc_ExtractFiles (tcFolder)
 	Local lnError, loFiles
 	Local lnAnswerYesToAllOverwriteFilePrompts, lnCreateDestinationFolderIfNotPresent, lnShowErrorDialog, lnOptions
 	
-	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Copying files to install folder...')
+	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_ExtractFiles_CopyAndInstall_loc )
 	
 	lnError = 0
 	
@@ -3025,8 +3200,8 @@ Procedure GetThor_Proc_ExtractFiles (tcFolder)
 	Endif && not Directory(tcDestinationPath)
 		
 	If lnError < 0
-		lcErrorMessage = 'Error creating or accessing install folder [' + tcDestinationPath  + ']'
-		MessageBox(lcErrorMessage, 16, 'Error!')
+		lcErrorMessage =  _Thor_Main_ExtractFiles_Error_loc  + tcDestinationPath  + '】'
+		MessageBox(lcErrorMessage, 16,  _Thor_Main_ErrorTitle_loc )
 		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', lcErrorMessage)
 		Execscript (_Screen.cThorDispatcher, 'Result=', lnError)
 		Return lnError
@@ -3047,8 +3222,8 @@ Procedure GetThor_Proc_ExtractFiles (tcFolder)
 	Endtry
 	
 	If lnError < 0
-		MessageBox('Error opening ZIP file.', 16, 'Error!')
-		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Error opening ZIP file or path [' + tcSource + '] to copy from.')
+		MessageBox( _Thor_Main_ExtractFiles_ErrorOpenZIP_loc , 16,  _Thor_Main_ErrorTitle_loc )
+		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_ExtractFiles_ErrorOpenZIPOrPath_loc  + tcSource +  _Thor_Main_ExtractFiles_ToCopyFrom_loc )
 		Execscript (_Screen.cThorDispatcher, 'Result=', lnError)
 		Return lnError
 	Endif	
@@ -3074,21 +3249,24 @@ Procedure GetThor_Proc_ExtractFiles (tcFolder)
 	Set Library to &lcLibrary
 		
 	If lnError < 0
-		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Error extracting files from [' + tcSource + ']')
-		MessageBox('Error extracting files.', 16, 'Error!')
+		Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_ExtractFiles_ErrorExtract_loc  + tcSource + '】')
+		MessageBox( _Thor_Main_ExtractFiles_ErrorExtract2_loc , 16,  _Thor_Main_ErrorTitle_loc )
 		Execscript (_Screen.cThorDispatcher, 'Result=', lnError)
 		Return lnError
 	Endif
 
 	lnReturn = 1
-	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Copied files from [' + tcSource + '] to [' + tcDestinationPath + ']')
+	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_ExtractFiles_CopyFrom_loc  + tcSource +  _Thor_Main_ExtractFiles_To_loc  + tcDestinationPath + '】')
 	Execscript (_Screen.cThorDispatcher, 'Result=', lnReturn)
 	Return lnReturn
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_ExtractFilesFromZip=======================================================================
 
 Procedure GetThor_Proc_ExtractFilesFromZip (tcFolder)
 
@@ -3103,7 +3281,7 @@ Local llReturn, lnResult
 
 llReturn = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_SetLibrary', 'VFPCompression.fll')
 
-Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Extracting from [' + tcSource + '] to [' + tcDestinationPath + ']')
+Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_ExtractFilesFromZip_Extract_loc  + tcSource +  _Thor_Main_ExtractFiles_To_loc  + tcDestinationPath + '】')
 
 If llReturn
 	If UnzipOpen (tcSource)
@@ -3115,16 +3293,19 @@ If llReturn
 	Endif
 Else
 	lnReturn = -2
-	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog', 'Error loading VFP Compression library [VFPCompression.fll]')
+	Execscript (_Screen.cThorDispatcher, 'Thor_Proc_WriteToCFULog',  _Thor_Main_ExtractFilesFromZip_ErrorInLibrary_loc )
 EndIf
 
 Execscript (_Screen.cThorDispatcher, 'Result=', lnResult)
 Return lnResult
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_ExtractToPath=======================================================================
 
 Procedure GetThor_Proc_ExtractToPath (tcFolder)
 
@@ -3145,12 +3326,12 @@ lcTempFolder = Addbs (Sys(2023)) + lcTempName
 loFSO		 = Createobject ('Scripting.FileSystemObject')
 loFSO.CreateFolder (lcTempFolder) && Create the temp folder
 
-ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow", 'Extracting.... Please wait.')
+ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow",  _Thor_Main_ExtractToPath_Extracting_loc )
 lnExtractFilesToTempFolder = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_ExtractFilesFromZip', lcDownloadDestinationFile, lcTempFolder)
 
 *--- Copy files from temp folder to target install folder ----------
 If lnExtractFilesToTempFolder > 0
-	ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow",  'Installing.... Please wait.')
+	ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow",   _Thor_Main_ExtractToPath_Installing_loc )
 	lnCopyFilesToInstallFolder = Execscript (_Screen.cThorDispatcher, 'Thor_Proc_ExtractFiles', lcTempFolder, tcInstallPath, .F., tlShowCopyErrorDialog)
 Else
 	Execscript (_Screen.cThorDispatcher, 'Result=', ERROR_EXTRACTING_FILE)
@@ -3158,9 +3339,9 @@ Endif
 
 If lnExtractFilesToTempFolder > 0 And lnCopyFilesToInstallFolder > 0
 	lnReturn =  1
-	ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow", 'Update complete!')
+	ExecScript(_Screen.cThorDispatcher, "Thor_Proc_UpdateWaitWindow",  _Thor_Main_ExtractToPath_Complete_loc )
 Else
-	Messagebox ('Error updating ' + Evl (tcAppName, '') + '.', 0, 'Failure!')
+	Messagebox ( _Thor_Main_ExtractToPath_ErrorUpdating_loc  + Evl (tcAppName, '') + '.', 0,  _Thor_Main_ExtractToPath_Failure_loc )
 	lnReturn = ERROR_INSTALLING_FILES
 Endif
 
@@ -3168,9 +3349,12 @@ Execscript (_Screen.cThorDispatcher, 'Result=', lnReturn)
 Return lnReturn
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_GetAvailableVersionInfo=======================================================================
 
 Procedure GetThor_Proc_GetAvailableVersionInfo (tcFolder)
 
@@ -3200,10 +3384,10 @@ If Not Empty (lcVersionFileUrl)
 
 			*-- The downloaded file above contains VFP code which will set properties on the passed object:
 			Try
-				WritetoCFULog('Executing code from downloaded version file...')
+				WritetoCFULog( _Thor_Main_GetAvailableVersionInfo_WritetoCFULog_Executing_loc )
 				toUpdateInfo = Execscript (lcVersionFileCode, toUpdateInfo)
 			Catch
-				WritetoCFULog('ERROR while executing code from downloaded version file!')
+				WritetoCFULog( _Thor_Main_GetAvailableVersionInfo_WritetoCFULog_Error_loc )
 				toUpdateInfo.ErrorCode = -1
 			Endtry
 
@@ -3212,7 +3396,7 @@ If Not Empty (lcVersionFileUrl)
 					Exit
 				Case lnAttempt = MaxTries
 					If Alines (laLines, lcVersionFileCode) > 4 && ignore messages about earlier versions which did not pass objects
-						ErrorMessage ('Invalid format in version file for ' + toUpdateInfo.AppName + CR	+ ;
+						ErrorMessage ( _Thor_Main_GetAvailableVersionInfo_InvalidFormat_loc  + toUpdateInfo.AppName + CR	+ ;
 							  STARS + CR + 'URL: ' + lcVersionFileUrl + CR +					;
 							  STARS + CR + lcVersionFileCode + CR +								;
 							  STARS, toUpdateInfo.AppName)
@@ -3222,9 +3406,9 @@ If Not Empty (lcVersionFileUrl)
 
 		Else
 			toUpdateInfo.ErrorCode = -5
-			WritetoCFULog('Error getting available version information from server.')
+			WritetoCFULog( _Thor_Main_GetAvailableVersionInfo_WritetoCFULog_Error2_loc )
 			If lnAttempt = MaxTries
-				ErrorMessage ('Error getting available version information from server.' + toUpdateInfo.AppName + CR	+ ;
+				ErrorMessage ( _Thor_Main_GetAvailableVersionInfo_WritetoCFULog_Error2_loc  + toUpdateInfo.AppName + CR	+ ;
 					  STARS + CR + 'URL: ' + lcVersionFileUrl + CR +							;
 					  STARS, toUpdateInfo.AppName)
 			Endif
@@ -3247,9 +3431,9 @@ Return Execscript (_Screen.cThorDispatcher, 'Result=', toUpdateInfo)
 Procedure ErrorMessage (tcMessage, tcAppName)
 	#Define CR Chr[13]
 	Local lcMessage
-	WritetoCFULog('MessageBox: ' + tcMessage)
-	lcMessage = tcMessage + CR + CR + 'Cancelling ... ' + CR + CR + 'This error may self-correct if "Check For Updates" is run again.'
-	Messagebox (lcMessage, 0, 'Error: ' + tcAppName)
+	WritetoCFULog( _Thor_Main_GetAvailableVersionInfo_ErrorMessage_MessageBox_loc  + tcMessage)
+	lcMessage = tcMessage + CR + CR +  _Thor_Main_GetAvailableVersionInfo_ErrorMessage_Cancel_loc  + CR + CR +  _Thor_Main_GetAvailableVersionInfo_ErrorMessage_SelfCorrect_loc 
+	Messagebox (lcMessage, 0,  _Thor_Main_ErrorTitle_loc  + [:] + tcAppName)
 
 Endproc
 
@@ -3259,9 +3443,12 @@ Procedure WritetoCFULog (tcText, tlDivider)
 EndProc 
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*===============================================Thor_Proc_GetUpdateList======================================================================
 
 Procedure GetThor_Proc_GetUpdateList (tcFolder)
 
@@ -3365,7 +3552,7 @@ Procedure AddUpdateFolder (loUpdateList, tlIsThor, lcUpdateFolder, lcNeverUpdate
 
 
 					If (Empty (lcVersionFileUrl) And Empty(loResult.AvailableVersion)) Or Empty (lcLocalVersionFile)
-						loResult.ErrorMessage = 'One of the required version files properties is empty.'
+						loResult.ErrorMessage =  _Thor_Main_GetUpdateList_VersionIsEmpty_loc 
 						loResult.ErrorCode	  = -1
 					Endif
 
@@ -3394,9 +3581,12 @@ Procedure AddUpdateFolder (loUpdateList, tlIsThor, lcUpdateFolder, lcNeverUpdate
 Endproc
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_GetUpdaterObject=======================================================================
 
 Procedure GetThor_Proc_GetUpdaterObject (tcFolder)
 
@@ -3454,9 +3644,12 @@ Enddefine
 
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_GetUpdaterObject2=======================================================================
 
 Procedure GetThor_Proc_GetUpdaterObject2 (tcFolder)
 
@@ -3514,9 +3707,12 @@ Enddefine
 
 
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*================================================Thor_Proc_MessageBox=====================================================================
 
 Procedure GetThor_Proc_MessageBox (tcFolder)
 
@@ -3543,6 +3739,8 @@ Return lnResult
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*=============================================Thor_Proc_SetLibrary========================================================================
 
 Procedure GetThor_Proc_SetLibrary (tcFolder)
 
@@ -3574,9 +3772,12 @@ Execscript (_Screen.cThorDispatcher, 'Result=', llReturn)
 Return llReturn
  
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*=============================================Thor_Proc_UpdateWaitWindow========================================================================
 
 Procedure GetThor_Proc_UpdateWaitWindow (tcFolder)
 
@@ -3586,10 +3787,14 @@ Procedure GetThor_Proc_UpdateWaitWindow (tcFolder)
 Lparameters lcText, lxParam2, lxParam3, lxParam4
 
 Wait Window (lcText) at 20, 30 Nowait 
+
 	EndText
+
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
+
+*!*==============================================Thor_Proc_WriteToCFULog=======================================================================
 
 Procedure GetThor_Proc_WriteToCFULog (tcFolder)
 
@@ -3647,6 +3852,3 @@ Endcase
 	Return Strtran(lcCode, '*##*', '')
 
 EndProc
-
-
-

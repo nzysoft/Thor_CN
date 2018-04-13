@@ -32,3 +32,16 @@
 
 #Define     ccThorMemberData    '<VFPData><memberdata name="cthordispatcher" display="cThorDispatcher"/><memberdata name="lthordebugmode" display="lThorDebugMode"/></VFPData>'
 
+#IF Version(3) = [86]
+	#Define _Thor_Run_AddMenuItems_Forums_loc				[社区]
+	#Define _Thor_Run_AddMenuItems_Blogs_loc				[博客]
+	#Define _Thor_Run_AddMenuItems_ChangeLogs_loc			[Thor 更新历史]
+	#Define _Thor_Run_AddMenuItems_ThorERs_loc				[Thor 错误提交]
+	#Define _Thor_Run_AddMenuItems_ThorVideos_loc			[Thor 视频]
+#ELSE
+	#Define _Thor_Run_AddMenuItems_Forums_loc				[Forums]
+	#Define _Thor_Run_AddMenuItems_Blogs_loc				[Blogs]
+	#Define _Thor_Run_AddMenuItems_ChangeLogs_loc			[Thor-ChangeLogs]
+	#Define _Thor_Run_AddMenuItems_ThorERs_loc				[Thor ERs]
+	#Define _Thor_Run_AddMenuItems_ThorVideos_loc			[Thor videos]
+#ENDIF
