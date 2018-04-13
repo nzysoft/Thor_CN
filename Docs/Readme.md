@@ -1,6 +1,6 @@
 ## 说明
 
-本文件夹下，除PRG外，所有文档均已汉化完成。
+本文件夹下，除 .PRG 和 .zip 外，所有文档均已汉化完成。
 
 1 | 2| 3|4
 ---|---|---|---
@@ -17,4 +17,4 @@
 
 ## Readme
 
-All documents have been translated into Simplified Chinese. Just ignore the PRG temporarily...
+All documents have been translated into Simplified Chinese. Just ignore the PRG and ZIP temporarily...
