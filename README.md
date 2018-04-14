@@ -17,7 +17,7 @@ _**Thor** 是一个管理 IDE 中插件工具的的管理器，用于管理访�
 
 [获取 Thor 的最新消息](Docs/Thor_news.md)
 
-**下载 App:** [点击此处下载最新的编译版本](http://vfpxrepository.com/dl/thorupdate/thor/Thor.zip)
+**下载 App:** [点击此处下载最新的编译版本(英文)](http://vfpxrepository.com/dl/thorupdate/thor/Thor.zip)
 
 **如何使用:** [点击此处查看安装说明](Docs/Thor_install.md)
 
@@ -53,7 +53,7 @@ Thor 附带两个工具：**Thor 仓库**和**PEM 编辑器** 。(详见下文)
 
 ### 如何使用
 
-[点击此处下载最新的编译版本](http://vfpxrepository.com/dl/thorupdate/thor/Thor.zip).
+[点击此处下载最新的编译版本(英文)](http://vfpxrepository.com/dl/thorupdate/thor/Thor.zip).
 
 [点击此处查看安装说明](Docs/Thor_install.md).
 
