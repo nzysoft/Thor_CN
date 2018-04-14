@@ -551,7 +551,7 @@
 	#Define _Thor_Main_ErrorTitle_loc															[Error]
 
 	#Define _Thor_Main_DownloadFileFromURL_Contacting_loc										[Contacting server.... Please wait.]
-	#Define _Thor_Main_DownloadFileFromURL_ExpandingBitlyLink_loc								"Expanding bitly link ["
+	#Define _Thor_Main_DownloadFileFromURL_ExpandingBitlyLink_loc								"Expanding bitly link ¡¾"
 	#Define _Thor_Main_DownloadFileFromURL_URLIsEmpty_loc										[Requested URL is an empty string.]
 	#Define _Thor_Main_DownloadFileFromURL_SessionCanNot_loc									[Internet session cannot be established]
 	#Define _Thor_Main_DownloadFileFromURL_RequestFile_loc										[Requesting file ]
@@ -562,16 +562,16 @@
 	#Define _Thor_Main_DownloadFileFromURL_ErrorSave_loc										[Error downloading or saving file.]
 
 	#Define _Thor_Main_ExtractFiles_CopyAndInstall_loc											[Copying files to install folder...]
-	#Define _Thor_Main_ExtractFiles_Error_loc													"Error creating or accessing install folder ["
+	#Define _Thor_Main_ExtractFiles_Error_loc													"Error creating or accessing install folder ¡¾"
 	#Define _Thor_Main_ExtractFiles_ErrorOpenZIP_loc											[Error opening ZIP file.]
-	#Define _Thor_Main_ExtractFiles_ErrorOpenZIPOrPath_loc										"Error opening ZIP file or path ["
-	#Define _Thor_Main_ExtractFiles_ToCopyFrom_loc												"] to copy from."
-	#Define _Thor_Main_ExtractFiles_ErrorExtract_loc											"Error extracting files from ["
+	#Define _Thor_Main_ExtractFiles_ErrorOpenZIPOrPath_loc										"Error opening ZIP file or path ¡¾"
+	#Define _Thor_Main_ExtractFiles_ToCopyFrom_loc												"¡¿ to copy from."
+	#Define _Thor_Main_ExtractFiles_ErrorExtract_loc											"Error extracting files from ¡¾"
 	#Define _Thor_Main_ExtractFiles_ErrorExtract2_loc											[Error extracting files.]
-	#Define _Thor_Main_ExtractFiles_CopyFrom_loc												"Copied files from ["
-	#Define _Thor_Main_ExtractFiles_To_loc														"] to ["
+	#Define _Thor_Main_ExtractFiles_CopyFrom_loc												"Copied files from ¡¾"
+	#Define _Thor_Main_ExtractFiles_To_loc														"¡¿ to ¡¾"
 
-	#Define _Thor_Main_ExtractFilesFromZip_Extract_loc											"Extracting from ["
+	#Define _Thor_Main_ExtractFilesFromZip_Extract_loc											"Extracting from ¡¾"
 	#Define _Thor_Main_ExtractFilesFromZip_ErrorInLibrary_loc									"Error loading VFP Compression library [VFPCompression.fll]"
 
 	#Define _Thor_Main_ExtractToPath_Extracting_loc												[Extracting.... Please wait.]
