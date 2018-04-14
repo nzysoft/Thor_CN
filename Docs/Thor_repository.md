@@ -11,11 +11,11 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 **下载:** [Thor Repository.Zip](http://vfpxrepository.com/dl/thorupdate/Tools/Thor_Repository/Thor_Repository.zip)
 
-**完整目录:** **[所有 Thor 仓库工具的目录](https://github.com/VFPX/ThorRepository/blob/master/documents/ThorRepositoryCatalog.md)**
+**完整目录:** **[所有 Thor 仓库工具的目录(简体中文)](https://github.com/vfp9/ThorRepository_CN/blob/master/documents/ThorRepositoryCatalog.md)**
 
 **讨论组:** [在 Thor 讨论组发布问题，错误报告和讨论](http://groups.google.com/group/FoxProThor)
 
-**Thor主页:** [**Thor**](https://github.com/VFPX/Thor)
+**Thor主页:** [**Thor(简体中文)**](https://github.com/vfp9/Thor_CN)     [**Thor(英文)**](https://github.com/VFPX/Thor)
 
 ![](Images/Thor_greenline.png)
 
