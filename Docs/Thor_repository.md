@@ -9,7 +9,7 @@ _本文档由 xinjie 于 2018-04-07 翻译_
 
 ![](Images/Thor_greenline.png)
 
-**下载:** [Thor Repository.Zip](http://vfpxrepository.com/dl/thorupdate/Tools/Thor_Repository/Thor_Repository.zip)
+**下载:** [Thor Repository.Zip(英文)](http://vfpxrepository.com/dl/thorupdate/Tools/Thor_Repository/Thor_Repository.zip)
 
 **完整目录:** **[所有 Thor 仓库工具的目录(简体中文)](https://github.com/vfp9/ThorRepository_CN/blob/master/documents/ThorRepositoryCatalog.md)**
 
