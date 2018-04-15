@@ -14,8 +14,8 @@ Grid 下方有两个按钮：
 
 **按钮** |**描述**
 ---|---
-Save Selections(保存选择)|保存当前选择，以便下次打开此表格时将选择相同的字段。
-Show Schema(显示概要)|在浏览器中打开关于表的详细描述。
+保存所选|保存当前选择，以便下次打开此表格时将选择相同的字段。
+显示概要|在浏览器中打开关于表的详细描述。
 
 ### Picker 页
 
@@ -44,13 +44,13 @@ SQLExec|以 MsSQL 语法创建
 
 **按钮** |**描述**
 ---|---
-Add NVL()|在适当的地方添加NVL（）语法
+添加 NVL()|在适当的地方添加NVL（）语法
 
 #### 选项组选择字段映射类型：
 
 **按钮** |**描述**
 ---|---
-No|不增加 Cast()
+不使用 Cast()|不增加 Cast()
 VFP|增加 VFP 类型的 Cast()
 ANSI|创建 ANSI 类型的 Cast()
 
@@ -60,14 +60,14 @@ ANSI|创建 ANSI 类型的 Cast()
 ---|---
 “From:” 文本框|显示当前表名
 “Add From” 选择框|将“From”短语添加到Select语句
-“Close afterwards” 选择框|超级浏览器退出时关闭表
+“执行后关闭游标” 选择框|超级浏览器退出时关闭表
 “As:” 文本框|填写 Table_Alias
-“=TableName” 按钮|在 As 文本框中填写当前表名
-“Remove” 按钮|As 文本框置空
+“=表名” 按钮|在 As 文本框中填写当前表名
+“移除” 按钮|As 文本框置空
 “Into Table” 文本框|填写目标表/游标的名称
-Option 1\. Table|目标是一个表
-Option 2\. Cursor|目标是一个只读游标
-Option 3\. Cursor read/Write|目标是一个可读写的游标
+Option 1\. 表|目标是一个表
+Option 2\. 游标|目标是一个只读游标
+Option 3\. 可读写游标|目标是一个可读写的游标
 
 ### Grid 页:
 
@@ -83,9 +83,9 @@ Option 3\. Cursor read/Write|目标是一个可读写的游标
 
 **控制** |**描述**
 ---|---
-Search Values 文本框|输入你想要搜索的内容
-Expression 选项|搜索您输入的表达式 
-Value 选项|输入你想要搜索的内容
+查找值 文本框|输入你想要搜索的内容
+表达式 选项|搜索您输入的表达式 
+值 选项|输入你想要搜索的内容
 
 #### 在表中搜索
 
@@ -93,15 +93,15 @@ Value 选项|输入你想要搜索的内容
 
 **选项类型** |**键入的内容**|**描述**
 ---|---|---
-Expression|Name='Jim' 或 name = 'Tore'|自解释
-Expression|Obsolete|查找逻辑字段 Obsolete 是.T的每个记录。
-Expression|Inlist(custno,10,20,30)|自解释
-Expression|'nit'$country|查找“nit”位于字段 Country 内的每条记录
-Value|usa|查找“usa”一词所在的每个记录**任何**所选字段
-Value|samsung 5110|查找单词'samsung'**和**'5110'在**任何**所选字段内的每条记录
-Value|jim nelson kong|查找每个记录中**任意**所选字段包含'jim'和'nelson'以及'kong'字样的记录
-Expression|*jim nelson kong|与上面的相同，星号是用于强调**任意**所选的字段
-Value|=price>100|查找 price >100 的所有记录，等号（=）将强制执行表达式类型搜索**任意**所选字段
+表达式|Name='Jim' 或 name = 'Tore'|自解释
+表达式|Obsolete|查找逻辑字段 Obsolete 是.T的每个记录。
+表达式|Inlist(custno,10,20,30)|自解释
+表达式|'nit'$country|查找“nit”位于字段 Country 内的每条记录
+值|usa|查找“usa”一词所在的每个记录**任何**所选字段
+值|samsung 5110|查找单词'samsung'**和**'5110'在**任何**所选字段内的每条记录
+值|jim nelson kong|查找每个记录中**任意**所选字段包含'jim'和'nelson'以及'kong'字样的记录
+表达式|*jim nelson kong|与上面的相同，星号是用于强调**任意**所选的字段
+值|=price>100|查找 price >100 的所有记录，等号（=）将强制执行表达式类型搜索**任意**所选字段
 
 
 #### 轻松使用正确的搜索类型
@@ -122,13 +122,13 @@ Value|=price>100|查找 price >100 的所有记录，等号（=）将强制执�
 **控制** |**描述**
 ---|---
 Sort 列表框|选择当前的排序顺序
-按钮 \|<|转到上一条记录
-按钮 \|>|转到下一条记录
+按钮 \|<|转到首记录
+按钮 \|>|转到末记录
 按钮 +|添加一条新记录
 按钮 Edit|在单独的表单上编辑当前记录
-Read-Only 选择框|自解释
-Hide unselected fields 选择框|使 Grid 仅显示选定的字段
-按钮 Modify Structure|给你修改结构的可能性。 如果表是共享打开的，则会询问您是否要将其重新打开。
+只读 选择框|自解释
+隐藏未选字段 选择框|使 Grid 仅显示选定的字段
+按钮 修改结构|给你修改结构的可能性。 如果表是共享打开的，则会询问您是否要将其重新打开。
 
 ### Index 页
 
